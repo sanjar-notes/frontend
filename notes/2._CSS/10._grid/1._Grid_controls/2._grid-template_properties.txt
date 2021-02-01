@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-03T17:12:36+05:30
+
+====== 2. grid-template properties ======
+Created Thursday 03 September 2020
+
+* Set these on the container
+* Use these to set the row/column widths.
+* There are two:
+	a. grid-template-columns: col1 col2 col3 ...
+	b. grid-template-rows: row1 row2 row3 ...
+{{{code: lang="css" linenumbers="True"
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px; // The grid will have two columns of width 50px
+}
+}}}
+
+* The number of values specified are the number of rows/columns
+* Note: row and column are both plural

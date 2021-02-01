@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-17T22:43:29+05:30
+
+====== 7. ES8 ======
+Created Friday 17 July 2020
+
+Important changes in 2017:
+1. String functions for adding spaces to the end(s).
+	a. stri.padStart(2);// stri = "hello" -> "  hello"
+	b. stri.padEnd(2); // stri = "hello" -> "hello  "
+2. A trailing comma is acceptable - Makes the code systematic -  //Only one comma.//
+3. Object iteration facilities like:
+	a. Object.values(obj_name) - returns a list of values.
+	b. Object.entries(obj_name) - returns a list of key value pairs(as arrays of size 2).
+	* Object.keys() - This is an existing feature.
+	* Note: We need to call .values() using Object.
+4. Async Await
+
+Note:
+* strinG.trim() trims the white-spaces at the ends.

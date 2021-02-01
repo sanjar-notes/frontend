@@ -1,0 +1,66 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-17T01:37:09+05:30
+
+====== 5. Advanced Objects ======
+Created Friday 17 July 2020
+
+1. **Reference types** - All the datatypes except the primitive ones(number, boolean, string, null, undefined, symbol). e.g Array, Set, Object etc.
+	* Reference types are compared(=== and ==) only by their address, no bit by bit comparison is performed.
+	* All data-structures(except strings) are reference types. This is the reason [] and [] is false, they are actually two empty arrays stored at two locations.
+	* Shallow copy is done for all reference type assignments.
+		{{./pasted_image.png?width=500}}  {{./pasted_image001.png}}
+	* Why is it so? - This makes code efficient, and comparing big types doesn't make sense.
+	* All primitive types are passed by value, and all the others are passed by reference.
+2. **Context** - The parent object, or answer to the question'What parent object environment are we in ?'
+	* Accessed using the **this** keyword
+	* When we run f(), we it is equivalent to this.f(), i.e run w.r.t the parent object.
+	* A simpler definition - What's on the left side of the dot. e.g alert('Hello') has window as it's context because it is equivalent to window.alert('hello');
+{{{code: lang="js" linenumbers="True"
+function f()	// context of f is the same as LOC sibling to f
+{
+	const a = 10;	// a does not affect the parent - 'this' talks about parent object.
+	return this;
+}
+console.log(this===f()); // -> true for a webpage, this and f() reference the document
+}}}
+	
+	* How to change context - we need to be inside another object.
+		{{./pasted_image002.png}}
+		Note that lambda function doesn't acknowledge a change in parent object but a function does.
+3. **Instantiation** - Making an object from a class.
+	* To make a class, the syntax is:
+{{{code: lang="js" linenumbers="True"
+class A{
+	constructor(name) // constructor is a keyword
+	{
+		this.name = name;
+	}
+	intro()
+	{
+		console.log(`Hi, I'm ${this.name}.`);
+	}
+	// no need of destructor - auto gargabge collector
+};
+}}}
+		
+	* To **instantiate** a class, use the new keyword, like all dynamically typed languages.
+{{{code: lang="js" linenumbers="True"
+Sanjar = new A('Muhammad Sanjar Afaq');
+Sanjar.intro();	// -> Hi, I'm Muhammad Sanjar Afaq
+}}}
+		
+4. **Inheritance** - Simple.
+	* Suppose we are making a MOBA. Our players can be a Wizard, Healer, etc.
+	* How to handle object creation, and then allot them their type.
+	//Approach// - Make a Player class, having a function with a switch(type_input) which creates the required object, and also adds Player properties to it.
+	* This approach is good, but it has many practical and theoretic problems, which are solved using inheritance:
+		a. We have two classes, Player and Wizard(which contains everything from Player. This is **hampering extensibility** - what if we had a Wizard which was female, we'd have to work on Player, Wizard and the new female class. The code would be very **clumsy**. Code reuse is easy.
+		b. It makes code **maintainable **- Changing the superclass, will reflect the change in all the subclasses, if such a change is ever required.
+	* All this is implemented and the simplified approach is called inheritance. It can be tricky, but is way better than the manual way.
+	* Syntax: Use **extends** keyword.
+		{{./pasted_image003.png}}
+Note:
+* Classes are nothing but syntactic sugar introduced from ES6 2015
+* All OOPS syntax is a subset of Java syntax.
+* No access modifiers exist in Javascript

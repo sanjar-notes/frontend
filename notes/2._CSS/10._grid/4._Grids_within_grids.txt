@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-03T20:05:46+05:30
+
+====== 4. Grids within grids ======
+Created Thursday 03 September 2020
+
+* As grid applies only to container items and not their descendants, we can further have more 
+* Grid have auto wrapping

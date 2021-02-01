@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-02T03:15:54+05:30
+
+====== 3. Wrapping ======
+Created Wednesday 02 September 2020
+
+**flex-wrap** wraps [[https://www.freecodecamp.org/learn/responsive-web-design/css-flexbox/use-the-flex-wrap-property-to-wrap-a-row-or-column|the]] components. It is for reading, and therefore has no cross-axis property. It has 3 modes:
+1. no-wrap → The default
+	{{./pasted_image.png}}
+2. wrap → Wrap w.r.t to the main axis
+	{{./pasted_image001.png}}
+3. wrap-reverse → Wrap to put in the opposite direction(top here, row main-axis)
+	{{./pasted_image002.png}}

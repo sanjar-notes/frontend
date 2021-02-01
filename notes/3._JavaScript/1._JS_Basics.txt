@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-08T14:37:12+05:30
+
+====== 1. JS Basics ======
+Created Wednesday 08 July 2020
+
+{{./pasted_image.png?width=400}}
+--------------------
+* CSS is **really **difficult.
+* It's somewhat arbitrary.
+* Web development is hard, it is not easy.
+* CSS is for those who make designs.
+* JS is for the app builders.
+* Use JS to make apps and learn CSS and HTML while doing it.
+* This is the most efficient path.
+--------------------

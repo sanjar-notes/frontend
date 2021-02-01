@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-18T21:05:29+05:30
+
+====== 11. Modules in JS ======
+Created Saturday 18 July 2020
+
+* Let us first see where are we now:
+1. We had inline scripts - Reusability, pollution of the global namespace
+2. We had script tags src - Order has to be decided beforehand(dependency resolution), we have to keep the script tags in all HTML files, global namespace is polluted.
+3. Using IIFE, we have no pollution, but order is not important.
+4. Browserify, before deployment, this app bundled all of the JS files into a single massive file called bundle.js. This way, we wouldn't have to worry about the namespace etc.
+5. In ES6 using Webpack, we can use export and import - Makes code easy to maintain.
+{{{code: lang="js" linenumbers="True"
+// js1
+export const add = (a, b) => a+b;
+//OR
+export default function add(a, b){
+	return a+b;
+}
+
+//js2
+import {add} from './add';
+//OR
+import add from './add';
+}}}

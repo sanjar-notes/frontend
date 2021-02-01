@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-08T16:47:26+05:30
+
+====== 4. JS in the browser ======
+Created Wednesday 08 July 2020
+
+There are 2 ways to do this:
+1. Directly write the code in <script></script>.
+2. link the JS file in the script tag, using type and src.
+Note: Keep the script tag at the end of the body, and never in the head. They are run one by one just as HTML is rendered, coz script tag delays rendering.

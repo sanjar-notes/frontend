@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-08T14:16:14+05:30
+
+====== 3. MailChimp ======
+Created Wednesday 08 July 2020
+
+It's an easy way to make form. No backend required.

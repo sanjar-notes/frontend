@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-18T19:10:49+05:30
+
+====== 9. Debugging ======
+Created Saturday 18 July 2020
+
+Debugging - Figuring out why the program isn't working as intended.
+* Rename things according to you.
+* Use console.log() to check behavior.
+* Use the keyword **debugger** to stop the program and open the chrome debugger.

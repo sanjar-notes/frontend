@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-08T14:30:00+05:30
+
+====== 5. Animate dot css ======
+Created Wednesday 08 July 2020
+
+* Just like Bootstrap4
+* Write code from scratch only if the functionality doesn't exist.

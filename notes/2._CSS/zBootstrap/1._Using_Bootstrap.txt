@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-08T13:14:43+05:30
+
+====== 1. Using Bootstrap ======
+Created Wednesday 08 July 2020
+
+There are two ways to use Bootstrap:
+1. Using compiled CSS and JS(for actions) files.
+2. Using the CDN link from the website. No need to keep the file with us. 
+Note: Put the JS files at the end, this helps in user engagement.

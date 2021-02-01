@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-08T13:26:08+05:30
+
+====== 2. Edit things in the component templates ======
+Created Wednesday 08 July 2020
+
+* Just add your own style sheet. Add it below the Bootstrap link.

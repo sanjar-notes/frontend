@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-01T00:38:45+05:30
+
+====== 5. Multimedia tags ======
+Created Tuesday 01 September 2020
+
+1. <**img**> - self closing image tag
+	a. src
+	b. alt
+	c. width
+	d. height
+	e. title
+2. <**figure**></**figure**> - used to surround a photo/code/anything
+3. <**figcaption**></**figcaption**> - used to name a figure tag - [[https://www.sitepoint.com/quick-tip-the-right-way-to-use-figure-and-figcaption-elements/|one inside one]]
+
+--------------------
+1. <**video**>Alt_text_here</**video**>
+	a. src
+	b. height
+	c. width
+	d. **poster** = "image.png"
+	e. **autoplay**
+	f. **controls**
+	g. **loop**
+--------------------
+**Iframe - simply having a webview from a website**
+* It is not a self closing rag
+* <iframe>Alt_text_here</iframe>
+{{{code: lang="html" linenumbers="True"
+<iframe
+        src="https://www.youtube.com/embed/2DGxm1csQQM?"
+        width="height"
+        allow="autoplay"
+        allowfullscreen
+ ></iframe>
+}}}
+
+--------------------
+Audio
+* <audio controls>alt_text_here</audio>
+* <source **src** **type="audio/mpeg"**> needs to be inside audio - can be used for sound awa transcripts

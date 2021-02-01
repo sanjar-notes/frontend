@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-01T22:10:01+05:30
+
+====== 1. Media queries ======
+Created Tuesday 01 September 2020
+
+Media queries are very useful for responsive devices.
+Syntax:
+{{{code: lang="css" linenumbers="True"
+<style>
+@media(condition)
+{
+	p{}
+	h1{}
+}
+</style>
+}}}
+	
+Some common conditions are:
+a. max-width:100px ⇒ if width<=100px
+b. min-width:100px ⇒ if width>=100px
+c. print ⇒ Hide some things when the page is printed

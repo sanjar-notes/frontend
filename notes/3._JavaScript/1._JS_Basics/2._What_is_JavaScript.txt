@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-08T15:58:52+05:30
+
+====== 2. What is JavaScript ======
+Created Wednesday 08 July 2020
+
+* Created by NetScape in 1995 for to run in the browser.
+* It was(?) like a feature for browsers.
+* Initially, it was standardised, just like HTML5, CSS3 for different browsers. This became a nightmare for developers.
+* It has now been standardized and is called ECMAScript. JavaScript and ECMAScript are the same thing.
+--------------------
+What JavaScript does:
+1. It is the animations and logic for JavaScript.
+2. Instagram App.
+3. Flying Drones
+4. Robotics
+{{./pasted_image.png}}
+* It can be used for quick development.
+--------------------
+How to run JavaScript:
+* Node.js is the starting point.
+* All other libraries use the exact same language - We can use any library, like React, Vue, Node, Express etc.
+--------------------
+* Big websites are made - iteratively, and built using these very basic stuff.

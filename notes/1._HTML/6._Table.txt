@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-01T00:46:23+05:30
+
+====== 6. Table ======
+Created Tuesday 01 September 2020
+
+6 tags
+1. **table **- table
+2. **thead **- the head of the table
+3. **tbody** - the body of the table
+4. **tfoot** - the foot of the table
+5. **tr** - the row of a table
+**td/th** - the cell, either data cell or header cell
+* thead, th are used together
+{{{code: lang="html" linenumbers="True"
+<table>
+	<thead>
+		<tr> 
+			<th>Name</th>
+			<th>RollNo</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+		<tr>
+	</tbody>
+</table>
+}}}

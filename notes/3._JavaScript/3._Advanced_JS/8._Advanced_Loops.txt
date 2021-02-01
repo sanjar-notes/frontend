@@ -1,0 +1,32 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-18T19:00:48+05:30
+
+====== 8. Advanced Loops ======
+Created Saturday 18 July 2020
+
+1. for of loops - loops only over iterables like array and strings
+{{{code: lang="js" linenumbers="True"
+let arr = [1,2,3];
+for(const ele of arr)
+	console.log(ele);
+/*
+1
+2
+3
+*/
+}}}
+
+2. for in loops - enumerates over object properties, works for iterables too. MAID(in-enumerate object)
+{{{code: lang="js" linenumbers="True"
+let x = { a:1, b:2, c:3 };
+for(const ele in x)
+	console.log(ele);
+/*
+'a'
+'b'
+'c'
+/*
+}}}
+
+Note: for in loop can work with arrays too, because arrays are objects with numbered properties.**MAID **in enum

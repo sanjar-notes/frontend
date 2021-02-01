@@ -1,0 +1,43 @@
+body {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-family: sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-shrink: 2; */
+}
+
+input[type="text"] {
+  /* attribute selector*/
+  padding: 5px;
+  margin: 20px;
+  color: black;
+}
+inputs {
+  display: flex;
+  flex-direction: row;
+}
+*::placeholder {
+  color: black;
+  font-family: cursive;
+}
+#value:focus {
+  background-color: rgb(56, 56, 243);
+  color: yellow;
+}
+
+body {
+  background-image: linear-gradient(to left, red, blue);
+}
+
+#object_code {
+  /* float: center; */
+  justify-self: center;
+  /* border: 1px solid; */
+  max-width: 400px;
+  min-height: 40px;
+}

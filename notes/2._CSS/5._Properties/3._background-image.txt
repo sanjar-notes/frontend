@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-15T17:29:54+05:30
+
+====== 3. background-image ======
+Created Monday 15 June 2020
+
+* Input: **url(**'path of the image'**)**
+{{{code: lang="css" linenumbers="True"
+body {
+  background-image: url("paper.gif");
+}
+}}}
+
+* See to it that the background doesn't make the text unreadable
+* background-image repeats an image both horizontally and vertically, to control this use:
+{{{code: lang="css" linenumbers="True"
+body{
+background-image: url(something);
+background-repeat: repeat-x; /* or repeat-y or no-repeat/*
+}
+}}}
+
+* Also we can specify the position:
+{{{code: lang="css" linenumbers="True"
+body
+{
+	background-image: url(something);
+	background-attachment: fixed; /*scroll*/ /* background does not change/*
+}
+}}}
+
+* background-size: cover fill etc.

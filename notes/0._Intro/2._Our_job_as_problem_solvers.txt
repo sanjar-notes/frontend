@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-08T15:41:06+05:30
+
+====== 2. Our job as problem solvers ======
+Created Wednesday 08 July 2020
+
+* Our job is to solve the problems with the given resource, at the time.
+* StackOverflow is a very good place to look for answers.

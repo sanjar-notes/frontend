@@ -1,0 +1,45 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-17T00:51:39+05:30
+
+====== 2. Writing stuff ======
+Created Wednesday 17 June 2020
+
+There are many types of writing text elements:
+1. <p> ⇒ paragraph tag
+2. <cite> ⇒ citation (italicized)
+3. <pre> ⇒ pre-formatted or verbatim text
+4. <blockquote cite> ⇒ indented
+5. <q> ⇒ Italicized
+6. <abbr></abrr> ⇒ abbreviation
+7. <dfn></dfn> ⇒ definition.
+--------------------
+Code:
+8. <code><code/> tag. Mostly the code is wrapped by a <pre> wrapped by a <code> element.
+9. <samp><samp/> tag. The output of the code.
+10. <var><var/> represents a variable.
+--------------------
+Miscellaneous:
+11. <kbd> Ctrl+S<kbd> defines a keybinding.
+12. <address></address> ⇒ italicizes the address
+13. <br /> ⇒ newline
+14. <hr /> ⇒ visible horizontal separator
+--------------------
+Note: use the title attribute for abbreviations and citations
+Demo
+{{{code: lang="html" linenumbers="True"
+<code>
+        x = 5;<br>
+        y = 6;<br>
+        z = x + y;
+</code>
+
+<!-- samp - output of the program -->
+<p>If you input wrong value, the program will return <samp>Error!</samp></p>
+
+<!-- 2. kbd - represents keyboard input: For quick action, very important in PCs Rendered differenetly-->
+    <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+<!-- var helps us render a variable differently - italicised -->
+Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.
+}}}

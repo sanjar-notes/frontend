@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-14T13:33:09+05:30
+
+====== 3. Advanced JS ======
+Created Tuesday 14 July 2020
+
+* We can have nested functions
+* Nested functions are hoisted

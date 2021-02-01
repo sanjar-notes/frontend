@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-12-25T23:23:42+05:30
+
+====== 3. JavaScript ======
+Created Friday 25 December 2020
+

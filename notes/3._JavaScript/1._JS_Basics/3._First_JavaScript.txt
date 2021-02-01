@@ -1,0 +1,83 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-08T16:08:23+05:30
+
+====== 3. First JavaScript ======
+Created Wednesday 08 July 2020
+
+**Comments**: same as C++
+
+It has seven basic types:
+1. Number - No difference between int and float. NaN is a part of number.
+2. String - ' and " are equivalent. Concatenation works, if numbers are required, "3" can act as 3(except +, where concatenation is the default).
+3. Boolean(true/false)
+4. undefined - not been assigned(garbage values are avoided this way)
+5. null
+6. symbol(new in ES6)
+7. Object(user-defined)
+--------------------
+Variables  -  Same as CPP, except that $ is a valid identifier symbol.
+There are 4 kinds of declarations:
+* **let** - simple variable(just like C++)
+* **const** - non reassignable variable(data structure if any, is mutable)
+* **var **- hoisted reference in the current scope, accessible inside the function or is simply global. Discouraged.
+* Nothing - these variables are declared just like python - They are global.
+{{./pasted_image.png}}
+Note: 
+	a. Avoid using var altogether.
+	b. Uninitalized(undefined) variables store the value undefined😁️.
+	c. All - //let, const //and// var //are [[https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-hoisted/31222689#31222689|hoisted]], but only var is accessible(and set to undefined).
+	d. JS is dynamically typed.
+--------------------
+**Printing**: console.log() - same as print() in Python, virial function and newlines
+**User input**: prompt() returns a string. Works only in browser. Use the cast, Number(), Boolean()
+User alert: **alert**(variable), a OK key appears. All this is browser specific.
+--------------------
+**Semicolons** are required at end of a statement. It won't break the code, but recommended.
+--------------------
+* Code blocks are {}, and consequently we need () for **for**, **while **etc  - Exactly the same as C++
+* //if//, //else//, //else if//, //for//, //while//, //do while//, //switch//, //ternary operator(?:;)// - same as C++
+* equality === and inequality !==  [[https://www.w3schools.com/js/js_comparisons.asp|JS Comparison Operators]]
+* //continue// and //break// mean the same as C++.
+* forEach - since ES5
+{{{code: lang="js" linenumbers="True"
+iterable.forEach(f); // f is a function which does it for each element - it gets the value of the current element
+
+f = function(a){};	// a  = element value
+f = function(a, b){}; // a = element value, b = index
+}}}
+
+--------------------
+Functions:
+* No return type required.
+* Keyword function is required.
+* **return** ends the function(obvious).
+{{{code: lang="js" linenumbers="True"
+function x()
+{
+	return 2;
+}
+function x(a, b)
+{
+	return a*b;
+}
+}}}
+
+* Default params are available
+{{{code: lang="js" linenumbers="True"
+function f(a=1, b)
+{
+	console.log(a, b);
+}
+f(12, 321);
+// 12 321
+}}}
+
+* Anonymous functions - lambdas:
+{{{code: lang="js" linenumbers="True"
+let x = function(){ // no function name required
+	return 2;
+};	// semi colon at the end
+}}}
+
+* Functions are hoisted before the variables(vars, if any).
