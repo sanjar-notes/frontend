@@ -40,3 +40,4 @@ Created Tuesday 01 September 2020
 Audio
 * <audio controls>alt_text_here</audio>
 * <source **src** **type="audio/mpeg"**> needs to be inside audio - can be used for sound awa transcripts
+mAid - self closing tags don't have a text content.

@@ -2,23 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-06-17T00:47:48+05:30
 
-====== 1. Basics ======
+====== 11. Page sectors ======
 Created Wednesday 17 June 2020
 
-* We have the <head> and the <body> inside the <html>
 * We have header, footer and navigation.
 We use the following layout
 {{./pasted_image001.png}}
-{{{code: lang="html" linenumbers="True"
-<!DOCTYPE html>
-<html>
-	<head>
-	</head>
-	<body>
-	</body>
-</html>
-}}}
-
 --------------------
 6 HTML5 things:
 * header - for headings, dates, name etc
@@ -27,3 +16,5 @@ We use the following layout
 * article - a standalone article, part of no section
 * aside - side links, appendix
 * footer - site footer
+
+--------------------
