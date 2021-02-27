@@ -5,18 +5,20 @@ Creation-Date: 2020-09-01T00:46:23+05:30
 ====== 6. Table ======
 Created Tuesday 01 September 2020
 
-6 tags
-1. **table **- table
-2. **thead **- the head of the table
-3. **tbody** - the body of the table
-4. **tfoot** - the foot of the table
-5. **tr** - the row of a table
-**td/th** - the cell, either data cell or header cell
-* thead, th are used together
+=== 7 tags ===
+1. **''table''**- basic table tag
+2. **''thead'' **- head of the table, containing headings
+3. **''tbody''** - body of the table, containing cells
+4. **''tfoot''** - the foot of the table, contains appendices and/or legends.
+5. **''tr''** - row of a table.
+6. **''td''** - tag for enclosing a data cell.
+7. **''th''** - tag for enclosing a header cell, i.e this is only used inside **''thead''**
+
+* **tfoot** may be ommitted.
 {{{code: lang="html" linenumbers="True"
 <table>
 	<thead>
-		<tr> 
+		<tr>
 			<th>Name</th>
 			<th>RollNo</th>
 		</tr>

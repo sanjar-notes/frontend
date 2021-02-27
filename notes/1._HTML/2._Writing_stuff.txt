@@ -8,12 +8,14 @@ Created Wednesday 17 June 2020
 === Basic text constructs ===
 1. <h1> ⇒ heading, h1 to h6 are available, with h6 being the smallest(least important).
 2. <p> ⇒ paragraph tag
-3. <cite> ⇒ citation (italicized)
-4. <pre> ⇒ pre-formatted or verbatim text
-5. <blockquote cite> ⇒ indented
-6. <q> ⇒ Italicized
-7. <abbr></abrr> ⇒ abbreviation. Short is new, <acronym> is obsolete.
-8. <dfn></dfn> ⇒ definition.
+3. <strong> ⇒ bold text
+4. <em> ⇒ italicized text
+5. <cite> ⇒ citation (displayed as italicized)
+6. <pre> ⇒ pre-formatted or verbatim text
+7. <blockquote cite=""> ⇒ indented
+8. <q> ⇒ Quote, Italicized
+9. <abbr></abrr> ⇒ abbreviation. Short is new, <acronym> is obsolete.
+10. <dfn></dfn> ⇒ definition.
 
 === Code and scientific notation ===
 1. <code><code/> tag. Mostly the code is wrapped by a <pre> wrapped by a <code> element.
@@ -23,10 +25,10 @@ Created Wednesday 17 June 2020
 5. <sup></sup> is used for superscript text.
 
 === Miscellaneous ===
-11. <kbd> Ctrl+S<kbd> for keybindings.
-12. <address></address> ⇒ italicizes the address
-13. <br /> ⇒ newline
-14. <hr /> ⇒ visible horizontal separator
+1. <kbd> Ctrl+S<kbd> for keybindings.
+2. <address></address> ⇒ italicizes the address.
+3. <br /> ⇒ newline
+4. <hr /> ⇒ visible horizontal separator
 --------------------
 Note: 
 * Use the **title** attribute for abbreviations and citations.
@@ -51,11 +53,9 @@ Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.
 
 
 === Handling Whitespace ===
-* As discussed before, browser ignores whitespace in HTML.
+* As discussed before, browser ignores whitespace in HTML content.
 * Whitespace, operators and emojis are handled using ''entitites''.
-* Syntax for entities - there are 3 kinds of notations - word(&entity_name), decimal and hex(&#entity_number).
+* Syntax for entities - there are 3 kinds of notations - ''&entity_code'', decimal and ''&#entity_hex_number''.
 * How to use - just write the entity in the content.
 **Examples**
 {{./pasted_image.png}}
-
-

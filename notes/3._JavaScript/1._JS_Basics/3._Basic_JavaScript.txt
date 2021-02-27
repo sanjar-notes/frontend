@@ -1,0 +1,108 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-08T16:08:23+05:30
+
+====== 3. Basic JavaScript ======
+Created Wednesday 08 July 2020
+
+**Comments**: same as C++
+
+=== Data types ===
+It has seven basic types:
+1. ''number'' - No difference between int and float. NaN is a part of number.ssp
+2. ''string'' - ' and " are equivalent. Concatenation is done using ''+''. Strings can be manipulated like numbers(and vice versa). e.g. '''2.3'*2 = 4.6''
+3. ''boolean''(''true''/''false'')
+4. ''undefined'' - not been assigned(garbage values are avoided this way)
+5. ''null''
+6. ''object''(user-defined)
+7. Symbol(new in ES6)
+
+=== Variables ===
+There are 4 kinds of declarations:
+* **let** - simple variable(just like C++). Example ''let x = 2;''
+* **const** - non reassignable variable(data structure if any, is mutable). Same as C++. Example ''const k = 32;''
+* **var **- variable declaration(not initialization) is moved at top of the scope. Discouraged.
+{{./pasted_image.png}}
+Note: 
+	a. Avoid using ''var'', except when working with old codebases.
+	b. Uninitalized(undefined) variables store the value undefined😁️.
+	c. Internally, //let, const //and// var, function, function*, class //are **all** [[https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-hoisted/31222689#31222689|hoisted]]
+	d. JavaScript has only two scopes - global(unique), local(changes);
+	e. All inner scopes can read/write variables from outer scope. Just like C++.
+
+=== ''var'' vs ''let'' ===
+* The only difference is that var has a function scope, a more free scope. i.e it can leak out of top-level blocks, but not out of the function.
+{{{code: lang="js" linenumbers="True"
+if(true)
+	var x = 2;
+console.log(x); // prints 2, as x leaked out from the block
+
+if(true)
+	let x = 2; // x is a block scope, so it ends here. Just like C++
+console.log(x); // Error x is undefined
+}}}
+
+* So ''var'' has only two anomalies(w.r.t C++):
+	a. It leaks out of non-function blocks(conditionals, loops).
+	b. It can be redeclared.
+
+=== Hoisting(JS feature) ===
+* A JavaScript interpreter performs many things behind the scene, and one of them is called hoisting.
+* If you are not aware of this “hidden” behavior, it can cause a lot of confusion. 
+* The best way of thinking about the behavior of JavaScript variables is to always visualize them as consisting of two parts: a declaration and an assignment.
+
+=== Standard IO ===
+**Output** 
+* ''console.log(variable)'' - just like ''print()'' in Python3(newlines, virial). Works for both CLI and browser.
+* ''alert(variable)'', for the browser. Alert is blocking: you have to click OK or press the Enter key.
+**Input**
+* ''prompt('message', defaultAnswer)'' - same as ''input()'' in Python3. only for the browser.
+
+=== Operators ===
+**Semicolons** are required at end of a statement. It won't break the code, but recommended.
+
+* Equality(of value) - ''=='' and ''≠''
+* Equality(of value and type) - ''==='' and ''!==''
+* Relational operators same as C++
+
+* Code blocks are {}, and consequently we need () for **for**, **while **etc  - Exactly the same as C++
+
+=== Conditionals ===
+* //if//, //else//, //else if//, //ternary operator(?:;)// - same as C++
+* //switch - same as C++//
+* JS does have a concept of truthy values.
+
+=== Loops ===
+* //for//, //while//, //do while - same as C++//
+* //continue// and //break// mean the same as C++.
+
+=== Functions ===
+* No return/parameter type required.
+* Keyword ''function'' is used - like ''def'' in Python3
+* Name may be skipped for IIFE.
+* Default params are allowed in JS, rules same as C++.
+* Functions are hoisted.
+* **return** ends the function(obvious).
+**Syntax**
+1. Named function
+{{{code: lang="js" linenumbers="True"
+function foo(bar1, bar2)
+{
+	// code
+}
+}}}
+
+2. Anonymous functions(lambda) - storing function in variables.
+{{{code: lang="js" linenumbers="True"
+let x = function(){ // function name not necessary
+	return 2;
+};	
+}}}
+
+3. IIFE - short form of lambda. No variable required.
+{{{code: lang="js" linenumbers="True"
+( // prefix parenthesis is required here.
+	function(bar)
+	{ /* code */ }
+)(); // calling parenthesis is out of function object
+}}}

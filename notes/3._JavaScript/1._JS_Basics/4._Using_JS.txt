@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-08T16:47:26+05:30
+
+====== 4. Using JS ======
+Created Wednesday 08 July 2020
+
+=== In the browser ===
+* Use ''<script>''  ''</script>'' tag
+There are 2 ways to add JS code:
+1. Add it between the ''script'' tag.
+2. Add JS from a file in using ''src'' attribute. This is not a self closing tag.
+{{{code: lang="js" linenumbers="True"
+<body>
+	<script> var x = 2; </script>
+<body>
+
+<body>
+	<script src="path"></script> <!-- Leave content empty -->
+<body>
+}}}
+
+* Keep the ''script'' tag at the end of ''body'', and never in the head. Executing/downloading ''script'' content blocks the rendering process.
+
+=== Outside the browser ===
+* Write code in ''.js'' files.
+* Run them using ''node'' in a terminal.
+
+=== Differences ===
+* In the browser, you may use objects like ''window'', but this is an error in the terminal.

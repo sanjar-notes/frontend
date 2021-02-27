@@ -9,9 +9,9 @@ There are 3 kinds of lists:
 1. <ul> - Unordered-lists
 2. <ol> - Ordered-lists, default is number
 3. <dl> - definition lists
-* Elements inside ul, ol are specified using <li></li> list item
-* Elements inside dl are specified using dt and dd items.
-
+* Elements inside ul, ol are specified using <li></li> tag, where ''li'' stands for list item.
+* Elements inside dl are specified using ''dt''(definition title) and ''dd''(definition description) items.
+* Lists can be nested, even heterogeneously.
 {{{code: lang="html" linenumbers="True"
 <ul>
     <li></li>

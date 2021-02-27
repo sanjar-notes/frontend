@@ -2,29 +2,32 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2021-02-14T05:02:58+05:30
 
-====== 1. Basicss ======
+====== 1. Basics ======
 Created Sunday 14 February 2021
 
-* HTML specifies the basic structure(skelton) of the webpage.
+* HTML specifies the basic structure(skeleton) of the webpage.
 * HTML is a markup language, not a programming language.
 * HTML stands for HyperText Markup Language
 
 === Basic syntax ===
-* We have the <head> and the <body> inside the <html>
+* We have the ''<head>'' and the ''<body>'' inside the ''<html>'' tag.
 * DOCTYPE is like a shebang.
 {{{code: lang="html" linenumbers="True"
 <!DOCTYPE html>
 <html>
+
 	<head>
 	</head>
+	
 	<body>
 	</body>
+	
 </html>
 }}}
 
 * Everything inside the body is perceptible in the browser(below the omnibox).
 
 === Facts about HTML ===
-* Errors are ignored by the browser
-* Whitespace is ignored in content in HTML tags, except in string literals.
+* Errors are ignored by the browser.
+* Whitespace is ignored in the content of HTML tags, except in string literals.
 * HTML does not have strict indentation, it is free flow language.

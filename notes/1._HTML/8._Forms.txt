@@ -5,28 +5,28 @@ Creation-Date: 2020-09-01T01:32:17+05:30
 ====== 8. Forms ======
 Created Tuesday 01 September 2020
 
-Tags:
+=== Basic form tags ===
 1. <**form**></**form**> - encloses the whole form
 2. <**label** for="x"><**/label**> - used before/after/enclosing an input, the value displayed
 3. <**input** type id="x" name value**(if checkbox/radio)**/> - the input
 4. <**select **multiple></**select**>  - encloses a drop down menu(**select**)
-5. <**option **value></**option**> - the components of a dropdown
---------------------
-Input can be:
-1. checkbox - name + value
-2. radio - name + value
-3. button - title + value
-4. text - placeholder + maxlength
-5. password
-6. date
-7. file
+5. <**option **value=""></**option**> - the components of a dropdown
+
+=== Input type values - allowed attributes ===
+1. ''checkbox'' - name + value
+2. ''radio'' - name + value
+3. ''button'' - title + value
+4. ''text'' - placeholder + maxlength
+5. ''password''
+6. ''date''
+7. ''file''
 8. **reset** - value
 9. **submit** - value
 --------------------
 * form tag has 2 attributes
 	a. **action** = "form_filled.html" - will be triggered when submit is clicked
 	b. **method **= "GET" or "POST" - POST is more secure
-* **label** for and checkbox, radio id should be the same
+* label's //for// and checkbox's, radio's //id// should be the same.
 --------------------
 Examples
 {{{code: lang="html" linenumbers="True"
@@ -44,6 +44,6 @@ Examples
 }}}
 
 --------------------
-Acessibility principles for forms:
-1. Use the **fieldset **tag to enclose options.
+Accessibility principles for form:
+1. Use the **fieldset **tag to enclose ''option'' tags.
 2. Use the **legend** tag to ask the question inside the [[https://www.freecodecamp.org/learn/responsive-web-design/applied-accessibility/wrap-radio-buttons-in-a-fieldset-element-for-better-accessibility|fieldset]].

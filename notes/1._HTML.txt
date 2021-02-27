@@ -5,3 +5,5 @@ Creation-Date: 2019-10-07T16:28:06+05:30
 ====== 1. HTML ======
 Created Monday 07 October 2019
 
+* No need to remember syntax here.
+* Just undertstand the concepts.

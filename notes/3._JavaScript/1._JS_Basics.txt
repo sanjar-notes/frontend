@@ -8,10 +8,9 @@ Created Wednesday 08 July 2020
 {{./pasted_image.png?width=400}}
 --------------------
 * CSS is **really **difficult.
-* It's somewhat arbitrary.
+* Its somewhat arbitrary.
 * Web development is hard, it is not easy.
 * CSS is for those who make designs.
 * JS is for the app builders.
 * Use JS to make apps and learn CSS and HTML while doing it.
 * This is the most efficient path.
---------------------
