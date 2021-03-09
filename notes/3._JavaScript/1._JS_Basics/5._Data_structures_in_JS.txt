@@ -5,34 +5,29 @@ Creation-Date: 2020-07-09T04:15:34+05:30
 ====== 5. Data structures in JS ======
 Created Thursday 09 July 2020
 
-1. Array - We can keep anything here
+1. Array
+* Syntax for arrays
 {{{code: lang="js" linenumbers="True"
-var list = [1,2,3,4];
-var mixed = [1, "one", 2, [3,4]];
-var tooMuch = [1, function p(){ 
-	a = 2;
-	b = 2;	
-	return a+b;}]
+let list = [1,2,3,4]; // definition
 }}}
 
-* Mixed lists can cause performance issues.
+* Mixed(heterogeneous) lists can cause performance issues. ''let mixed = [1, "one", 2, [3,4]];''
 * Array functions:
-	0. Accessing elements arr[0]
-	1. b = a; does a deep copy
-	2. a.concat(b) //returns// a concatenated list. IP
-	3. a.sort() - sorts the in place array(just like python)
-	4. a.concat().sort() - returns a sorted copy
-	5. a.push(var1, var2)
-	6. a.pop() - removes the last letter
-	7. a.splice(index, how_many, advar1, advar2) - used to insert and delete how_many elements from(incl) index. **IP**
-		a. arr.splice(i, 0, x); // adds x as the ith index, all others pushed to the right
-		b. arr.splice(i, 1); // removes the ith index terms, all others pushed to the left
-	8. a.length - an object property
-	9. b = a; does a deep copy
+	1. Accessing element - ''arr[0]''
+	2. ''a.concat(b)'' //returns// a concatenated list. In place.
+	3. ''a.sort()'' - sorts the in place array(just like python)
+	4. ''a.concat().sort()'' - returns a sorted copy
+	5. ''a.push(var1, var2)'' - append. It is a virial function.
+	6. ''a.pop()'' - removes the last letter.
+	7. ''a.splice(index, how_many, addvar1, addvar2)'' - used to insert and delete how_many elements from(incl) index. **IP**
+		a. ''arr.splice(i, 0, x);'' // adds x as the ith index, all others pushed to the right
+		b. ''arr.splice(i, 1);'' // removes the ith index terms, all others pushed to the left
+	8. ''a.length'' - length of array
+	9. ''b = a;'' does a deep copy of array ''a''
 	10. arr.reverse() reverses the array **IP**
-* Array can have empty values
+* Array can have empty values.
 --------------------
-2. Objects - They are a collection of properties and functions.
+2. Objects - They are a collection of attributes and values.
 {{{code: lang="js" linenumbers="True"
 var user = {
 	name: "John",
@@ -46,10 +41,10 @@ user.favoriteFood = "spinach"; // add a member to an object
 user['favoriteFood'] = "spinach"; // same as above
 }}}
 
-* **null** - Represents the state of being empty, not equal to being empty. i.e null!={}
-* Properties can be accessed by property_name or the string property_name.
+* **null** - Represents the state of being empty, not equal to emptiness. i.e ''null!={}''
+* Properties can be accessed by ''objectA.property_name'' or ''objectA[property_name]''.
 * Objects are not index subscriptable.
 --------------------
 Membership:
-* ~~**in** can be used to check membership, for maps awa arrays.~~
-* use myArray.includes(key) to check membership.
+* **''in''** can be used to check membership, for all iterables. Not for arrays.
+* use myArray.includes(key) to check membership. Works with any data structure.

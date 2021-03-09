@@ -5,29 +5,38 @@ Creation-Date: 2020-07-08T16:08:23+05:30
 ====== 3. Basic JavaScript ======
 Created Wednesday 08 July 2020
 
-**Comments**: same as C++
+**Comments**: same as C++, both multiline and single line.
 
 === Data types ===
-It has seven basic types:
-1. ''number'' - No difference between int and float. NaN is a part of number.ssp
-2. ''string'' - ' and " are equivalent. Concatenation is done using ''+''. Strings can be manipulated like numbers(and vice versa). e.g. '''2.3'*2 = 4.6''
-3. ''boolean''(''true''/''false'')
-4. ''undefined'' - not been assigned(garbage values are avoided this way)
-5. ''null''
-6. ''object''(user-defined)
-7. Symbol(new in ES6)
+* JavaScript is dynamically typed.
+* There are two kinds of types in JS: primitives(non-objects) and ''object''.
+* There are 7 "primitive" types:
+1. ''number'' - No difference between int and float. ''NaN'' is a part of number.
+2. ''bigint''
+3. ''string'' - ' and " are equivalent. Concatenation is done using ''+''. Strings can be manipulated like numbers(and vice versa). e.g. '''2.3'*2 = 4.6''
+4. ''boolean''(''true''/''false'')
+5. ''Symbol''
+6. ''undefined'' - not been assigned(garbage values are avoided this way)
+7. ''null''
+
+* Everything else is an ''object'', including functions, arrays etc.
+* All primitives(except null and undefined) have an object equivalent.
+
+Note:
+	* An ''object'' in JS is simply a hashmap with key-value pairs. A key is always a ''string'', and a value can be anything including strings, integers, booleans, functions, other objects etc.
+	* All primitives are immutable.
 
 === Variables ===
-There are 4 kinds of declarations:
-* **let** - simple variable(just like C++). Example ''let x = 2;''
-* **const** - non reassignable variable(data structure if any, is mutable). Same as C++. Example ''const k = 32;''
-* **var **- variable declaration(not initialization) is moved at top of the scope. Discouraged.
+There are 3 kinds of variable declarations in JS:
+* **let** - simple variable(scoping same as C++). Example ''let x = 2;''
+* **const** - non reassignable variable(data structure is still mutable). Same as C++. Example ''const k = 32;''
+* **var **- variable declaration(not initialization). Discouraged.
 {{./pasted_image.png}}
 Note: 
 	a. Avoid using ''var'', except when working with old codebases.
-	b. Uninitalized(undefined) variables store the value undefined😁️.
+	b. Uninitalized(undefined) variables store the value ''undefined''😁️.
 	c. Internally, //let, const //and// var, function, function*, class //are **all** [[https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-hoisted/31222689#31222689|hoisted]]
-	d. JavaScript has only two scopes - global(unique), local(changes);
+	d. JavaScript has only two scopes - global(unique), local(changes).
 	e. All inner scopes can read/write variables from outer scope. Just like C++.
 
 === ''var'' vs ''let'' ===
@@ -61,15 +70,15 @@ console.log(x); // Error x is undefined
 === Operators ===
 **Semicolons** are required at end of a statement. It won't break the code, but recommended.
 
-* Equality(of value) - ''=='' and ''≠''
+* Equality(string equivalent) - ''=='' and ''!=''
 * Equality(of value and type) - ''==='' and ''!==''
-* Relational operators same as C++
+* Relational operators same as C++'s
 
 * Code blocks are {}, and consequently we need () for **for**, **while **etc  - Exactly the same as C++
 
 === Conditionals ===
 * //if//, //else//, //else if//, //ternary operator(?:;)// - same as C++
-* //switch - same as C++//
+* //switch - //same as// C++//
 * JS does have a concept of truthy values.
 
 === Loops ===
@@ -81,8 +90,8 @@ console.log(x); // Error x is undefined
 * Keyword ''function'' is used - like ''def'' in Python3
 * Name may be skipped for IIFE.
 * Default params are allowed in JS, rules same as C++.
-* Functions are hoisted.
-* **return** ends the function(obvious).
+* Functions are always hoisted.
+* **return** ends the function(obviously). Every function returns ''undefined'', if return is absent.
 **Syntax**
 1. Named function
 {{{code: lang="js" linenumbers="True"
@@ -97,9 +106,11 @@ function foo(bar1, bar2)
 let x = function(){ // function name not necessary
 	return 2;
 };	
+
+x(); // calling
 }}}
 
-3. IIFE - short form of lambda. No variable required.
+3. IIFE - short form of lambda. No storing required.
 {{{code: lang="js" linenumbers="True"
 ( // prefix parenthesis is required here.
 	function(bar)

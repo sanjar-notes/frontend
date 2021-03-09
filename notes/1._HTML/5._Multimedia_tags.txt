@@ -7,7 +7,7 @@ Created Tuesday 01 September 2020
 
 === Image ===
 1. <**img**> - self closing image tag
-	a. src - path to image file
+	a. src - path to image file.
 	b. alt - text for image file, displayed if image is unavailable
 	c. width - in px
 	d. height - in px
@@ -53,4 +53,9 @@ mAid - self closing tags don't have a text content.
 }}}
 
 
-
+=== A note on path ===
+* ''src'' path follows UNIX notation.
+* Use forward slash, even if website is on a Windows machine.
+* Relative paths are allowed - ''.'' and ''..'' can be used, relative to the current page.
+* Absolute paths are OK too, from the root of the machine.
+* Note: index.html does not determine the root in any case.

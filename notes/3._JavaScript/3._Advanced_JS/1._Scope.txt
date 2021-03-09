@@ -8,7 +8,7 @@ Created Tuesday 14 July 2020
 There are two scopes in JS:
 1. Global scope - variables/functions defined outside of any class/function. There is only one global scope.
 2. Local scope - variables  defined inside a function/class.
-3. **Root Scope** - window
-	By default we are in the window(the tab) scope. This is also called the root scope.
+Note: **Root Scope** - makes sense only for the browser
+	By default, we are in the window(the tab) scope in a browser. This is also called the root scope.
 	{{./pasted_image.png?width=400}}
 

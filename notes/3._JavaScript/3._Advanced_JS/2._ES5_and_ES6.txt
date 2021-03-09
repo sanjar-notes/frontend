@@ -6,12 +6,10 @@ Creation-Date: 2020-07-14T15:34:11+05:30
 Created Tuesday 14 July 2020
 
 **"There is nothing static about being a web-developer, everything is improving".**
-* HTML, CSS are JS constantly improving.
+* HTML, CSS are JS evolving very rapidly.
 * Even browsers are being updated.
 * New libraries are made, existing ones are being improved.
---------------------
-* JS was created by Netscape, and everybody started using it.
-* Netscape submitted JS to an organization called ECMA International, for standardization. This is followed by all the browsers.
+
 * Now formally called ECMAScript, it interchangeably used with JavaScript.
 * ES5 and ES6 introduced new features which make coding very easy and fun.
 --------------------
@@ -49,7 +47,6 @@ const { prop1, prop2, ...... propn } = obj; // no object and prop duplicates, RH
 }}}
 	
 
-
 ==== 3. Object Properties ====
 	1. Can keep property name as the string equivalent of a non-//Object// variable. 
 		* Syntax: Place the existing variable inside square brackets.
@@ -70,6 +67,7 @@ const { prop1, prop2, ...... propn } = obj; // no object and prop duplicates, RH
 	* Syntax: Use **back-ticks** instead of the quotes, with the template part written as ${var_name}
 	{{./pasted_image007.png}}
 	{{./pasted_image008.png}}
+
 ==== 5. Symbol data type ====
 	* Useful when working with objects.
 	* Used to create properties in objects which are invisible to the object owner.

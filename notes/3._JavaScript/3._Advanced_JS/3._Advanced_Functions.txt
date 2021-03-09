@@ -5,7 +5,7 @@ Creation-Date: 2020-07-15T17:55:09+05:30
 ====== 3. Advanced Functions ======
 Created Wednesday 15 July 2020
 
-1. Keep the functions as their own universe. Use const and avoid using function keyword as much as possible.
+1. Keep the functions as their own universe. Use ''const'' and avoid using ''function'' keyword as much as possible.
 2. **Closures** - An inner function is returned but, it remembers the parents scope. This can be used to create secure counters. 
 	* Why secure ? **Two inner functions are not the same, they are actually instances(which store the context).**
 	{{./pasted_image001.png}}
@@ -45,7 +45,7 @@ const g = // a unary function
 // compose_function(f, g) has one argument
 console.log(compose_func(f, g)(a));
 }}}
-	
+
 	* Accumulation of context is optional.
 	* **Why do this?** To avoid obfuscation and ugly code when we want composition, which is by nature ugly(lots of commas).
 	* Currying vs Composition - Currying is a multi-argument system and composition is multi-function(not multi-purpose) system.

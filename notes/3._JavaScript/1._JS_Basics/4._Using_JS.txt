@@ -8,23 +8,25 @@ Created Wednesday 08 July 2020
 === In the browser ===
 * Use ''<script>''  ''</script>'' tag
 There are 2 ways to add JS code:
-1. Add it between the ''script'' tag.
-2. Add JS from a file in using ''src'' attribute. This is not a self closing tag.
-{{{code: lang="js" linenumbers="True"
+1. Add it as content of the ''script'' tag.
+2. Add code from a ''.js'' file using ''src'' attribute. This doesn't make ''script'' self closing.
+{{{code: lang="html" linenumbers="True"
+<!-- Method 1, direct -->
 <body>
 	<script> var x = 2; </script>
 <body>
 
+<!-- Method 2, src -->
 <body>
 	<script src="path"></script> <!-- Leave content empty -->
 <body>
 }}}
 
-* Keep the ''script'' tag at the end of ''body'', and never in the head. Executing/downloading ''script'' content blocks the rendering process.
+* Keep the ''script'' tag at the end of the ''body'' tag, and never in the head. Reason: Executing/downloading ''script'' content blocks the rendering process.
 
 === Outside the browser ===
 * Write code in ''.js'' files.
-* Run them using ''node'' in a terminal.
+* Run them using ''node file.js'' in a terminal.
 
 === Differences ===
 * In the browser, you may use objects like ''window'', but this is an error in the terminal.

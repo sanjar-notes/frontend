@@ -5,7 +5,7 @@ Creation-Date: 2020-07-16T17:35:16+05:30
 ====== 4. Advanced Arrays ======
 Created Thursday 16 July 2020
 
-* Map, filter and reduce help us make our code functionally pure(deterministic).
+* Map, filter and reduce help us to make our code functionally pure(deterministic).
 * Use these anytime we need loops for small things.
 * forEach does not store anything, so it is different from these three.
 
