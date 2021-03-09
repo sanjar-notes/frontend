@@ -9,9 +9,45 @@ Created Sunday 14 February 2021
 * HTML is a markup language, not a programming language.
 * HTML stands for HyperText Markup Language
 
-=== Basic syntax ===
-* We have the ''<head>'' and the ''<body>'' inside the ''<html>'' tag.
-* DOCTYPE is like a shebang.
+=== Tags ===
+* The atomic unit of an element is the tag.
+* There are two kinds of tags
+	a. Content tags(or just tags)
+{{{code: lang="html" linenumbers="True"
+<p> HTML is genius </p>
+}}}
+
+	b. Self closing(or empty tags)
+{{{code: lang="html" linenumbers="True"
+<img />
+}}}
+
+
+=== Attributes ===
+* An attribute is a key-value pairs used for modifying a tag.
+* They are written inside the angled brackets, not in the content.
+* Syntax:
+{{{code: lang="html" linenumbers="True"
+<img height="200px" width="200px" />
+}}}
+
+* keys are strings(without spaces). No quotes.
+* values are strings. Quotes are recommended.
+* = is used for assigning values to key.
+Note: "true"/"false", i.e boolean attribute values can be ommitted. Presence of a boolean attribute means it is enabled.
+{{{code: lang="html" linenumbers="True"
+<video autoplay /> <!-- better -->
+<video autoplay="true" /> <!-- same -->
+}}}
+
+
+=== Anatomy of a webpage ===
+* ''<!DOCTYPE html>'' is a mandatory "preamble".
+* There are 3 basic tags in all webages.
+	1. ''html'' - encloses the whole webpage.
+	2. ''head'' - contains title(tab title) and page metadata. Used by crawlers.
+	3. ''body'' - webpage content, as seen in the browser.
+* Basic structure of a webpage.
 {{{code: lang="html" linenumbers="True"
 <!DOCTYPE html>
 <html>
@@ -26,6 +62,10 @@ Created Sunday 14 February 2021
 }}}
 
 * Everything inside the body is perceptible in the browser(below the omnibox).
+
+=== Other basic tags ===
+* ''title'' - appears on the tab. Page file name is displayed if this is absent. Used within ''head''.
+* ''meta'' - describes various types of metadata like language, region, character encoding.
 
 === Facts about HTML ===
 * Errors are ignored by the browser.
