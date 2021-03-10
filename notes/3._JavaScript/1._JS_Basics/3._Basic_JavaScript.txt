@@ -5,26 +5,28 @@ Creation-Date: 2020-07-08T16:08:23+05:30
 ====== 3. Basic JavaScript ======
 Created Wednesday 08 July 2020
 
-**Comments**: same as C++, both multiline and single line.
+**Comments**: same as C++, both multiline and inline.
 
 === Data types ===
 * JavaScript is dynamically typed.
-* There are two kinds of types in JS: primitives(non-objects) and ''object''.
-* There are 7 "primitive" types:
-1. ''number'' - No difference between int and float. ''NaN'' is a part of number.
+* There are 8 data types:
+1. ''number'' - For both integers and floats.
 2. ''bigint''
-3. ''string'' - ' and " are equivalent. Concatenation is done using ''+''. Strings can be manipulated like numbers(and vice versa). e.g. '''2.3'*2 = 4.6''
+3. ''string'' - both quotes are OK. Concatenation using ''+''. Strings can be like numbers(and vice versa). e.g. '''2.3'*2 = 4.6''. [[./pasted_image001.png|Escape]] character same as C++.
 4. ''boolean''(''true''/''false'')
 5. ''Symbol''
 6. ''undefined'' - not been assigned(garbage values are avoided this way)
 7. ''null''
+8. ''object'' - everything except the primitives is an ''object'', including functions, arrays etc.
 
-* Everything else is an ''object'', including functions, arrays etc.
+* non-''object'' types are called primitve data types.
 * All primitives(except null and undefined) have an object equivalent.
 
 Note:
 	* An ''object'' in JS is simply a hashmap with key-value pairs. A key is always a ''string'', and a value can be anything including strings, integers, booleans, functions, other objects etc.
 	* All primitives are immutable.
+	* ''NaN'' - result of number • nonNumber. It is a number.
+	* ''Infinity'' - a ''number''.
 
 === Variables ===
 There are 3 kinds of variable declarations in JS:
@@ -32,12 +34,13 @@ There are 3 kinds of variable declarations in JS:
 * **const** - non reassignable variable(data structure is still mutable). Same as C++. Example ''const k = 32;''
 * **var **- variable declaration(not initialization). Discouraged.
 {{./pasted_image.png}}
-Note: 
+Note:
 	a. Avoid using ''var'', except when working with old codebases.
 	b. Uninitalized(undefined) variables store the value ''undefined''😁️.
 	c. Internally, //let, const //and// var, function, function*, class //are **all** [[https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-hoisted/31222689#31222689|hoisted]]
 	d. JavaScript has only two scopes - global(unique), local(changes).
 	e. All inner scopes can read/write variables from outer scope. Just like C++.
+	f. Declarations can be chained.
 
 === ''var'' vs ''let'' ===
 * The only difference is that var has a function scope, a more free scope. i.e it can leak out of top-level blocks, but not out of the function.
@@ -56,7 +59,8 @@ console.log(x); // Error x is undefined
 	b. It can be redeclared.
 
 === Hoisting(JS feature) ===
-* A JavaScript interpreter performs many things behind the scene, and one of them is called hoisting.
+* A JavaScript interpreter performs many things behind the scene, "hoisting" is one of them.
+* Hoisting: functions and variables in the current scope are intrepreted before code execution.
 * If you are not aware of this “hidden” behavior, it can cause a lot of confusion. 
 * The best way of thinking about the behavior of JavaScript variables is to always visualize them as consisting of two parts: a declaration and an assignment.
 
@@ -68,13 +72,17 @@ console.log(x); // Error x is undefined
 * ''prompt('message', defaultAnswer)'' - same as ''input()'' in Python3. only for the browser.
 
 === Operators ===
-**Semicolons** are required at end of a statement. It won't break the code, but recommended.
+* All operators are the same(symbol and rules) as C++(bitwise, relational, increment/decrement(post and pre)), with some changes:
+	* Equality(string equivalent) - ''=='' and ''!=''
+	* Equality(of value and type) - ''==='' and ''!==''
+	* ''**'' does exponentiation of numbers.
+	* ''>>>'' - makes the number unsigned after the shift.
+* Shorthand operators are allowed.
+* Assignment expressions are allowed.
 
-* Equality(string equivalent) - ''=='' and ''!=''
-* Equality(of value and type) - ''==='' and ''!==''
-* Relational operators same as C++'s
-
-* Code blocks are {}, and consequently we need () for **for**, **while **etc  - Exactly the same as C++
+=== Code indentation and statements ===
+* **Semicolons** are required at end of a statement. It won't break the code, but recommended.
+* JS if free-form - Code blocks are {}, and consequently we need () for **for**, **while **etc  - Just like C++.
 
 === Conditionals ===
 * //if//, //else//, //else if//, //ternary operator(?:;)// - same as C++

@@ -65,7 +65,7 @@ Note: "true"/"false", i.e boolean attribute values can be ommitted. Presence of 
 
 === Other basic tags ===
 * ''title'' - appears on the tab. Page file name is displayed if this is absent. Used within ''head''.
-* ''meta'' - describes various types of metadata like language, region, character encoding.
+* ''meta'' - self closing tag specifying metadata like language, region, character encoding etc.
 
 === Facts about HTML ===
 * Errors are ignored by the browser.
