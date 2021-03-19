@@ -55,8 +55,9 @@ console.log(x); // Error x is undefined
 }}}
 
 * So ''var'' has only two anomalies(w.r.t C++):
-	a. It leaks out of non-function blocks(conditionals, loops).
+	a. It violates block scope. It does follow all other scopes, i.e function, enclosing, class etc. **Behaves just like a python variable does.**
 	b. It can be redeclared.
+* JS has no global write restriction, which is the default behavior in python3.
 
 === Hoisting(JS feature) ===
 * A JavaScript interpreter performs many things behind the scene, "hoisting" is one of them.
