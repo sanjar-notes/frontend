@@ -30,7 +30,8 @@ const res = arr.reduce(((accum, ele)=> accum + ele), accum_init_value); // 0 if 
 * All the quick for functions - **forEach**, **map**, **filter** and **reduce** process one element at a time.
 * The most we can do is get the index of the current element using a second variable, for **forEach**, **map** and **filter**.
 * **reduce** has accumulator as the 1^{st} argument, element as the 2^{nd}, and a 3^{rd} argument for index(if required). It is supposed to be one element at a time for reduce too.
---------------------
+
+=== Spread Operator ===
 The spread operator, very useful for deep copy expanding arrays and objects https://flaviocopes.com/javascript-spread-operator/
 {{{code: lang="js" linenumbers="True"
 x = [1,2,3]

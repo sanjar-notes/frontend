@@ -12,7 +12,7 @@ Created Wednesday 08 July 2020
 * There are 8 data types:
 1. ''number'' - For both integers and floats.
 2. ''bigint''
-3. ''string'' - both quotes are OK. Concatenation using ''+''. Strings can be like numbers(and vice versa). e.g. '''2.3'*2 = 4.6''. [[./pasted_image001.png|Escape]] character same as C++.
+3. ''string'' - both quotes are OK. Concatenation using ''+''. Strings can be like numbers(and vice versa). e.g. '''2.3'*2 = 4.6''. [[./pasted_image001.png|Escape]] character same as C++. Strings can span multiple lines.
 4. ''boolean''(''true''/''false'')
 5. ''Symbol''
 6. ''undefined'' - not been assigned(garbage values are avoided this way)

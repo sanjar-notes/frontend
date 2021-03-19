@@ -1,0 +1,59 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-09T04:15:34+05:30
+
+====== 5. Basic Data Structures ======
+Created Thursday 09 July 2020
+
+=== Array ===
+* Array is dynamic.
+* Syntax
+{{{code: lang="js" linenumbers="True"
+let list = [1, "two" , [3,4] ]; // mixing and nesting is OK
+}}}
+
+* Arrays are objects, and are assigned as references. 
+* Array may be pooled. However, this doesn't affect the code.
+* Array API
+| Action                       <| Code                                        <| Return Value   <| Comment                                                                                                 <|
+|:------------------------------|:---------------------------------------------|:----------------|:---------------------------------------------------------------------------------------------------------|
+| Access Element                | A[0]                                         | element         | Same as C++                                                                                              |
+| Get length                    | A.length                                     | length(number)  | This property is readable/writable: it can change array size.                                            |
+| Append                        | A.push(newVal)                               | new length      |                                                                                                          |
+| Remove tail                   | A.pop()                                      | removed element | returns removed element. Error if array is empty.                                                        |
+| splice(changes memory)        | A.splice(goal_index, #deletions, val1, val2) | deleted array   | Delete #deletion elements and add val1, val2 etc at goal index(inclusive).                               |
+| Remove at index               | A.splice(destination_index, 1)               | element         | Removes ith element                                                                                      |
+| Remove head                   | A.splice(0, 1)                               | element         |                                                                                                          |
+| Resize Array                  | A.length = new_length;                       | length(number)  |                                                                                                          |
+| slice(extract subarray)       | A.slice(start, length=A.length)              | extracted array | No change in array                                                                                       |
+| Clear(current reference only) | A = []                                       | void            | No change at memory location.                                                                            |
+| Deep copy                     | B = [...A]                                   |                 | New memory allocated, same behavior for array literal rvalue.                                            |
+| reverse array                 | A.reverse()                                  |                 | Inplace and reference as return value.                                                                   |
+| sort                          | A.sort(criteriaFunction)                     |                 | Default criteria - alphabetical comparison of string equivalent. Inplace with reference as return value. |
+| Expand/Decrease array size    | A.length = new_length                        |                 | Change is in-place.                                                                                      |
+
+* Array can have empty values.
+* The [[3. JavaScript:3. Advanced JS:4. Advanced Arrays|spread operator]] is indispensible. It is used almost everywhere.
+
+=== Object ===
+Objects - It is a set of key-value pairs.
+{{{code: lang="js" linenumbers="True"
+var user = {
+	name: "John",
+	age:34,
+	hobby: "Socccer",
+	isMarried: false, // , does not matter
+	shout: function(){ console.log('Ahhhhh');},	// method - a function inside an object
+};
+
+user.favoriteFood = "spinach"; // add a member to an object
+user['favoriteFood'] = "spinach"; // same as above
+}}}
+
+* **null** - Represents the state of being empty(consider like a null pointer). ''null'' and {}(empty object) are different.
+* Properties can be accessed by ''objectA.property_name'' or ''objectA[property_name]''.
+* Objects are not index subscriptable.
+--------------------
+Membership:
+* **''in''** can be used to check membership, for all iterables except arrays.
+* use myArray.includes(key) to check membership. Works with any data structure.
