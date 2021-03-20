@@ -127,21 +127,27 @@ function foo(bar1, bar2)
 }
 }}}
 
-2. First class function(lambda) - storable/passable functions.
+2. Anonymous functions - unhoisted. Use case - as a functor, an [[https://developer.mozilla.org/en-US/docs/Glossary/IIFE|IIFE]]
+{{{code: lang="js" linenumbers="True"
+x.sort( function (a) { return Number(a); }) // functor as sorting criteria
+// Don't call the functor, just specify it.
+
+
+// IIFE - Immediately Invoked Function Expression
+(
+	function(bar) { /* code */ }(option1)
+)(option2)
+// You have two option, use (option1) or (option2) depending on the situation.
+// Enclosing () are a must - They prevent namespace pollution
+}}}
+
+3. Lambda - passable anonymous functions. FIXME: can't have both.
 {{{code: lang="js" linenumbers="True"
 let x = function(){ // storing
 	return 2;
 };
 
 x(); // calling
-}}}
-
-3. Anonymous function(IIFE). Enclosing parentheses are a must. Calling parenthesis are obviously required
-{{{code: lang="js" linenumbers="True"
-( // prefix parenthesis is required here.
-	function(bar)
-	{ /* code */ }
-)(); // calling parenthesis is out of function object
 }}}
 
 4. Inner functions - have their own content(scope). Not invocable outside parent function. Chain as many as you like.

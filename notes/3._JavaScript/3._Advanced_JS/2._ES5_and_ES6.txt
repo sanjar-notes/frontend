@@ -24,56 +24,157 @@ The new standards are produce clean and short code, which is easy to understand.
 Don't be afraid.
 --------------------
 
-==== 1. let and const ====
-* **let** was introduced in ES6.
-* use **const** if you won't reuse the variable, makes the code more consistent.
+=== 1. let and const ===
+* Both were introduced in ES6.
+* Purpose: Very basic feature. Makes JS sensible.
+* Both follow the same scoping rules - LEGB.
+* Neither can be redeclared, just like C++, Java.
+* Use ''const'' if you want to restrict reassignment.
 
-==== 2. Destructuring objects ====
-	1. Can declare variables with name(same as properties) outside the object. They are assigned the correponding property value from the object. The reference variable names and properties should be **same, **though** order** does not matter. __Useful if only one object is involved.__
-		{{./pasted_image002.png?width=300}}
-	* Destructuring can take place in parameter places. Calling f(obj) where f is defined as f({a, b, c});
+==== 6. Arrow functions ====
+* //Looks// similar to lamdas(storable functions).
+* Purpose: Concise code. Variable Binding.
+* The de-facto standard for anonymous functions.
+* Syntax(can be used in conjunction):
+	* For single argument: ''p => {};''
+	* For single expression as definition: ''(p1, p2) => 2*3;''. Returns expression value.
+	* For multiliners: ''(p1, p2, p3) => { /* code*/ }''. Simple function function.
 {{{code: lang="js" linenumbers="True"
-const {prop2, prop1, prop11} = obj; // all properties placed correctly, order is not important 
-// we can do property = x;
+const f = num => num*2;	// single argument, single expression
+f() // call
 
-// WHY IS THE NEW WAY BETTER? In the old way, this would be
-const prop1 = obj.prop1; // n lines like these for n properties - 4 words per property
-...
-const propn = obj.propn;
+// Multiline body - no return
+const f = () => 
+{
+	console.log('Hello');
+	console.log('World'); // returns undefined
+}
 
-// But in ES6
-const { prop1, prop2, ...... propn } = obj; // no object and prop duplicates, RHS is completely omitted.
-// Consequenly, code size 1/4 th the original - 1 word per property
+//Multiline - with return
+const f = (a, b) => {
+	a*2 = b; 
+	return a+b; 
+}; // 
+
+(()=>console.log(2))(); // Arrow function as IIFE
 }}}
-	
 
-==== 3. Object Properties ====
-	1. Can keep property name as the string equivalent of a non-//Object// variable. 
-		* Syntax: Place the existing variable inside square brackets.
-		{{./pasted_image003.png?width=400}} 
-		{{./pasted_image004.png}}
-		* List within lists are treated as one list. This shortening is not meant for lists, actually. Strings are unchanged.
-		* Using an **Object** is not helpful, the property name is object Object.
-		* Helps in objects with properties name based on user input. **Dynamic properties**.
-		* We can get the property by doing obj[var_name], no need of strings here. It is done internally.
-	2. Can keep property name the same as the variable name.
-		* Syntax: just write the variable, without the value part.
-		{{./pasted_image005.png}}
-		{{./pasted_image006.png}}
-		* Halves the code.
+Note:	
+* You do need a () for zero params.
+* **Make it a habit to ditch **//function **keyword**//** for throwaway and/or one-liner(use const) functions.**
+* Arrow functions automatically bind function to object. In contrast, //function// function requires explicit binding.
 
-==== 4. Template strings ====
-	* Our friend from Python.
-	* Syntax: Use **back-ticks** instead of the quotes, with the template part written as ${var_name}
+=== 3. Destructuring objects(object unpacking) ===
+* A very nice feature. Very popular.
+* Purpose: Concise code.
+* Declare and intialize variables(name-value match fieldname-value) of object. 
+* **Order** does not matter. No need to declare all fields.
+* Basic syntax: ''let {name, place, color} = obj;''
+{{./pasted_image002.png?width=300}}
+* Destructuring can take place anywhere. Examples:
+	a. Outside functions
+{{{code: lang="js" linenumbers="True"
+const {name, place} = personObj;
+// use name and place
+}}}
+
+	b. Inside functions
+{{{code: lang="js" linenumbers="True"
+function f( {name, place}) // OK
+{
+	console.log(place, name);
+}
+
+f(personObj); // OK
+}}}
+
+* Destructuring is awesome, see [[./destructuringCode.js|how]].
+
+=== 4. Existing object value as field name: Dynamic fieldnames ===
+* You can use existing object's value as field name, actually its string equivalent.
+* Purpose: Have dynamic fieldnames, decided at runtime.
+* Pitfall: Name of the variable is irrelevant.
+* Creating the property: [personObject] instead of fieldName.
+{{{code: lang="js" linenumbers="True"
+let a = [1, 2], b = 'bingo';
+let z = 
+{
+	[a]: 1 ,
+	[b]: 2
+}
+// { '1,2':1, 'bingo':2 } object created
+}}}
+
+* Accessing the property syntax: z[a]
+{{./pasted_image003.png?width=400}} 
+{{./pasted_image004.png}}
+* Gotchas
+	* String equivalent of a list is a flattened list. For example: String equivalent of ''[1, 2]'' and ''[1, [2]]'' are identical.
+	* Avoid using plain ''Object'''s as field equivalent. It's vague.
+
+* How does this work? What's the intuition?
+	* It's pretty simple - Any fieldname/key/property must be a ''string'' in JS. And all objects have a string equivalent.
+	* So there are 3 equivalent ways for ''creating fields'', all making the same field:
+		a. Use a name - old way. Like this: ''{ name: 'Sanjar' }''
+		b. Use a string - in quotes. Like this: ''{ 'name': 'Sanjar' }''
+		c. Use [existingObject] to set string equivalent as fieldname. Like so: ''{ [nameObject]: 'Sanjar' };''
+	* And so there three equivalent ways to access field values:
+		* ''Person.name'' - just the name, no quotes no brackets.
+		* ''Person['name']'' - using strings within brackets.
+		* ''Person[nameObject]'' - finds a field matching the string equivalent of namedObject.
+
+=== 5. Existing variable as fieldName and value ===
+* You can use an existing variable to specify both the fieldName and value.
+* How this works: variable name becomes field name. Stored data becomes value.
+* Purpose: Concise code.
+* Syntax: Just include the variable. Like a list item.
+{{./pasted_image005.png}}
+{{./pasted_image006.png}}
+* Note: This feature has nothing to do with dynamic field names, as seen earlier.
+
+=== 6. Template Literals ===
+* Extremely powerful tool.
+* Purpose - DSL injection, template string.
+* Template string is a use case of this feature.
+* General syntax: 
+	* Enclose the whole string in backticks. 
+	* Write literal part verbatim.
+	* Use ''${ /*code*/ }'' to enclose the code parts.
 	{{./pasted_image007.png}}
 	{{./pasted_image008.png}}
+* Supports multiline strings.
+* Use:
+	a. As template string
+{{{code: lang="js" linenumbers="True"
+let pname = 'Sanjar', emotion = 'Happy';
+let message = `${ name } is ${emotion}.`;
 
-==== 5. Symbol data type ====
-	* Useful when working with objects.
-	* Used to create properties in objects which are invisible to the object owner.
-	* This is important if different people work on the same object. Separation of concerns is the goal, symbols avoid properties to clash, if the object is handled by two scripts.
-	* There is a global symbol registry, syntax, Symbol.for('id') is used to get the key for id, this is useful if we want some symbols to be the same in a team where a project has many teams.
-	* Symbol() don't auto-convert to strings, which is why obj[id1] is different for different people.
+console.log(`I am ${name}`); // prints -> I am Sanjar
+}}}
+
+	b. For carrying JS code.
+{{{code: lang="js" linenumbers="True"
+`${ console.log(2); }` // prints 2 on string evaluation
+
+`${ (() => { console.log('Autodestruct sequence intiated'); })() } `	// pretty hacky and dangerous
+}}}
+
+	c. DSL injection(Domain Specific Language)
+{{{code: lang="js" linenumbers="True"
+p.innerHTML(`<h1> DSL injected </h1>`);
+}}}
+ 
+* How it works:
+	* ''${}''(code) parts are executed normally.
+	* Result, i.e. expression/return value of the code is placed as strings in the template literal.
+	* The string is ready, to be printed or stored.
+
+=== 7. Symbol data type ===
+* Useful when working with objects.
+* Used to create properties in objects which are invisible to the object owner.
+* This is important if different people work on the same object. Separation of concerns is the goal, symbols avoid properties to clash, if the object is handled by two scripts.
+* There is a global symbol registry, syntax, Symbol.for('id') is used to get the key for id, this is useful if we want some symbols to be the same in a team where a project has many teams.
+* Symbol() don't auto-convert to strings, which is why obj[id1] is different for different people.
 {{{code: lang="js" linenumbers="True"
 id = Symbol('id'); // desciption does not affect the hash value
 const obj = {
@@ -84,38 +185,12 @@ const obj = {
 id1 = Symbol();
 obj[id1] = 231; // not accessible to the original user even if he uses property name as id1
 }}}
-	
+FIXME	
 
-==== 6. Arrow functions ====
-	* Similar to lambda functions in C++, except the symbol(=>). Place arguments in ().
-	* For one liners, all - **return**, **{} **and **;**(except for end of statement) are unnecesary. JS takes care of it.
-	* For multi-liners, treat the {} block as any other function block. returns undefined if return in absent.
-	* For single arguments only - no need of argument parenthesis. const 2x = num => num*2; is enough. For no-argument and multi-argument, we do need them.
-	* **Syntax **(arg1, arg2) => ____ or (arg1, arg2) => {};
-{{{code: lang="js" linenumbers="True"
-const f = num => num*2;	// no 'return' and '{}' allowed for one liners
-console.log(f);	// returns the value
-
-// multi-iners must have {}, and a return(if they return something);
-const f = () => console.log('Hello');
-console.log('World'); // returns undefined
-}
-const f = (a, b) => {
-	a*2 = b; 
-	return a+b; 
-}; // 
-
-(()=>console.log(2))(); // running it
-}}}
-	
-	* **Why do it?** -4 letters for each anonymous function, i.e cleaner code.
-	{{./pasted_image009.png}}
-	* **Make it a habit to ditch **//function **keyword**//** for throwaway and/or one-liner(use const) functions.**
-	* Arrow functions bind the object with the function, this is a core difference from function, which require explicit binding.
-
-==== 7. use strict; ====
+=== 8. use strict; ===
 * We can limit the flexibility of [[https://johnresig.com/blog/ecmascript-5-strict-mode-json-and-more/|things]] using strict mode for **whole scripts** or **functions**.
-* syntax
+* Syntax - add ''"use strict"'' on top of the function, script, class.
+* Example
 {{{code: lang="js" linenumbers="True"
 "use strict"; // for the whole script
 
