@@ -35,7 +35,7 @@ There are 3 kinds of variable declarations in JS:
 * **var **- variable declaration(not initialization). Discouraged.
 {{./pasted_image.png}}
 Note:
-	a. Avoid using ''var'', except when working with old codebases.
+	a. Simply **avoid** using ''var'', except for old codebases.
 	b. Uninitalized(undefined) variables store the value ''undefined''😁️.
 	c. Internally, //let, const //and// var, function, function*, class //are **all** [[https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-hoisted/31222689#31222689|hoisted]]
 	d. JavaScript has only two scopes - global(unique), local(changes).
@@ -55,18 +55,20 @@ console.log(x); // Error x is undefined
 }}}
 
 * So ''var'' has only two anomalies(w.r.t C++):
-	a. It violates block scope. It does follow all other scopes, i.e function, enclosing, class etc. **Behaves just like a python variable does.**
+	a. It violates block scope, i.e leaks out to the nearest enclosing function scope. **Behaves just like a python variable does.**
 	b. It can be redeclared.
 * JS has no global write restriction, which is the default behavior in python3.
 
 === Hoisting(JS feature) ===
-* A JavaScript interpreter performs many things behind the scene, "hoisting" is one of them.
-* Hoisting: functions and variables in the current scope are intrepreted before code execution.
-* If you are not aware of this “hidden” behavior, it can cause a lot of confusion. 
-* The best way of thinking about the behavior of JavaScript variables is to always visualize them as consisting of two parts: a declaration and an assignment.
+* Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (block or function).
+* Only declarations are hoisted, not initializations.
+* If you are not aware of this “hidden” behavior, it can cause a lot of confusion - "why isn't a ReferenceError popping up.
+* Memory aid, all JS code: a declaration(creation phase) and an initialization(execution phase).
+* Easy advice: Ignore this feature while coding: write code for people, not for the compiler. Declare variables just like you would in C++, Python: nearest to first use.
+[[./badCode.js|Bad code]]
 
 === Standard IO ===
-**Output** 
+**Output**
 * ''console.log(variable)'' - just like ''print()'' in Python3(newlines, virial). Works for both CLI and browser.
 * ''alert(variable)'', for the browser. Alert is blocking: you have to click OK or press the Enter key.
 **Input**
@@ -114,7 +116,7 @@ function foo(bar1, bar2)
 {{{code: lang="js" linenumbers="True"
 let x = function(){ // function name not necessary
 	return 2;
-};	
+};
 
 x(); // calling
 }}}
