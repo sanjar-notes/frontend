@@ -12,7 +12,7 @@ Created Wednesday 08 July 2020
 * There are 8 data types:
 1. ''number'' - For both integers and floats.
 2. ''bigint''
-3. ''string'' - both quotes are OK. Concatenation using ''+''. Strings can be like numbers(and vice versa). e.g. '''2.3'*2 = 4.6''. [[./pasted_image001.png|Escape]] character same as C++. Strings can span multiple lines.
+3. ''string'' - both kinds of quotes are OK, you can even use backticks. Concatenation using ''+''. Strings can be like numbers(and vice versa). e.g. '''2.3'*2 = 4.6''. [[./pasted_image001.png|Escape]] character same as C++. Strings can span multiple lines.
 4. ''boolean''(''true''/''false'')
 5. ''Symbol''
 6. ''undefined'' - not been assigned(garbage values are avoided this way)
@@ -20,44 +20,59 @@ Created Wednesday 08 July 2020
 8. ''object'' - everything except the primitives is an ''object'', including functions, arrays etc.
 
 * non-''object'' types are called primitve data types.
-* All primitives(except null and undefined) have an object equivalent.
+* Everything is an ''object'', except primitives.
+* All primitives have ''object'' versions.
+* ''null'' and ''undefined'' are objects, not primitives.
 
 Note:
-	* An ''object'' in JS is simply a hashmap with key-value pairs. A key is always a ''string'', and a value can be anything including strings, integers, booleans, functions, other objects etc.
-	* All primitives are immutable.
-	* ''NaN'' - result of number • nonNumber. It is a number.
-	* ''Infinity'' - a ''number''.
+* An ''object'' in JS is simply a hashmap with key-value pairs. A key is always a ''string'', and a value can be anything(primitives, functions, objects).
+* All primitives are immutable.
+* ''NaN'' - result of number • nonNumber. It is a number.
+* ''Infinity'' - a ''number''.
+
+=== String ===
+* Single quotes and double quotes are equivalent.
+* Concatenate using ''+''
+* Escape char and rules same as Python, C++, Java.
+* Numerical strings interact just like numbers, except concatenation. Like so:
+{{{code: lang="js" linenumbers="True"
+'2' * 3 		// number 6
+'2' * '3.2' 		// number 6.4
+'2' + '3' 		// string '23' - concatenation is concatenation
+}}}
+
 
 === Variables ===
 There are 3 kinds of variable declarations in JS:
-* **let** - simple variable(scoping same as C++). Example ''let x = 2;''
-* **const** - non reassignable variable(data structure is still mutable). Same as C++. Example ''const k = 32;''
-* **var **- variable declaration(not initialization). Discouraged.
+* **let** - simple variable(i.e. reassignable). Example ''let x = 0;''
+* **const** - non reassignable variable(mutable variables remain mutable). Must be declarized(declared and intialized). Same as C++'s ''const''. Example ''const k = 'stingy symbol table';''
+* **var **- leaks out of block scope. Follows all other rules. Syntax: ''var k = 'var wars';''
 {{./pasted_image.png}}
 Note:
-	a. Simply **avoid** using ''var'', except for old codebases.
-	b. Uninitalized(undefined) variables store the value ''undefined''😁️.
+	a. Declarations can be mixed, chained. i.e ''let x = 2, y = [1, 2], z = 3;'' is OK.
+	b. Simply **avoid** using ''var'', except for old codebases.
 	c. Internally, //let, const //and// var, function, function*, class //are **all** [[https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-hoisted/31222689#31222689|hoisted]]
-	d. JavaScript has only two scopes - global(unique), local(changes).
-	e. All inner scopes can read/write variables from outer scope. Just like C++.
-	f. Declarations can be chained.
+	d. Undefined(uninitiliazed) variables store the value ''undefined''😁️. Example: ''let x; console.log(x) // undefined''
+	e. JavaScript has 4 scopes - local, enclosing, global, builtin. Same as python3.
+	f. All inner scopes can read/write to variables of outer scope. Just like C++.
 
 === ''var'' vs ''let'' ===
 * The only difference is that var has a function scope, a more free scope. i.e it can leak out of top-level blocks, but not out of the function.
 {{{code: lang="js" linenumbers="True"
 if(true)
 	var x = 2;
-console.log(x); // prints 2, as x leaked out from the block
+console.log(x); // prints 2, as x leaked out from the block, just like python3
 
+// Run separately
 if(true)
-	let x = 2; // x is a block scope, so it ends here. Just like C++
+	let x = 2; // x respects block scope, goes out of scope. Just like C++, Java
 console.log(x); // Error x is undefined
 }}}
 
 * So ''var'' has only two anomalies(w.r.t C++):
-	a. It violates block scope, i.e leaks out to the nearest enclosing function scope. **Behaves just like a python variable does.**
+	a. It violates block scope, i.e leaks out to the nearest enclosing function scope.
 	b. It can be redeclared.
-* JS has no global write restriction, which is the default behavior in python3.
+* ''var'' is identical to a python3 variable. Simple.💡️
 
 === Hoisting(JS feature) ===
 * Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (block or function).
@@ -104,7 +119,7 @@ console.log(x); // Error x is undefined
 * Functions are always hoisted.
 * **return** ends the function(obviously). Every function returns ''undefined'', if return is absent.
 **Syntax**
-1. Named function
+1. Named function - just function.
 {{{code: lang="js" linenumbers="True"
 function foo(bar1, bar2)
 {
@@ -112,19 +127,32 @@ function foo(bar1, bar2)
 }
 }}}
 
-2. Anonymous functions(lambda) - storing function in variables.
+2. First class function(lambda) - storable/passable functions.
 {{{code: lang="js" linenumbers="True"
-let x = function(){ // function name not necessary
+let x = function(){ // storing
 	return 2;
 };
 
 x(); // calling
 }}}
 
-3. IIFE - short form of lambda. No storing required.
+3. Anonymous function(IIFE). Enclosing parentheses are a must. Calling parenthesis are obviously required
 {{{code: lang="js" linenumbers="True"
 ( // prefix parenthesis is required here.
 	function(bar)
 	{ /* code */ }
 )(); // calling parenthesis is out of function object
+}}}
+
+4. Inner functions - have their own content(scope). Not invocable outside parent function. Chain as many as you like.
+{{{code: lang="js" linenumbers="True"
+function f()
+{
+	function g() {	/*code*/ }
+	g() // invocation - OK
+	
+	function k() { /* code */ } // so called 'sibling' function
+}
+
+g()// Error - g not defined
 }}}
