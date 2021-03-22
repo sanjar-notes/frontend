@@ -6,5 +6,5 @@ Creation-Date: 2020-07-17T21:53:34+05:30
 Created Friday 17 July 2020
 
 Only two significant changes:
-1. arr.''includes''(key_value) - returns true if key_value is present in arr(array or object - checks for property value). **This is very useful in case of subarrays., in cannot do this.**
-2. Exponent using star_star
+1. arr.''includes''(key_value) - returns a Boolean for array membership. ''in'' is much weaker.
+2. Exponentiation using ''**''

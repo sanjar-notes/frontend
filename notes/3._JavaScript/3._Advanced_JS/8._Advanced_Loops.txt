@@ -7,13 +7,13 @@ Created Saturday 18 July 2020
 
 1. forEach - since ES5
 {{{code: lang="js" linenumbers="True"
-iterable.forEach(f); // f is a function which does it for each element - it gets the value of the current element
+iterable.forEach(f); // f(ele) for all elements, returns nothing
 
 f = function(a){};	// a  = element value
 f = function(a, b){}; // a = element value, b = index
 }}}
 
-2. for of loops - loops only over iterables like array and strings
+2. for ''of'' loop - loops over iterable elements, like array, set, string.
 {{{code: lang="js" linenumbers="True"
 let arr = [1,2,3];
 for(const ele of arr)
@@ -25,16 +25,15 @@ for(const ele of arr)
 */
 }}}
 
-for in loops - enumerates over object properties, works for iterables too. MAID(in-enumerate object)
+3. for ''in'' loop - enumerates over object properties. MAID(in-enumerate object)
 {{{code: lang="js" linenumbers="True"
-let x = { a:1, b:2, c:3 };
+let timeSpace = { place:'Earth',  era:'Phanerozoic'};
 for(const ele in x)
 	console.log(ele);
 /*
-'a'
-'b'
-'c'
+place
+era
 /*
 }}}
 
-Note: for in loop can work with arrays too, because arrays are objects with numbered properties.**MAID **in enum
+Note: for in loop can work with arrays too, because arrays are objects with numbered properties.

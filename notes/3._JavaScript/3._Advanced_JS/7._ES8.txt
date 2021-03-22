@@ -7,15 +7,15 @@ Created Friday 17 July 2020
 
 Important changes in 2017:
 1. String functions for adding spaces to the end(s).
-	a. stri.padStart(2);// stri = "hello" -> "  hello"
-	b. stri.padEnd(2); // stri = "hello" -> "hello  "
-2. A trailing comma is acceptable - Makes the code systematic -  //Only one comma.//
-3. Object iteration facilities like:
-	a. Object.values(obj_name) - returns a list of values.
-	b. Object.entries(obj_name) - returns a list of key value pairs(as arrays of size 2).
-	* Object.keys() - This is an existing feature.
-	* Note: We need to call .values() using Object.
-4. Async Await
+	* ''stri.padStart(2);'' "hello" becomes "  hello".
+	* ''stri.padEnd(2);'' // "hello" -> "hello  "
+2. Trailing comma is ignored, for iterables and objects. Use //only one comma, otherwise empty elements will be created.//
+3. Object iteration key, value or both:
+	* ''Object.values(student)'' - returns an array of values.
+	* ''Object.entries(student)'' - returns an array of key value pairs(as arrays of size 2).
+	* ''Object.keys(student)'' - This is an existing feature.
+	Note: We need to call .values() using Object.
+4. Async Await - FIXME
 
 Note:
-* strinG.trim() trims the white-spaces at the ends.
+* "my String".trim() trims the whitespace at the ends.
