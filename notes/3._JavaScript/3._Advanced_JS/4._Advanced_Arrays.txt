@@ -32,7 +32,15 @@ const res = arr.reduce(((accum, ele)=> accum + ele), accum_init_value); // 0 if 
 * **reduce** has accumulator as the 1^{st} argument, element as the 2^{nd}, and a 3^{rd} argument for index(if required). It is supposed to be one element at a time for reduce too.
 
 === Spread Operator ===
-The spread operator, very useful for deep copy expanding arrays and objects https://flaviocopes.com/javascript-spread-operator/
+* The spread operator, very useful for deep copy expanding iterables and objects. [[https://flaviocopes.com/javascript-spread-operator/|See]].
+* Syntax - ''...iter'' exposes all elements, comma separated.
+* Analgous to ''*'' in python3.
+* Uses:
+	* Packing - ''let [x, ...y] = [1, 2, 3, 4]; // y = [2, 3, 4];''
+	* Unpacking - ''let x = [1, 2, 3]; f(...x); // f(1, 2, 3);''
+	* Deep copy - ''let x = [1, 2], y = [...x];''
+	* List concatenation(in place) - ''z = [...z, 1, 2];''
+	* List concatenation(deep copy) - ''let z = [...x, ...y]'';
 {{{code: lang="js" linenumbers="True"
 x = [1,2,3]
 y = [4, 5]

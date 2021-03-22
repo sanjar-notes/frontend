@@ -65,7 +65,7 @@ Note:
 * Arrow functions automatically bind function to object. In contrast, //function// function requires explicit binding.
 
 === 3. Destructuring(object/iterable unpacking) ===
-* A very nice feature. Very popular.
+* A very nice feature. Very popular. Inspired from python3.
 * Purpose: Concise code.
 * Features: 
 	* Iterables - Intialize variables in order, starting from the left. Extraneous variables are left out or set to ''undefined'', no errors.
