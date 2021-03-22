@@ -10,8 +10,8 @@ Created Thursday 16 July 2020
 * Syntax - ''...iter'' exposes all elements, comma separated.
 * Analgous to ''*'' in python3.
 * Uses:
-	* Packing - ''let [x, ...y] = [1, 2, 3, 4]; // y = [2, 3, 4];''
-	* Unpacking/variadic function - ''let z = [1, 2, 3]; f(...z); // in f(z), param becomes [1, 2, 3];''
+	* Unpacking - ''let [x, ...y] = [1, 2, 3, 4]; // y = [2, 3, 4];''
+	* Packing/variadic function - ''let z = [1, 2, 3]; f(...z); // in f(z), param becomes [1, 2, 3];''
 	* Deep copy - ''let x = [1, 2], y = [...x];''
 	* List concatenation(in place) - ''z = [...z, 1, 2];''
 	* List concatenation(deep copy) - ''let z = [...x, ...y]'';
@@ -21,6 +21,7 @@ y = [4, 5]
 z = [...x, ...y] # concatenated
 }}}
 
+* Spread operator is cannot be used for skipping(except at the end of array), use empty space between commas instead.
 https://www.youtube.com/watch?v=R8rmfD9Y5-c&ab_channel=WebDevSimplified FIXME
 
 === Map, filter and reduce ===

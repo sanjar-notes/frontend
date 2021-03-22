@@ -16,7 +16,7 @@ How to write pure functions?
 * This makes our code deterministic(each function is a mathematical function, not just a relation), and consequently more robust.
 
 === 2. Closures ===
-TODO - somewhat OK. Understand binding in arrow.
+TODO - somewhat OK. Understand binding in arrow functions.
 * **Closure** - a function bundled with references to its surrounding state(the lexical environment). 
 * Simply put - a highly impure function.
 * Purpose - create secure counters.
@@ -25,6 +25,7 @@ TODO - somewhat OK. Understand binding in arrow.
 	{{./pasted_image.png}}
 * Closures help us avoid global variables, and they are very useful.
 * The outer function is used only once.
+
 === 3. Currying ===
 TODO
 What is currying?
@@ -56,6 +57,7 @@ let a2 = add(10)(20); //
 }}}
 
 * Currying is highly incentivized in JS - there are even special functions which help debug curried functions.
+
 === 4. Composition ===
 TODO
 * **Composition** - Writing functions where the input of the outer function is the output of the inner function, and this is true for all. Implementing f(g(h(x))) using main_func(f, g)(arg). 

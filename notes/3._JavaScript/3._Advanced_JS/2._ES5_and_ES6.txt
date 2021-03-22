@@ -71,19 +71,22 @@ Note:
 	* Object - Declare and intialize variables(set to field-variableName corresponding value). **Order** does not matter.
 * Syntax - iterable/object as **rvalue**. Literals are OK too.
 	* Iterable - ''const [x, y, z] = [1, 2, 3, 4] // 4 is not ''
-	* Object - ''let {name,place} = myObj; // myObj = {name:'Sanjar', place:'Earth', era:'Phanerozoic'};''
+	* Object - ''let {name,place='Default'} = myObj; // myObj = {name:'Sanjar', place:'Earth', era:'Phanerozoic'};''
 {{./pasted_image002.png?width=300}}
-* Skipping values
-	* From the middle - ''let [x, , y, , z] = [1, 2, 3, 4, 5]; // 2 and 5 are unused''
-	* From the end - ''let [x, y] = [1, 2, 3, 4]; // 3 and 4 ignored''
+* Features in destructuring
+	* Default value for fields - ''let {name, place='India'} = myObj; // in case myObj doesn't have a 'place' field''
+	* Skipping selected values - ''let [x, , y, , z] = [1, 2, 3, 4, 5]; // 2 and 5 are unused''
+	* Skipping the right part - ''let [x, y] = [1, 2, 3, 4]; // 3 and 4 ignored''
+	* Note: Spread operator cannot be used for skipping, except at the end(right), which is unnecessary.
 * Uses:
-	a. Outside functions
+	a. Swap variables - ''[a, b] = [b, a]''
+	b. Outside functions
 {{{code: lang="js" linenumbers="True"
 const {name, place} = personObj;
 // use name and place
 }}}
 
-	b. Inside functions
+	b. Functions taking an object argument
 {{{code: lang="js" linenumbers="True"
 function f( {name, place}) // OK
 {
@@ -93,7 +96,8 @@ function f( {name, place}) // OK
 f(personObj); // OK
 }}}
 
-* Destructuring is awesome, see [[./destructuringCode.js|how]].
+* Is destructuring worthy it - [[./destructuringCode.js]]
+* [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Ignoring_some_returned_values|More]] at MDN
 
 === 4. Existing object value as field name: Dynamic fieldnames ===
 * You can use existing object's value as field name, actually its string equivalent.
