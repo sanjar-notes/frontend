@@ -64,12 +64,15 @@ Note:
 * **Make it a habit to ditch **//function **keyword**//** for throwaway and/or one-liner(use const) functions.**
 * Arrow functions automatically bind function to object. In contrast, //function// function requires explicit binding.
 
-=== 3. Destructuring objects(object unpacking) ===
+=== 3. Destructuring(object/iterable unpacking) ===
 * A very nice feature. Very popular.
 * Purpose: Concise code.
-* Declare and intialize variables(name-value match fieldname-value) of object. 
-* **Order** does not matter. No need to declare all fields.
-* Basic syntax: ''let {name, place, color} = obj;''
+* Features: 
+	* Iterables - Intialize variables in order, starting from the left. Extraneous variables are left out or set to ''undefined'', no errors.
+	* Object - Declare and intialize variables(set to field-variableName corresponding value). **Order** does not matter. You can unpack what you want.
+* Syntax - just enclose variables in [] or {}: 
+	* Iterable - ''const [x, y, z] = [1, 2, 3, 4]; // 4 is not used''
+	* Object - ''let {name, place, color} = obj;''
 {{./pasted_image002.png?width=300}}
 * Destructuring can take place anywhere. Examples:
 	a. Outside functions
