@@ -36,14 +36,15 @@ let list = [1, "two" , [3,4] ]; // mixing and nesting is OK
 * The [[3. JavaScript:3. Advanced JS:4. Advanced Arrays|spread operator]] is indispensible. It is used almost everywhere.
 
 === Object ===
-Objects - It is a set of key-value pairs.
+* Objects - It is a set of key-value pairs.
+* ''Object'' is a keyword.
 {{{code: lang="js" linenumbers="True"
 var user = {
 	name: "John",
 	age:34,
 	hobby: "Socccer",
 	isMarried: false, // , does not matter
-	shout: function(){ console.log('Ahhhhh');},	// method - a function inside an object
+	shout: function(){ console.log(this.name);},	// method, can use 'this'.
 };
 
 user.favoriteFood = "spinach"; // add a member to an object
@@ -52,6 +53,7 @@ user['favoriteFood'] = "spinach"; // same as above
 
 * **null** - Represents the state of being empty(consider like a null pointer). ''null'' and {}(empty object) are different.
 * Properties can be accessed by ''objectA.property_name'' or ''objectA[property_name]''.
+* ''this'' is not accessible if the method is run after isolation.
 * Objects are not index subscriptable.
 --------------------
 Membership:

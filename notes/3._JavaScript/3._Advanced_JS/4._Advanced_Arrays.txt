@@ -5,39 +5,13 @@ Creation-Date: 2020-07-16T17:35:16+05:30
 ====== 4. Advanced Arrays ======
 Created Thursday 16 July 2020
 
-* Map, filter and reduce help us to make our code functionally pure(deterministic).
-* Use these anytime we need loops for small things.
-* forEach does not store anything, so it is different from these three.
-
-1. arr.map(f) - stores f() for each element and returns a **map object**.
-	* Syntax - arr.map(f); where f can be a function in any form.
-	* Assume an argument when defining f.
-	* f(ele) is computed and stored for each element. undefined is stored if nothing is returned.
-	* The map object is index subscriptable.
-	{{./pasted_image.png}}
-2. arr.filter(f) - keeps ele only if f(ele) is true. Syntax same as map.
-	{{./pasted_image001.png}}
-3. arr.reduce(f, accum_default) - Accumulates the result by running f(accum,ele) for each element.
-	Syntax:
-{{{code: lang="js" linenumbers="True"
-const arr = [1, 2, 3]
-const res = arr.reduce(((accum, ele)=> accum + ele), accum_init_value); // 0 if unspecified
-// same as doing accum = accum + ele each time
-}}}
-		
-	* accum is assigned the value f() everytime.
-**Caution**: 
-* All the quick for functions - **forEach**, **map**, **filter** and **reduce** process one element at a time.
-* The most we can do is get the index of the current element using a second variable, for **forEach**, **map** and **filter**.
-* **reduce** has accumulator as the 1^{st} argument, element as the 2^{nd}, and a 3^{rd} argument for index(if required). It is supposed to be one element at a time for reduce too.
-
 === Spread Operator ===
-* The spread operator, very useful for deep copy expanding iterables and objects. [[https://flaviocopes.com/javascript-spread-operator/|See]].
+* The spread operator, extremely useful with iterables. [[https://flaviocopes.com/javascript-spread-operator/|See]].
 * Syntax - ''...iter'' exposes all elements, comma separated.
 * Analgous to ''*'' in python3.
 * Uses:
 	* Packing - ''let [x, ...y] = [1, 2, 3, 4]; // y = [2, 3, 4];''
-	* Unpacking - ''let x = [1, 2, 3]; f(...x); // f(1, 2, 3);''
+	* Unpacking/variadic function - ''let z = [1, 2, 3]; f(...z); // in f(z), param becomes [1, 2, 3];''
 	* Deep copy - ''let x = [1, 2], y = [...x];''
 	* List concatenation(in place) - ''z = [...z, 1, 2];''
 	* List concatenation(deep copy) - ''let z = [...x, ...y]'';
@@ -47,4 +21,34 @@ y = [4, 5]
 z = [...x, ...y] # concatenated
 }}}
 
-https://www.youtube.com/watch?v=R8rmfD9Y5-c&ab_channel=WebDevSimplified
+https://www.youtube.com/watch?v=R8rmfD9Y5-c&ab_channel=WebDevSimplified FIXME
+
+=== Map, filter and reduce ===
+* map - stores f() for each element and returns a **map object**.
+	* Syntax - ''arr.map(f)''; where f can be a function in any form.
+	* Assume an argument when defining f.
+	* f(ele) is computed and stored for each element. ''undefined'' is stored if ''f'' returns nothing.
+	* The map object is index subscriptable.
+	{{./pasted_image.png}}
+* filter(f) - returns a filtered iterable of elements, according to the criteria f(ele) is true. 
+	* Syntax - same as map.
+	{{./pasted_image001.png}}
+* reduce - Accumulates the result by running f(accum,ele) for each element.
+	* Syntax - ''arr.reduce(f, accum_start=0)''
+	* Include accumulator and element as parameters of ''f'', in order.
+{{{code: lang="js" linenumbers="True"
+const arr = [1, 2, 3]
+const res = arr.reduce(((accum, ele)=> accum + ele), accum_init_value); // 0 if unspecified
+// same as doing accum = accum + ele each time
+}}}
+
+	* accum is assigned the value f() everytime.
+Note: 
+* All the quick for functions - **forEach**, **map**, **filter** and **reduce** work sequentially by default. They can be made parallel, however.
+* Iteration number is available all **forEach**, **map** and **filter **- as the second parameter of ''f''. This is optional.
+
+=== Why use map, filter or reduce ===
+* Map, filter and reduce help us to make our code functionally pure(deterministic).
+* ''map'' and ''filter'' return an iterable objects of outputs, while ''filter'' returns a single value.
+* Use these anytime we need loops for small things.
+* forEach is different, it returns nothing.

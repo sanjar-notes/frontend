@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-07-17T21:53:34+05:30
 
-====== 6. ES7 ======
+====== 7. ES7 ======
 Created Friday 17 July 2020
 
 Only two significant changes:

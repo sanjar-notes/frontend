@@ -1,0 +1,90 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-15T17:55:09+05:30
+
+====== 4. Advanced Functions ======
+Created Wednesday 15 July 2020
+
+=== 1. Pure functions ===
+What are pure functions?
+* Have a single purpose.
+* Should be free from side-effects(i.e change to external variables), as much as possible.
+* Always return something.
+
+How to write pure functions?
+* Use ''const'' and avoid using ''function'' keyword as much as possible.
+* This makes our code deterministic(each function is a mathematical function, not just a relation), and consequently more robust.
+
+=== 2. Closures ===
+TODO - somewhat OK. Understand binding in arrow.
+* **Closure** - a function bundled with references to its surrounding state(the lexical environment). 
+* Simply put - a highly impure function.
+* Purpose - create secure counters.
+* Why secure - a closure behavior depends on the environment.
+	{{./pasted_image001.png}}
+	{{./pasted_image.png}}
+* Closures help us avoid global variables, and they are very useful.
+* The outer function is used only once.
+=== 3. Currying ===
+TODO
+What is currying?
+* //A [[https://medium.com/javascript-scene/curry-and-function-composition-2c208d774983|curried]] function is a function that takes multiple arguments one at a time.// All functions in the chain are different, with the contexts building up as we go inside(∵ closure).
+* Function call trace is a singly linked list.
+
+Syntax
+* Arrow functions are used, because they store state.
+* Definition: Most parts are one liners, so they may be chain them directly {} for the body.
+* Function invocation: f(a)(b)(c) also called point-free-style.
+
+Use
+* Generate specific version of functions, by setting contexts. Example: ''const g = f(a)(b);'' we can set contexts a and b to generate ''g'', a specialized function.
+* **Why do this** ? - Concise code and DRY
+{{{code: lang="js" linenumbers="True"
+// Without currying
+function add(x, y, z) { return x + y + z } // general definition
+function a1(p) { return 1 + 2 + z; } // no reuse
+function a2(p) { return 10 + 20 + z; } // no reuse
+
+
+// With currying
+let add => x => y => z => (x + y + z);
+let a1 = add(1)(2);
+let a2 = add(10)(20); //
+
+
+// calling is the same
+}}}
+
+* Currying is highly incentivized in JS - there are even special functions which help debug curried functions.
+=== 4. Composition ===
+TODO
+* **Composition** - Writing functions where the input of the outer function is the output of the inner function, and this is true for all. Implementing f(g(h(x))) using main_func(f, g)(arg). 
+* Syntax
+{{{code: lang="js" linenumbers="True"
+const g = (foo) => (/*code*/); // takes function as argument
+const h = (a) => (/*code*/); // takes value as argument
+
+const f(g, h) = (x) => f(g(x)); // composition definition
+
+f(g(x)); // call
+}}}
+
+* Accumulation of context is optional.
+* **Why do this?** To avoid obfuscation and ugly code when we want composition, which is by nature ugly(lots of commas).
+{{{code: lang="js" linenumbers="True"
+// Without composition
+function f(g, h)
+{
+	
+}
+
+// With currying
+let add => x => y => z => (x + y + z);
+let a1 = add(1)(2);
+let a2 = add(10)(20); //
+
+
+// calling is the same
+}}}
+
+* Currying vs Composition - Currying is a multi-argument system and composition is multi-function(not multi-purpose) system.

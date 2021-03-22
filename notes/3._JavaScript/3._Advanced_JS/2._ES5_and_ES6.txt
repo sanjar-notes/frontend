@@ -14,14 +14,13 @@ Created Tuesday 14 July 2020
 * ES5 and ES6 introduced new features which make coding very easy and fun.
 --------------------
 **Not all browsers support ES5 and ES6 right now, is it practical to learn and use the standard right now?**
-**Explanation:** Yes, some new features of ESx are not currently supported by all browsers. But we can still use them, we'll use a **compiler** to obtain the most supported version of ECMAScript from the latest ESx code. A popular compiler is **Babel**, it works with the latest ESx. **Don't worry about the version.**
+Yes, some new features of ESx are not currently supported by all browsers. But we can still use them, we'll use a **compiler** to obtain the most supported version of ECMAScript from the latest ESx code. A popular compiler is **Babel**, it works with the latest ESx. **Don't worry about the version.**
 There are two important operations when handling two versions:
 	1. Polyfilling - Representing new functionality in old code. No syntax changes should be present between new and old. Only functionality changes.
 	2. Transpiling - There are new syntax changes, and the current code needs to be represented in old syntax. Functionality does not matter here.
 * Babel does both transpiling and polyfilling.
 {{./pasted_image.png?width=300}} {{./pasted_image001.png}}
-The new standards are produce clean and short code, which is easy to understand.
-Don't be afraid.
+* The new standards have made the code clean and concise.
 --------------------
 
 === 1. let and const ===
@@ -31,9 +30,9 @@ Don't be afraid.
 * Neither can be redeclared, just like C++, Java.
 * Use ''const'' if you want to restrict reassignment.
 
-==== 6. Arrow functions ====
+=== 2. Arrow functions ===
 * //Looks// similar to lamdas(storable functions).
-* Purpose: Concise code. Variable Binding.
+* Purpose: Concise code. Function(state) Binding.
 * The de-facto standard for anonymous functions.
 * Syntax(can be used in conjunction):
 	* For single argument: ''p => {};''
@@ -68,13 +67,16 @@ Note:
 * A very nice feature. Very popular. Inspired from python3.
 * Purpose: Concise code.
 * Features: 
-	* Iterables - Intialize variables in order, starting from the left. Extraneous variables are left out or set to ''undefined'', no errors.
-	* Object - Declare and intialize variables(set to field-variableName corresponding value). **Order** does not matter. You can unpack what you want.
-* Syntax - just enclose variables in [] or {}: 
-	* Iterable - ''const [x, y, z] = [1, 2, 3, 4]; // 4 is not used''
-	* Object - ''let {name, place, color} = obj;''
+	* Iterables - Intialize variables in order, starting from the left. You can skip values.
+	* Object - Declare and intialize variables(set to field-variableName corresponding value). **Order** does not matter.
+* Syntax - iterable/object as **rvalue**. Literals are OK too.
+	* Iterable - ''const [x, y, z] = [1, 2, 3, 4] // 4 is not ''
+	* Object - ''let {name,place} = myObj; // myObj = {name:'Sanjar', place:'Earth', era:'Phanerozoic'};''
 {{./pasted_image002.png?width=300}}
-* Destructuring can take place anywhere. Examples:
+* Skipping values
+	* From the middle - ''let [x, , y, , z] = [1, 2, 3, 4, 5]; // 2 and 5 are unused''
+	* From the end - ''let [x, y] = [1, 2, 3, 4]; // 3 and 4 ignored''
+* Uses:
 	a. Outside functions
 {{{code: lang="js" linenumbers="True"
 const {name, place} = personObj;

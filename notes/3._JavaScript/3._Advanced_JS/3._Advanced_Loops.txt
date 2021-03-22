@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-07-18T19:00:48+05:30
 
-====== 8. Advanced Loops ======
+====== 3. Advanced Loops ======
 Created Saturday 18 July 2020
 
 1. forEach - since ES5
