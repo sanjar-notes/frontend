@@ -75,11 +75,13 @@ console.log(x); // Error x is undefined
 * ''var'' is identical to a python3 variable. Simple.💡️
 
 === Hoisting(JS feature) ===
-* Hoisting - a default JS feature where the intepreter moves all variable/function/class declarations to the top of the current scope (block or function).
+* Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (block or function).
 * Only declarations are hoisted, not initializations.
 * Gotchas about hoisting, there are 2:
 	* **Intialization** - During hoisting, ''var''/''function''/''function*'' are intialized(to ''undefined'' or function body), but ''let''/''const''/''class'' are not.
-	* **Temporal Dead Zone(''ReferenceError'')** - It refers to the //time//(//phase)// between the declaration and intialization, for a variable. This means that you cannot access ''let''/''const''/''class'' variables before their actual declaration statement(in code). You'll recieve a ''ReferenceError(variable not initalized)'' if try. **Note** that the dead zone correlates with sections of the code, but this is the effect, not the cause.
+	* **Temporal Dead Zone(''ReferenceError'')** - It refers to the //time//(//phase)// between the declaration and intialization, for a variable. This means that accessing ''let''/''const''/''class'' variables before their actual declaration statement(in code) is a ''ReferenceError(variable not initalized)''. **Note** that the temporal dead zone correlates with sections of the code, but this is the effect, not the cause.
+* Common Question - What happens if there's a declaration(like ''let x'') and ''x'' is accessed after the declaration. After the declaration(in code, not hoisting), ''x'' is intialized to ''undefined''. 👍️
+* Pitfall: Hoisting and scoping are independent features.
 * Conclusion: Assume that people don't know about hoisitng. ''let'' and ''const'' were created for solving the problems with hoisting. Declare variables just like you would in C++, Python: nearest to first use.
 [[./badCode.js|Bad code]]
 
@@ -157,7 +159,7 @@ function f()
 {
 	function g() {	/*code*/ }
 	g() // invocation - OK
-	
+
 	function k() { /* code */ } // so called 'sibling' function
 }
 

@@ -139,7 +139,7 @@ let z =
 * General syntax: 
 	* Enclose the whole string in backticks. 
 	* Write literal part verbatim.
-	* Use ''${ /*code*/ }'' to enclose the code parts.
+	* Use ''${ JS_code }'' to enclose the code parts.
 	{{./pasted_image007.png}}
 	{{./pasted_image008.png}}
 * Supports multiline strings.
