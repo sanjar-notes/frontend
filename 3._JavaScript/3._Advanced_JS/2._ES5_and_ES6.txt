@@ -22,6 +22,17 @@ There are two important operations when handling two versions:
 {{./pasted_image.png?width=300}} {{./pasted_image001.png}}
 * The new standards have made the code clean and concise.
 --------------------
+There are 3 kinds of features introduced by ES5 and ES6:
+A. Necessities - critical problems with JS
+B. Shorthands and object features - make code concise and dynamic.
+C. Exclusive features - new features exclusive to JS
+--------------------
+
+===== A. Neccessities =====
+Necessary features commonly found in other programming languages:
+* let and const - solve hositing and scope problems.
+* arrow functions - solve context binding
+* Template literals - easy string builder, ability to add DSL.
 
 === 1. let and const ===
 * Both were introduced in ES6.
@@ -29,10 +40,11 @@ There are two important operations when handling two versions:
 * Both follow the same scoping rules - LEGB.
 * Neither can be redeclared, just like C++, Java.
 * Use ''const'' if you want to restrict reassignment.
+* Use of ''var'' is discouraged.
 
 === 2. Arrow functions ===
 * //Looks// similar to lamdas(storable functions).
-* Purpose: Concise code. Function(state) Binding.
+* Purpose: Function(state) Binding. Concise code.
 * The de-facto standard for anonymous functions.
 * Syntax(can be used in conjunction):
 	* For single argument: ''p => {};''
@@ -63,7 +75,48 @@ Note:
 * **Make it a habit to ditch **//function **keyword**//** for throwaway and/or one-liner(use const) functions.**
 * Arrow functions automatically bind function to object. In contrast, //function// function requires explicit binding.
 
-=== 3. Destructuring(object/iterable unpacking) ===
+=== 3. Template Literals ===
+* Extremely powerful tool.
+* Purpose - DSL injection, concide code.
+* Template string is a use case of this feature.
+* General syntax: 
+	* Enclose the whole string in backticks. 
+	* Write literal part verbatim.
+	* Use ''${ JS_code }'' to enclose the code parts.
+	{{./pasted_image007.png}}
+	{{./pasted_image008.png}}
+* Supports multiline strings.
+* Use:
+	a. As template string
+{{{code: lang="js" linenumbers="True"
+let pname = 'Sanjar', emotion = 'Happy';
+let message = `${ name } is ${emotion}.`;
+
+console.log(`I am ${name}`); // prints -> I am Sanjar
+}}}
+
+	b. For carrying JS code.
+{{{code: lang="js" linenumbers="True"
+`${ console.log(2); }` // prints 2 on string evaluation
+
+`${ (() => { console.log('Autodestruct sequence intiated'); })() } `	// pretty hacky and dangerous
+}}}
+
+	c. DSL injection(Domain Specific Language)
+{{{code: lang="js" linenumbers="True"
+p.innerHTML(`<h1> DSL injected </h1>`);
+}}}
+ 
+* How it works:
+	* ''${}''(code) parts are executed normally.
+	* Result, i.e. expression/return value of the code is placed as strings in the template literal.
+	* The string is ready, to be printed or stored.
+
+--------------------
+
+===== B. Shorthands and ''Object'' features =====
+
+=== 1. Destructuring(object/iterable unpacking) ===
 * A very nice feature. Very popular. Inspired from python3.
 * Purpose: Concise code.
 * Features: 
@@ -99,10 +152,9 @@ f(personObj); // OK
 * Is destructuring worthy it - [[./destructuringCode.js]]
 * [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Ignoring_some_returned_values|More]] at MDN
 
-=== 4. Existing object value as field name: Dynamic fieldnames ===
-* You can use existing object's value as field name, actually its string equivalent.
+=== 2. Dynamic fieldnames - Existing object value as field name ===
+* Use existing object's value as field name, actually its string equivalent.
 * Purpose: Have dynamic fieldnames, decided at runtime.
-* Pitfall: Name of the variable is irrelevant.
 * Creating the property: [personObject] instead of fieldName.
 {{{code: lang="js" linenumbers="True"
 let a = [1, 2], b = 'bingo';
@@ -120,6 +172,7 @@ let z =
 * Gotchas
 	* String equivalent of a list is a flattened list. For example: String equivalent of ''[1, 2]'' and ''[1, [2]]'' are identical.
 	* Avoid using plain ''Object'''s as field equivalent. It's vague.
+	* Name of the variable is irrelevant.
 
 * How does this work?
 	* It's pretty simple - Any fieldname/key/property must be a ''string'' in JS, and all objects have a string equivalent.
@@ -132,7 +185,7 @@ let z =
 		* ''Person['name']'' - using strings within brackets.
 		* ''Person[nameObject]'' - finds a field matching the string equivalent of namedObject.
 
-=== 5. Object literal shothand - use variable as fieldName and value ===
+=== 3. Object literal shothand - use variable as fieldName and value ===
 * Use an existing variable to specify both the fieldName and value in an object literal.
 * What happens: variable name becomes field name. Variable value becomes field value.
 * Purpose: Concise code. [[https://www.youtube.com/watch?v=HF0PN1vHsSY|See]].
@@ -141,44 +194,35 @@ let z =
 {{./pasted_image006.png}}
 * Note: This feature has nothing to do with dynamic field names, as seen earlier.
 
-=== 6. Template Literals ===
-* Extremely powerful tool.
-* Purpose - DSL injection, template string.
-* Template string is a use case of this feature.
-* General syntax: 
-	* Enclose the whole string in backticks. 
-	* Write literal part verbatim.
-	* Use ''${ JS_code }'' to enclose the code parts.
-	{{./pasted_image007.png}}
-	{{./pasted_image008.png}}
-* Supports multiline strings.
-* Use:
-	a. As template string
+=== 4. Shorthand method names ===
+* Directly add function to object literal.
+* Purpose - Concide code
+* Syntax
 {{{code: lang="js" linenumbers="True"
-let pname = 'Sanjar', emotion = 'Happy';
-let message = `${ name } is ${emotion}.`;
+// old way
+class Cashier
+{
+	name: 'Will',
+	calculateWorth: function() {
+		/*code*/
+	},
+}
 
-console.log(`I am ${name}`); // prints -> I am Sanjar
+// shorthand
+class Cashier
+{
+	name: 'Will',
+	calculateWorth() {/*code*/}
+}
+
+// both are identical
 }}}
 
-	b. For carrying JS code.
-{{{code: lang="js" linenumbers="True"
-`${ console.log(2); }` // prints 2 on string evaluation
+--------------------
 
-`${ (() => { console.log('Autodestruct sequence intiated'); })() } `	// pretty hacky and dangerous
-}}}
+===== 3. Exclusive features =====
 
-	c. DSL injection(Domain Specific Language)
-{{{code: lang="js" linenumbers="True"
-p.innerHTML(`<h1> DSL injected </h1>`);
-}}}
- 
-* How it works:
-	* ''${}''(code) parts are executed normally.
-	* Result, i.e. expression/return value of the code is placed as strings in the template literal.
-	* The string is ready, to be printed or stored.
-
-=== 7. Symbol data type ===
+=== 1. Symbol data type ===
 * Useful when working with objects.
 * Used to create properties in objects which are invisible to the object owner.
 * This is important if different people work on the same object. Separation of concerns is the goal, symbols avoid properties to clash, if the object is handled by two scripts.
@@ -196,17 +240,25 @@ obj[id1] = 231; // not accessible to the original user even if he uses property 
 }}}
 FIXME	
 
-=== 8. use strict; ===
-* We can limit the flexibility of [[https://johnresig.com/blog/ecmascript-5-strict-mode-json-and-more/|things]] using strict mode for **whole scripts** or **functions**.
+=== 2. use ''strict'' ===
+* Purpose - Generates more exceptions that usual. Usable for **whole scripts** or **functions**. [[https://johnresig.com/blog/ecmascript-5-strict-mode-json-and-more/|See]].
 * Syntax - add ''"use strict"'' on top of the function, script, class.
 * Example
 {{{code: lang="js" linenumbers="True"
+// Example 1 - Globally
 "use strict"; // for the whole script
 
+/* code*/
+
+// Example 2 - Selective
 function f()
 {
 	"use strict"; // for the function
 	// code 
+}
+function g()
+{
+	/*code*/ // no effect of "strict"
 }
 }}}
 
