@@ -121,8 +121,8 @@ let z =
 	* String equivalent of a list is a flattened list. For example: String equivalent of ''[1, 2]'' and ''[1, [2]]'' are identical.
 	* Avoid using plain ''Object'''s as field equivalent. It's vague.
 
-* How does this work? What's the intuition?
-	* It's pretty simple - Any fieldname/key/property must be a ''string'' in JS. And all objects have a string equivalent.
+* How does this work?
+	* It's pretty simple - Any fieldname/key/property must be a ''string'' in JS, and all objects have a string equivalent.
 	* So there are 3 equivalent ways for ''creating fields'', all making the same field:
 		a. Use a name - old way. Like this: ''{ name: 'Sanjar' }''
 		b. Use a string - in quotes. Like this: ''{ 'name': 'Sanjar' }''
@@ -132,11 +132,11 @@ let z =
 		* ''Person['name']'' - using strings within brackets.
 		* ''Person[nameObject]'' - finds a field matching the string equivalent of namedObject.
 
-=== 5. Existing variable as fieldName and value ===
-* You can use an existing variable to specify both the fieldName and value.
-* How this works: variable name becomes field name. Stored data becomes value.
-* Purpose: Concise code.
-* Syntax: Just include the variable. Like a list item.
+=== 5. Object literal shothand - use variable as fieldName and value ===
+* Use an existing variable to specify both the fieldName and value in an object literal.
+* What happens: variable name becomes field name. Variable value becomes field value.
+* Purpose: Concise code. [[https://www.youtube.com/watch?v=HF0PN1vHsSY|See]].
+* Syntax: Just include the variable, like element of an array.
 {{./pasted_image005.png}}
 {{./pasted_image006.png}}
 * Note: This feature has nothing to do with dynamic field names, as seen earlier.
