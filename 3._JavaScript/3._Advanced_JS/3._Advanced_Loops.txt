@@ -5,35 +5,80 @@ Creation-Date: 2020-07-18T19:00:48+05:30
 ====== 3. Advanced Loops ======
 Created Saturday 18 July 2020
 
-1. forEach - since ES5
+=== Aren't for/while enough? ===
+No, because they:
+	* Work on iterables, but with a potential for off-by-one errors.
+	* Don't work on objects.
+
+=== 1. forEach - array ===
+* Purpose - iterate over an array.
+* Since ES5.
+* Syntax
 {{{code: lang="js" linenumbers="True"
-iterable.forEach(f); // f(ele) for all elements, returns nothing
+myIterable.forEach(f); // f(ele) for all elements, returns nothing
 
 f = function(a){};	// a  = element value
 f = function(a, b){}; // a = element value, b = index
 }}}
 
-2. for ''of'' loop - loops over iterable elements, like array, set, string.
-{{{code: lang="js" linenumbers="True"
-let arr = [1,2,3];
-for(const ele of arr)
-	console.log(ele);
-/*
-1
-2
-3
-*/
-}}}
+* Arguments passed to function, in order:
+	1. Element
+	2. Index, only for arrays. OPTIONAL
+* Gotcha - no way to ''break'' or ''continue''
 
-3. for ''in'' loop - enumerates over object properties. MAID(in-enumerate object)
+=== 2. for ''in'' - object ===
+* Purpose - iterate over an object.
+* Iterates over fieldNames, not values.
+* MAID(in-enumerate object)
 {{{code: lang="js" linenumbers="True"
 let timeSpace = { place:'Earth',  era:'Phanerozoic'};
 for(const ele in x)
 	console.log(ele);
-/*
+/* fields not values
 place
 era
 /*
 }}}
 
-Note: for in loop can work with arrays too, because arrays are objects with numbered properties.
+* Cons
+	* Works only for one iterable - array.
+	* Iteration will include functions, in addition to indices of the array. [[./messyForIn.js|See]].
+	* Loop variable is the index instead of element for arrays.
+* Advice - avoid with iterables.
+
+=== 3. for ''of'' - any iterable ===
+* Purpose - iterate over any //iterable//.
+* Solves the problem of iterables in ''for in''. Is a generalized ''forEach''.
+{{{code: lang="js" linenumbers="True"
+// arrays
+for(const ele of [1,2,3])
+	console.log(ele);
+
+// set
+let s = new Set(['H', 'A', 'C', 'K']);
+for(const i of s)
+	console.log(i);
+}}}
+
+* To access array index, run the loop for arr''.entries()'', which is an array of [index, value] 2-arrays. Use destructuring for concise code.
+{{{code: lang="js" linenumbers="True"
+let s = ['H', 'A', 'C', 'K'];
+for(const i of s.entries())
+	console.log(i[1]);
+/*
+H
+A
+C
+K
+*/
+
+// better - destructuring
+for(const [i, j] of s.entries())
+	console.log(i)
+/*
+0
+1
+2
+3
+*/
+}}}
