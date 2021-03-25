@@ -5,6 +5,7 @@ Creation-Date: 2020-07-14T15:34:11+05:30
 ====== 2. ES5 and ES6 ======
 Created Tuesday 14 July 2020
 
+=== About the JS ecosystem ===
 **"There is nothing static about being a web-developer, everything is improving".**
 * HTML, CSS are JS evolving very rapidly.
 * Even browsers are being updated.
@@ -12,255 +13,19 @@ Created Tuesday 14 July 2020
 
 * Now formally called ECMAScript, it interchangeably used with JavaScript.
 * ES5 and ES6 introduced new features which make coding very easy and fun.
---------------------
-**Not all browsers support ES5 and ES6 right now, is it practical to learn and use the standard right now?**
-Yes, some new features of ESx are not currently supported by all browsers. But we can still use them, we'll use a **compiler** to obtain the most supported version of ECMAScript from the latest ESx code. A popular compiler is **Babel**, it works with the latest ESx. **Don't worry about the version.**
-There are two important operations when handling two versions:
+
+=== ESMAScript standards and compatibility ===
+* **Not all browsers support ES5 and ES6 right now, is it practical to learn and use the standard right now?**
+* Yes, some new features of ESx are not currently supported by all browsers. But we can still use them, we'll use a **compiler** to obtain the most supported version of ECMAScript from the latest ESx code. A popular compiler is **Babel**, it works with the latest ESx. **Don't worry about the version.**
+* There are two important operations when handling two versions:
 	1. Polyfilling - Representing new functionality in old code. No syntax changes should be present between new and old. Only functionality changes.
 	2. Transpiling - There are new syntax changes, and the current code needs to be represented in old syntax. Functionality does not matter here.
 * Babel does both transpiling and polyfilling.
 {{./pasted_image.png?width=300}} {{./pasted_image001.png}}
 * The new standards have made the code clean and concise.
---------------------
+
+=== Features of ES5 and ES6 ===
 There are 3 kinds of features introduced by ES5 and ES6:
-A. Necessities - critical problems with JS
-B. Shorthands and object features - make code concise and dynamic.
-C. Exclusive features - new features exclusive to JS
---------------------
-
-===== A. Neccessities =====
-Necessary features commonly found in other programming languages:
-* let and const - solve hositing and scope problems.
-* arrow functions - solve context binding
-* Template literals - easy string builder, ability to add DSL.
-
-=== 1. let and const ===
-* Both were introduced in ES6.
-* Purpose: Very basic feature. Makes JS sensible.
-* Both follow the same scoping rules - LEGB.
-* Neither can be redeclared, just like C++, Java.
-* Use ''const'' if you want to restrict reassignment.
-* Use of ''var'' is discouraged.
-
-=== 2. Arrow functions ===
-* //Looks// similar to lamdas(storable functions).
-* Purpose: Function(state) Binding. Concise code.
-* The de-facto standard for anonymous functions.
-* Syntax(can be used in conjunction):
-	* For single argument: ''p => {};''
-	* For single expression as definition: ''(p1, p2) => 2*3;''. Returns expression value.
-	* For multiliners: ''(p1, p2, p3) => { /* code*/ }''. Simple function function.
-{{{code: lang="js" linenumbers="True"
-const f = num => num*2;	// single argument, single expression
-f() // call
-
-// Multiline body - no return
-const f = () => 
-{
-	console.log('Hello');
-	console.log('World'); // returns undefined
-}
-
-//Multiline - with return
-const f = (a, b) => {
-	a*2 = b; 
-	return a+b; 
-}; // 
-
-(()=>console.log(2))(); // Arrow function as IIFE
-}}}
-
-Note:	
-* You do need a () for zero params.
-* **Make it a habit to ditch **//function **keyword**//** for throwaway and/or one-liner(use const) functions.**
-* Arrow functions automatically bind function to object. In contrast, //function// function requires explicit binding.
-
-=== 3. Template Literals ===
-* Extremely powerful tool.
-* Purpose - DSL injection, concide code.
-* Template string is a use case of this feature.
-* General syntax: 
-	* Enclose the whole string in backticks. 
-	* Write literal part verbatim.
-	* Use ''${ JS_code }'' to enclose the code parts.
-	{{./pasted_image007.png}}
-	{{./pasted_image008.png}}
-* Supports multiline strings.
-* Use:
-	a. As template string
-{{{code: lang="js" linenumbers="True"
-let pname = 'Sanjar', emotion = 'Happy';
-let message = `${ name } is ${emotion}.`;
-
-console.log(`I am ${name}`); // prints -> I am Sanjar
-}}}
-
-	b. For carrying JS code.
-{{{code: lang="js" linenumbers="True"
-`${ console.log(2); }` // prints 2 on string evaluation
-
-`${ (() => { console.log('Autodestruct sequence intiated'); })() } `	// pretty hacky and dangerous
-}}}
-
-	c. DSL injection(Domain Specific Language)
-{{{code: lang="js" linenumbers="True"
-p.innerHTML(`<h1> DSL injected </h1>`);
-}}}
- 
-* How it works:
-	* ''${}''(code) parts are executed normally.
-	* Result, i.e. expression/return value of the code is placed as strings in the template literal.
-	* The string is ready, to be printed or stored.
-
---------------------
-
-===== B. Shorthands and ''Object'' features =====
-
-=== 1. Destructuring(object/iterable unpacking) ===
-* A very nice feature. Very popular. Inspired from python3.
-* Purpose: Concise code.
-* Works with:
-	* Iterables - Intialize variables using an iterable rvalue. Skipping is allowed, order(L to R) is maintained.
-	* Object - Declare and intialize variables(set to field-variableName corresponding value). **Order** does not matter.
-* Syntax - iterable/object as **rvalue**. Literals are OK too.
-	* Iterable - ''const [x, y, z] = new Set([1, 2, 3, 4]);''
-	* Object - ''let {name,place='Default'} = myObj; // myObj = {name:'Sanjar', place:'Earth', era:'Phanerozoic'};''
-{{./pasted_image002.png?width=300}}
-* Features in destructuring
-	* Default value for fields - ''let {name, place='India'} = myObj; // in case myObj doesn't have a 'place' field''
-	* Skip selected values - ''let [x, , y, , z] = [1, 2, 3, 4, 5]; // 2 and 5 are unused''
-	* Skip extraneous values - ''let [x, y] = [1, 2, 3, 4]; // 3 and 4 ignored''
-	* Note: Spread operator is not meant for skipping.
-* Other uses:
-	a. Swap variables - ''[a, b] = [b, a]''
-	b. Outside functions
-{{{code: lang="js" linenumbers="True"
-const {name, place} = personObj;
-// use name and place
-}}}
-
-	b. Functions taking an object argument
-{{{code: lang="js" linenumbers="True"
-function f( {name, place}) // OK
-{
-	console.log(place, name);
-}
-
-f(personObj); // OK
-}}}
-
-* Is destructuring worthy it - [[./destructuringCode.js]]
-* [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Ignoring_some_returned_values|More]] at MDN
-
-=== 2. Dynamic fieldnames - Existing object value as field name ===
-* Use existing object's value as field name, actually its string equivalent.
-* Purpose: Have dynamic fieldnames, decided at runtime.
-* Creating the property: [personObject] instead of fieldName.
-{{{code: lang="js" linenumbers="True"
-let a = [1, 2], b = 'bingo';
-let z = 
-{
-	[a]: 1 ,
-	[b]: 2
-}
-// { '1,2':1, 'bingo':2 } object created
-}}}
-
-* Accessing the property syntax: z[a]
-{{./pasted_image003.png?width=400}} 
-{{./pasted_image004.png}}
-* Gotchas
-	* String equivalent of a list is a flattened list. For example: String equivalent of ''[1, 2]'' and ''[1, [2]]'' are identical.
-	* Avoid using plain ''Object'''s as field equivalent. It's vague.
-	* Name of the variable is irrelevant.
-
-* How does this work?
-	* It's pretty simple - Any fieldname/key/property must be a ''string'' in JS, and all objects have a string equivalent.
-	* So there are 3 equivalent ways for ''creating fields'', all making the same field:
-		a. Use a name - old way. Like this: ''{ name: 'Sanjar' }''
-		b. Use a string - in quotes. Like this: ''{ 'name': 'Sanjar' }''
-		c. Use [existingObject] to set string equivalent as fieldname. Like so: ''{ [nameObject]: 'Sanjar' };''
-	* And so there three equivalent ways to access field values:
-		* ''Person.name'' - just the name, no quotes no brackets.
-		* ''Person['name']'' - using strings within brackets.
-		* ''Person[nameObject]'' - finds a field matching the string equivalent of namedObject.
-
-=== 3. Object literal shothand - use variable as fieldName and value ===
-* Use an existing variable to specify both the fieldName and value in an object literal.
-* What happens: variable name becomes field name. Variable value becomes field value.
-* Purpose: Concise code. [[https://www.youtube.com/watch?v=HF0PN1vHsSY|See]].
-* Syntax: Just include the variable, like element of an array.
-{{./pasted_image005.png}}
-{{./pasted_image006.png}}
-* Note: This feature has nothing to do with dynamic field names, as seen earlier.
-
-=== 4. Shorthand method names ===
-* Directly add function to object literal.
-* Purpose - Concide code
-* Syntax
-{{{code: lang="js" linenumbers="True"
-// old way
-class Cashier
-{
-	name: 'Will',
-	calculateWorth: function() {
-		/*code*/
-	},
-}
-
-// shorthand
-class Cashier
-{
-	name: 'Will',
-	calculateWorth() {/*code*/}
-}
-
-// both are identical
-}}}
-
---------------------
-
-===== 3. Exclusive features =====
-
-=== 1. Symbol data type ===
-* Useful when working with objects.
-* Used to create properties in objects which are invisible to the object owner.
-* This is important if different people work on the same object. Separation of concerns is the goal, symbols avoid properties to clash, if the object is handled by two scripts.
-* There is a global symbol registry, syntax, Symbol.for('id') is used to get the key for id, this is useful if we want some symbols to be the same in a team where a project has many teams.
-* Symbol() don't auto-convert to strings, which is why obj[id1] is different for different people.
-{{{code: lang="js" linenumbers="True"
-id = Symbol('id'); // desciption does not affect the hash value
-const obj = {
-	[id]: 23; 
-}
-
-// we can add our own properties to an existing object
-id1 = Symbol();
-obj[id1] = 231; // not accessible to the original user even if he uses property name as id1
-}}}
-FIXME	
-
-=== 2. use ''strict'' ===
-* Purpose - Generates more exceptions that usual. Usable for **whole scripts** or **functions**. [[https://johnresig.com/blog/ecmascript-5-strict-mode-json-and-more/|See]].
-* Syntax - add ''"use strict"'' on top of the function, script, class.
-* Example
-{{{code: lang="js" linenumbers="True"
-// Example 1 - Globally
-"use strict"; // for the whole script
-
-/* code*/
-
-// Example 2 - Selective
-function f()
-{
-	"use strict"; // for the function
-	// code 
-}
-function g()
-{
-	/*code*/ // no effect of "strict"
-}
-}}}
-
---------------------
-[[./practice.js]]
+A. [[3. JavaScript:3. Advanced JS:2. ES5 and ES6:A. Necessities|Necessities]] - critical problems with JS
+B. [[+B. Shorthands and object features|Shorthands and object features]] - make code concise and dynamic.
+C. [[+C. JS exclusive features|Exclusive features]] - new features exclusive to JS

@@ -1,0 +1,6 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-15T17:55:09+05:30
+
+====== 5. Advanced Functions ======
+Created Wednesday 15 July 2020

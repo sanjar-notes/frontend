@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-03-25T07:43:44+05:30
+
+====== 2. Closures ======
+Created Thursday 25 March 2021
+
+TODO - somewhat OK. Understand binding in arrow functions.
+* **Closure** - a function bundled with references to its surrounding state(the lexical environment). 
+* Simply put - a highly impure function.
+* Purpose - create secure counters.
+* Why secure - a closure behavior depends on the environment.
+	{{./pasted_image001.png}}
+	{{./pasted_image.png}}
+* Closures help us avoid global variables, and they are very useful.
+* The outer function is used only once.
