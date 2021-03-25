@@ -86,3 +86,8 @@ Membership:
 | Suffic membership          | s.endsWith                     | boolean          | Same as Python3                                                    |
 | Split                      | s.spit(delim=undefined)        | array of strings | No splitting without delimiter                                     |
 | Trim whitespace            | s.trim()                       | array            | No arguments. trimLeft, trimRight are available.                   |
+
+
+--------------------
+Resources:
+* [[https://dev.to/lukocastillo/time-complexity-big-0-for-javascript-array-methods-and-examples-mlg|TIme Complexity of popular ops]]

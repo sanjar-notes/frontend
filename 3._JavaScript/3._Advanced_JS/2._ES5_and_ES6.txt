@@ -119,8 +119,8 @@ p.innerHTML(`<h1> DSL injected </h1>`);
 === 1. Destructuring(object/iterable unpacking) ===
 * A very nice feature. Very popular. Inspired from python3.
 * Purpose: Concise code.
-* Features: 
-	* Iterables - Intialize variables in order, starting from the left. You can skip values.
+* Works with:
+	* Iterables - Intialize variables using an iterable rvalue. Skipping is allowed, order(L to R) is maintained.
 	* Object - Declare and intialize variables(set to field-variableName corresponding value). **Order** does not matter.
 * Syntax - iterable/object as **rvalue**. Literals are OK too.
 	* Iterable - ''const [x, y, z] = new Set([1, 2, 3, 4]);''
@@ -128,10 +128,10 @@ p.innerHTML(`<h1> DSL injected </h1>`);
 {{./pasted_image002.png?width=300}}
 * Features in destructuring
 	* Default value for fields - ''let {name, place='India'} = myObj; // in case myObj doesn't have a 'place' field''
-	* Skipping selected values - ''let [x, , y, , z] = [1, 2, 3, 4, 5]; // 2 and 5 are unused''
-	* Skip right end of array - ''let [x, y] = [1, 2, 3, 4]; // 3 and 4 ignored''
+	* Skip selected values - ''let [x, , y, , z] = [1, 2, 3, 4, 5]; // 2 and 5 are unused''
+	* Skip extraneous values - ''let [x, y] = [1, 2, 3, 4]; // 3 and 4 ignored''
 	* Note: Spread operator is not meant for skipping.
-* Uses:
+* Other uses:
 	a. Swap variables - ''[a, b] = [b, a]''
 	b. Outside functions
 {{{code: lang="js" linenumbers="True"

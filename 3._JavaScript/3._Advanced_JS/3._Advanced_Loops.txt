@@ -44,6 +44,7 @@ era
 	* Works only for one iterable - array.
 	* Iteration will include functions, in addition to indices of the array. [[./messyForIn.js|See]].
 	* Loop variable is the index instead of element for arrays.
+* Note: No provision for index as 2nd param.
 * Advice - avoid with iterables.
 
 === 3. for ''of'' - any iterable ===

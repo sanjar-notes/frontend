@@ -15,7 +15,7 @@ Important changes in 2017:
 	* ''Object.values(student)'' - returns an array of values.
 	* ''Object.entries(student)'' - returns an array of key value pairs(as arrays of size 2).
 
-	Note: We need to call .values() using Object.
+	Note: We need use the ''Object'' class.
 4. Async Await - FIXME
 
 Note:
