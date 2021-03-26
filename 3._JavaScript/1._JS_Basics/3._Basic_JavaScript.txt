@@ -5,8 +5,6 @@ Creation-Date: 2020-07-08T16:08:23+05:30
 ====== 3. Basic JavaScript ======
 Created Wednesday 08 July 2020
 
-**Comments**: same as C++, both multiline and inline.
-
 === Data types ===
 * JavaScript is dynamically typed.
 * There are 8 data types:
@@ -101,9 +99,12 @@ console.log(x); // Error x is undefined
 * Shorthand operators are allowed.
 * Assignment expressions are allowed.
 
-=== Code indentation and statements ===
-* **Semicolons** are required at end of a statement. It won't break the code, but recommended.
-* JS if free-form - Code blocks are {}, and consequently we need () for **for**, **while **etc  - Just like C++.
+=== Code Structure ===
+* **Semicolons** - Using it at the end of a statement is preferred, because omitting it //can// lead to error //sometimes//, if not all the time.
+* **Indendation** - JS is free-form.
+	* {} - code blocks
+	* () for **for**, **while **conditions.
+* **Comments**: same as C++, both multiline and inline.
 
 === Conditionals ===
 * //if//, //else//, //else if//, //ternary operator(?:;)// - same as C++

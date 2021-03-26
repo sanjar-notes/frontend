@@ -24,8 +24,9 @@ These were necessary features common in other programming languages:
 * The de-facto standard for anonymous functions.
 * Syntax(can be used in conjunction):
 	* For single argument: ''p => {};''
-	* For single expression as definition: ''(p1, p2) => 2*3;''. Returns expression value.
+	* For single expression as return value: ''(p1, p2) => 2*3;''. Returns expression value.
 	* For multiliners: ''(p1, p2, p3) => { /* code*/ }''. Simple function function.
+	* For other combination of cases - use all in conjunction.
 {{{code: lang="js" linenumbers="True"
 const f = num => num*2;	// single argument, single expression
 f() // call
@@ -46,10 +47,11 @@ const f = (a, b) => {
 (()=>console.log(2))(); // Arrow function as IIFE
 }}}
 
+* Important gotcha - arrow functions are not just a syntactic sugar for normal functions, they do more. See [[+this and arrow functions|details]].
 Note:	
 * You do need a () for zero params.
-* **Make it a habit to ditch **//function **keyword**//** for throwaway and/or one-liner(use const) functions.**
-* Arrow functions automatically bind function to object. In contrast, //function// function requires explicit binding.
+* Avoid normal functions for** throwaway **or** one-liner **functions**.**
+* Arrow function is short for "arrow function expressions". So these are actually expressions. Expressions don't have declarations, ergo, arrow functions are not hoisted.
 
 === 3. Template Literals ===
 * Extremely powerful tool.

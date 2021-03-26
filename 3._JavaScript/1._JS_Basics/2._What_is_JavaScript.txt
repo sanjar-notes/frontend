@@ -37,15 +37,17 @@ Anything.
 * No limits exist if JavaScript is used outside of the browser, e.g via ''node''.
 * Modern browsers also allow plugin/extensions which may ask for extended permissions.
 
-=== Why JavaScript ===
-* Single language for both front-end and back-end.
+=== Why use JavaScript ===
+* Single language for both front-end and back-end. Lesser things to learns, lesser tools.
 * Quite fast and stable.
 * Extremely good libraries and frameworks are available - React, Vue, Express
 * Easy to learn.
 * Portable.
 
-=== Portability of JS ===
+=== Languages "over" JavaScript ===
+* JS has been implemented in all browser, with most features.
 * JS is efficient, but the syntax is not liked by everyone.
+* JS is not suitable for complex apps.
 * So people created their own languages, which are transpiled to JS.
 * Examples:
 	1. CofeeScript - adds "syntactic sugar", making code short and easy to write.
@@ -54,5 +56,5 @@ Anything.
 	4. Brython - a Python transpiler. Supports pure Python development.
 	5. Kotlin - modern, concise and safe language that can target the browser or ''node''.
 
-=== Why ''node'' ===
+=== What is ''node'' ===
 JavaScript was experimented with and was found to be quite fast. Consequently, the ''node'' interpreter was developed, for running JS as a general purpose programming language outside of the browser.
