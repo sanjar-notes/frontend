@@ -24,8 +24,10 @@ obj[id1] = 231; // not accessible to the original user even if he uses property 
 FIXME	
 
 === 2. use ''strict'' ===
-* Purpose - Generates more exceptions that usual. Usable for **whole scripts** or **functions**. [[https://johnresig.com/blog/ecmascript-5-strict-mode-json-and-more/|See]].
-* Syntax - add ''"use strict"'' on top of the function, script, class.
+* Purpose - Modern mode for JS, generates more exceptions that usual. It can be enforced at the **function** or **script** level. [[https://johnresig.com/blog/ecmascript-5-strict-mode-json-and-more/|See]].
+* Syntax - add ''"use strict"'' at the first line inside the function, class or script. Only comments may appear about the ''"use script"''.
+* It is just a signal for the interpreter.
+* Gotcha - There's no way to "cancel" ''"use strict"'', once enabled.
 * Example
 {{{code: lang="js" linenumbers="True"
 // Example 1 - Globally
@@ -45,5 +47,8 @@ function g()
 }
 }}}
 
+* Is it used often? There are two cases:
+	* Code using classes and modules - Not required. ''"use strict"'' is enabled inside these by default.
+	* Old codebases - ''"use strict"'' is encouraged.
 --------------------
 [[./practice.js]]
