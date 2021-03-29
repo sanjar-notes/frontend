@@ -7,7 +7,20 @@ Created Wednesday 08 July 2020
 
 === Data types ===
 * JavaScript is dynamically typed.
-* There are 8 data types:
+* There are 9 data types, divided into categories:
+	* 6 primitives - ''number, string, boolean, symbol, bigint'' and ''undefined''.
+	* 2 structural types - ''object'', ''function''
+	* structural root - ''null''
+| Popularity<|   Name   <|                 Used for                <|                                        Comment                                       <|
+|:----------:|:---------:|:----------------------------------------:|:-------------------------------------------------------------------------------------:|
+|     1      |  string   |         both strings, characters         | Unicode OK, concatenationed using +, numerical strings operate with numbers(except +) |
+|     2      |  number   |           integers and floats            |                                                                                       |
+|     3      |  boolean  |              boolean values              |                               true, false are keywords                                |
+|     4      |  object   |                  object                  |                                                                                       |
+|     5      | undefined | default value for uninitialized variable |                                     is an object                                      |
+|     6      |   null    |      sentinel value marking absence      |                                     is an object                                      |
+|     7      |  symbol   |          Store memory location           |                                                                                       |
+
 1. ''number'' - For both integers and floats.
 2. ''bigint''
 3. ''string'' - both kinds of quotes are OK, you can even use backticks. Concatenation using ''+''. Strings can be like numbers(and vice versa). e.g. '''2.3'*2 = 4.6''. [[./pasted_image001.png|Escape]] character same as C++. Strings can span multiple lines.
@@ -41,18 +54,32 @@ Note:
 
 
 === Variables ===
-There are 3 kinds of variable declarations in JS:
-* **let** - simple variable(i.e. reassignable). Example ''let x = 0;''
-* **const** - non reassignable variable(mutable variables remain mutable). Must be declarized(declared and intialized). Same as C++'s ''const''. Example ''const k = 'stingy symbol table';''
-* **var **- leaks out of block scope. Follows all other scoping rules. Syntax: ''var k = 'var wars';''
-{{./pasted_image.png}}
+* Declaration and intialization are separate concepts in JS. Declarations are a must.
+* There are 3 kinds of variables:
+	* **let** - simple variable(i.e. reassignable). Syntax: ''let x = 0;''
+	* **const** - non reassignable variable(variable contents may be changed). Must be intialized with declaration. Same as C++'s ''const''. Syntax ''const k = 'stingy symbol table';''
+	* **var **- leaks out of block scope. Follows all other scoping rules. Syntax: ''var k = 'var wars';''
+	{{./pasted_image.png}}
+* All variables follow the same syntax - for declaration, initlialization, assignment, access. The syntax are:
+	* Declaration: ''let x;'', ''const p = 24;'', ''var k = 'hi''';
+	* Initialization/assignment: ''let x = 2;'', ''p = 'sanjar'''
+	* Access(reading): Just write the variable name. ''sum = x + y;'', ''f(x)''.
 Note:
-	a. Declarations can be mixed, chained. i.e ''let x = 2, y = [1, 2], z = 3;'' is OK.
-	b. Simply **avoid** using ''var'', except for old codebases.
-	c. Internally, //var,// //let, const, function, class, function* //are **all** [[https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-hoisted/31222689#31222689|hoisted]]. But only ''var'', ''function'' and ''function*'' are allocated memory for.
-	d. Undefined(uninitiliazed) variables store the value ''undefined''😁️. Example: ''let x; console.log(x) // undefined''
-	e. JavaScript has 4 scopes - local, enclosing, global, builtin. Same as python3.
-	f. All inner scopes can read/write to variables of outer scope. Just like C++.
+	a. Uninitialized variables store the value ''undefined''😁️. Example: ''let x; console.log(x) // undefined''
+	b. Declarations can be chained. i.e ''let x = 2, y = [1, 2], z = 3;''.
+	c. Variables cannot be redeclared, except for ''var''.
+	d. **Avoid** using ''var'' in new codebases.
+	e. Internally, //var,// //let, const, function, class, function* //are **all** [[https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-hoisted/31222689#31222689|hoisted]]. But only ''var'', ''function'' and ''function*'' are allocated memory(set to ''undefined'').
+	f. JavaScript has 4 scopes - local, enclosing, global, builtin. Same as python3. Discussed in detail
+	g. All inner scopes can read/write to variables of outer scope. Just like C++.
+
+=== Variable naming rules ===
+* Symbols → a-z, A-Z, 0-9, _, $
+* Rules:
+	* Name cannot start with a number
+	* Keywords cannot be used.
+* Basically, C++ rules with a dollar sign.
+* Note: You can use other language scripts like Cyrillic, Arabic etc. English is recommended.
 
 === ''var'' vs ''let'' ===
 * The only difference is that var has a function scope, a more free scope. i.e it can leak out of top-level blocks, but not out of the function.
@@ -76,10 +103,11 @@ console.log(x); // Error x is undefined
 * Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (block or function).
 * Only declarations are hoisted, not initializations.
 * Gotchas about hoisting, there are 2:
-	* **Intialization** - During hoisting, ''var''/''function''/''function*'' are intialized(to ''undefined'' or function body), but ''let''/''const''/''class'' are not.
-	* **Temporal Dead Zone(''ReferenceError'')** - It refers to the //time//(//phase)// between the declaration and intialization, for a variable. This means that accessing ''let''/''const''/''class'' variables before their actual declaration statement(in code) is a ''ReferenceError(variable not initalized)''. **Note** that the temporal dead zone correlates with sections of the code, but this is the effect, not the cause.
-* Common Question - What happens if there's a declaration(like ''let x'') and ''x'' is accessed after the declaration. After the declaration(in code, not hoisting), ''x'' is intialized to ''undefined''. 👍️
-* Pitfall: Hoisting and scoping are independent features.
+	* **Intialization** - During hoisting, memory is not allocated for ''let''/''const''/''class'' variables. ''var''/''function''/''function*'' are allocated memory(set to ''undefined'' or function body). 
+	* **Temporal Dead Zone(''ReferenceError'')** - It refers to the //time//(//phase)// between the declaration and intialization, for a variable. Accessing ''let''/''const''/''class'' variables before their declaration(in code) is an error ''ReferenceError(variable not initalized)''. 
+	**Note:** temporal dead zone does correlates with sections of the code, but it's actually a time period.
+* Common Question - What is the value of a ''let'' variable outside(after) the dead zone? ''x'' is set to ''undefined''.
+* Note: Hoisting and scoping are unrelated.
 * Conclusion: Assume that people don't know about hoisitng. ''let'' and ''const'' were created for solving the problems with hoisting. Declare variables just like you would in C++, Python: nearest to first use.
 [[./badCode.js|Bad code]]
 
@@ -109,7 +137,7 @@ console.log(x); // Error x is undefined
 === Conditionals ===
 * //if//, //else//, //else if//, //ternary operator(?:;)// - same as C++
 * //switch - //same as// C++//
-* JS does have a concept of truthy values.
+* JS does the concept of truthy values.
 
 === Loops ===
 * //for//, //while//, //do while - same as C++//
