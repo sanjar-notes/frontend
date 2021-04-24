@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-01T01:46:22+05:30
+
+====== 6. Meta tags ======
+Created Tuesday 01 September 2020
+
+These reside inside **head**. They define SEO related things.
+* <**meta **name="author" content=""**/**>

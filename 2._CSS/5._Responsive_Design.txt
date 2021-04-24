@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-16T23:07:46+05:30
+
+====== 5. Responsive Design ======
+Created Tuesday 16 June 2020
+
+Two things constitute responsive UI:
+1. Website is responsive to window changes etc.
+2. Website works in the responsive way across devices.

@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-17T00:47:48+05:30
+
+====== 5. Page Sections ======
+Created Wednesday 17 June 2020
+
+* We have header, footer and navigation.
+We use the following layout
+{{./pasted_image001.png}}
+--------------------
+6 HTML5 sections:
+* header - for headings, dates, name etc
+* nav - for links to other pages
+* section - encloses like content
+* article - a standalone article, part of no section
+* aside - side links, appendix
+* footer - site footer

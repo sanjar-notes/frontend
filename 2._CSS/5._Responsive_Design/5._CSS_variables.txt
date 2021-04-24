@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-29T15:05:13+05:30
+
+====== 5. CSS variables ======
+Created Saturday 29 August 2020
+
+* CSS variables are created by us and they can be used to store property values. This is helpful for automation.
+1. to declare, and initialize, syntax is 	
+{{{code: lang="css" linenumbers="True"
+--variable_name:property_value;
+}}}
+	
+2. to use, just write:
+{{{code: lang="css" linenumbers="True"
+var(--variable, fallback_value)
+}}}
+	
+e.g
+{{{code: lang="css" linenumbers="True"
+:root{
+	--bgcolor: red;
+	--fontcolor: blue;
+}
+body {
+	--bgp: red;
+	background-color: var(--bgp);
+}
+
+}}}
+	
+Note: 
+* Global declarations must be written inside the special **:root**
+* Variables [[https://www.freecodecamp.org/learn/responsive-web-design/basic-css/inherit-css-variables|do]] have scope in descendents.
+* Variables can be reassigned for an element(and consequently in all its elements).

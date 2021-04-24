@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-17T01:01:29+05:30
+
+====== 2. Anchor tag ======
+Created Wednesday 17 June 2020
+
+Used for linking to other pages.
+* ''<a href=""></a>'' is used for making links.
+* ''<a href="#idname"></a>'' link element on the same page.
+* ''<a href="mailto:email id here"></a>'' ⇒ Opens the email website/app, with the //To //section filled.
+
+Note: As anchor is an open tag, We can set images to act as links, and technically anything.

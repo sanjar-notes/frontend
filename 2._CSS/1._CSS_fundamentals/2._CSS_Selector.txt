@@ -1,0 +1,91 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-05-08T14:26:33+05:30
+
+====== 2. CSS Selector ======
+Created Friday 08 May 2020
+
+* CSS selectors are used specify the HTML elements we want to style.
+There are 5 types of selectors - with criteria:
+1. Simple selector - name, id or class.
+2. Combinator selector - relation, like sibling, parent etc.
+3. Pseudo-class selector - state, like hover.
+4. Attribute selectors- attribute and/or value
+5. Pseudo-elements selectors - styles part of an element
+
+Note: Don't try to remember all the names, use as per requirement.
+
+=== Syntax for using selectors ===
+{{{code: lang="css" linenumbers="True"
+selector_name{property: value;}
+}}}
+
+e.g
+{{{code: lang="css" linenumbers="True"
+h2{color:blue;}
+
+h2.class_name{}
+
+p#id_name{}
+
+h2.#id_name{}
+}}}
+
+--------------------
+* **Order of CSS rules matter.**
+--------------------
+A. **Fundamental Selectors**:
+	1. tag name(p)
+	2. class(**.**) (somewhat specific - group of elements - irrespective of tag)
+	3. id(**#**) - (we can use it only once - single) 
+B. **CSS Combinator** i.e **Select element(s) in relation to a selector** **:**
+	0. A, B      (for all A, B and so on. Independent)
+	1. A B	(all Bs inside A - like scope) aka **descendant** selector
+	2. A > B	(all Bs having A as parent) aka **child** selector
+	3. A ~ B	(all Bs after A) **all successive sibling** selector
+	4. A + B	(the B which is **just** after A)  aka **successor sibling** selector
+	MAID: Successive ones are more specific. Future generation and siblings only. Just like normal trees.
+	* While using multiple classes in tags, they are [[https://www.freecodecamp.org/learn/responsive-web-design/basic-css/add-borders-around-your-elements|space]] separated. ID's are [[https://www.freecodecamp.org/learn/responsive-web-design/basic-css/set-the-id-of-an-element|supposed]] to be unique and tags are inherent. 
+	* To select an element which has multiple classes, use .class1.class2.class3 and so on, without the spaces. This is like LOGICAL AND. Only elements having all the classes will be affected.
+	* The order of class in the class **attribute** [[https://www.freecodecamp.org/learn/responsive-web-design/basic-css/override-class-declarations-by-styling-id-attributes|does not]] affect the style. The order of declaration in the CSS does.
+--------------------
+Other types of selectors
+A. **CSS Pseudo-classes **ie** Specifying style for a state of the element** **:**
+	1. a:link - unvisited(unclicked) link
+	2. a:visited - visited(clicked) link
+	3. a:hover - (Its an event, hover the mouse over X)
+	4. a:active - (Applies while an element is being activated by the user. e.g, the time span between the press and release of the mouse button)
+	5. X:last-child	(Applied to an X, if it is the last child, of an element)
+	6. X:first-child	(Applied to the an X, if it is the first child, of an element)
+	7. X:first-type-child (Applied to the first X, of each parent)
+B. **Pseudo element selectors **- select part of an element, like first letter, first line etc
+	1. ::after - apply just after the element. //Irrespective of the next sibling.//
+	2. ::before - apply just before the element. //Irrespective of the next sibling.//
+	3. ::first-letter
+	4. ::first-line
+	5. ::selection - the portion selected by the user.
+C. **Attribute selectors** - apply to all elements which have the attribute values set as the arg.
+	1. only attribute ⇒	tag[attri]
+	2. attribute with value ⇒ tag[attri="value"]
+	3. attribute with value **like **⇒ tag[attri~="value"]
+	4. It's like regex ⇒ ^(starting with), $(ending with), *, |
+{{{code: lang="css" linenumbers="True"
+img[alt] /* select all img elements with an alt value*/
+{
+	color:green;
+}
+
+img[alt="server one down"] /*select with the given alt*/
+{
+	color:red;
+}
+}}}
+
+Note:
+1. all(*) elements (not used so often)
+2. !important (not recommended) (fixed) - **This is a value flag.**
+{{{code: lang="css" linenumbers="True"
+p{	color: blue !important;}
+}}}
+
+3. There's nothing like pseudo ID, makes no sense as they are unique anyway

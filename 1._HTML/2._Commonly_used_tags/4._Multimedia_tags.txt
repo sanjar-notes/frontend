@@ -1,0 +1,61 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-01T00:38:45+05:30
+
+====== 4. Multimedia tags ======
+Created Tuesday 01 September 2020
+
+=== Image ===
+1. <**img**> - self closing image tag
+	a. src - path to image file.
+	b. alt - text for image file, displayed if image is unavailable
+	c. width - in px
+	d. height - in px
+	e. title - tooltip upon hover
+2. <**figure**></**figure**> - used when image has a caption associated with it.
+3. <**figcaption**></**figcaption**> - to add caption to image. Used in conjunction only inside a ''figure'' tag - [[https://www.sitepoint.com/quick-tip-the-right-way-to-use-figure-and-figcaption-elements/|one inside one]]
+Example - ''figure'' tag is immensely helpful.
+{{{code: lang="js" linenumbers="True"
+<figure>
+	<img src="myCat.jpg" />
+	<figcaption>
+		My Cat
+	</figcaption>
+<figure>
+}}}
+
+
+=== Video ===
+* <**video**>Alt_text_here</**video**>
+	a. src
+	b. height
+	c. width
+	d. poster = "image.png"
+	e. **''autoplay''**
+	f. **''controls''**
+	g. **''loop''**
+
+=== Audio ===
+* <audio ''controls''>alt_text_here</audio>
+* <source **src=""** **type="audio/mpeg"**> needs to be inside audio - can be used for sound awa transcripts
+mAid - self closing tags don't have a text content.
+
+=== **Iframe - simply having a webview from a website** ===
+* It is not a self closing tag
+* <iframe>Alt_text_here</iframe>
+{{{code: lang="html" linenumbers="True"
+<iframe
+        src="https://www.youtube.com/embed/2DGxm1csQQM?"
+        width="height"
+        allow="autoplay"
+        allowfullscreen
+ ></iframe>
+}}}
+
+
+=== A note on path ===
+* ''src'' path follows UNIX notation.
+* Use forward slash, even if website is on a Windows machine.
+* Relative paths are allowed - ''.'' and ''..'' can be used, relative to the current page.
+* Absolute paths are OK too, from the root of the machine.
+* Note: index.html does not determine the root in any case.

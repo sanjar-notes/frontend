@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-16T01:57:28+05:30
+
+====== 3. Box model ======
+Created Tuesday 16 June 2020
+
+* Every element is considered a box in CSS
+{{./pasted_image.png}}
+* When we set width, height for an element, we are doing so only for the **content.** margin, border and padding have to be calculated seperately.
+	{{./pasted_image001.png}}
+
+

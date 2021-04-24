@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-16T12:05:10+05:30
+
+====== 7. Links ======
+Created Tuesday 16 June 2020
+
+* Buttons are nothing but padded elements.
+{{{code: lang="css" linenumbers="True"
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+}}}
