@@ -5,10 +5,6 @@ Creation-Date: 2020-05-08T14:24:16+05:30
 ====== 2. CSS ======
 Created Friday 08 May 2020
 
-What is CSS?
-* Cascading Style Sheets
-* CSS describes how HTML elements are displayed on the **screen, paper or in other media**
-* CSS saves a **lot of work**, it can control the layout of multiple web pages all at once.
 {{./pasted_image001.png}}
 --------------------
 Syntax:

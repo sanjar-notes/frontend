@@ -30,4 +30,4 @@ A) There are many reasons for this:
 	3. Reduces duplicacy.
 	4. Lets us get css files which are not saved on the server, or out computer. Like googlefonts etc. Which may be changing.
 --------------------
-* Internal and external styles are order dependent.#main>p:nth-child(35)
+* Internal and external styles are line order dependent.#main>p:nth-child(35)
