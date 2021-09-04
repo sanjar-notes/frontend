@@ -24,14 +24,14 @@ Created Wednesday 17 June 2020
 2. ''code'' - Mostly the code is wrapped by a <pre> wrapped by a <code> element.
 3. ''samp'' The output of the code.
 4. ''var'' represents a variable.
-5. ''sub'' is used for subscript text.
-6. ''sup'' is used for superscript text.
+5. ''sub'' is used for subscript text. CH_{4}.
+6. ''sup'' is used for superscript text. E=mc^{2}.
 
 === Miscellaneous ===
 1. ''<kbd> Ctrl+S <kbd>'' for keybindings.
 2. address ⇒ italicizes the address.
 --------------------
-Note: 
+Note:
 * Use the **title** attribute for abbreviations and citations.
 * Except ''hr'' and ''br'', all other tags have a text content, so they are closed tags.
 
