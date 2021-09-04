@@ -34,7 +34,7 @@ Created Sunday 14 February 2021
 
 * Parts of an attribute:
 	a. key - a string without quotes.
-	b. value - a string with quotes.
+	b. value
 	''='' is used for assigning values to key.
 * Rules for attributes:
 	* Attributes are separated by space.
