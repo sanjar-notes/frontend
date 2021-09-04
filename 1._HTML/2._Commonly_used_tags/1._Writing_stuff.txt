@@ -20,11 +20,12 @@ Created Wednesday 17 June 2020
 12. ''dfn'' ⇒ definition.
 
 === Code and scientific notation ===
-1. ''code'' - Mostly the code is wrapped by a <pre> wrapped by a <code> element.
-2. ''samp'' The output of the code.
-3. ''var'' represents a variable.
-4. ''sub'' is used for subscript text.
-5. ''sup'' is used for superscript text.
+1. ''eqn'' - for equations.
+2. ''code'' - Mostly the code is wrapped by a <pre> wrapped by a <code> element.
+3. ''samp'' The output of the code.
+4. ''var'' represents a variable.
+5. ''sub'' is used for subscript text.
+6. ''sup'' is used for superscript text.
 
 === Miscellaneous ===
 1. ''<kbd> Ctrl+S <kbd>'' for keybindings.
