@@ -28,8 +28,8 @@ Created Wednesday 17 June 2020
 6. ''sup'' is used for superscript text. E=mc^{2}.
 
 === Miscellaneous ===
-1. ''<kbd> Ctrl+S <kbd>'' for keybindings.
-2. address ⇒ italicizes the address.
+1. ''<kbd> Ctrl+S </kbd>'' for keybindings.
+2. ''address'' ⇒ italicizes the address.
 --------------------
 Note:
 * Use the **title** attribute for abbreviations and citations.
