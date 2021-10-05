@@ -8,4 +8,5 @@ Created Monday 24 August 2020
 {{./css_position.png?width=550}}
 * short for position type
 * These are used to define how a selection is position.
-* https://www.youtube.com/watch?v=jx5jmI0UlXU
+* [[https://www.youtube.com/watch?v=jx5jmI0UlXU|All 5 positions, < 10 mins]]
+* [[https://www.youtube.com/watch?v=NzjU1GmKosQ|Sticky positioning < 8 min]]
