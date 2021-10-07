@@ -10,7 +10,7 @@ Browsing the web? This is// "//trivial". Yes, //using// is. But we cannot think 
 
 === First connection to a website ===
 {{./pasted_image.png}}
-* The URL is sent to the DNS, through the ISP(your phone company).
+* The URL is sent to the DNS, through the ISP(your Internet company).
 * The DNS sends an IP address(the physical device's address). This identifies the server(computer owned by the website) address. Your device also has an IP address.
 * You communicate directly with the server now. You are still using going through the ISP, but a DNS is not required in between.
 
