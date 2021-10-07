@@ -5,12 +5,25 @@ Creation-Date: 2020-09-01T01:32:17+05:30
 ====== 4. Forms ======
 Created Tuesday 01 September 2020
 
+[[#fixme]] why, how and what of <form>
+
 === Basic form tags ===
 1. <**form**></**form**> - encloses the whole form
 2. <**label** for="x"><**/label**> - used before/after/enclosing an input, the value displayed
 3. <**input** type id="x" name value**(if checkbox/radio)**/> - the input
 4. <**select **multiple></**select**>  - encloses a drop down menu(**select**)
 5. <**option **value=""></**option**> - the components of a dropdown
+
+=== How form elements works ===
+* Each form element must have a **name **and **value** attribute.
+* The **value** attribute is skipped in HTML code if the user is going to type it.
+* name:value are passed as key-value pairs to the server on submission. 
+{{{code: id="form" lang="html" linenumbers="True"
+<input type="_non-text_" name="" value="">
+
+<input type="text" name=""> <!-- value typed by the user -->
+}}}
+
 
 === Input type values - allowed attributes ===
 1. ''checkbox'' - name + value
