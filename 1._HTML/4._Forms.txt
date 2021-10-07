@@ -10,9 +10,9 @@ Created Tuesday 01 September 2020
 === Basic form tags ===
 1. <**form**></**form**> - encloses the whole form
 2. <**label** for="x"><**/label**> - used before/after/enclosing an input, the value displayed
-3. <**input** type id="x" name value**(if checkbox/radio)**/> - the input
+3. <**input** type /> - the input
 4. <**select **multiple></**select**>  - encloses a drop down menu(**select**)
-5. <**option **value=""></**option**> - the components of a dropdown
+5. With **select**, <**option **value=""></**option**> - the components of a dropdown
 
 === How form elements works ===
 * Each form element must have a **name **and **value** attribute.
@@ -25,7 +25,13 @@ Created Tuesday 01 September 2020
 }}}
 
 
-=== Input type values - allowed attributes ===
+=== Input tag attributes ===
+1. name
+2. value (omit if text)
+3. type - text, number, email, checkbox, radio, file
+4. required -boolean attribute. Omit if optional input.
+
+=== Input '**type'** - allowed values ===
 1. ''checkbox'' - name + value
 2. ''radio'' - name + value
 3. ''button'' - title + value
@@ -35,6 +41,7 @@ Created Tuesday 01 September 2020
 7. ''file''
 8. **reset** - value
 9. **submit** - value
+
 --------------------
 * form tag has 2 attributes
 	a. **action** = "form_filled.html" - will be triggered when submit is clicked
