@@ -7,7 +7,7 @@ Created Wednesday 17 June 2020
 
 === Basic text constructs ===
 1. ''h1'' ⇒ heading, h6 is the smallest.
-2. ''p'' ⇒ paragraph tag
+2. ''p'' ⇒ paragraph tag, the attribute ''contenteditable="true"'' is omitted generally.
 3. ''strong'' ⇒ bold text
 4. ''em'' ⇒ italicized text
 5. ''<br />'' ⇒ newline
