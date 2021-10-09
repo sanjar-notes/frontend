@@ -13,6 +13,7 @@ FIXME why, how and what of <form>
 3. <**input** type /> - the input
 4. <**select **multiple></**select**>  - encloses a drop down menu(**select**)
 5. With **select**, <**option **value=""></**option**> - the components of a dropdown
+6. With **datalist,** <option> tags. For keyboard exploration of list. Enclose datalist in a ''<input type="list" />'' tag.
 
 === How form elements works ===
 * Each form element must have a **name **and **value** attribute.
@@ -28,7 +29,7 @@ FIXME why, how and what of <form>
 === Input tag attributes ===
 1. name
 2. value (omit if text)
-3. type - text, number, email, checkbox, radio, file
+3. type - text, number, email, checkbox, radio, file, list + ''datalist''
 4. required -boolean attribute. Omit if optional input.
 
 === Input '**type'** - allowed values ===
@@ -39,8 +40,9 @@ FIXME why, how and what of <form>
 5. ''password''
 6. ''date''
 7. ''file''
-8. **reset** - value
-9. **submit** - value
+8. ''color''
+9. **reset** - value
+10. **submit** - value
 
 --------------------
 * form tag has 2 attributes
