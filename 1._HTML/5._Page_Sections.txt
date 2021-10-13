@@ -7,12 +7,12 @@ Created Wednesday 17 June 2020
 
 * We have header, footer and navigation.
 We use the following layout
-{{./pasted_image001.png}}
---------------------
-6 HTML5 sections:
+{{./pasted_image001.png?width=250}}
+The 5 semantic (fixed type of content is not fixed) tags:
 * header - for headings, dates, name etc
 * nav - for links to other pages
-* section - encloses like content
-* article - a standalone article, part of no section
+* main
+	* section - encloses like content
+	* article - a standalone article, part of no section
 * aside - side links, appendix
 * footer - site footer
