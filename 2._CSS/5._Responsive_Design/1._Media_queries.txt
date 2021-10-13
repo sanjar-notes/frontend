@@ -11,6 +11,7 @@ Syntax:
 <style>
 @media(condition)
 {
+	/* add valid CSS*/
 	p{}
 	h1{}
 }
