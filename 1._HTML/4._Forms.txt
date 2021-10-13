@@ -41,8 +41,9 @@ FIXME why, how and what of <form>
 6. ''date''
 7. ''file''
 8. ''color''
-9. **reset** - value
-10. **submit** - value
+9. ''pattern'' - regex expression. Standard symbols, i.e. [a-z], [0-9], *, +, .. New in HTML5
+10. **reset** - value
+11. **submit** - value
 
 --------------------
 * form tag has 2 attributes
