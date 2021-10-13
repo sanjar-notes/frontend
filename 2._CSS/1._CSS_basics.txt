@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2021-04-25T00:56:22+05:30
 
-====== 1. CSS fundamentals ======
+====== 1. CSS basics ======
 Created Sunday 25 April 2021
 
 * The basic structure of CSS is very simple.
