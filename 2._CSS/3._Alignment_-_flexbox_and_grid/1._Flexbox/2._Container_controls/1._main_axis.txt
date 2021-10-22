@@ -7,7 +7,7 @@ Created Wednesday 02 September 2020
 
 All of this can be done by the **justify-content** property. This changes the components w.r.t the main axis
 It has 6 modes:
-1. center → all components stacked at the center, same space on both ends.
+1. center → all components stacked at the center.
 2. flex-start → all components stacked at the start
 3. flex-end → all components stacked at the end
 4. space-between → All elements have the same space between them. No space at the two ends.
