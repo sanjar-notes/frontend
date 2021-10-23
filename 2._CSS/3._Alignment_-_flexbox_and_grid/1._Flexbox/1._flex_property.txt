@@ -6,7 +6,7 @@ Creation-Date: 2020-09-01T22:31:31+05:30
 Created Tuesday 01 September 2020
 
 Steps:
-1. Set display:flex to the container.
+1. Set display:flex on the container.
 2. Set the main axis direction(row, column, row-reverse, column-reverse) - default is row.
 {{{code: lang="css" linenumbers="True"
 {
