@@ -5,7 +5,9 @@ Creation-Date: 2020-09-02T02:50:25+05:30
 ====== 2. cross axis ======
 Created Wednesday 02 September 2020
 
-All of this can be done by the **align-items** property. This changes the components w.r.t the cross axis
+Cross axis = perpendicular to direction of flex (main axis)
+''align-items'' controls components along the cross axis.
+
 It has 5 modes:
 1. center → all components stacked at the center, same space on both ends.
 2. flex-start → all components stacked at the start
@@ -13,5 +15,9 @@ It has 5 modes:
 4. stretch → All elements are streched fully along the cross axis. It is the default for align-items, if not specified.
 5. baseline → All components have the same baseline.
 
-{{./pasted_image.png}}
-{{./pasted_image001.png}}
+=== Examples ===
+{{./pasted_image.png?id=center&width=400}}
+cross axis, center
+
+{{./pasted_image001.png?width=400}}
+cross axis, end (''flex-end'').
