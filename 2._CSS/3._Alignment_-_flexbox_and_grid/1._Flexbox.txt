@@ -6,6 +6,8 @@ Creation-Date: 2020-06-16T22:54:42+05:30
 Created Tuesday 16 June 2020
 
 === Why flexbox? ===
+Control/set contained elements in a single row/column.
+
 Helps us keep everything at the correct place(in a row or in a column - 1D), without explicit settings. 
 * Saves us a lot of time, and is responsive.
 * We'll not be using the older things, mostly.
