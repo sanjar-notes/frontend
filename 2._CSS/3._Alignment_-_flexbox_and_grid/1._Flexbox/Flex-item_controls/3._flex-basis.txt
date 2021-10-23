@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-03T11:07:09+05:30
+
+====== 3. flex-basis ======
+Created Thursday 03 September 2020
+
+Sets the intitial size of an item which is irrespective of the flex-grow and flex-shrink property
+{{{code: lang="css" linenumbers="True"
+p
+{
+	flex-basis:200px;
+}
+}}}
