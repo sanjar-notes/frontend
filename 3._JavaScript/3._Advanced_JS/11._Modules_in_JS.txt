@@ -5,7 +5,18 @@ Creation-Date: 2020-07-18T21:05:29+05:30
 ====== 11. Modules in JS ======
 Created Saturday 18 July 2020
 
-=== ES6 ===
+=== Why ===
+For:
+* Reuse of code
+* Encapsulation
+* Abstraction
+
+=== What is a module ===
+A module is just a bit of code encapsulated in a file, and exported to another file.
+
+=== How ===
+
+=== - ES6 ===
 * Let us first see where are we now:
 1. We had inline scripts - Reusability, pollution of the global namespace
 2. We had script tags src - Order has to be decided beforehand(dependency resolution), we have to keep the script tags in all HTML files, global namespace is polluted.
@@ -27,7 +38,7 @@ import add from './add';
 }}}
 
 
-=== Common JS modules ===
+=== - Common JS modules ===
 The ES6 syntax has not been implemented in CommonJS (the standard Node follows). An **old** syntax is followed by Node.
 * Source: Everything to be exported is exported in a single object, called ''module.exports''
 * Destination: Needed stuff is accessed from the export object using the ''require'' function.
