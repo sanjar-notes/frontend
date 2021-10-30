@@ -5,3 +5,17 @@ Creation-Date: 2021-04-25T00:58:42+05:30
 ====== 2. Positioning ======
 Created Sunday 25 April 2021
 
+Attribute: ''position''
+Values: 5 values available.
+
+1. Static - the default, per document flow.
+2. Relative - moves only if specified w.r.t the normal document flow. Not used generally.
+3. Absolute - removed from document flow, set w.r.t the latest non-static ancestor. If nothing is found, set w.r.t body. Default is (left=0, top=0).
+4. Fixed - fixed w.r.t the browser, no matter what.
+5. Sticky - moves only until set value.
+
+
+* short for position type
+* These are used to define how a selection is position.
+* [[https://www.youtube.com/watch?v=jx5jmI0UlXU|All 5 positions, < 10 mins]]
+* [[https://www.youtube.com/watch?v=NzjU1GmKosQ|Sticky positioning < 8 min]]
