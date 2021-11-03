@@ -7,7 +7,7 @@ Created Tuesday 16 June 2020
 
 * Every element is considered a box in CSS
 {{./pasted_image.png}}
-* When we set width, height for an element, we are doing so only for the **content.** margin, border and padding have to be calculated seperately.
+* Width, height are for the content. Padding, border and margin are calculated seperately.
 	{{./pasted_image001.png}}
-
+* If there was an eventListener, it would activate only within the border(inclusive).
 
