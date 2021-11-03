@@ -19,6 +19,6 @@ Syntax:
 }}}
 	
 Some common conditions are:
-a. max-width:100px ⇒ if width<=100px
-b. min-width:100px ⇒ if width>=100px
+a. max-width:100px ⇒ 0 to 100px
+b. min-width:100px ⇒ 100px to ∞
 c. print ⇒ Hide some things when the page is printed
