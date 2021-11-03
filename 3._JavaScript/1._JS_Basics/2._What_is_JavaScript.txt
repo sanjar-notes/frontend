@@ -10,7 +10,7 @@ Created Wednesday 08 July 2020
 * Created by NetScape in 1995 to run in the browser.
 * It was(is?) a feature for the browser.
 * Initially, it was not standardised, just like HTML5, CSS3 for different browsers. This became a nightmare for developers.
-* It has now been standardized and is called ECMAScript. JavaScript and ECMAScript used interchangeably.
+* It has now been standardized and is called ECMAScript. JavaScript and ECMAScript are used interchangeably.
 
 === What can JavaScript do ===
 **In the browser**

@@ -6,20 +6,20 @@ Creation-Date: 2020-07-14T17:40:11+05:30
 Created Tuesday 14 July 2020
 
 === **No-setup method** ===
-* Open developer tool aka DevTool
+* Open developer tool aka DevTool, in a browser.
 * Write JS in console
 
 === **Dedicated setup(in the terminal)** ===
 * JavaScript needs the ''node.js'' interpreter to run outside the browser.
 * **Steps for installing node**
 Install **nvm**: easy to update/manage node versions. Similar to pyenv.
-	2. Install ''node'' using **''nvm''** by running the following command
+Install ''node'' using **''nvm''** by running the following command
 {{{code: lang="sh" linenumbers="True"
-nvm install latest_version --lts
+nvm install insert_latest_version --lts
 }}}
 
-	3. ''npm''(Node Package Manager) comes bundled with ''node''
-	4. check version using ''node -v''
+''npm''(Node Package Manager) comes bundled with ''node''
+check version using ''node -v''
 
 Note: 
 * Node is similar to the Python interpreter.
