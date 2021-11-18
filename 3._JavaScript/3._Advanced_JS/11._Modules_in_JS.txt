@@ -33,9 +33,9 @@ export default function add(a, b){
 }
 
 //js2
-import {add} from './add';
+import {add} from './add'; // if normal 'export'
 //OR
-import add from './add';
+import add from './add'; // if 'export default'
 }}}
 
 
