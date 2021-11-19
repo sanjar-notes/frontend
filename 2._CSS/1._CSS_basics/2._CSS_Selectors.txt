@@ -67,8 +67,7 @@ B. **Pseudo element selectors **- select part of an element, like first letter, 
 C. **Attribute selectors** - apply to all elements which have the attribute values set as the arg.
 	1. only attribute ⇒	tag[attri]
 	2. attribute with value ⇒ tag[attri="value"]
-	3. attribute with value **like **⇒ tag[attri~="value"]
-	4. It's like regex ⇒ ^(starting with), $(ending with), *, |
+	3. attribute with value **like **⇒ tag[attri~="value"]. t's like regex ⇒ ^(starting with), $(ending with), *, |
 {{{code: lang="css" linenumbers="True"
 img[alt] /* select all img elements with an alt value*/
 {
