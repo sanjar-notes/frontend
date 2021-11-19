@@ -34,6 +34,7 @@ Example - ''figure'' tag is immensely helpful.
 	e. **''autoplay''**
 	f. **''controls''**
 	g. **''loop''**
+	h. ''muted''
 
 === Audio ===
 * <audio ''controls''>alt_text_here</audio>
