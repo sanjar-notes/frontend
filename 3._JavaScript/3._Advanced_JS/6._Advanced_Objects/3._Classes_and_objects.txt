@@ -27,3 +27,5 @@ Sanjar = new A('Muhammad Sanjar Afaq');
 Sanjar.intro();	// -> Hi, I'm Muhammad Sanjar Afaq
 }}}
 		
+FIXME: static functions
+FIXME: inheritance
