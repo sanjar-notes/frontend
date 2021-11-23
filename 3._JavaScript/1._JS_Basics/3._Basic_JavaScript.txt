@@ -19,8 +19,8 @@ Created Wednesday 08 July 2020
 |     4      | undefined | default value for uninitialized variable |       is an object       |
 |     5      |   null    |      sentinel value marking absence      |       is an object       |
 |     6      |  symbol   |          Store memory location           |                          |
-|     7      |  bigint   |                                          |                          |
-|     4      |  object   |                  object                  |                          |
+|     7      |  bigint   |     Number with arbitrary precision      |                          |
+|     4      |  object   |       Made of primitives, objects        |                          |
 
 1. ''number'' - For both integers and floats.
 2. ''bigint''
