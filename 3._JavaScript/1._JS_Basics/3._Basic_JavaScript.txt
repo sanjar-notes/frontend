@@ -7,7 +7,7 @@ Created Wednesday 08 July 2020
 
 === Data types ===
 * JavaScript is dynamically typed.
-* There are 9 data types, divided into categories:
+* There are 8 data types, divided into categories:
 	* 7 primitives (immutable datum represented directly at the lowest level of the language)-
 		 ''number, string, boolean, symbol, bigint'' and ''undefined'', ''null''
 	* 1 non primitive type - ''object''
@@ -52,6 +52,7 @@ Note:
 '2' + '3' 		// string '23' - concatenation is concatenation
 }}}
 
+* JS is loosely typed. 
 
 === Variables ===
 * Declaration and intialization are separate concepts in JS. Declarations are a must.
@@ -105,7 +106,7 @@ console.log(x); // Error x is undefined
 * Gotchas about hoisting, there are 2:
 	* **Intialization** - During hoisting, memory is not allocated for ''let''/''const''/''class'' variables. ''var''/''function''/''function*'' are allocated memory(set to ''undefined'' or function body). 
 	* **Temporal Dead Zone(''ReferenceError'')** - It refers to the //time//(//phase)// between the declaration and intialization, for a variable. Accessing ''let''/''const''/''class'' variables before their declaration(in code) is an error ''ReferenceError(variable not initalized)''. 
-	**Note:** temporal dead zone does correlates with sections of the code, but it's actually a time period.
+	**Note:** temporal dead zone does correlate with sections of the code, but it's actually a time period.
 * Common Question - What is the value of a ''let'' variable outside(after) the dead zone? ''x'' is set to ''undefined''.
 * Note: Hoisting and scoping are unrelated.
 * Conclusion: Assume that people don't know about hoisitng. ''let'' and ''const'' were created for solving the problems with hoisting. Declare variables just like you would in C++, Python: nearest to first use.
