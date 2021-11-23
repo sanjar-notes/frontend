@@ -24,7 +24,7 @@ Syntax:
 * //Huge Plus//: As anchor is an open tag, We can set images to act as links, and technically anything.
 
 === Other attributes ===
-1. ''target'' attribute of //''_blank''// will open the link in new tab. It has 3 more values, see [[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target|MDN]] and [[target attrbutes]].
+1. ''target'' attribute of //''_blank''// will open the link in new tab. It has 3 more values, see [[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target|MDN]].
 2. ''download'' boolean attribute will download the file, if it's passed in ''href''.
 
 === Relative vs Absolute address/paths ===
