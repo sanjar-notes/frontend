@@ -53,10 +53,11 @@ Note:
 Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.
 }}}
 
+[[./output.html|See Output]]
 
-=== Handling Whitespace ===
+=== HTML Entities ===
 * As discussed before, browser ignores whitespace in HTML content.
-* Whitespace, operators and emojis are handled using ''entitites''.
+* So - whitespace, operators and emojis are handled using ''entitites''.
 * Syntax for entities - there are 3 kinds of notations - ''&entity_code'', decimal and ''&#entity_hex_number''.
 * How to use - just write the entity in the content.
 **Examples**
