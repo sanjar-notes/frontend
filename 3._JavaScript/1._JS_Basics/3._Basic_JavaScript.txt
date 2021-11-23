@@ -8,18 +8,19 @@ Created Wednesday 08 July 2020
 === Data types ===
 * JavaScript is dynamically typed.
 * There are 9 data types, divided into categories:
-	* 6 primitives - ''number, string, boolean, symbol, bigint'' and ''undefined''.
-	* 2 structural types - ''object'', ''function''
-	* structural root - ''null''
-| Popularity<|   Name   <|                 Used for                <|                                        Comment                                       <|
-|:----------:|:---------:|:----------------------------------------:|:-------------------------------------------------------------------------------------:|
-|     1      |  string   |         both strings, characters         | Unicode OK, concatenationed using +, numerical strings operate with numbers(except +) |
-|     2      |  number   |           integers and floats            |                                                                                       |
-|     3      |  boolean  |              boolean values              |                               true, false are keywords                                |
-|     4      |  object   |                  object                  |                                                                                       |
-|     5      | undefined | default value for uninitialized variable |                                     is an object                                      |
-|     6      |   null    |      sentinel value marking absence      |                                     is an object                                      |
-|     7      |  symbol   |          Store memory location           |                                                                                       |
+	* 7 primitives (immutable datum represented directly at the lowest level of the language)-
+		 ''number, string, boolean, symbol, bigint'' and ''undefined'', ''null''
+	* 1 non primitive type - ''object''
+| Popularity<|   Name   <|                 Used for                <|         Comment         <|
+|:----------:|:---------:|:----------------------------------------:|:------------------------:|
+|     1      |  string   |         both strings, characters         |        Unicode OK        |
+|     2      |  number   |           integers and floats            |                          |
+|     3      |  boolean  |              boolean values              | true, false are keywords |
+|     4      | undefined | default value for uninitialized variable |       is an object       |
+|     5      |   null    |      sentinel value marking absence      |       is an object       |
+|     6      |  symbol   |          Store memory location           |                          |
+|     7      |  bigint   |                                          |                          |
+|     4      |  object   |                  object                  |                          |
 
 1. ''number'' - For both integers and floats.
 2. ''bigint''
@@ -33,7 +34,6 @@ Created Wednesday 08 July 2020
 * non-''object'' types are called primitve data types.
 * Everything is an ''object'', except primitives.
 * All primitives have ''object'' versions.
-* ''null'' and ''undefined'' are objects, not primitives.
 
 Note:
 * An ''object'' in JS is simply a hashmap with key-value pairs. A key is always a ''string'', and a value can be anything(primitives, functions, objects).

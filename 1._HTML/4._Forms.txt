@@ -45,8 +45,8 @@ FIXME why, how and what of <form>
 4. required -boolean attribute. Omit if optional input.
 
 === Input '**type'** - allowed values ===
-1. ''checkbox'' - name + value
-2. ''radio'' - name + value
+1. ''checkbox'' - name + value + same id for additive linking.
+2. ''radio'' - name + value + "same id" for linking
 3. ''button'' - title + value
 4. ''text'' - placeholder + maxlength
 5. ''password''
