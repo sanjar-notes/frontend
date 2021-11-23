@@ -42,7 +42,10 @@ See https://www.w3schools.com/tags/att_th_scope.asp and https://www.codecademy.c
 * There are two attributes that merge space for a cell to take multiple row/column cells.
 * Syntax: add ''rowspan''/''colspan''="//number//", the number defines number of cells spanned. Default value is 1 for both, 😁️.
 {{./pasted_image.png}}
-Hours has been rowspan set to 6, Sat F has rowspan set to 3, Lunch has colspan set to 5.
+
+==== In the diagram ====
+* Hours has been rowspan set to 6, Sat F has rowspan set to 3, Lunch has colspan set to 5.
+* All other corresponding rows/columns have been removed. They are **absent**.
 
 === Border attrbute ===
 FIXME, to be included or not. I'll use CSS anyways.
