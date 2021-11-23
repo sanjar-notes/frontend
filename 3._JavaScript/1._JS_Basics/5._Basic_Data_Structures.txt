@@ -25,7 +25,7 @@ let list = [1, "two" , [3,4] ]; // mixing and nesting is OK
 | Remove at index               | A.splice(destination_index, 1)               | element         | Removes ith element                                                          |
 | Remove head                   | A.splice(0, 1)                               | element         |                                                                              |
 | Resize Array                  | A.length = new_length;                       | length(number)  |                                                                              |
-| slice(extract subarray)       | A.slice(start, length=A.length)              | extracted array | No change in array                                                           |
+| slice(extract subarray)       | A.slice(start, length=A.length)              | extracted array | No change in array, just like substr in C++                                  |
 | Clear(current reference only) | A = []                                       | void            | No change at memory location.                                                |
 | Deep copy                     | B = [...A]                                   |                 | New memory allocated, same behavior for array literal rvalue.                |
 | reverse array                 | A.reverse()                                  |                 | Inplace and reference as return value.                                       |
