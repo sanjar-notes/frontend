@@ -68,7 +68,7 @@ let z =
 		a. Use a name - old way. Like this: ''{ name: 'Sanjar' }''
 		b. Use a string - in quotes. Like this: ''{ 'name': 'Sanjar' }''
 		c. Use [existingObject] to set string equivalent as fieldname. Like so: ''{ [nameObject]: 'Sanjar' };''
-	* And so there three equivalent ways to access field values:
+	* And so there are three equivalent ways to access field values:
 		* ''Person.name'' - just the name, no quotes no brackets.
 		* ''Person['name']'' - using strings within brackets.
 		* ''Person[nameObject]'' - finds a field matching the string equivalent of namedObject.

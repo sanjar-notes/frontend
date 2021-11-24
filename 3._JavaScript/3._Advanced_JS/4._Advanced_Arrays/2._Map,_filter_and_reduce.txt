@@ -37,6 +37,6 @@ Note:
 * Iteration number is available all **forEach**, **map** and **filter **- as the second parameter of ''f''. This is optional.
 
 === Gotchas ===
-* ''map'' and ''filter'' return an iterable objects of outputs, while ''filter'' returns a single value.
+* ''map'' and ''filter'' return an Array of outputs, while ''reduce'' returns a single value.
 * Use these anytime we need loops for small things.
 * forEach is different, it returns nothing.

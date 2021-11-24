@@ -68,7 +68,7 @@ Note:
 	a. As template string
 {{{code: lang="js" linenumbers="True"
 let pname = 'Sanjar', emotion = 'Happy';
-let message = `${ name } is ${emotion}.`;
+let message = `${pname} is ${emotion}.`;
 
 console.log(`I am ${name}`); // prints -> I am Sanjar
 }}}
