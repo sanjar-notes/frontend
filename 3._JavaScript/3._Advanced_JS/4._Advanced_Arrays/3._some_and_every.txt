@@ -18,6 +18,7 @@ Created Thursday 25 March 2021
 	* You can access index as the 2nd param.
 	* Working: ''every'' stops at first violation. ''some'' stops at first validation.
 	* Time complexity - Θ(n)
+	* Both return Boolean.
 
 Example
 {{{code: lang="js" linenumbers="True"
