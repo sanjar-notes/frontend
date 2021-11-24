@@ -14,7 +14,7 @@ Created Tuesday 14 July 2020
 * Now formally called ECMAScript, it interchangeably used with JavaScript.
 * ES5 and ES6 introduced new features which make coding very easy and fun.
 
-=== ESMAScript standards and compatibility ===
+=== ECMAScript standards and compatibility ===
 * **Not all browsers support ES5 and ES6 right now, is it practical to learn and use the standard right now?**
 * Yes, some new features of ESx are not currently supported by all browsers. But we can still use them, we'll use a **compiler** to obtain the most supported version of ECMAScript from the latest ESx code. A popular compiler is **Babel**, it works with the latest ESx. **Don't worry about the version.**
 * There are two important operations when handling two versions:

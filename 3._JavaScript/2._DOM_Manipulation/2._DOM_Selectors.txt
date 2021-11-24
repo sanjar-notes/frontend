@@ -44,4 +44,4 @@ Helps us brush up CSS as well. They used in most of the new codebases.
 1. eObj.parentElement - the parent element
 2. eObj.children - a list of the children elements
 3. eObj.firstElementChild
-4. eObj.nextElementSibling ''and eObj.previousElementSibling''
+4. eObj.nextElementSibling and eObj.previousElementSibling
