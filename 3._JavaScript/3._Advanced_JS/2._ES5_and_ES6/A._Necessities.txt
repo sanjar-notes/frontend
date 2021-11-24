@@ -55,7 +55,7 @@ Note:
 
 === 3. Template Literals ===
 * Extremely powerful tool.
-* Purpose - DSL injection, concide code.
+* Purpose - DSL injection is easier, concise code.
 * Template string is a use case of this feature.
 * General syntax: 
 	* Enclose the whole string in backticks. 
