@@ -36,6 +36,8 @@ export default function add(a, b){
 import {add} from './add'; // if normal 'export'
 //OR
 import add from './add'; // if 'export default'
+
+import add as k from "./add"
 }}}
 
 
@@ -53,8 +55,8 @@ module.exports = {
 
 
 // Import - Destination file
-const importedObj = require("source_file_path");
-const a = importedObj.largeNumbers;
+const { largeNumbers } = require("source_file_path");
+const a = largeNumbers;
 a // can be used
 }}}
 
