@@ -20,7 +20,7 @@ grid-template-areas:
 
 .item
 {
-  grid-template:;
+  grid-area:;
 }
 }}}
 

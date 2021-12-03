@@ -15,9 +15,5 @@ It has 5 modes:
 4. stretch → All elements are streched fully along the cross axis. It is the default for align-items, if not specified.
 5. baseline → All components have the same baseline.
 
-=== Examples ===
-{{./pasted_image.png?id=center&width=400}}
-cross axis, center
-
-{{./pasted_image001.png?width=400}}
-cross axis, end (''flex-end'').
+=== Picture ===
+{{./pasted_image002.png}}
