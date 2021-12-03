@@ -16,12 +16,5 @@ It has 6 values (modes):
 5. space-around → Same as space between but, there's space/2 space at the ends too.
 6. space-evenly → Distributes the space evenly, with space at the ends too.
 
-=== Examples ===
-{{./pasted_image.png?width=400}}
-main axis, center
-
-{{./pasted_image001.png?width=400}}
-main axis, end (''flex-end'')
-
-{{./pasted_image002.png?width=400}}
-main axis, ''space-evenly''
+=== Picture ===
+{{./pasted_image.png}}
