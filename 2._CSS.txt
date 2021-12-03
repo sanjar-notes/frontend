@@ -4,17 +4,3 @@ Creation-Date: 2020-05-08T14:24:16+05:30
 
 ====== 2. CSS ======
 Created Friday 08 May 2020
-
-{{./pasted_image001.png}}
---------------------
-Syntax:
-{{./pasted_image.png}}
-* Colon for defining values, like a dictionary.
-* Comments are C like.
-* Don't try to remember the things, it is not the best use of your time. It's not realistic.
-* Keep body on top, this is important.
-* CSS-Tricks: Alamnac is a good resource.
-* For colors use: paletton.com
-* No space between value and sunit, just like physics.
---------------------
-* While using multiple classes, separate them using spaces.

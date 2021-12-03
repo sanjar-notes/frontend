@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-09-23T12:07:42+05:30
-
-====== 1. Grid controls ======
-Created Wednesday 23 September 2020
-

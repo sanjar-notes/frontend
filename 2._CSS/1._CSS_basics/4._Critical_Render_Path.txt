@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-06-16T22:41:45+05:30
 
-====== 5. Critical Render Path ======
+====== 4. Critical Render Path ======
 Created Tuesday 16 June 2020
 
 * We always should know how things work underneath the hood to know how things happen.

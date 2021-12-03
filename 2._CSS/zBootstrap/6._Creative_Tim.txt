@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-07-08T14:35:10+05:30
-
-====== 6. Creative Tim ======
-Created Wednesday 08 July 2020
-

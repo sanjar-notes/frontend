@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2021-04-25T00:59:06+05:30
 
-====== 4. Transition and Animations ======
+====== 6. Transition and Animations ======
 Created Sunday 25 April 2021
 
 FIXME
