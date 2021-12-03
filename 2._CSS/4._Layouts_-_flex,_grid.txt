@@ -7,3 +7,5 @@ Created Sunday 25 April 2021
 
 === Why ===
 Control/set nested elements as 1D or 2D block, and with automatic responsive styles.
+
+Important detail in [[https://youtu.be/yMEjLBKyvEg|video]] (~90 min)

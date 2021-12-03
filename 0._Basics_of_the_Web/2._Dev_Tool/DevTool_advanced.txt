@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-04T05:08:31+05:30
+
+====== DevTool advanced ======
+Created Saturday 04 December 2021
+
+FIXME ! do this [[https://www.youtube.com/watch?v=Y3u2groOG-A|~2hr course]]
+Also, [[https://developer.chrome.com/docs/devtools/|ChromeDevTool]]
