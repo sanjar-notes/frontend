@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex cross axis</title>
+    <link rel="stylesheet" href="styles_common.css" />
+    <style>
+      .flex-start {
+  align-items: flex-start;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+.center {
+  align-items: center;
+}
+
+.baseline {
+  align-items: baseline;
+}
+
+.stretch {
+  align-items: stretch;
+}
+    </style>
+  </head>
+  <link rel="stylesheet" href="style">
+  <body>
+    <div class="flex row flex-start">
+      <div class="item red">A</div>
+      <div class="item blue">B</div>
+      <div class="item green">C</div>
+      <div class="item pink">D</div>
+      <div class="item orange">E</div>
+      <p>flex-start</p>
+    </div>
+    <br />
+    <br />
+    <div class="flex row flex-end">
+        <div class="item red">A</div>
+        <div class="item blue">B</div>
+        <div class="item green">C</div>
+        <div class="item pink">D</div>
+        <div class="item orange">E</div>
+        <p>flex-end</p>
+    </div>
+    <br />
+    <br />
+    <div class="flex row center">
+        <div class="item red">A</div>
+        <div class="item blue">B</div>
+        <div class="item green">C</div>
+        <div class="item pink">D</div>
+        <div class="item orange">E</div>
+        <p>center</p>
+    </div>
+    <br />
+    <br />
+    <div class="flex row baseline">
+        <div class="item red">A</div>
+        <div class="item blue">B</div>
+        <div class="item green" style="font-size: 30px; color: white; border: 1px solid white">C</div>
+        <div class="item pink">D</div>
+        <div class="item orange">E</div>
+        <p>baseline (i.e. match baselines)</p>
+    </div>
+    <br />
+    <br />
+    <div class="flex row space-around">
+        <div class="item red">A</div>
+        <div class="item blue">B</div>
+        <div class="item green">C</div>
+        <div class="item pink">D</div>
+        <div class="item orange">E</div>
+        <p>stretch</p>
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-03T11:07:09+05:30
+
+====== 3. flex-basis ======
+Created Thursday 03 September 2020
+
+=== Why ===
+Sets a width before flex is applied.
+
+Sets the intitial size of item, like a ''width''. The flex behaviors apply to this as the basis.
+{{{code: lang="css" linenumbers="True"
+p
+{
+	flex-basis:200px;
+}
+}}}

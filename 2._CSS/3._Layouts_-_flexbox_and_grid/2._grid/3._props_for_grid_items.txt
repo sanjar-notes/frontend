@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-03T17:31:58+05:30
+
+====== 3. props for grid items ======
+Created Thursday 03 September 2020
+
+Properties for grid items themselves
