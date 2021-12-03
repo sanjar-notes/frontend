@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-11-15T23:19:21+05:30
+
+====== 2. Promises ======
+Created Monday 15 November 2021
+
+=== Why ===
+They serve the same purpose as asynchronous tasks via callback, but make code manageable.
+
+=== How ===
+

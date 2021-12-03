@@ -70,7 +70,7 @@ Note:
 let pname = 'Sanjar', emotion = 'Happy';
 let message = `${pname} is ${emotion}.`;
 
-console.log(`I am ${name}`); // prints -> I am Sanjar
+console.log(`I am ${pname}`); // prints -> I am Sanjar
 }}}
 
 	b. For carrying JS code.

@@ -37,7 +37,7 @@ import {add} from './add'; // if normal 'export'
 //OR
 import add from './add'; // if 'export default'
 
-import add as k from "./add"
+import { add as k } from "./add"
 
 import * as bundled from "./add"
 }}}

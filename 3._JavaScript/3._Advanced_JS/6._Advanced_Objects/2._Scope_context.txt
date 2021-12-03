@@ -7,7 +7,7 @@ Created Thursday 25 March 2021
 
 **Context** - The parent object, or answer to the question'What parent object environment are we in ?'
 * Accessed using the **this** keyword
-* When we run f(), we it is equivalent to this.f(), i.e run w.r.t the parent object.
+* When we run f(), it is equivalent to this.f(), i.e run w.r.t the parent object.
 * A simpler definition - What's on the left side of the dot. e.g alert('Hello') has window as it's context because it is equivalent to window.alert('hello');
 {{{code: lang="js" linenumbers="True"
 function f()	// context of f is the same as LOC sibling to f

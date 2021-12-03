@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-09-03T23:03:49+05:30
 
-====== 6. Naming items ======
+====== 5. Naming items ======
 Created Thursday 03 September 2020
 
 * We can name item by using grid-template-areas

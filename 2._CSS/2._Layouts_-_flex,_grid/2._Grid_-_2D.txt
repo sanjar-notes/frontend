@@ -2,8 +2,14 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-09-03T17:04:36+05:30
 
-====== 2. grid ======
+====== 2. Grid - 2D ======
 Created Thursday 03 September 2020
+
+FIXME
 
 === Why ===
 Control/set contained elements (items) like a grid.
+
+=== Syntax ===
+* To use grid, set **display:grid **to the container
+* This will not change anything.
