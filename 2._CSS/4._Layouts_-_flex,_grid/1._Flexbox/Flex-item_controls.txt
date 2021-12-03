@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-02T03:29:52+05:30
+
+====== Flex-item controls ======
+Created Wednesday 02 September 2020
+
+Flex items have no position props except

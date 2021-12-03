@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-10-23T12:06:01+05:30
+
+====== 5. align self ======
+Created Saturday 23 October 2021
+
+=== Why ===
+Control cross axis for a flex-item.
+
+=== How ===
+''align-item'' and set its values, same as cross axis 5 values.
