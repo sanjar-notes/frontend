@@ -13,7 +13,7 @@ It has 5 modes:
 2. flex-start → all components stacked at the start
 3. flex-end → all components stacked at the end
 4. stretch → All elements are streched fully along the cross axis. It is the default for align-items, if not specified.
-5. baseline → All components have the same baseline.
+5. baseline → All components have the same baseline(line where letters sit). See [[https://stackoverflow.com/q/34606879/11392807|this]] for clarification.
 
 === Picture ===
 {{./pasted_image002.png}}
