@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2021-11-15T23:19:27+05:30
-
-====== 3. Async await syntax sugar ======
-Created Monday 15 November 2021
-

@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2021-03-25T08:23:13+05:30
-
-====== this and arrow functions ======
-Created Thursday 25 March 2021
-
-FIXME

@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-09-01T22:19:20+05:30
-
-====== 3. Avoid pixelation ======
-Created Tuesday 01 September 2020
-
-Set width and height of a picture to half its original resolution.

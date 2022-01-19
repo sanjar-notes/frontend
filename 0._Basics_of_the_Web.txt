@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-12-25T23:20:02+05:30
-
-====== 0. Basics of the Web ======
-Created Friday 25 December 2020
-

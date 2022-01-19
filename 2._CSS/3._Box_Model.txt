@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2021-04-25T01:29:50+05:30
-
-====== 3. Box Model ======
-Created Sunday 25 April 2021
-
-FIXME fix the entire section

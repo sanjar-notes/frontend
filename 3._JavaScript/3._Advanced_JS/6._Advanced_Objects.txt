@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-07-17T01:37:09+05:30
-
-====== 6. Advanced Objects ======
-Created Friday 17 July 2020
-
-FIXME - fix the section

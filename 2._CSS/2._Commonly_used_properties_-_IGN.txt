@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-06-15T16:22:26+05:30
-
-====== 2. Commonly used properties - IGN ======
-Created Monday 15 June 2020
-
-This section stores properties I haven't studied fully about, but still use.

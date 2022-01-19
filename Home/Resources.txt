@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2021-03-20T00:19:32+05:30
-
-====== Resources ======
-Created Saturday 20 March 2021
-
-[[./Full+Stack+-+nd0044+-+syllabus.pdf]]

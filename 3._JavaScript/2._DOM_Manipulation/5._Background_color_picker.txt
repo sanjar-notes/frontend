@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-07-12T19:54:09+05:30
-
-====== 5. Background color picker ======
-Created Sunday 12 July 2020
-
-[[./code]]
