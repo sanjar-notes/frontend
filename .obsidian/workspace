@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "a8e7caf149f51e6a",
+    "type": "split",
+    "children": [
+      {
+        "id": "62fb1922f1e3ca84",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/3._Currying.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6ca44eeb48cc6ba0",
+    "type": "split",
+    "children": [
+      {
+        "id": "a4fa5e2c0a146745",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c951073554b9e1e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b292e5653ead9872",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "closure",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "04b2ca586df4ebc5",
+    "type": "split",
+    "children": [
+      {
+        "id": "16d1f90ac8e83a7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "850133e58be871ad",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/3._Currying.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "62fb1922f1e3ca84",
+  "lastOpenFiles": [
+    "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/3._Currying.md",
+    "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/2._Closures.md",
+    "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/1._Pure_functions.md",
+    "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/pasted_image001.png",
+    "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/pasted_image.png",
+    "0._Basics_of_the_Web/3._How_browsers_work.md",
+    "0._Basics_of_the_Web/2._Dev_Tool.md",
+    "0._Basics_of_the_Web/2._Dev_Tool/DevTool_advanced.md",
+    "0._Basics_of_the_Web/1._Browsing_the_web.md",
+    "2._CSS/5._Positioning.md"
+  ]
+}
