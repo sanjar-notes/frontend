@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/3._Currying.md",
+            "file": "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/2._Closures.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/3._Currying.md",
+                "file": "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/2._Closures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,8 +89,8 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
-    "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/3._Currying.md",
     "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/2._Closures.md",
+    "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/3._Currying.md",
     "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/1._Pure_functions.md",
     "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/pasted_image001.png",
     "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/pasted_image.png",
