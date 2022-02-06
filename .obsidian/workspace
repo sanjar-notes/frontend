@@ -7,11 +7,9 @@
         "id": "62fb1922f1e3ca84",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "image",
           "state": {
-            "file": "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/2._Closures.md",
-            "mode": "source",
-            "source": false
+            "file": "0._Basics_of_the_Web/Pasted image 20220207035753.png"
           }
         }
       }
@@ -40,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "closure",
+                "query": "rendering ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/2._Closures.md",
+                "file": "0._Basics_of_the_Web/Pasted image 20220207035753.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +87,15 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
-    "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/2._Closures.md",
-    "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/3._Currying.md",
-    "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/1._Pure_functions.md",
-    "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/pasted_image001.png",
-    "3._JavaScript/3._Advanced_JS/5._Advanced_Functions/pasted_image.png",
+    "0._Basics_of_the_Web/Pasted image 20220207035753.png",
+    "2._CSS.md",
     "0._Basics_of_the_Web/3._How_browsers_work.md",
-    "0._Basics_of_the_Web/2._Dev_Tool.md",
-    "0._Basics_of_the_Web/2._Dev_Tool/DevTool_advanced.md",
+    "0._Basics_of_the_Web/Pasted image 20220207035623.png",
+    "0._Basics_of_the_Web/Pasted image 20220123011831.png",
+    "0._Basics_of_the_Web/Pasted image 20220123012045.png",
+    "Pasted image 20220207035305.png",
     "0._Basics_of_the_Web/1._Browsing_the_web.md",
-    "2._CSS/5._Positioning.md"
+    "3._JavaScript/2._DOM_Manipulation/8._How_browsers_work.md",
+    "3._JavaScript/2._DOM_Manipulation/7._Developer_Fundamental_5.md"
   ]
 }
