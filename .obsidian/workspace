@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Home/3. Resources/2. freeCodeCamp.md",
+            "file": "Home/3. Resources/1. Complete_Web_Developer_2020.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Home/3. Resources/2. freeCodeCamp.md",
+                "file": "Home/3. Resources/1. Complete_Web_Developer_2020.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,8 +89,8 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
+    "Home/3. Resources/1. Complete_Web_Developer_2020.md",
     "Home/3. Resources/2. freeCodeCamp.md",
-    "Home/3. Resources/1. Complete Web Developer 2020.md",
     "Home/3. Resources.md",
     "Home/Transition.md",
     "Home/2._Roadmap/Full+Stack+-+nd0044+-+syllabus.pdf",
