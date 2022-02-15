@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3._JavaScript/3._Advanced_JS/11._Modules_in_JS.md",
+            "file": "Home/3. Resources/2. freeCodeCamp.md",
             "mode": "source",
             "source": false
           }
@@ -49,13 +49,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "04b2ca586df4ebc5",
@@ -71,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3._JavaScript/3._Advanced_JS/11._Modules_in_JS.md",
+                "file": "Home/3. Resources/2. freeCodeCamp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -91,15 +89,15 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
-    "3._JavaScript/3._Advanced_JS/11._Modules_in_JS.md",
-    "0._Basics_of_the_Web/3._How_browsers_work.md",
-    "0._Basics_of_the_Web/Pasted image 20220212195032.png",
-    "0._Basics_of_the_Web/Pasted image 20220207035753.png",
-    "2._CSS.md",
-    "0._Basics_of_the_Web/Pasted image 20220207035623.png",
-    "0._Basics_of_the_Web/Pasted image 20220123011831.png",
-    "0._Basics_of_the_Web/Pasted image 20220123012045.png",
-    "Pasted image 20220207035305.png",
-    "0._Basics_of_the_Web/1._Browsing_the_web.md"
+    "Home/3. Resources/2. freeCodeCamp.md",
+    "Home/3. Resources/1. Complete Web Developer 2020.md",
+    "Home/3. Resources.md",
+    "Home/Transition.md",
+    "Home/2._Roadmap/Full+Stack+-+nd0044+-+syllabus.pdf",
+    "Home/2._Roadmap/road_map_coding_blocks+CodeWithHarry.md",
+    "Home/2._Roadmap.md",
+    "Home/1._Motivation.md",
+    "Home/2._Our_job_as_problem_solvers.md",
+    "Home/3._Applying_to_jobs.md"
   ]
 }
