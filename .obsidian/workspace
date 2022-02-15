@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "0._Basics_of_the_Web/3._How_browsers_work.md",
+            "file": "3._JavaScript/3._Advanced_JS/11._Modules_in_JS.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rendering ",
+                "query": "commonjs",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,11 +49,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "04b2ca586df4ebc5",
@@ -69,7 +71,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0._Basics_of_the_Web/3._How_browsers_work.md",
+                "file": "3._JavaScript/3._Advanced_JS/11._Modules_in_JS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +91,7 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
+    "3._JavaScript/3._Advanced_JS/11._Modules_in_JS.md",
     "0._Basics_of_the_Web/3._How_browsers_work.md",
     "0._Basics_of_the_Web/Pasted image 20220212195032.png",
     "0._Basics_of_the_Web/Pasted image 20220207035753.png",
@@ -97,7 +100,6 @@
     "0._Basics_of_the_Web/Pasted image 20220123011831.png",
     "0._Basics_of_the_Web/Pasted image 20220123012045.png",
     "Pasted image 20220207035305.png",
-    "0._Basics_of_the_Web/1._Browsing_the_web.md",
-    "3._JavaScript/2._DOM_Manipulation/8._How_browsers_work.md"
+    "0._Basics_of_the_Web/1._Browsing_the_web.md"
   ]
 }
