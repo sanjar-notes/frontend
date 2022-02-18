@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Home/3. Resources/1. Complete_Web_Developer_2020.md",
+            "file": "Home/4_Setup.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "commonjs",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Home/3. Resources/1. Complete_Web_Developer_2020.md",
+                "file": "Home/4_Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
-    "Home/3. Resources/1. Complete_Web_Developer_2020.md",
+    "Home/4_Setup.md",
     "Home/3. Resources/2. freeCodeCamp.md",
-    "Home/3. Resources.md",
-    "Home/Transition.md",
-    "Home/2._Roadmap/Full+Stack+-+nd0044+-+syllabus.pdf",
-    "Home/2._Roadmap/road_map_coding_blocks+CodeWithHarry.md",
-    "Home/2._Roadmap.md",
-    "Home/1._Motivation.md",
-    "Home/2._Our_job_as_problem_solvers.md",
-    "Home/3._Applying_to_jobs.md"
+    "Home/Transition/1._JavaScript.info_course/2._JS_fundamentals.md",
+    "Home/Transition/1._JavaScript.info_course/1._An_Introduction.md",
+    "Home/Transition/1._JavaScript.info_course.md",
+    "0._Basics_of_the_Web/1._Browsing_the_web.md",
+    "0._Basics_of_the_Web/2._Dev_Tool/DevTool_advanced.md",
+    "3._JavaScript/3._Advanced_JS/11._Modules_in_JS.md",
+    "Home/3. Resources/1. Complete_Web_Developer_2020.md",
+    "Home/3. Resources.md"
   ]
 }
