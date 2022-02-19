@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "home/3. Resources/1. Complete_Web_Developer_2020.md",
+            "file": "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started/2_Setup.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home/3. Resources/1. Complete_Web_Developer_2020.md",
+                "file": "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started/2_Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
-    "home/3. Resources/1. Complete_Web_Developer_2020.md",
+    "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started/2_Setup.md",
+    "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started/1_Introduction_and_Goal_of_the_course.md",
     "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/0_Source Link.md",
-    "home/3. Resources/3. JavaScript_the_weird_parts.md",
-    "vault/3._JavaScript/3._Advanced_JS/10._How_Does_JS_works.md",
-    "vault/notebook.md",
-    "Home.md",
+    "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started.md",
+    "home/4._Roadmap.md",
+    "home/2._Roadmap.md",
     "home/4_Setup.md",
-    "home/3. Resources/2. freeCodeCamp.md",
-    "home/Transition/1._JavaScript.info_course/2._JS_fundamentals.md",
-    "home/Transition/1._JavaScript.info_course/1._An_Introduction.md"
+    "home/3._Applying_to_jobs.md",
+    "home/3. Resources/1. Complete_Web_Developer_2020.md",
+    "home/3. Resources/3. JavaScript_the_weird_parts.md"
   ]
 }
