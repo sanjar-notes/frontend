@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started/1_Introduction_and_Goal_of_the_course.md",
+            "file": "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/1_First_3_big_word_alerts.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started/1_Introduction_and_Goal_of_the_course.md",
+                "file": "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/1_First_3_big_word_alerts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,9 +89,9 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
-    "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started/1_Introduction_and_Goal_of_the_course.md",
     "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/1_First_3_big_word_alerts.md",
     "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started/6_Understanding_and_frameworks.md",
+    "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started/1_Introduction_and_Goal_of_the_course.md",
     "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started/2_Setup.md",
     "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/0_Source Link.md",
     "home/3. Resources/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started.md",
