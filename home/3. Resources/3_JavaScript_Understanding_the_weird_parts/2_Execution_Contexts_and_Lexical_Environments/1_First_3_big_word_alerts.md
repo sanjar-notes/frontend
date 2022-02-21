@@ -7,7 +7,7 @@ The first 3 "big word alerts" to be discussed in this video are:
 3. Lexical  Environments
 
 What are these things, let's see:
-1. Syntax Parser - a program that reads source code and checks if the syntax of it is correct. It may do extra stuff too, as specified by the syntax parser's creators.
+1. Syntax Parser - a program that reads source code and checks syntax. It may do extra stuff too, if specified by the syntax parser's creators.
 2. Lexical Environment - the tree structure of scopes.
 3. Execution Context - the current stack frame.
 
