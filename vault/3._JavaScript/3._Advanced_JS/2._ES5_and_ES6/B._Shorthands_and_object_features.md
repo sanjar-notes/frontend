@@ -55,8 +55,8 @@ Created Thursday 25 March 2021
 
 * Accessing the property syntax: z[a]
 
-![](vault/3._JavaScript/3._Advanced_JS/2._ES5_and_ES6/B._Shorthands_and_object_features/pasted_image003.png) 
-![](vault/3._JavaScript/3._Advanced_JS/2._ES5_and_ES6/B._Shorthands_and_object_features/pasted_image004.png)
+![](pasted_image003%202.png) 
+![](assets/pasted_image004.png)
 
 * Gotchas
 	* String equivalent of a list is a flattened list. For example: String equivalent of ``[1, 2]`` and ``[1, [2]]`` are identical.
@@ -84,7 +84,7 @@ Created Thursday 25 March 2021
 * Purpose: Concise code. [See](https://www.youtube.com/watch?v=HF0PN1vHsSY).
 * Syntax: Just include the variable, like element of an array.
 
-![](vault/3._JavaScript/3._Advanced_JS/2._ES5_and_ES6/B._Shorthands_and_object_features/pasted_image005.png)
+![](assets/pasted_image005.png)
 ![](pasted_image006.png)
 
 * Note: This feature has nothing to do with dynamic field names, as seen earlier.
