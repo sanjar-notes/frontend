@@ -7,12 +7,8 @@
         "id": "62fb1922f1e3ca84",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "vault/2._CSS/4._Layouts_-_flex,_grid/2._Grid_-_2D/1._Container/1._grid-template.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/2._CSS/4._Layouts_-_flex,_grid/2._Grid_-_2D/1._Container/1._grid-template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +84,15 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
+    "home/Resources.md",
+    "home/Transition.md",
+    "home/Transition/1._JavaScript.info_course.md",
+    "home/Transition/1._JavaScript.info_course/2._JS_fundamentals.md",
+    "home/Transition/1._JavaScript.info_course/1._An_Introduction.md",
+    "home/2._Roadmap/road_map_coding_blocks+CodeWithHarry.md",
     "vault/2._CSS/4._Layouts_-_flex,_grid/2._Grid_-_2D/1._Container/1._grid-template.md",
     "vault/2._CSS/4._Layouts_-_flex,_grid/2._Grid_-_2D/1._Container/2._units.md",
     "assets/pasted_image 31.png",
-    "vault/2._CSS/4._Layouts_-_flex,_grid/2._Grid_-_2D/1._Container/1._grid-template/1._CSS_functions.md",
-    "assets/pasted_image 29.png",
-    "vault/0._Basics_of_the_Web/2._Dev_Tool/DevTool_advanced.md",
-    "vault/0._Basics_of_the_Web/1._Browsing_the_web.md",
-    "vault/0._Basics_of_the_Web/3._How_browsers_work.md",
-    "vault/0._Basics_of_the_Web/2._Dev_Tool.md",
-    "assets/Pasted image 20220207035753.png"
+    "vault/2._CSS/4._Layouts_-_flex,_grid/2._Grid_-_2D/1._Container/1._grid-template/1._CSS_functions.md"
   ]
 }
