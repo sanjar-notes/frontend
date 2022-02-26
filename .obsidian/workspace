@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "vault/3._JavaScript/1._JS_Basics.md",
+            "file": "vault/2._CSS/4._Layouts_-_flex,_grid/2._Grid_-_2D/1._Container/1._grid-template.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 206
+    "width": 409
   },
   "right": {
     "id": "04b2ca586df4ebc5",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/3._JavaScript/1._JS_Basics.md",
+                "file": "vault/2._CSS/4._Layouts_-_flex,_grid/2._Grid_-_2D/1._Container/1._grid-template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
-    "vault/3._JavaScript/1._JS_Basics.md",
-    "vault/3._JavaScript/3._Advanced_JS/9._Debugging.md",
-    "vault/3._JavaScript/3._Advanced_JS/8._ES8.md",
-    "vault/3._JavaScript/3._Advanced_JS/7._ES7.md",
-    "vault/3._JavaScript/3._Advanced_JS/6._Advanced_Objects.md",
-    "vault/3._JavaScript/3._Advanced_JS/5._Advanced_Functions.md",
-    "vault/3._JavaScript/3._Advanced_JS/4._Advanced_Arrays.md",
-    "vault/3._JavaScript/3._Advanced_JS/3._Advanced_Loops.md",
-    "vault/3._JavaScript/3._Advanced_JS/2._ES5_and_ES6.md",
-    "vault/3._JavaScript/3._Advanced_JS/1._Scope.md"
+    "vault/2._CSS/4._Layouts_-_flex,_grid/2._Grid_-_2D/1._Container/1._grid-template.md",
+    "vault/2._CSS/4._Layouts_-_flex,_grid/2._Grid_-_2D/1._Container/2._units.md",
+    "assets/pasted_image 31.png",
+    "vault/2._CSS/4._Layouts_-_flex,_grid/2._Grid_-_2D/1._Container/1._grid-template/1._CSS_functions.md",
+    "assets/pasted_image 29.png",
+    "vault/0._Basics_of_the_Web/2._Dev_Tool/DevTool_advanced.md",
+    "vault/0._Basics_of_the_Web/1._Browsing_the_web.md",
+    "vault/0._Basics_of_the_Web/3._How_browsers_work.md",
+    "vault/0._Basics_of_the_Web/2._Dev_Tool.md",
+    "assets/Pasted image 20220207035753.png"
   ]
 }
