@@ -7,8 +7,12 @@
         "id": "62fb1922f1e3ca84",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,15 +89,15 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
-    "home/Resources.md",
-    "home/Transition.md",
-    "home/Transition/1._JavaScript.info_course.md",
-    "home/Transition/1._JavaScript.info_course/2._JS_fundamentals.md",
-    "home/Transition/1._JavaScript.info_course/1._An_Introduction.md",
-    "home/2._Roadmap/road_map_coding_blocks+CodeWithHarry.md",
-    "vault/2._CSS/4._Layouts_-_flex,_grid/2._Grid_-_2D/1._Container/1._grid-template.md",
-    "vault/2._CSS/4._Layouts_-_flex,_grid/2._Grid_-_2D/1._Container/2._units.md",
-    "assets/pasted_image 31.png",
-    "vault/2._CSS/4._Layouts_-_flex,_grid/2._Grid_-_2D/1._Container/1._grid-template/1._CSS_functions.md"
+    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript.md",
+    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/1_Callbacks.md",
+    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/2_Promises.md",
+    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/3_Async_await_syntax_sugar.md",
+    "vault/3_JavaScript/3_Advanced_JS/5_Advanced_Functions/3_Currying.md",
+    "vault/3_JavaScript/1_JS_Basics/3_Basic_JavaScript.md",
+    "vault/2_CSS/3_Box_Model/2_margin_and_padding.md",
+    "vault/2_CSS/2_Commonly_used_properties_-_IGN/4_List_styles.md",
+    "vault/2_CSS/2_Commonly_used_properties_-_IGN/1_Data_based/6_Icons.md",
+    "vault/1_HTML/2_Commonly_used_tags/1_Writing_stuff.md"
   ]
 }
