@@ -1,6 +1,7 @@
 # 3. Two phase interpretation, "hoisting"
 Created Sunday 1 March 2022
 
+#### The two phases
 JavaScript is run in two phases by the JavaScript engine.
 The phases are:
 1. Creation phase (or "hoisting") - memory is reserved for variables and functions, i.e. they are declared but not defined.
