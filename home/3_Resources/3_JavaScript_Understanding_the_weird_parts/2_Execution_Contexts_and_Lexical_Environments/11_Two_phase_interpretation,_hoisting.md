@@ -16,4 +16,8 @@ Some caveats:
 1. Function bodies are defined, in addition to being declared during "hoisting", although variables are only declared not defined.
 2. When using `let`, using code like the above (i.e. access before definition, due to the fact of "hoisting") results in a `ReferenceError`.
 
+#### What about nested code, how is that hoisted?
+Hoisting happens only for the current code level, not for nested code. See [this](https://stackoverflow.com/questions/41249587/confused-about-javascript-hoisting?rq=1). In short, hoisting is minimal (contained to the code level).
+
+#### Sane practice
 One should avoid "using" hoisiting to access code at obscure places. It is nice to access code after it has been defined.
