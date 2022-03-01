@@ -1,4 +1,4 @@
-# 3. The Global environment and the global object
+# 10. The Global environment and the global object
 Created Sunday 20 February 2022
 
 #### Global execution context

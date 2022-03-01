@@ -1,4 +1,4 @@
-# 2. Name value pairs and objects
+# 8. Name value pairs and objects
 Created Sunday 20 February 2022
 
 - Objects are very important in JavaScript.
