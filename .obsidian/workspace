@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/11_Two_phase_interpretation,_hoisting.md",
+            "file": "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/7_First_3_big_word_alerts.md",
             "mode": "source",
             "source": false
           }
@@ -53,8 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409,
-    "collapsed": true
+    "width": 409
   },
   "right": {
     "id": "04b2ca586df4ebc5",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/11_Two_phase_interpretation,_hoisting.md",
+                "file": "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/7_First_3_big_word_alerts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,15 +89,15 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
-    "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/11_Two_phase_interpretation,_hoisting.md",
-    "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/10_The_Global_environment_and_the_global_variable.md",
     "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/7_First_3_big_word_alerts.md",
     "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/8_Name_value_pairs_and_objects.md",
+    "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/12_undefined_is_special.md",
+    "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/10_The_Global_environment_and_the_global_variable.md",
+    "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/11_Two_phase_interpretation,_hoisting.md",
     "vault/3_JavaScript/3_Advanced_JS/6_Advanced_Objects/2_Scope_context.md",
     "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/5_Comparing_async_coding_constructs.md",
     "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/4_Async_await.md",
     "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/3_Promises.md",
-    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/2_Callbacks.md",
-    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/1_Event_loop.md"
+    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/2_Callbacks.md"
   ]
 }
