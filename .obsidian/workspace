@@ -7,12 +7,8 @@
         "id": "62fb1922f1e3ca84",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +84,15 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
-    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript.md",
-    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/1_Callbacks.md",
-    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/2_Promises.md",
-    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/3_Async_await_syntax_sugar.md",
+    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/5_Comparing_async_coding_constructs.md",
+    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/4_Async_await.md",
+    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/3_Promises.md",
+    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/2_Callbacks.md",
+    "vault/3_JavaScript/3_Advanced_JS/12_Asynchronous_JavaScript/1_Event_loop.md",
+    "vault/3_JavaScript/3_Advanced_JS/11_Modules_in_JS.md",
     "vault/3_JavaScript/3_Advanced_JS/5_Advanced_Functions/3_Currying.md",
     "vault/3_JavaScript/1_JS_Basics/3_Basic_JavaScript.md",
     "vault/2_CSS/3_Box_Model/2_margin_and_padding.md",
-    "vault/2_CSS/2_Commonly_used_properties_-_IGN/4_List_styles.md",
-    "vault/2_CSS/2_Commonly_used_properties_-_IGN/1_Data_based/6_Icons.md",
-    "vault/1_HTML/2_Commonly_used_tags/1_Writing_stuff.md"
+    "vault/2_CSS/2_Commonly_used_properties_-_IGN/4_List_styles.md"
   ]
 }
