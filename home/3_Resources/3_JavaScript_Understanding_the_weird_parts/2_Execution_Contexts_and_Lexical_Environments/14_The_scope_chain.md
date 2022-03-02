@@ -1,5 +1,5 @@
 # 14. The scope chain
-Created Sunday 1 March 2022
+Created Wednesday 2 March 2022
 
 Consider this code:
 ```js

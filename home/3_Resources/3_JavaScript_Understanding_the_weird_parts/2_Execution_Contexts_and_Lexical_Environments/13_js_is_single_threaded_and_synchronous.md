@@ -1,5 +1,5 @@
 # 13. js is single threaded and synchronous
-Created Sunday 1 March 2022
+Created Tuesday 1 March 2022
 
 #### Meaning of the words
 - Single threaded - running one command at a time.

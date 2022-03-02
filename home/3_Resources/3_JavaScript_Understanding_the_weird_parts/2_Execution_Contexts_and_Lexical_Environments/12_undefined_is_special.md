@@ -1,5 +1,5 @@
 # 12. undefined is special
-Created Sunday 1 March 2022
+Created Tuesday 1 March 2022
 
 - When variables are "hoisted", they are set to `undefined`. 
 - This is therefore a value set by the JavaScript engine.
