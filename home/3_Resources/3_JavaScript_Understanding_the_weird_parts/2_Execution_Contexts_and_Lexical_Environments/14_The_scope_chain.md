@@ -18,7 +18,7 @@ a(); // prints 1
 
 This code snipper indicates that JavaScript looks for variables not in the current execution context, in the next outer lexical environment and so on.
 
-Note that execution context (activation record) and lexical environment (scope) are two different things.
+Note that execution context (activation record) and lexical environment (scope) are two different things. This is the reason the lexical environment does not always behave like a stack, like here.
 
 Of course, one should not write code like this, and keep the declarations above the use.
 ![](Pasted%20image%2020220302174007.png)
