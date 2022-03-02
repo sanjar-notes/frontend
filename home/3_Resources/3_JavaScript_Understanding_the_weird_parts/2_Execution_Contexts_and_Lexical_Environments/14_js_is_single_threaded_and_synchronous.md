@@ -1,4 +1,4 @@
-# 13. js is single threaded and synchronous
+# 14. js is single threaded and synchronous
 Created Tuesday 1 March 2022
 
 #### Meaning of the words

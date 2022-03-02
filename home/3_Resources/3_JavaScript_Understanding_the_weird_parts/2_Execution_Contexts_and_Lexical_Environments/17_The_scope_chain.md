@@ -1,4 +1,4 @@
-# 14. The scope chain
+# 17. The scope chain
 Created Wednesday 2 March 2022
 
 Consider this code:
