@@ -1,6 +1,8 @@
 # 6. Understanding and frameworks
 Created Sunday 20 February 2022
 
+- [ ] in vault.
+
 JavaScript is being for very powerful, awesome libraries and frameworks like Express.js, Angular.js, React.js and more.
 
 - Developers get introduced to JavaScript details via these libraries and frameworks, i.e. JavaScript is not studied in isolation.

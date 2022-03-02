@@ -1,6 +1,8 @@
 # 19. Asynchronous Callbacks
 Created Wednesday 2 March 2022
 
+- [ ] in vault
+
 #### Asynchronous - JS engine vs Browser
 "JavaScript is synchrounous and single threaded" - this statement seems naive or wrong. But it's not.
 
