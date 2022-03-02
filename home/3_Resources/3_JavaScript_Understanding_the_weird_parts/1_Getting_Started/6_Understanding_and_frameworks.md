@@ -1,6 +1,5 @@
 # 6. Understanding and frameworks
 Created Sunday 20 February 2022
-
 - [ ] in vault.
 
 JavaScript is being for very powerful, awesome libraries and frameworks like Express.js, Angular.js, React.js and more.

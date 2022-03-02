@@ -1,6 +1,5 @@
 # 19. Asynchronous Callbacks
 Created Wednesday 2 March 2022
-
 - [ ] in vault
 
 #### Asynchronous - JS engine vs Browser

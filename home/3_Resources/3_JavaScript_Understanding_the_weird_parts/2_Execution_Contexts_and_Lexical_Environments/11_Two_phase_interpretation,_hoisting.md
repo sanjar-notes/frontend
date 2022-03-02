@@ -1,6 +1,5 @@
 # 11. Two phase interpretation, "hoisting"
 Created Tuesday 1 March 2022
-
 - [ ] in vault
 
 #### The two phases

@@ -1,6 +1,5 @@
 # 12. undefined is special
 Created Tuesday 1 March 2022
-
 - [ ] in vault
 
 - When variables are "hoisted", they are set to `undefined`. 

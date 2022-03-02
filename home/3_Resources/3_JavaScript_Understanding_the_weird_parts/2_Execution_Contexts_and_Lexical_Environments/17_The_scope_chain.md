@@ -1,6 +1,5 @@
 # 17. The scope chain
 Created Wednesday 2 March 2022
-
 - [ ] in vault
 
 Consider this code:

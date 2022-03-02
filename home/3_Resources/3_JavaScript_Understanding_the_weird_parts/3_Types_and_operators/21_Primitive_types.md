@@ -1,6 +1,5 @@
 # 21. Primitive types
 Created Thursday 3 March 2022
-
 - [ ] in vault
 
 There are two kinds of variable types in JavaScript:

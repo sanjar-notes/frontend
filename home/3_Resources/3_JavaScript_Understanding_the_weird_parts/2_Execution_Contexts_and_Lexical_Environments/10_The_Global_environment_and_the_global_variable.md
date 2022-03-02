@@ -1,6 +1,5 @@
 # 10. The Global environment and the global object
 Created Sunday 20 February 2022
-
 - [ ] in vault
 
 #### Global execution context
