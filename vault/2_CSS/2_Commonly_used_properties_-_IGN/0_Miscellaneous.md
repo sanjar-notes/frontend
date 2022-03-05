@@ -19,8 +19,8 @@ Created Monday 15 June 2020
 
 	p { cursor: wait;} // grab, text, cursor, grabbing
 
-
-5. **cursor **property
+5. `cursor` - `default`, `grab`, `grabbing`, `pointer`, `progress`.
 6. To keep aspect ratio for images, set **image-width:100%**. Especially useful in case of flexbox.
+7. `user-select`: `none` disables selection of text, good for making pages non-edit like.
 
 
