@@ -1,5 +1,6 @@
 # 7. First 3 big word alerts
 Created Sunday 20 February 2022
+- [ ] in vault
 
 The first 3 "big word alerts" to be discussed in this video are:
 1. Syntax Parsers

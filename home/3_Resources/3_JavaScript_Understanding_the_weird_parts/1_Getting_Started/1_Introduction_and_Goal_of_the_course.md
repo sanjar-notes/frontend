@@ -1,5 +1,6 @@
 # 1. Introduction and Goal of the course
 Created Sunday 20 February 2022
+- [ ] in vault
 
 To understand JavaScript, and not Nodejs or browser stuff - so the language.
 

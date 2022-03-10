@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "vault/3_JavaScript/13_Exception_handling.md",
+            "file": "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/17_The_scope_chain.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "functional",
+                "query": "OR",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,15 +89,15 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
-    "vault/3_JavaScript/13_Exception_handling.md",
-    "vault/3_JavaScript/3_Advanced_JS.md",
-    "vault/3_JavaScript/3_Advanced_JS/4_Advanced_Arrays/3_some_and_every.md",
-    "vault/3_JavaScript/3_Advanced_JS/4_Advanced_Arrays/2_Map,_filter_and_reduce.md",
     "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/17_The_scope_chain.md",
     "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/3_Types_and_operators/30_Multi-file_collisions.md",
     "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/3_Types_and_operators/29_Logic_ops_and_value_evaluation.md",
     "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/3_Types_and_operators/26_Comparison_operators.md",
     "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/3_Types_and_operators/21_Primitive_types.md",
-    "vault/3_JavaScript/1_JS_Basics/3_Basic_JavaScript.md"
+    "vault/3_JavaScript/1_JS_Basics/3_Basic_JavaScript.md",
+    "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/19_Asynchronous_callbacks.md",
+    "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/14_js_is_single_threaded_and_synchronous.md",
+    "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/12_undefined_is_special.md",
+    "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/11_Two_phase_interpretation,_hoisting.md"
   ]
 }
