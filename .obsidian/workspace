@@ -7,12 +7,8 @@
         "id": "62fb1922f1e3ca84",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "home/3_Resources/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/17_The_scope_chain.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/3_JavaScript/13_Exception_handling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
