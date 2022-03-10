@@ -5,7 +5,7 @@ Created Thursday 25 March 2021
 * Both use ellipisis as operator symbol.
 * Both have different use:
 	1. Unpacking things -  "spread operator".
-	2. Packing things - "rest parameter/element".der7   unnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn[=
+	2. Packing things - "rest parameter/element".
 
 
 #### Spread operator
@@ -27,7 +27,7 @@ Created Thursday 25 March 2021
 	* Rest element - ``[a, b, ...x] = iter``, must use a ``[]`` or ``{}``.
 * Gotcha - only the last param/element can be a rest param/element, ergo, there can only be one.
 * Uses:
-	* Varidic function definition - ``f(a, b, ...theArgs)``, ``theArgs`` will be an array.
+	* Variadic function definition - ``f(a, b, ...theArgs)``, ``theArgs`` will be an array.
 	* Rest element - ``[a, ...b] = new Set([1, 2, 3])``, result ``a = 1``, ``b = [2, 3]``.
 * Variadic functions were possible before ES6 too - you had to use the ``arguments`` object, which is not an array and was therefore difficult to work with. Rest param solved this problem.
 * How this works? - Rest element is a simple syntax sugar. For functions, an enclosing [] is placed around the param list by the interpreter, ``arguments`` as rvalue, like so: ``[a, b, ...c] = arguments;``. Thus, we get ``c`` as a array.
