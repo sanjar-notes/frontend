@@ -7,12 +7,8 @@
         "id": "62fb1922f1e3ca84",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "vault/3_JavaScript/13_Exception_handling.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/3_JavaScript/13_Exception_handling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,7 +84,7 @@
   },
   "active": "62fb1922f1e3ca84",
   "lastOpenFiles": [
-    "vault/3_JavaScript/13_Exception_handling.md",
+    "vault/3_JavaScript/3_Advanced_JS/13_Exception_handling.md",
     "vault/3_JavaScript/3_Advanced_JS.md",
     "vault/3_JavaScript/3_Advanced_JS/4_Advanced_Arrays/3_some_and_every.md",
     "vault/3_JavaScript/3_Advanced_JS/4_Advanced_Arrays/2_Map,_filter_and_reduce.md",
