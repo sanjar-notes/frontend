@@ -1,11 +1,7 @@
-# 1. spread and rest operators120
-
-2. 0A._Necessities/this_and_arrow_functions.txt
-
+# 1. spread and rest operators
 Created Thursday 25 March 2021
 
 #### Are the two different?
-
 * Both use ellipisis as operator symbol.
 * Both have different use:
 	1. Unpacking things -  "spread operator".
@@ -13,7 +9,6 @@ Created Thursday 25 March 2021
 
 
 #### Spread operator
-
 * Purpose - unpack iterables.
 * Syntax - ``...iter``. Exposes all elements, comma separated. May be placed inside ``[]`` or ``{}``.
 * No in place effect.
@@ -26,7 +21,6 @@ Created Thursday 25 March 2021
 
 
 #### Rest parameter/element
-
 * Purpose - pack elements, to an array.
 * Syntax - There is a slight variation
 	* Rest param - ``f(a, b, ...x)``
@@ -40,8 +34,8 @@ Created Thursday 25 March 2021
 
 <https://www.youtube.com/watch?v=R8rmfD9Y5-c&ab_channel=WebDevSimplified> FIXME
 
-#### How is spread operator, rest param and destructuring related?
 
+#### How is spread operator, rest param and destructuring related?
 * All 3 have different purpose:
 	1. Spread operator - unpack elements.
 	2. Rest param/element - pack elements.
