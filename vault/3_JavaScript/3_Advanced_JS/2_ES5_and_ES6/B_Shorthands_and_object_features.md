@@ -2,12 +2,11 @@
 Created Thursday 25 March 2021
 
 #### 1. Destructuring(object/iterable unpacking)
-
 * A very nice feature. Very popular. Inspired from python3.
 * Purpose: Concise code.
 * Works with:
 	* Iterables - Intialize variables using an iterable rvalue. Skipping is allowed, order(L to R) is maintained.
-	* Object - Declare and intialize variables(set to field-variableName corresponding value). **Order** does not matter.
+	* Object - Declare and intialize variables(set to field-variableName corresponding value). **Order** does not matter. Works for deeply nested fields too. See [this](https://www.w3schools.com/react/tryit.asp?filename=tryreact_es6_destructuring_object2).
 * Syntax - iterable/object as **rvalue**. Literals are OK too.
 	* Iterable - ``const [x, y, z] = new Set([1, 2, 3, 4]);``
 	* Object - ``let {name,place='Default'} = myObj; // myObj = {name:'Sanjar', place:'Earth', era:'Phanerozoic'};``
@@ -19,27 +18,26 @@ Created Thursday 25 March 2021
 * Other uses:
 	1. Swap variables - ``[a, b] = [b, a]``
 	2. Outside functions
-
+	```js
 	const {name, place} = personObj;
 	// use name and place
+	```
+1. Functions taking an object argument
+```js
+function f( {name, place}) // OK
+{
+	console.log(place, name);
+}
+
+f(personObj); // OK
+```
 
 
-2. Functions taking an object argument
-
-	function f( {name, place}) // OK
-	{
-		console.log(place, name);
-	}
-	
-	f(personObj); // OK
-
-
-* Is destructuring worthy it - [./destructuringCode.js](destructuringCode.js)
+* Is destructuring worth it - [./destructuringCode.js](destructuringCode.js)
 * [More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Ignoring_some_returned_values) at MDN
 
 
 #### 2. Dynamic fieldnames - Existing object value as field name
-
 * Use existing object's value as field name, actually its string equivalent.
 * Purpose: Have dynamic fieldnames, decided at runtime.
 * Creating the property: [personObject] instead of fieldName.
