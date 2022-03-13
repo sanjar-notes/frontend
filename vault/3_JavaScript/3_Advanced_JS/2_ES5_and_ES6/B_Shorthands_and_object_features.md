@@ -12,7 +12,7 @@ Created Thursday 25 March 2021
 	* Object - ``let {name,place='Default'} = myObj; // myObj = {name:'Sanjar', place:'Earth', era:'Phanerozoic'};``
 * Features in destructuring
 	* Default value for fields - ``let {name, place='India'} = myObj; // in case myObj doesn't have a 'place' field``
-	* Skip selected values - ``let [x, , y, , z] = [1, 2, 3, 4, 5]; // 2 and 5 are unused``
+	* Skip selected values - ``let [x, , y, , z] = [1, 2, 3, 4, 5]; // 2 and 4 are unused``
 	* Skip extraneous values - ``let [x, y] = [1, 2, 3, 4]; // 3 and 4 ignored``
 	* Alias destructuring - `let {name: c} = {name:'Sanjar};'` creates a variable of name 'c' and gives it the value for key 'name'.
 	* Note: Spread operator is not meant for skipping.
