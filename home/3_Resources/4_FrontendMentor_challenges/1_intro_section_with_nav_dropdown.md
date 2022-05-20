@@ -15,6 +15,8 @@ Have to implement UI that'll render properly on mobile (which is completely diff
 
 How is a custom styled dropdown created ?
 I am yet to create this.
+See
+![](Pasted%20image%2020220520210020.png)
 1. Using `z-index` and `display: none`?
 2. Or something else.
 3. Note that dropdown `select`, `option` are OS controlled, and cannot be styled extensively.
