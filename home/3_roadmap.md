@@ -1,8 +1,7 @@
 # 4. Roadmap
 Created Friday 25 December 2020
 
----
-Arnav's Course
+<details> <summary>Arnav's Course</summary>
 
 Full stack
 Front End - embrace it, good eye for Design
@@ -49,7 +48,7 @@ Back End - Dev Ops
   _ MySQL or Postgres - SQL
   _ NoSQL - MongoDB, CassandraDB
   _ SQL commands - trickery
-  _ $query, $sort in mongoDB
+  _ query, $sort in mongoDB
   Ready to make CRUD websites
 
 # 2nd Pass
@@ -194,10 +193,10 @@ CodeWithHarry
 
 * Python vs Node is not important
 ---
+</details>
 
-* [./road_map_coding_blocks+CodeWithHarry.md](home/4._Roadmap/road_map_coding_blocks+CodeWithHarry.md)
-* <https://github.com/kamranahmedse/developer-roadmap>
+- https://roadmap.sh/frontend
 
 
-Parse both and do it.
+- https://roadmap.sh/backend
 
