@@ -11,5 +11,5 @@ There are two options:
 * Just set them in the grid container
 * They specify the gap **between** rows and columns.
 
-![](pasted_image%2034.png)
+![](3_row_and_column_gap-image-1.png)
 

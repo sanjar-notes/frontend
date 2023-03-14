@@ -10,5 +10,5 @@ Classify resource as per type:
 4. images - image files
 5. media - audio/video
 
-![](pasted_image%2016.png)
+![](2_Folder_structure-image-1.png)
 

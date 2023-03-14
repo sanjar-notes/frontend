@@ -14,14 +14,14 @@ Created Thursday 25 March 2021
 * f(ele) is computed and stored for each element. ``undefined`` is stored if ``f`` returns nothing.
 * The map object is index subscriptable.
 
-![](pasted_image%2011.png)
+![](2_Map,_filter_and_reduce-image-1.png)
 
 #### 2. Filter
 
 * Purpose - returns an iterable of elements for which f(ele) is true.
 * Syntax - same as map.
 
-![](pasted_image001%208.png)
+![](2_Map,_filter_and_reduce-image-2.png)
 
 #### 3. Reduce
 

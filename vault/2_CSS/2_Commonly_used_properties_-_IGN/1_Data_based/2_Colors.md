@@ -14,7 +14,7 @@ Notes:
 
 1. For grayscale - use the same color for all red, green and blue.
 
-![](pasted_image003%207.png)
+![](2_Colors-image-1.png)
 
 2. There are about 140 names supported by HTML/CSS
 3. **rgba(r,g,b, alpha) **is used 0≤α≤1 to allow transparency with alpha = **1 being the most opaque**. It's got nothing to do with the rgb values.

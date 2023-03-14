@@ -15,5 +15,5 @@ It has 6 values (modes):
 
 
 #### Picture
-![](pasted_image%2027.png)
+![](1_main_axis-image-1.png)
 

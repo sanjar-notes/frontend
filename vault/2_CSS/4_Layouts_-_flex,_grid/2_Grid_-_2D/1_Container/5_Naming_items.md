@@ -32,7 +32,7 @@ Steps:
 
 
 e.g Here the first 3 cells were marked header
-![](pasted_image%2038.png)
+![](5_Naming_items-image-1.png)
 
 *****
 

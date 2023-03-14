@@ -6,7 +6,7 @@ First: Undertand how grid is represented
 * Like a matrix
 * 1 based indexing
 
-![](pasted_image%2028.png)
+![](1_Space_occupied-image-1.png)
 
 *****
 
@@ -21,7 +21,7 @@ There are two options:
 * If you feel confused, start with grid-row: n/n+1;
 
 e.g
-![](pasted_image001%2018.png)
+![](1_Space_occupied-image-2.png)
 
 *****
 

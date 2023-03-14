@@ -8,13 +8,13 @@ It has 3 values (modes):
 
 1. no-wrap → The default
 
-![](pasted_image%2035.png)
+![](3_Wrapping-image-1.png)
 
 2. wrap → Wrap w.r.t to the main axis
 
-![](pasted_image001%2021.png)
+![](3_Wrapping-image-2.png)
 
 3. wrap-reverse → Wrap to put in the opposite direction(top here, row main-axis)
 
-![](pasted_image002%2011.png)
+![](3_Wrapping-image-3.png)
 

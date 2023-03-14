@@ -4,7 +4,7 @@ Created Tuesday 16 June 2020
 
 1. font-family: defines **boldness**, size and style.
 
-![](pasted_image%2036.png)
+![](4_Fonts-image-1.png)
 CSS font families:
 
 1. Generic family: serif or monospace or sans-serif

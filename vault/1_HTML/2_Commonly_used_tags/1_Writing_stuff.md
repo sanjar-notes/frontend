@@ -67,5 +67,5 @@ Note:
 * How to use - just write the entity in the content.
 
 **Examples**
-![](pasted_image%2019.png)
+![](1_Writing_stuff-image-1.png)
 

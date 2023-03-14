@@ -9,5 +9,5 @@ There are 4 units:
 4. % - percentage of the container dimension
 
 
-![](pasted_image%2031.png)
+![](2_units-image-1.png)
 
