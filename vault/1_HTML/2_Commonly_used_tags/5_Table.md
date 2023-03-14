@@ -41,7 +41,7 @@ See <https://www.w3schools.com/tags/att_th_scope.asp> and <https://www.codecadem
 * There are two attributes that merge space for a cell to take multiple row/column cells.
 * Syntax: add ``rowspan``/``colspan``="*number*", the number defines number of cells spanned. Default value is 1 for both, 😁️.
 
-![](pasted_image%2020.png)
+![](5_Table-image-1.png)
 
 ### In the diagram
 

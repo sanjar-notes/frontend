@@ -20,7 +20,7 @@ There are two basic mechanisms in a computer:
 1. **Memory Heap** - Memory is limited, so we need a garbage collector - To avoid memory leaks(unused memory) - This is why global variables are discouraged.
 2. **Call stack** - This is used to control the program flow, including recursion. Including function removal after execution.
 
-![](pasted_image%2014.png)
+![](10_How_Does_JS_works-image-1.png)
 
 * Stack overflow - There's no space to include new activation records.
 
@@ -40,7 +40,7 @@ How to program asynchronous?
 
 1. Using a timeout for the blocking sections of the code.
 
-![](pasted_image001%2011.png) > ![](pasted_image002%205.png)![](pasted_image003%204.png)
+![](10_How_Does_JS_works-image-2.png) > ![](10_How_Does_JS_works-image-3.png)![](10_How_Does_JS_works-image-4.png)
 
 *****
 
@@ -48,7 +48,7 @@ JavaScript Run-Time Environment
 
 * In addition to the JS engine, we have Web APIs(like DOM, AJAX etc), a callback queue and an event loop. All this is referred to as the environment.
 
-![](pasted_image004%201.png)
+![](10_How_Does_JS_works-image-5.png)
 
 * timeout is provided by the browser.
 

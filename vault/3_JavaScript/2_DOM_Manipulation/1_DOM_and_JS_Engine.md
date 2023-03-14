@@ -8,7 +8,7 @@ We assumed, until now that HTML is *just* rendered by the browser. Now, before r
 * As we can edit the document, we can effectively change the whole page.
 * Strictlys speaking, it has got nothing to do with CSS or JS, even if they are present. Small [caveat](https://bitsofco.de/what-exactly-is-the-dom/) regarding JS though.
 
-![](assets/pasted_image.png)
+![](1_DOM_and_JS_Engine-image-1.png)
 **The HTML DOM is a standard for how to get, change, add, or delete HTML elements.**
 
 *****
@@ -16,7 +16,7 @@ We assumed, until now that HTML is *just* rendered by the browser. Now, before r
 
 * The whole page is stored(in memory) as an object named **document**, it does not look like an object however.
 
-![](assets/pasted_image001.png)
+![](1_DOM_and_JS_Engine-image-2.png)
 e.g
 	document.write('Hello'); // document the write method
 
@@ -42,7 +42,7 @@ Note: DOM and document are used interchangeably.
 * The document has a parent object called the **window** - represents the current tab.
 * The window object also has the alert(), prompt() functions and the document.
 
-![](pic2.png)
+![](1_DOM_and_JS_Engine-image-3.png)
 
 * **window **is the default object if unspecified, i.e f() ↔ window.f()
 

@@ -9,7 +9,7 @@ Created Sunday 12 July 2020
 	
 	// f recieves the event automatically as first argument
 
-![](pasted_image%202.png)
+![](3_DOM_events-image-1.png)
 
 * More than 95% of the events are keypress and mouse events.
 

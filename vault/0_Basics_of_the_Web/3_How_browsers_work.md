@@ -10,17 +10,17 @@ The browser's main components are:
 5.  **UI backend**: used for drawing basic widgets like combo boxes and windows. This backend exposes a generic interface that is not platform specific. Underneath it uses operating system user interface methods.
 6.  **JavaScript interpreter**. Used to parse and execute JavaScript code.
 7.  **Data storage**. This is a persistence layer. The browser may need to save all sorts of data locally, such as cookies. Browsers also support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem.
-![[Pasted image 20220123011831.png]]
+![[3_How_browsers_work-image-1.png]]
 
 
 ## Code to Display flow
-![[Pasted image 20220123012045.png]]
-![[Pasted image 20220212195032.png]]
+![[3_How_browsers_work-image-2.png]]
+![[3_How_browsers_work-image-3.png]]
 1. parse HTML --> DOM tree and parse CSS and apply selectors --> CSSOM tree
 2. DOM and CSSOM are combined to create "render tree". This contains visible nodes and their height/width and other styles.
 3. Layout/Reflow: Layouts (dimensions and coordinates) are calculated.
 4. Repaint: Render tree is finally painted using UI backend (connected to OS).
-![[Pasted image 20220207035753.png]]
+![[3_How_browsers_work-image-4.png]]
 The flow of HTML, CSS code to render.
 
 ###### Resources used

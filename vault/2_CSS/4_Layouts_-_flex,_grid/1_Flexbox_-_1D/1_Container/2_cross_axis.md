@@ -14,5 +14,5 @@ It has 5 modes:
 
 
 #### Picture
-![](pasted_image002%2010.png)
+![](2_cross_axis-image-1.png)
 

@@ -7,5 +7,5 @@ Created Sunday 25 April 2021
 * CSS cannot be memorized - it's too big. Better learn the basics and use MDN for names.
 
 See [Drawio mindmap.](css_mindmap) Here's the image.
-![](pasted_image%2024.png)
+![](1_CSS_Basics-image-1.png)
 

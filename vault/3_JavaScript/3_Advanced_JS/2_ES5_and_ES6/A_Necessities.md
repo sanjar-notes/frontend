@@ -67,8 +67,8 @@ Note:
 	* Write literal part verbatim.
 	* Use ``${ JS_code }`` to enclose the code parts.
 
-![](pasted_image007.png)
-![](pasted_image008.png)
+![](A_Necessities-image-1.png)
+![](A_Necessities-image-2.png)
 
 * Supports multiline strings.
 * Use:

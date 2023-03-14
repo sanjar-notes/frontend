@@ -5,19 +5,19 @@ Created Tuesday 16 June 2020
 * We always should know how things work underneath the hood to know how things happen.
 
 Suppose we have the following setup:
-![](pasted_image%2023.png)
+![](4_Critical_Render_Path-image-1.png)
 We're using an external google-font style file.
 The process:
 
 1. HTML is sent - It requests for the CSS we built. 
 
-![](pasted_image001%2016.png)
-![](pasted_image002%208.png)
+![](4_Critical_Render_Path-image-2.png)
+![](4_Critical_Render_Path-image-3.png)
 	
 
 2. It then encounters the google-style sheet, and requests google.com.
 
-![](pasted_image003%206.png)
+![](4_Critical_Render_Path-image-4.png)
 
 * As this is being done, the first CSS file **could **be used  - But this is not done, the items using CSS are not rendered until the CSS is there.
 * CSS is a **render blocking file**

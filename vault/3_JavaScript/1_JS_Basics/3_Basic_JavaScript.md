@@ -70,7 +70,7 @@ Note:
 	* **const** - non reassignable variable(variable contents may be changed). Must be intialized with declaration. Same as C++'s ``const``. Syntax ``const k = 'stingy symbol table';``
 	* **var **- leaks out of block scope. Follows all other scoping rules. Syntax: ``var k = 'var wars';``
 
-![](pasted_image%206.png)
+![](3_Basic_JavaScript-image-1.png)
 
 * All variables follow the same syntax - for declaration, initlialization, assignment, access. The syntax are:
 	* Declaration: ``let x;``, ``const p = 24;``, ``var k = 'hi``';
