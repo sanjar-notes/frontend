@@ -25,7 +25,7 @@ Created Wednesday 08 July 2020
 
 1. ``number`` - For both integers and floats.
 2. ``bigint``
-3. ``string`` - both kinds of quotes are OK, you can even use backticks. Concatenation using ``+``. Strings can be like numbers(and vice versa). e.g. '``2.3'*2 = 4.6``. [Escape](pasted_image001%204.png) character same as C++. Strings can span multiple lines.
+3. ``string`` - both kinds of quotes are OK, you can even use backticks. Concatenation using ``+``. Strings can be like numbers(and vice versa). e.g. '``2.3'*2 = 4.6``. ![Escape](pasted_image001%204.png) character same as C++. Strings can span multiple lines.
 4. ``boolean``(``true``/``false``)
 5. ``Symbol``
 6. ``undefined`` - not been assigned(garbage values are avoided this way)
