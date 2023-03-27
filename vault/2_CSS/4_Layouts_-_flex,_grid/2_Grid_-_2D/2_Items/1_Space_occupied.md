@@ -6,14 +6,14 @@ First: Undertand how grid is represented
 * Like a matrix
 * 1 based indexing
 
-![](1_Space_occupied-image-1.png)
+![](assets/1_Space_occupied-image-1.png)
 
 *****
 
 **Set the postions**
 There are two options:
 
-1. grid-row: a/b; // occupies rows from line a to b 
+1. grid-row: a/b; // occupies rows from line a to b
 2. grid-column:a/b; // occupies column from line a to b
 
 
@@ -21,7 +21,7 @@ There are two options:
 * If you feel confused, start with grid-row: n/n+1;
 
 e.g
-![](1_Space_occupied-image-2.png)
+![](assets/1_Space_occupied-image-2.png)
 
 *****
 

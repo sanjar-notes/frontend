@@ -30,16 +30,16 @@ Helps us brush up CSS as well. They used in most of the new codebases.
 
 1. elementObj.**getAttribute**('attribute');	//prints the attribute value
 
-![](2_DOM_Selectors-image-1.png)
+![](assets/2_DOM_Selectors-image-1.png)
 
 2. elementObj.**setAttribute**('attribute'**,** 'newvalue');	// change the attribute
 
-![](2_DOM_Selectors-image-2.png)
+![](assets/2_DOM_Selectors-image-2.png)
 
 3. We can access and change **inline **style attributes directly by doing elementObj.**style**.backgroundColor = 'red'. But it is *discouraged* as it violates the principle of **separation of concerns**.
 
-![](2_DOM_Selectors-image-3.png) is equivalent to ![](2_DOM_Selectors-image-4.png)
-Note: .style [won't](https://css-tricks.com/an-introduction-and-guide-to-the-css-object-model-cssom/) be able to acesss external CSS. 
+![](assets/2_DOM_Selectors-image-3.png) is equivalent to ![](assets/2_DOM_Selectors-image-4.png)
+Note: .style [won't](https://css-tricks.com/an-introduction-and-guide-to-the-css-object-model-cssom/) be able to acesss external CSS.
 
 4. Because an element can have multiple classes, we have special **properties** for it:
 	1. eObj.className = 'newname'; // if there's only one class

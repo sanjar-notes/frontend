@@ -31,26 +31,26 @@ These were necessary features common in other programming languages:
 
 	const f = num => num*2;	// single argument, single expression
 	f() // call
-	
+
 	// Multiline body - no return
-	const f = () => 
+	const f = () =>
 	{
 		console.log('Hello');
 		console.log('World'); // returns undefined
 	}
-	
+
 	//Multiline - with return
 	const f = (a, b) => {
-		a*2 = b; 
-		return a+b; 
-	}; // 
-	
+		a*2 = b;
+		return a+b;
+	}; //
+
 	(()=>console.log(2))(); // Arrow function as IIFE
 
 
 * Important gotcha - arrow functions are not just a syntactic sugar for normal functions, they do more. See [details](this_and_arrow_functions.md).
 
-Note:	
+Note:
 
 * You do need a () for zero params.
 * Avoid normal functions for** throwaway **or** one-liner **functions**.**
@@ -62,13 +62,13 @@ Note:
 * Extremely powerful tool.
 * Purpose - DSL injection is easier, concise code.
 * Template string is a use case of this feature.
-* General syntax: 
-	* Enclose the whole string in backticks. 
+* General syntax:
+	* Enclose the whole string in backticks.
 	* Write literal part verbatim.
 	* Use ``${ JS_code }`` to enclose the code parts.
 
-![](A_Necessities-image-1.png)
-![](A_Necessities-image-2.png)
+![](assets/A_Necessities-image-1.png)
+![](assets/A_Necessities-image-2.png)
 
 * Supports multiline strings.
 * Use:
@@ -76,21 +76,21 @@ Note:
 
 	let pname = 'Sanjar', emotion = 'Happy';
 	let message = `${pname} is ${emotion}.`;
-	
+
 	console.log(`I am ${pname}`); // prints -> I am Sanjar
 
 
 2. For carrying JS code.
 
 	`${ console.log(2); }` // prints 2 on string evaluation
-	
+
 	`${ (() => { console.log('Autodestruct sequence intiated'); })() } `	// pretty hacky and dangerous
 
 
 3. DSL injection(Domain Specific Language)
 
 	p.innerHTML(`<h1> DSL injected </h1>`);
- 
+
 
 * How it works:
 	* ``${}``(code) parts are executed normally.

@@ -47,13 +47,13 @@ Note:
 	        y = 6;<br>
 	        z = x + y;
 	</code>
-	
+
 	<!-- samp - output of the program -->
 	<p>If you input wrong value, the program will return <samp>Error!</samp></p>
-	
+
 	<!-- 2. kbd - represents keyboard input: For quick action, very important in PCs Rendered differenetly-->
 	    <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
-	
+
 	<!-- var helps us render a variable differently - italicised -->
 	Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.
 
@@ -67,5 +67,5 @@ Note:
 * How to use - just write the entity in the content.
 
 **Examples**
-![](1_Writing_stuff-image-1.png)
+![](assets/1_Writing_stuff-image-1.png)
 

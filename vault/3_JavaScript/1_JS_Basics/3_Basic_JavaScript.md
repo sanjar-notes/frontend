@@ -59,7 +59,7 @@ Note:
 	'2' + '3' 		// string '23' - concatenation is concatenation
 
 
-* JS is loosely typed. 
+* JS is loosely typed.
 
 
 #### Variables
@@ -70,7 +70,7 @@ Note:
 	* **const** - non reassignable variable(variable contents may be changed). Must be intialized with declaration. Same as C++'s ``const``. Syntax ``const k = 'stingy symbol table';``
 	* **var **- leaks out of block scope. Follows all other scoping rules. Syntax: ``var k = 'var wars';``
 
-![](3_Basic_JavaScript-image-2.png)
+![](assets/3_Basic_JavaScript-image-2.png)
 
 * All variables follow the same syntax - for declaration, initlialization, assignment, access. The syntax are:
 	* Declaration: ``let x;``, ``const p = 24;``, ``var k = 'hi``';
@@ -105,7 +105,7 @@ Note:
 	if(true)
 		var x = 2;
 	console.log(x); // prints 2, as x leaked out from the block, just like python3
-	
+
 	// Run separately
 	if(true)
 		let x = 2; // x respects block scope, goes out of scope. Just like C++, Java
@@ -123,8 +123,8 @@ Note:
 * Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (block or function).
 * Only declarations are hoisted, not initializations.
 * Gotchas about hoisting, there are 2:
-	* **Intialization** - During hoisting, memory is not allocated for ``let``/``const``/``class`` variables. ``var``/``function``/``function*`` are allocated memory(set to ``undefined`` or function body). 
-	* **Temporal Dead Zone(``ReferenceError``)** - It refers to the *time*(*phase)* between the declaration and intialization, for a variable. Accessing ``let``/``const``/``class`` variables before their declaration(in code) is an error ``ReferenceError(variable not initalized)``. 
+	* **Intialization** - During hoisting, memory is not allocated for ``let``/``const``/``class`` variables. ``var``/``function``/``function*`` are allocated memory(set to ``undefined`` or function body).
+	* **Temporal Dead Zone(``ReferenceError``)** - It refers to the *time*(*phase)* between the declaration and intialization, for a variable. Accessing ``let``/``const``/``class`` variables before their declaration(in code) is an error ``ReferenceError(variable not initalized)``.
 
 **Note:** temporal dead zone does correlate with sections of the code, but it's actually a time period.
 
@@ -201,8 +201,8 @@ Note:
 
 	x.sort( function (a) { return Number(a); }) // functor as sorting criteria
 	// Don't call the functor, just specify it.
-	
-	
+
+
 	// IIFE - Immediately Invoked Function Expression
 	(
 		function(bar) { /* code */ }(option1)
@@ -216,7 +216,7 @@ Note:
 	let x = function(){ // storing
 		return 2;
 	};
-	
+
 	x(); // calling
 
 
@@ -226,9 +226,9 @@ Note:
 	{
 		function g() {	/*code*/ }
 		g() // invocation - OK
-	
+
 		function k() { /* code */ } // so called 'sibling' function
 	}
-	
+
 	g()// Error - g not defined
 

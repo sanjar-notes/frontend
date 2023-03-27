@@ -44,7 +44,7 @@ f(personObj); // OK
 * Creating the property: [personObject] instead of fieldName.
 
 	let a = [1, 2], b = 'bingo';
-	let z = 
+	let z =
 	{
 		[a]: 1 ,
 		[b]: 2
@@ -54,8 +54,8 @@ f(personObj); // OK
 
 * Accessing the property syntax: z[a]
 
-![](B_Shorthands_and_object_features-image-1.png) 
-![](B_Shorthands_and_object_features-image-2.png)
+![](assets/B_Shorthands_and_object_features-image-1.png)
+![](assets/B_Shorthands_and_object_features-image-2.png)
 
 * Gotchas
 	* String equivalent of a list is a flattened list. For example: String equivalent of ``[1, 2]`` and ``[1, [2]]`` are identical.
@@ -83,8 +83,8 @@ f(personObj); // OK
 * Purpose: Concise code. [See](https://www.youtube.com/watch?v=HF0PN1vHsSY).
 * Syntax: Just include the variable, like element of an array.
 
-![](B_Shorthands_and_object_features-image-3.png)
-![](B_Shorthands_and_object_features-image-4.png)
+![](assets/B_Shorthands_and_object_features-image-3.png)
+![](assets/B_Shorthands_and_object_features-image-4.png)
 
 * Note: This feature has nothing to do with dynamic field names, as seen earlier.
 
@@ -103,13 +103,13 @@ f(personObj); // OK
 			/*code*/
 		},
 	}
-	
+
 	// shorthand
 	class Cashier
 	{
 		name: 'Will',
 		calculateWorth() {/*code*/}
 	}
-	
+
 	// both are identical
 

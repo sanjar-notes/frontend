@@ -70,12 +70,12 @@ Useful: [CommonJS - what, why and how](https://medium.com/@cgcrutch18/commonjs-w
 
 #### If CommonJS is what JS used, how does React use ES6 syntax?
 
-* Browsers don't understand CommonJS, as they're not Node. 
-* Consequently, apps written in Node.js's JavaScript needs to be transpiled to vanilla JS. 
+* Browsers don't understand CommonJS, as they're not Node.
+* Consequently, apps written in Node.js's JavaScript needs to be transpiled to vanilla JS.
 * This is where compilers like [Babel](2_ES5_and_ES6.md) come in: they can receieve input in any way.
 * And ES6 is set as input, and is compiled to CommonJS.
 
 
 Evidence: create-react-app installs [babel-plugin-transform-modules-commonjs](https://babeljs.io/docs/en/babel-plugin-transform-modules-commonjs).
-![](11_Modules_in_JS-image-1.png)
+![](assets/11_Modules_in_JS-image-1.png)
 

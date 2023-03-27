@@ -6,10 +6,10 @@ Created Sunday 12 July 2020
 * How to listen to events - attach an event listener(to some element).
 
 	eObj.addEventListener('click', f);	// click is the event, f is the action
-	
+
 	// f recieves the event automatically as first argument
 
-![](3_DOM_events-image-1.png)
+![](assets/3_DOM_events-image-1.png)
 
 * More than 95% of the events are keypress and mouse events.
 

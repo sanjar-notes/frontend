@@ -14,7 +14,7 @@ Syntax:
 	  "advert content content"
 	  "footer footer footer"; // creates a 3x3 named grid
 	}
-	
+
 	.item
 	{
 	  grid-area:;
@@ -32,7 +32,7 @@ Steps:
 
 
 e.g Here the first 3 cells were marked header
-![](5_Naming_items-image-1.png)
+![](assets/5_Naming_items-image-1.png)
 
 *****
 

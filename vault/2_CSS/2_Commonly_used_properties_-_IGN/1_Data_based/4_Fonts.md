@@ -4,7 +4,7 @@ Created Tuesday 16 June 2020
 
 1. font-family: defines **boldness**, size and style.
 
-![](4_Fonts-image-1.png)
+![](assets/4_Fonts-image-1.png)
 CSS font families:
 
 1. Generic family: serif or monospace or sans-serif
@@ -14,7 +14,7 @@ CSS font families:
 
 * **Sans-serif are considered much easier to read on screens**
 
-Note: 
+Note:
 
 1. For multi-worded families, use double quotes.
 2. More than one fonts can be seperated by commas. Leftmost is used, if available.

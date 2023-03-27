@@ -14,7 +14,7 @@ Both have 4 options:
 4. end - sets the position to the right or bottom
 
 
-![](2_grid_item_position-image-1.png)
+![](assets/2_grid_item_position-image-1.png)
 
 * The properties have the name self, because they are used for the items.
 

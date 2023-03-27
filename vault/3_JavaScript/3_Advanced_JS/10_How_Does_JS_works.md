@@ -20,7 +20,7 @@ There are two basic mechanisms in a computer:
 1. **Memory Heap** - Memory is limited, so we need a garbage collector - To avoid memory leaks(unused memory) - This is why global variables are discouraged.
 2. **Call stack** - This is used to control the program flow, including recursion. Including function removal after execution.
 
-![](10_How_Does_JS_works-image-1.png)
+![](assets/10_How_Does_JS_works-image-1.png)
 
 * Stack overflow - There's no space to include new activation records.
 
@@ -29,7 +29,7 @@ There are two basic mechanisms in a computer:
 
 
 * What does single threaded mean? - JS has only one call stack. It is simple to implement as compared to multi-threaded. No deadlocks can occur.
-* Synchronous - Code is run line by line. 
+* Synchronous - Code is run line by line.
 * Synchronous can be problematic if a function takes too much time, e.g API calls, content load etc. This is also referred to as **blocking**.
 
 
@@ -40,7 +40,7 @@ How to program asynchronous?
 
 1. Using a timeout for the blocking sections of the code.
 
-![](10_How_Does_JS_works-image-2.png) > ![](10_How_Does_JS_works-image-3.png)![](10_How_Does_JS_works-image-4.png)
+![](assets/10_How_Does_JS_works-image-2.png) > ![](assets/10_How_Does_JS_works-image-3.png)![](assets/10_How_Does_JS_works-image-4.png)
 
 *****
 
@@ -48,7 +48,7 @@ JavaScript Run-Time Environment
 
 * In addition to the JS engine, we have Web APIs(like DOM, AJAX etc), a callback queue and an event loop. All this is referred to as the environment.
 
-![](10_How_Does_JS_works-image-5.png)
+![](assets/10_How_Does_JS_works-image-5.png)
 
 * timeout is provided by the browser.
 

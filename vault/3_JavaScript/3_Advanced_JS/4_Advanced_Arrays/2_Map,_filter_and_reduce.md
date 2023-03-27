@@ -14,14 +14,14 @@ Created Thursday 25 March 2021
 * f(ele) is computed and stored for each element. ``undefined`` is stored if ``f`` returns nothing.
 * The map object is index subscriptable.
 
-![](2_Map,_filter_and_reduce-image-1.png)
+![](assets/2_Map,_filter_and_reduce-image-1.png)
 
 #### 2. Filter
 
 * Purpose - returns an iterable of elements for which f(ele) is true.
 * Syntax - same as map.
 
-![](2_Map,_filter_and_reduce-image-2.png)
+![](assets/2_Map,_filter_and_reduce-image-2.png)
 
 #### 3. Reduce
 
@@ -36,7 +36,7 @@ Created Thursday 25 March 2021
 
 * Remember update accum inside f().
 
-Note: 
+Note:
 
 * All the quick for functions - **forEach**, **map**, **filter** and **reduce** work sequentially by default. They can be made parallel, however.
 * Iteration number is available all **forEach**, **map** and **filter **- as the second parameter of ``f``. This is optional.

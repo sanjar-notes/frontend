@@ -22,7 +22,7 @@ This code snipper indicates that JavaScript looks for variables not in the curre
 Note that execution context (activation record) and lexical environment (scope) are two different things. This is the reason the lexical environment does not always behave like a stack, like here.
 
 Of course, one should not write code like this, and keep the declarations above the use.
-![](17_The_scope_chain-image-1.png)
+![](assets/17_The_scope_chain-image-1.png)
 
 However, we can change the lexical environment for `b`. For example:
 ```js

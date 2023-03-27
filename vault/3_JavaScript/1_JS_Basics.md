@@ -1,7 +1,7 @@
 # 1. JS Basics
 Created Wednesday 08 July 2020
 
-![](1_JS_Basics-image-1.png)
+![](assets/1_JS_Basics-image-1.png)
 (Top) - Share of the technologies generally used in web development.
 *****
 * CSS is difficult.
