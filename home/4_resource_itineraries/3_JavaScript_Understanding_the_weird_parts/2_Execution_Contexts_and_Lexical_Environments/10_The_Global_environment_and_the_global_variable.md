@@ -18,4 +18,4 @@ Every location in the code has 4 things associated/accessible with it:
 3. Outer environment (=`null` for the global execution context).
 4. The code in the current execution context.
 
-![](assets/10_The_Global_environment_and_the_global_variable-image-1.png)
+![](/assets/10_The_Global_environment_and_the_global_variable-image-1.png)

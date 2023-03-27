@@ -10,7 +10,7 @@ Created Wednesday 2 March 2022
 The JavaScript engine just places requests at these browser APIs, but still runs single threaded and synchronously.
 
 So, the browser as a whole is asynchronous and multi-threaded.
-![](assets/19_Asynchronous_callbacks-image-1.png)
+![](/assets/19_Asynchronous_callbacks-image-1.png)
 
 #### Event loop and queue - the bridge between browser APIs and the JS engine
 The browser is aynchronous and multi-threaded, but the JS engine is not. Well, they cannot just work out of the box. There's actually a construct inside the JS engine that makes this combination of browser + JS engine, smooth. This construct has two parts:
@@ -19,7 +19,7 @@ The browser is aynchronous and multi-threaded, but the JS engine is not. Well, t
 	1. Microtask queue
 	2. Callback queue
 
-![](assets/19_Asynchronous_callbacks-image-2.png)
+![](/assets/19_Asynchronous_callbacks-image-2.png)
 
 #### How is the event queue populated and depopulated
 - The code from the event queue is run only when the main stack is empty.
@@ -49,5 +49,5 @@ console.log('finished execution');
 ```
 
 Result is:
-![](assets/19_Asynchronous_callbacks-image-3.png)
+![](/assets/19_Asynchronous_callbacks-image-3.png)
 Here, the whole pages kind of freezes for the first 3 seconds, because the main code (i.e. code in stack) is running. Still, click events (if any) are picked up by the browser resources and stored in the event queue. Once the 3 second `while` loop is done, the stack is still not empty, because it needs to call the remaining main code(the "finished function code" `console.log`). Only after this is executed does the stack become empty. Once the main stack is empty, the click event's callbacks are pushed into the stack to execute. This is the order of code.

@@ -26,7 +26,7 @@ Anything.
 1. Flying Drones
 2. Robotics
 
-![](assets/2_What_is_JavaScript-image-1.png)
+![](/assets/2_What_is_JavaScript-image-1.png)
 
 * It can be used for quick development.
 

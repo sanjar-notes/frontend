@@ -14,7 +14,7 @@ Created Thursday 25 March 2021
 * All this is implemented and the simplified approach is called inheritance. It can be tricky, but is way better than the manual way.
 * Syntax: Use **extends** keyword.
 
-![](assets/4_Inheritance-image-1.png)
+![](/assets/4_Inheritance-image-1.png)
 Note:
 
 * Classes are nothing but syntactic sugar introduced from ES6 2015

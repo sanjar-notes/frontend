@@ -77,5 +77,5 @@ Useful: [CommonJS - what, why and how](https://medium.com/@cgcrutch18/commonjs-w
 
 
 Evidence: create-react-app installs [babel-plugin-transform-modules-commonjs](https://babeljs.io/docs/en/babel-plugin-transform-modules-commonjs).
-![](assets/11_Modules_in_JS-image-1.png)
+![](/assets/11_Modules_in_JS-image-1.png)
 

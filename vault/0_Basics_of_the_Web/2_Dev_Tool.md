@@ -20,22 +20,22 @@ And more
 
 * For now, we will just play around with websites we see.
 
-![](assets/2_Dev_Tool-image-1.png)
+![](/assets/2_Dev_Tool-image-1.png)
 
 #### Playing around with a page
 
 * You can edit the files - HTML, CSS and JS. Changes are rendered instantly.
 * To edit HTML, click on the 'Elements tab'.
 
-![](assets/2_Dev_Tool-image-2.png)
+![](/assets/2_Dev_Tool-image-2.png)
 
 * To view/edit CSS, click on the 'styles' section. This generally on a different bar than the 'Elements' tab.
 
-![](assets/2_Dev_Tool-image-3.png)
+![](/assets/2_Dev_Tool-image-3.png)
 
 * An example, select the element selector button and click on an element(on the page). You'll be shown the corresponding code. Double click to edit.
 
-![](assets/2_Dev_Tool-image-4.png)
+![](/assets/2_Dev_Tool-image-4.png)
 
 * Refresh the website to reset changes.
 

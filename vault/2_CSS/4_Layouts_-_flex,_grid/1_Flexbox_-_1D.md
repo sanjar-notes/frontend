@@ -20,7 +20,7 @@ Two great resources are:
 
 
 #### flexbox container (in row mode, the default)
-![](assets/1_Flexbox_-_1D-image-1.png)
+![](/assets/1_Flexbox_-_1D-image-1.png)
 
 *****
 

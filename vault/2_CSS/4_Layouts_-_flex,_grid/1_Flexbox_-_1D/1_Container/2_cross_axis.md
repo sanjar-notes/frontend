@@ -14,5 +14,5 @@ It has 5 modes:
 
 
 #### Picture
-![](assets/2_cross_axis-image-1.png)
+![](/assets/2_cross_axis-image-1.png)
 

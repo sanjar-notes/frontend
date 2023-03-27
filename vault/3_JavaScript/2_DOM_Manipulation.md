@@ -21,13 +21,13 @@ Powers of JS include:
 
 We could do some of the changes even without JS, just by using new HTML and CSS files.
 e.g
-![](assets/2_DOM_Manipulation-image-1.png)
+![](/assets/2_DOM_Manipulation-image-1.png)
 Load the index.html
 
 **Option A**
-![](assets/2_DOM_Manipulation-image-2.png)
+![](/assets/2_DOM_Manipulation-image-2.png)
 Need about.html
-![](assets/2_DOM_Manipulation-image-3.png)
+![](/assets/2_DOM_Manipulation-image-3.png)
 Send about.html
 This increases the latency(4x transit time) and therefore hampers user experience.
 **Option B**
@@ -35,7 +35,7 @@ We just keep the instructions to change the html page, by just sending the JS. T
 
 * **More interactive websites.**
 
-![](assets/2_DOM_Manipulation-image-4.png)
+![](/assets/2_DOM_Manipulation-image-4.png)
 
 *****
 

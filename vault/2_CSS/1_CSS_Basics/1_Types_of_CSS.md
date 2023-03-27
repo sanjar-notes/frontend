@@ -5,12 +5,12 @@ There are three ways of adding styles, in order of precedence:
 
 1. Inline CSS - style attribute. The most immediate one.
 
-![](assets/1_Types_of_CSS-image-1.png)
+![](/assets/1_Types_of_CSS-image-1.png)
 As the element is already selected, just write the code-block's contents.
 
 2. Internal - define the style in the html file, using <style> tag in the head. Contents have selectors.
 
-![](assets/1_Types_of_CSS-image-2.png)
+![](/assets/1_Types_of_CSS-image-2.png)
 
 ### The 3rd way, the most widely used - External CSS
 
@@ -18,7 +18,7 @@ As the element is already selected, just write the code-block's contents.
 
 	<link rel="stylesheet" type="text/css" href="style.css" >
 
-![](assets/1_Types_of_CSS-image-3.png)
+![](/assets/1_Types_of_CSS-image-3.png)
 
 * The CSS file contents are nothing but the content of the **style **tag.
 * Each HTML file can have it's own styles.
