@@ -6,14 +6,16 @@ Created Thursday 03 September 2020
 - The value is the position, first is 1.
 - Order has to specified for all partcipating components.
 
-  div1
-  {
+```css
+div.one
+{
   order:2;
-  }
+}
 
-  div2
-  {
+div.two
+{
   order:1;
-  }
+}
+```
 
 - order is not good for forms etc. Tabs will go as per the HTML

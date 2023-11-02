@@ -2,7 +2,7 @@
 Created Tuesday 16 June 2020
 
 #### Why flexbox?
-Control/set contained elements in a single row/column.
+Lay out child elements in a single row/column.
 
 Helps us keep everything at the correct place(in a row or in a column - 1D), without explicit settings.
 
