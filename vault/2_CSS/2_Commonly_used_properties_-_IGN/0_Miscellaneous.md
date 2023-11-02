@@ -1,26 +1,8 @@
 # 0. Miscellaneous
 Created Monday 15 June 2020
 
-
-1. text-align
-2. border: size type color
-3. opacity: 0.3 ∈ [0, 1], 1 for the most opaque. This applies to the whole element(and its children).
-4. width - adjust element width, padding can mess with this, use box-sizing here.
-
-	p { text-align:left; }
-
-	p { border: 5px solid black; /* thickness style color */ }
-
-	body
-	{
-		background-image: url(link_here);	
-		background-size: cover;
-	}
-
-	p { cursor: wait;} // grab, text, cursor, grabbing
-
-5. `cursor` - `default`, `grab`, `grabbing`, `pointer`, `progress`.
-6. To keep aspect ratio for images, set **image-width:100%**. Especially useful in case of flexbox.
-7. `user-select`: `none` disables selection of text, good for making pages non-edit like.
-
-
+Misc properties:
+1. opacity: 0.3 ∈ \[0, 1\], 1 for the most opaque. This applies to the whole element(and its children).
+2. `cursor` - `default`, `grab`, `grabbing`, `pointer`, `progress`.
+3. To keep aspect ratio for images, set `image-width:100%`. Especially useful in case of flexbox.
+4. `user-select`: `none` disables selection of text, good for making pages non-edit like.

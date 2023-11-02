@@ -1,16 +1,15 @@
 # 3. border
 Created Monday 15 June 2020
 
-**By default, the properties apply to all the 4 sides.**
-border has propeties:
+### border
+- Short-hand(size type color). Example: `border: 1px solid black`
+- By default, the properties apply to all the 4 sides.
+- Properties
+	1. `border-color`. This is inherited.
+	2. `border-style: solid | dotted `
+	3. `border-width: {unit} | thin | medium | thick`
+		![](/assets/3_border-image-1.png)
+Individual border (top or left or right or bottom) can be styled by using a 3 worded key. Example: `border-top-color`.
 
-1. border-style
-2. border-width: can have 4 values, Top and clock. If two are specified, they are set rectangularly. We can slo use the following names:
-
-![](/assets/3_border-image-1.png)
-
-3. border-color: if not set, inherits the color of the element.
-4. If required we can set border for each of the sides, using border-top-style: other border will be set to ***auto*.**
-5. border-radius: radius of the circle.
-
-
+### Rounded corners aka `border-radius`
+1. border-radius: radius of the circle.
