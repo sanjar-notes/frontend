@@ -1,20 +1,20 @@
 # 5. Basic Data Structures
+
 Created Thursday 09 July 2020
 
 #### Array
 
-* Array is dynamic.
-* Syntax
+- Array is dynamic.
+- Syntax
 
-	let list = [1, "two" , [3,4] ]; // mixing and nesting is OK
+  let list = [1, "two" , [3,4] ]; // mixing and nesting is OK
 
-
-* Arrays are objects, and are assigned as references. 
-* Array may be pooled. However, this doesn't affect the code.
-* Array API
+- Arrays are objects, and are assigned as references.
+- Array may be pooled. However, this doesn't affect the code.
+- Array API
 
 | Action                        | Code                                         | Return Value     | Comment                                                                      |
-|:------------------------------|:---------------------------------------------|:-----------------|:-----------------------------------------------------------------------------|
+| :---------------------------- | :------------------------------------------- | :--------------- | :--------------------------------------------------------------------------- |
 | Access Element                | A[0]                                         | element          | Same as C++                                                                  |
 | Get length                    | A.length                                     | length(number)   | This property is readable/writable: it can change array size.                |
 | Append                        | A.push(newVal)                               | new length       |                                                                              |
@@ -33,53 +33,47 @@ Created Thursday 09 July 2020
 | sort                          | A.sort(criteriaFunction=LexCompare)          | sorted array     | function (a, b) { return numericDifference}; Return negative, 0 or positive. |
 | join array of strings         | A.join(sep='')                               | string           |                                                                              |
 
-
-* Array can have empty values.+
-* The [spread operator](4._Advanced_Arrays.md) is indispensible. It is used almost everywhere.
-
+- Array can have empty values.+
+- The [spread operator](4._Advanced_Arrays.md) is indispensible. It is used almost everywhere.
 
 #### Object
 
-* Objects - It is a set of key-value pairs.
-* ``Object`` is a keyword.
+- Objects - It is a set of key-value pairs.
+- `Object` is a keyword.
 
-	var user = {
-		name: "John",
-		age:34,
-		hobby: "Socccer",
-		isMarried: false, // , does not matter
-		shout: function(){ console.log(this.name);},	// method, can use 'this'.
-	};
-	
-	user.favoriteFood = "spinach"; // add a member to an object
-	user['favoriteFood'] = "spinach"; // same as above
+  var user = {
+  name: "John",
+  age:34,
+  hobby: "Socccer",
+  isMarried: false, // , does not matter
+  shout: function(){ console.log(this.name);}, // method, can use 'this'.
+  };
 
+  user.favoriteFood = "spinach"; // add a member to an object
+  user['favoriteFood'] = "spinach"; // same as above
 
-* **null** - Represents the state of being empty(consider like a null pointer). ``null`` and {}(empty object) are different.
-* Properties can be accessed by ``objectA.property_name`` or ``objectA[property_name]``.
-* ``this`` is not accessible if the method is run after isolation.
-* Objects are not index subscriptable.
+- **null** - Represents the state of being empty(consider like a null pointer). `null` and {}(empty object) are different.
+- Properties can be accessed by `objectA.property_name` or `objectA[property_name]`.
+- `this` is not accessible if the method is run after isolation.
+- Objects are not index subscriptable.
 
-
-*****
+---
 
 Membership:
 
-* Iterables - ``.includes(key)``
-* Object - ``.hasOwnProperty('fieldName')``
+- Iterables - `.includes(key)`
+- Object - `.hasOwnProperty('fieldName')`
 
-
-*****
-
+---
 
 #### String
 
-* ``string`` is a primitive type.
-* Strings are dynamically sized, immutable in JS.
-* String API - no inplace ops.
+- `string` is a primitive type.
+- Strings are dynamically sized, immutable in JS.
+- String API - no inplace ops.
 
 | Action                     | Code                           | Return Value     | Comment                                                            |
-|:---------------------------|:-------------------------------|:-----------------|:-------------------------------------------------------------------|
+| :------------------------- | :----------------------------- | :--------------- | :----------------------------------------------------------------- |
 | Access Element             | s.charAt(index)                | string           | [] works too. But fails for edge cases - 'hello'[true] is an error |
 | Get length                 | s.length                       | length(number)   | This property is readable/writable: it can change array size.      |
 | Concatenation              | a+b                            | string           | Works with non-string                                              |
@@ -88,7 +82,7 @@ Membership:
 | Substring                  | s.substr(start, len=A.length)  | removed element  | start, length based extraction                                     |
 | Slice                      | s.slice(start, end=end)        | extracted array  | [start, end) based extraction                                      |
 | UpperCase                  | s.toLocaleUpperCase(lang='en') |                  | same as toUpperCase() for EN. Similar syntax for lowercase.        |
-| Reverse string             | s.split(``).reverse().join(``) |                  | Inplace and reference as return value.                             |
+| Reverse string             | s.split(`).reverse().join(`)   |                  | Inplace and reference as return value.                             |
 | Expand/Decrease array size | A.length = new_length          |                  | Change is in-place.                                                |
 |                            |                                |                  |                                                                    |
 |                            |                                | Extended ops     |                                                                    |
@@ -97,12 +91,8 @@ Membership:
 | Split                      | s.spit(delim=undefined)        | array of strings | No splitting without delimiter                                     |
 | Trim whitespace            | s.trim()                       | array            | No arguments. trimLeft, trimRight are available.                   |
 
-
-
-*****
+---
 
 Resources:
 
-* [TIme Complexity of popular ops](https://dev.to/lukocastillo/time-complexity-big-0-for-javascript-array-methods-and-examples-mlg)
-
-
+- [TIme Complexity of popular ops](https://dev.to/lukocastillo/time-complexity-big-0-for-javascript-array-methods-and-examples-mlg)

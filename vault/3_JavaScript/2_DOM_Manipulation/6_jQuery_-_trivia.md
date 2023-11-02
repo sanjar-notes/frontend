@@ -1,15 +1,15 @@
 # 6. jQuery - trivia
+
 Created Monday 13 July 2020
 
-
-* What is jQuery - a DOM manipulation library.
-* Why jQuery
-	1. Eliminates cross-browser incompatibilities.
-	2. It facilitates the separation of HTML and JS.
-	3. Extensibility - methods and elements can be reused.
-	4. Brevity - new kinds of events and other properties are available.
-* How does it look?
-	1. jQuery is added inside a script tag.
+- What is jQuery - a DOM manipulation library.
+- Why jQuery
+  1.  Eliminates cross-browser incompatibilities.
+  2.  It facilitates the separation of HTML and JS.
+  3.  Extensibility - methods and elements can be reused.
+  4.  Brevity - new kinds of events and other properties are available.
+- How does it look?
+  1.  jQuery is added inside a script tag.
 
 ![](/assets/6_jQuery_-_trivia-image-1.png)
 Explanation: This is equivalent to setting the eventListener to the p tag.
@@ -18,27 +18,23 @@ Explanation: This is equivalent to setting the eventListener to the p tag.
 
 ![](/assets/6_jQuery_-_trivia-image-2.png)
 
-* What's the issue with jQuery:
-	1. It made the code very imperative - the developer had to account for every action and the consequences, which includes the user's actions. For big websites, this becomes a huge mess.
+- What's the issue with jQuery:
+  1.  It made the code very imperative - the developer had to account for every action and the consequences, which includes the user's actions. For big websites, this becomes a huge mess.
 
 ![](/assets/6_jQuery_-_trivia-image-3.png)
 **The pyramid of Doom**
 
-*****
+---
 
+- In a nutshell, we had HTML, CSS and JS. Then we had jQuery. As time progressed, people have made new things and much better libraries which have made working with JS much easier.
+- Today - there are very few new projects which use jQuery.
+- Developers who know only jQuery are not in high demand, and job postings are decreasing.
 
-* In a nutshell, we had HTML, CSS and JS. Then we had jQuery. As time progressed, people have made new things and much better libraries which have made working with JS much easier.
-* Today - there are very few new projects which use jQuery.
-* Developers who know only jQuery are not in high demand, and job postings are decreasing.
-
-
-*****
+---
 
 **What is better, and consequently popular now?**
 
-* We'll use a better, open source library called **React.js** - It is very popular and efficient(computationally awa from a development perspective).
-* It is declarative.
-
+- We'll use a better, open source library called **React.js** - It is very popular and efficient(computationally awa from a development perspective).
+- It is declarative.
 
 Note: We **won't** be using DOM manipulations from now on.
-

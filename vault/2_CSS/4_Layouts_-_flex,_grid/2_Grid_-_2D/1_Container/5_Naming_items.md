@@ -19,10 +19,8 @@ Syntax:
 	{
 	  grid-area:;
 	}
-
-
-*****
-
+  
+---
 **Naming/Using the items**
 Steps:
 
