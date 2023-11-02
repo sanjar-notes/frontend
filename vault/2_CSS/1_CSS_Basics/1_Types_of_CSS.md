@@ -8,7 +8,7 @@ There are three ways of adding styles, in order of precedence:
 ![](/assets/1_Types_of_CSS-image-1.png)
 As the element is already selected, just write the code-block's contents.
 
-2. Internal - define the style in the html file, using <style> tag in the head. Contents have selectors.
+2. Internal - define the style in the html file, using `<style>` tag in the head. Contents have selectors.
 
 ![](/assets/1_Types_of_CSS-image-2.png)
 

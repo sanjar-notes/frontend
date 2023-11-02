@@ -16,17 +16,22 @@ There are 5 types of selectors - with criteria:
 Note: Don't try to remember all the names, use as per requirement.
 
 #### Syntax for using selectors
-	selector_name{property: value;}
+```css
+selector_name 
+{ 
+  property: value; 
+}
+```
 
-e.g
-	h2{color:blue;}
-	
-	h2.class_name{}
-	
-	p#id_name{}
-	
-	h2.#id_name{}
+```css
+h2{color:blue;}
 
+h2.class_name{}
+
+p#id_name{}
+
+h2.#id_name{}
+```
 
 *****
 
@@ -35,7 +40,6 @@ e.g
 
 
 *****
-
 
 1. **Fundamental Selectors**:
 	1. tag name(p)
@@ -60,24 +64,24 @@ MAID: Successive ones are more specific. Future generation and siblings only. Ju
 Other types of selectors
 
 1. **CSS Pseudo-classes **ie** Specifying style for a state of the element** **:**
-	1. a:link - unvisited(unclicked) link
-	2. a:visited - visited(clicked) link
-	3. a:hover - (Its an event, hover the mouse over X)
-	4. a:active - (Applies while an element is being activated by the user. e.g, the time span between the press and release of the mouse button)
-	5. X:last-child	(Applied to an X, if it is the last child, of an element)
-	6. X:first-child	(Applied to the an X, if it is the first child, of an element)
-	7. X:first-type-child (Applied to the first X, of each parent)
+	1. a`:link` - unvisited(unclicked) link
+	2. a`:visited` - visited(clicked) link
+	3. a`:hover` - (Its an event, hover the mouse over X)
+	4. a`:active` - (Applies while an element is being activated by the user. e.g, the time span between the press and release of the mouse button)
+	5. X`:last-child`	(Applied to an X, if it is the last child, of an element)
+	6. X`:first-child`	(Applied to the an X, if it is the first child, of an element)
+	7. X`:first-type-child` (Applied to the first X, of each parent)
 2. **Pseudo element selectors **- select part of an element, like first letter, first line etc
-	1. ::after - apply just after the element. *Irrespective of the next sibling.*
-	2. ::before - apply just before the element. *Irrespective of the next sibling.*
-	3. ::first-letter
-	4. ::first-line
-	5. ::selection - the portion selected by the user.
+	1. ``::after` - apply just after the element. *Irrespective of the next sibling.*
+	2. `::before` - apply just before the element. *Irrespective of the next sibling.*
+	3. `::first-letter`
+	4. `::first-line`
+	5. `::selection` - the portion selected by the user.
 3. **Attribute selectors** - apply to all elements which have the attribute values set as the arg.
-	1. only attribute ⇒	tag[attri]
+	1. only attribute ⇒	tag[attri]`
 	2. attribute with value ⇒ tag[attri="value"]
 	3. attribute with value **like **⇒ tag[attri~="value"]. t's like regex ⇒ ^(starting with), $(ending with), *, |
-
+    ```css
 	img[alt] /* select all img elements with an alt value*/
 	{
 		color:green;
@@ -87,15 +91,14 @@ Other types of selectors
 	{
 		color:red;
 	}
+	```
 
 Note:
-
 1. all(*) elements (not used so often)
 2. !important (not recommended) (fixed) - **This is a value flag.**
-
-	p{	color: blue !important;}
+	```css
+	p {	color: blue !important;}
+	```
 
 
 3. There's nothing like pseudo ID, makes no sense as they are unique anyway
-
-
