@@ -1,5 +1,4 @@
 # 3. Basic JavaScript
-
 Created Wednesday 08 July 2020
 
 #### Data types

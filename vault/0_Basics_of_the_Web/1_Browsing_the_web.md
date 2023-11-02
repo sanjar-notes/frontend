@@ -1,5 +1,4 @@
 # 1. Browsing the web
-
 Created Saturday 27 March 2021
 
 #### Browsing the web

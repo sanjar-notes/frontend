@@ -1,5 +1,4 @@
 # 4. Critical Render Path
-
 Created Tuesday 16 June 2020
 
 - We always should know how things work underneath the hood to know how things happen.

@@ -1,5 +1,4 @@
 # 1. How variables work
-
 Created Thursday 25 March 2021
 
 FIXME

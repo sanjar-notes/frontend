@@ -1,5 +1,4 @@
 # 4. Inheritance
-
 Created Thursday 25 March 2021
 
 4. **Inheritance** - Simple.

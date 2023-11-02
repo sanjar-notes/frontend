@@ -1,5 +1,4 @@
 # 4. Function composition
-
 Created Thursday 25 March 2021
 
 TODO

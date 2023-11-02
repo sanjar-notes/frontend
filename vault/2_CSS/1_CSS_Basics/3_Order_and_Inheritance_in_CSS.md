@@ -1,5 +1,4 @@
 # 3. Order and Inheritance in CSS
-
 Created Friday 08 May 2020
 
 Reference:

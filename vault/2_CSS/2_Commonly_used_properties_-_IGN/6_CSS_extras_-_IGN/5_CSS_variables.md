@@ -1,5 +1,4 @@
 # 5. CSS variables
-
 Created Saturday 29 August 2020
 
 - CSS variables are created by us and they can be used to store property values. This is helpful for automation.

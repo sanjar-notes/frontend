@@ -1,5 +1,4 @@
 # 2. What is JavaScript
-
 Created Wednesday 08 July 2020
 
 #### Trivia

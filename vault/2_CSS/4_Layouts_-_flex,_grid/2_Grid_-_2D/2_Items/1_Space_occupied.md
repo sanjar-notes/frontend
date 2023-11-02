@@ -1,5 +1,4 @@
 # 1. Space occupied
-
 Created Thursday 03 September 2020
 
 First: Undertand how grid is represented

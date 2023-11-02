@@ -1,5 +1,4 @@
 # 4. Multimedia tags
-
 Created Tuesday 01 September 2020
 
 Available multimedia types are:

@@ -1,5 +1,4 @@
 # 2. DOM Manipulation
-
 Created Friday 10 July 2020
 
 - Up until now, we've been writing HTML, CSS and using JS to control effects on the page, but not really.

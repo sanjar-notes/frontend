@@ -1,5 +1,4 @@
 # 2. DOM Selectors
-
 Created Saturday 11 July 2020
 
 ### Element Selectors - To get the element object(call it eObj)

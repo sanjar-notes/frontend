@@ -1,5 +1,4 @@
 # 2. Colors
-
 Created Monday 15 June 2020
 
 There are three ways to define color:

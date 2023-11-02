@@ -1,5 +1,4 @@
 # 1. What are tags
-
 Created Sunday 14 February 2021
 
 ### What is HTML

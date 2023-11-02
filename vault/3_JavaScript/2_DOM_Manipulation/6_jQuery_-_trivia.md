@@ -1,5 +1,4 @@
 # 6. jQuery - trivia
-
 Created Monday 13 July 2020
 
 - What is jQuery - a DOM manipulation library.

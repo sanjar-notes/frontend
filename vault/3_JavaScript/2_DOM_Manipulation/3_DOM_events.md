@@ -1,5 +1,4 @@
 # 3. DOM events
-
 Created Sunday 12 July 2020
 
 - JS can be used to listen to events and do something. Events include hovering, clicking, writing, key-press, copy, paste etc.

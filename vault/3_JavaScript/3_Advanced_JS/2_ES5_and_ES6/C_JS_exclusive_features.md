@@ -1,5 +1,4 @@
 # C. JS exclusive features
-
 Created Thursday 25 March 2021
 
 #### 1. Symbol data type

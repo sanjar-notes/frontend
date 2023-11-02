@@ -1,5 +1,4 @@
 # 1. Media queries
-
 Created Tuesday 01 September 2020
 
 Media queries are very useful for responsive devices.

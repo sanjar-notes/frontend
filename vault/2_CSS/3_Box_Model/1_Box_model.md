@@ -1,5 +1,4 @@
 # 1. Box model
-
 Created Tuesday 16 June 2020
 
 Every element is essentially a box in CSS

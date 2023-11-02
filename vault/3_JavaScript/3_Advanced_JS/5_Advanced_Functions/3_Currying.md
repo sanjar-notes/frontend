@@ -1,5 +1,4 @@
 # 3. Currying
-
 Created Thursday 25 March 2021
 
 TODO

@@ -1,5 +1,4 @@
 # 1. JS Basics
-
 Created Wednesday 08 July 2020
 
 ![](/assets/1_JS_Basics-image-1.png)

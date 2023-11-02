@@ -1,5 +1,4 @@
 # 5. Basic Data Structures
-
 Created Thursday 09 July 2020
 
 #### Array

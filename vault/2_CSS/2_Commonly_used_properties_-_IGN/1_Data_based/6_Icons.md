@@ -1,5 +1,4 @@
 # 6. Icons
-
 Created Tuesday 16 June 2020
 
 - How to add icons to a webpage? We use a font library like Font Awesome.

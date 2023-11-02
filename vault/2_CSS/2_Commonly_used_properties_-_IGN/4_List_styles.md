@@ -1,5 +1,4 @@
 # 4. List styles
-
 Created Tuesday 16 June 2020
 
 1. `list-style-type`: `circle | square | upper-alpha | lower-alpha | upper-roman | lower-roman | lower-greek`. Default for `<ol>` are numbers.

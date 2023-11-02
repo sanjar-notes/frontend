@@ -1,5 +1,4 @@
 # 4. Justifying and aligning items
-
 Created Thursday 03 September 2020
 
 MAID: grid items, "items"

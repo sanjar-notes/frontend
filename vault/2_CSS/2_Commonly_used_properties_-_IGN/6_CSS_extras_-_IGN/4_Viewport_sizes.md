@@ -1,5 +1,4 @@
 # 4. Viewport sizes
-
 Created Tuesday 01 September 2020
 
 - Percentages in size are relative to the parent container.

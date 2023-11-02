@@ -1,5 +1,4 @@
 # 3. background-image
-
 Created Monday 15 June 2020
 
 ### Syntax

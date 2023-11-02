@@ -1,5 +1,4 @@
 # B. Shorthands and object features
-
 Created Thursday 25 March 2021
 
 #### 1. Destructuring(object/iterable unpacking)

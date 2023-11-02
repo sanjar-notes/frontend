@@ -1,5 +1,4 @@
 # 5. Text Formatting
-
 Created Tuesday 16 June 2020
 
 Properties:

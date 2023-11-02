@@ -1,5 +1,4 @@
 # 9. Debugging
-
 Created Saturday 18 July 2020
 
 Debugging - Figuring out why the program isn't working as intended.

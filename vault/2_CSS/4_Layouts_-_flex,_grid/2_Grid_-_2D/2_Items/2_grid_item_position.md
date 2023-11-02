@@ -1,5 +1,4 @@
 # 2. grid item position
-
 Created Thursday 03 September 2020
 
 - The **justify-self** property specifies position of the cell in the horizontal direction.

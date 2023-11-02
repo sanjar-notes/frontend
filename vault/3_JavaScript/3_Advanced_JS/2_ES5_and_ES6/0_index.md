@@ -1,5 +1,4 @@
 # 2. ES5 and ES6
-
 Created Tuesday 14 July 2020
 
 #### About the JS ecosystem

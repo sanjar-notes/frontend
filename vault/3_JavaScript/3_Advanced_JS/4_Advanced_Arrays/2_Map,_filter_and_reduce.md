@@ -1,5 +1,4 @@
 # 2. Map, filter and reduce
-
 Created Thursday 25 March 2021
 
 #### Why use map, filter or reduce?

@@ -1,5 +1,4 @@
 # 7. Developer Fundamental 5
-
 Created Monday 13 July 2020
 
 FIXME - this page has wrong information, correct it.

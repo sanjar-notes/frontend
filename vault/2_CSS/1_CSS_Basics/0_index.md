@@ -1,5 +1,4 @@
 # 1. CSS Basics
-
 Created Sunday 25 April 2021
 
 - The basic structure of CSS is very simple.

@@ -1,5 +1,4 @@
 # 2. Grid - 2D
-
 Created Thursday 03 September 2020
 
 FIXME

@@ -1,5 +1,4 @@
 # 4. Using JS
-
 Created Wednesday 08 July 2020
 
 #### In the browser

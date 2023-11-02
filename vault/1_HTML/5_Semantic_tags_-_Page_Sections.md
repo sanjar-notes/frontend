@@ -1,5 +1,4 @@
 # 5. Semantic tags - Page Sections
-
 Created Wednesday 17 June 2020
 
 - We have header, navigation, content tags and footer. The layout is like this:

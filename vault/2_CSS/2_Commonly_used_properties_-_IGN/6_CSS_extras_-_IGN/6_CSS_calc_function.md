@@ -1,5 +1,4 @@
 # 6. CSS calc function
-
 Created Wednesday 03 November 2021
 
 #### Why

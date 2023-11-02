@@ -1,5 +1,4 @@
 # 1. spread and rest operators
-
 Created Thursday 25 March 2021
 
 #### Are the two different?

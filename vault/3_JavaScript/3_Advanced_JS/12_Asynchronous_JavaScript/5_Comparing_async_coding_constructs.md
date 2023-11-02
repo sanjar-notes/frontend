@@ -1,5 +1,4 @@
 # 12. Asynchronous JavaScript
-
 Created Monday 15 November 2021
 
 #### Why

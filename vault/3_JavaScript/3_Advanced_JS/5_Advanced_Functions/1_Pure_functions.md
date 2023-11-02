@@ -1,5 +1,4 @@
 # 1. Pure functions
-
 Created Thursday 25 March 2021
 
 #### What are pure functions?

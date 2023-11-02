@@ -1,5 +1,4 @@
 # 1. DOM and JS Engine
-
 Created Saturday 11 July 2020
 
 ### DOM

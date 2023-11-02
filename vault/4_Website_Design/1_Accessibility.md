@@ -1,5 +1,4 @@
 # 1. Accessibility
-
 Created Tuesday 01 September 2020
 
 - Headings should be used in order 1 to 6

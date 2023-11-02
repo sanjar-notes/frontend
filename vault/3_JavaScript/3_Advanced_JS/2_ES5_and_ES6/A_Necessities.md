@@ -1,5 +1,4 @@
 # A. Necessities
-
 Created Thursday 25 March 2021
 
 These were necessary features common in other programming languages:

@@ -1,5 +1,4 @@
 # 10. How Does JS works
-
 Created Saturday 18 July 2020
 
 - We don't need to know how JS is implemented, but we do need to know how it works.
