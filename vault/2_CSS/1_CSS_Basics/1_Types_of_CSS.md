@@ -3,40 +3,69 @@ Created Friday 08 May 2020
 
 There are three ways of adding styles, in order of precedence:
 
-1. Inline CSS - style attribute. The most immediate one.
+### 1. Inline - style attribute
+The most immediate one
+```html
+<h1 style="color: blue; text-align: center;">This is a heading</h1>
 
-![](/assets/1_Types_of_CSS-image-1.png)
-As the element is already selected, just write the code-block's contents.
+<p  style="color: red;">This is a paragraph.</p>
+```
+As the element is already selected, just write the code-block's contents as attribute value.
 
-2. Internal - define the style in the html file, using `<style>` tag in the head. Contents have selectors.
+### 2. Internal - `<style>` tag in the head
+define the style in the html file, using `<style>` tag in the head. Contents have selectors.
+```html
+<html>
+<head>
+<style>
+	body {
+	background-color: linen;
+	}
+	hi {
+	color: maroon;
+	margin-left: 40px;
+	}
+</style>
+</head>
 
-![](/assets/1_Types_of_CSS-image-2.png)
+  <body></body>
+</html>
+```
 
-### The 3rd way, the most widely used - External CSS
+### 3. External CSS - file with `link`
+A `link` tag is used. And as the CSS file is external, use `href`. It takes no input, so it is a closed tag.
+```html
+<!-- HTML -->
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+```
+	
+```css
+/* CSS file */
+h2 
+{ 
+  color: red; 
+}
 
-* use a link tag. And as css is not an input, use href. It takes no input, so it is a closed tag.
+p 
+{ 
+  color: pink;
+}
 
-	<link rel="stylesheet" type="text/css" href="style.css" >
-
-![](/assets/1_Types_of_CSS-image-3.png)
-
+span
+{ 
+  color: green;
+}
+```
 * The CSS file contents are nothing but the content of the **style **tag.
 * Each HTML file can have it's own styles.
-* If we need multiple htmls to have the same style, we just link it to the same css.
+* If we need multiple HTMLs to have the same style, we just link it to the same css.
+* Internal and external styles are line order dependent
 
 
-Q) Why have a <style> sheet if we can add style to HTML:
-A) There are many reasons for this:
-
-1. Seperation of concerns, very very important in CS.
-2. Multiple people might be working on the html. Integration will be quite difficult.
-3. Reduces duplicacy.
-4. Lets us get css files which are not saved on the server, or out computer. Like googlefonts etc. Which may be changing.
-
-
-*****
-
-
-* Internal and external styles are line order dependent.#main>p:nth-child(35)
-
-
+### Why have a file instead of internal `<style>`
+1. Separation of concerns, very very important in CS.
+2. Collaboration - Multiple people might be working on the html. Integration will be quite difficult.
+3. DRY - don't repeat yourself.
+4. Import external CSS - Lets us get css files which are not part our code. Like GoogleFonts etc. Its not very useful to store such things in our code, since they could change at the source.
