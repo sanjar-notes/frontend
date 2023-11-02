@@ -3,7 +3,6 @@ Created Tuesday 14 July 2020
 
 #### Scopes in JS
 There are 4 scopes in JS, in order of lookup(during use):
-
 1. **L**ocal scope - block scope, function scope.
 2. **E**nclosing scope - inner function's scope.
 3. **G**lobal scope - variables/functions at the script level, i.e outside of any class/function. This scope is unique.

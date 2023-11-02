@@ -11,7 +11,6 @@ First: Undertand how grid is represented
 
 **Set the postions**
 There are two options:
-
 1. grid-row: a/b; // occupies rows from line a to b
 2. grid-column:a/b; // occupies column from line a to b
 

@@ -2,7 +2,6 @@
 Created Tuesday 16 June 2020
 
 Two things constitute responsive UI:
-
 1. Website is responsive to window changes etc.
 2. Website works in the responsive way across devices.
 

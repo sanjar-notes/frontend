@@ -3,7 +3,6 @@
 Created Tuesday 16 June 2020
 
 Properties:
-
 1. `color`, according to W3C, background-color must also be defined.
 2. `text-decoration`: **none**, **line-through**, **overline**, **underline. **Don't underline links.
 3. `text-align`: **left**, **center** or **right**

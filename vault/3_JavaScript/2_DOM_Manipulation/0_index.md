@@ -38,6 +38,5 @@ We just keep the instructions to change the html page, by just sending the JS. T
 ---
 
 To do all this, we need understand two things:
-
 1. DOM
 2. JS engine

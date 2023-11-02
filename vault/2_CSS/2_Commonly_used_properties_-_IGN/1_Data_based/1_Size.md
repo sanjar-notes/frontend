@@ -7,15 +7,14 @@ This is a physical size like **px**, **mm**, **cm**, **inch**, **pt**(points 1/7
 ### Relative units
 Units relative to the parents property(e.g relative to parents font size)
 
-examples: 
-- %(the best), 
+examples:
+- %(the best),
 - em - relative to the parent font size.
 - rem - (root em), relative to the OS font size.
 em vs % : em changes if the font size is changed by the user. But not the zoom level or screen size, while percentage accomodates for zoom too.
 Remember __1em = 12pt = 16px = 100%__
 <https://kyleschaeffer.com/css-font-size-em-vs-px-vs-pt-vs-percent>
 So there are 5 units:
-
 1. em (default size) or rem
 2. px - pixels
 3. % - percentage
@@ -29,7 +28,7 @@ p.size {
 	font-size:20px; /*correct*/
 	font-size:20em; /*20 times the default size of the page*/
 	font-size: 200%; /*This is the latest/*
-	
+
 	/* Note we don't have a spaces in between
 	em is the default size. Other common size units are
 	0. em(default size value)

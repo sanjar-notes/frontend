@@ -3,7 +3,6 @@
 Created Tuesday 01 September 2020
 
 Available multimedia types are:
-
 1. image
 2. video
 3. audio

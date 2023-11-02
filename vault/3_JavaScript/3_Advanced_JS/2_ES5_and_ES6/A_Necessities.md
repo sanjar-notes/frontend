@@ -3,7 +3,6 @@
 Created Thursday 25 March 2021
 
 These were necessary features common in other programming languages:
-
 1. let and const - solve hositing and scope problems.
 2. arrow functions - solve context binding
 3. Template literals - easy string builder, ability to add DSL.

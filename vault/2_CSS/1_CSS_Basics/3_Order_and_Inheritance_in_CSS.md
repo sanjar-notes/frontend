@@ -9,7 +9,6 @@ _<https://css-tricks.com/almanac/>
 - Explicit code is given the highest priority, because most CSS are from libraries.
 
 What seletors win out in the cascade depends on the following order:
-
 1. **Importance** (!important)
 2. Inline styles
 3. IDs
@@ -22,7 +21,6 @@ Obviously - Top down code** order** (top down code - This applies to link tag in
 
 What this means: If we have two styles which potentially apply to the same elements, the specific one is taken, irrespective of line order. If they have the same specificity, order breaks the tie. **Specificity is manual**, i.e \* is the least specific.
 Try these resources:
-
 1. [Specificity ](https://specificity.keegan.st/)[Calculator](https://specificity.keegan.st/)
 
 ---

@@ -12,7 +12,6 @@ Helps us keep everything at the correct place(in a row or in a column - 1D), wit
 - We'll not be using the older things like floats.
 
 Two good are:
-
 1. [CSS Tricks - Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 2. [Flexbox froggy](https://flexboxfroggy.com/) - game to learn flexbox
 

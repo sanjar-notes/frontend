@@ -72,7 +72,6 @@ Note:
   - Access(reading): Just write the variable name. `sum = x + y;`, `f(x)`.
 
 Note:
-
 1. Uninitialized variables store the value `undefined`😁️. Example: `let x; console.log(x) // undefined`
 2. Declarations can be chained. i.e `let x = 2, y = [1, 2], z = 3;`.
 3. Variables cannot be redeclared, except for `var`.

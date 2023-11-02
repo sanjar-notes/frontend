@@ -5,7 +5,6 @@ Cross axis = perpendicular to direction of flex (main axis)
 ``align-items`` controls components along the cross axis.
 
 It has 5 modes:
-
 1. center → all components stacked at the center, same space on both ends.
 2. flex-start → all components stacked at the start
 3. flex-end → all components stacked at the end

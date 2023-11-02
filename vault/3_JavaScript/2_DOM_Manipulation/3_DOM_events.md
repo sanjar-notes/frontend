@@ -26,6 +26,5 @@ Created Sunday 12 July 2020
 #### Three event parameter
 
 The callback function can have a parameter which is set by JS once the event occurs. Some important attributes of this `event` parameter are:
-
 1. tagName - returns tag name in all caps, a string.
 2. target - returns the host object

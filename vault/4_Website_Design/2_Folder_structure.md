@@ -3,7 +3,6 @@ Created Wednesday 10 March 2021
 
 #### Basic
 Classify resource as per type:
-
 1. index.html at root
 2. styles folder - CSS files
 3. scripts folder - JS files

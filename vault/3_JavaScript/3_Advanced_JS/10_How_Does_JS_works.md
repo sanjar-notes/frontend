@@ -13,7 +13,6 @@ Sample Interview questions:
 ---
 
 There are two basic mechanisms in a computer:
-
 1. **Memory Heap** - Memory is limited, so we need a garbage collector - To avoid memory leaks(unused memory) - This is why global variables are discouraged.
 2. **Call stack** - This is used to control the program flow, including recursion. Including function removal after execution.
 
@@ -47,7 +46,6 @@ JavaScript Run-Time Environment
 - timeout is provided by the browser.
 
 How did the code run:
-
 1. console.log('1') got executed by the call stack.
 2. The next line was a timeout, so Timeout API waited for 2 second, we were then ready to run the code.
 3. The timeout code was sent to the Callback-queue(which is a queue of processes ready to run)
@@ -59,6 +57,5 @@ How did the code run:
 ---
 
 Practial examples of asynchronous:
-
 1. **Synchronous** - We call a teacher and wait for the teacher to pick up and answer, but do noting while their phone is ringing. **Asynchronous** - We text the teacher and keep doing our work. The teacher responds when they are free.
 2. Reading files, network requests.

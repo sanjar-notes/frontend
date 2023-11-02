@@ -5,7 +5,6 @@ The ``flex-wrap`` property is used for wrapping [the](https://www.freecodecamp.o
 It applies w.r.t the main axis only - as it is for reading, and therefore has no cross-axis. property.
 
 It has 3 values (modes):
-
 1. no-wrap → The default
 
 ![](/assets/3_Wrapping-image-1.png)

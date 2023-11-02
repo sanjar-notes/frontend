@@ -6,7 +6,6 @@ Created Thursday 03 September 2020
 - The **align-self** property specifies position of the cell in the vertical direction.
 
 Both have 4 options:
-
 1. stretch - the default value
 2. center - at center
 3. start - sets the position to the left or top

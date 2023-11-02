@@ -7,7 +7,6 @@ Created Wednesday 08 July 2020
 - Using the `<script>` `</script>` tag.
 
 There are 2 ways to add JS code:
-
 1. Add it as content of the `script` tag.
 2. Add code from a `.js` file using `src` attribute. `script` is still a content tag.
 

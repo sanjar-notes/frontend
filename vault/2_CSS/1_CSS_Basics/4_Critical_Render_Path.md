@@ -8,7 +8,6 @@ Suppose we have the following setup:
 ![](/assets/4_Critical_Render_Path-image-1.png)
 We're using an external google-font style file.
 The process:
-
 1. HTML is sent - It requests for the CSS we built.
 
 ![](/assets/4_Critical_Render_Path-image-2.png)

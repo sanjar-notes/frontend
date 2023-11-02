@@ -3,7 +3,6 @@
 Created Monday 15 June 2020
 
 There are three ways to define color:
-
 1. **rgb(r,g,b)** - where 0 ≤r, g, b ≤ 255.
 2. **#pqrstu** - 0≤ all values ≤ f
 3. **Names** - blue, green, fuchsia
@@ -11,7 +10,6 @@ There are three ways to define color:
 5. **hsla(hue, saturation, lightness, alpha)** - for transparency
 
 Notes:
-
 1. For grayscale - use the same color for all red, green and blue.
 
 ![](/assets/2_Colors-image-1.png)

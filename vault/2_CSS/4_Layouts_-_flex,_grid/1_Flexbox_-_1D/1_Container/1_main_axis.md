@@ -5,7 +5,6 @@ Main axis = direction of flex.
 ``justify-content`` controls components along the main axis.
 
 It has 6 values (modes):
-
 1. center → all components stacked at the center, same space on both ends.
 2. flex-start → all components stacked at the start
 3. flex-end → all components stacked at the end

@@ -28,7 +28,6 @@ Created Tuesday 14 July 2020
 #### Features of ES5 and ES6
 
 There are 3 kinds of features introduced by ES5 and ES6:
-
 1. [Necessities](A_Necessities.md) - critical problems with JS
 2. [Shorthands and object features](B_Shorthands_and_object_features.md) - make code concise and dynamic.
 3. [Exclusive features](C_JS_exclusive_features.md) - new features exclusive to JS

@@ -22,7 +22,6 @@ Created Tuesday 16 June 2020
 ```
 
 Useful icons:
-
 1. FontAwesome Icons: `<script src="<https://kit.fontawesome.com/a076d05399.js"></script>`
 2. BootStrap Icons: `<link rel="stylesheet" href="<https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">`
 3. Google Icons: `<link rel="stylesheet" href="<https://fonts.googleapis.com/icon?family=Material+Icons">`

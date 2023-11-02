@@ -19,11 +19,10 @@ Syntax:
 	{
 	  grid-area:;
 	}
-  
+
 ---
 **Naming/Using the items**
 Steps:
-
 1. Select an existing selector
 2. Set **grid-area** to name of the template
 3. Write the styles
