@@ -2,7 +2,6 @@
 Created Thursday 25 March 2021
 
 #### 1. Destructuring(object/iterable unpacking)
-
 - A very nice feature. Very popular. Inspired from python3.
 - Purpose: Concise code.
 - Works with:
@@ -38,7 +37,6 @@ f(personObj); // OK
 
 - Is destructuring worth it - [./destructuringCode.js](destructuringCode.js)
 - [More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Ignoring_some_returned_values) at MDN
-
 #### 2. Dynamic fieldnames - Existing object value as field name
 
 - Use existing object's value as field name, actually its string equivalent.
@@ -74,7 +72,6 @@ f(personObj); // OK
     - `Person[nameObject]` - finds a field matching the string equivalent of namedObject.
 
 #### 3. Object literal shothand - use variable as fieldName and value
-
 - Use an existing variable to specify both the fieldName and value in an object literal.
 - What happens: variable name becomes field name. Variable value becomes field value.
 - Purpose: Concise code. [See](https://www.youtube.com/watch?v=HF0PN1vHsSY).
@@ -86,7 +83,6 @@ f(personObj); // OK
 - Note: This feature has nothing to do with dynamic field names, as seen earlier.
 
 #### 4. Shorthand method names
-
 - Directly add function to object literal.
 - Purpose - Concide code
 - Syntax

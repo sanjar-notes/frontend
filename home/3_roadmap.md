@@ -8,7 +8,6 @@ Front End - embrace it, good eye for Design
 Back End - Dev Ops
 
 # 1st Pass
-
 ## Front End
 
 - runs inside a browser(HTML, CSS, JS - only these but very important)(MDN web docs), w3schools(used for basics),
@@ -19,7 +18,6 @@ Back End - Dev Ops
 - Front end and backend cannot be done in isloation
 
 ## Back End
-
 - documentation is nodejs is nodejs.org
 - (1 week) nodejs - runtime for javascript based on V8, without the browser. This is faster than Python, around 10x
 - It was so fast that it became fit for desktop apps, even embedded apps
@@ -37,7 +35,6 @@ Back End - Dev Ops
 - Fundamental of server-client - theoretical
 
 ## Servers with Node JS(3 weeks)
-
 - How are REST APIs made - using Express.js, used to make servers
   - Routes
   - Middlewares
@@ -52,7 +49,6 @@ Back End - Dev Ops
   Ready to make CRUD websites
 
 # 2nd Pass
-
 ## Front End(2 weeks)
 
 - CSS libaries - Bootstrap, Materialize - professional sites
@@ -60,7 +56,6 @@ Back End - Dev Ops
 - axios - js library, https requests asynchronously
 
 ## Back End
-
 (Start of 2 weeks)
 
 - static or public HTML
@@ -79,49 +74,40 @@ Back End - Dev Ops
   (End of two weeks)
 
 ## Make project(any one - 1 week)
-
     Blogging site - comments
     Social media
 
 ## (1 week) Realtime apps - WebSocket(change without req-res) - learn - from socket.io.
-
 - (1 week) make Collab IDE, Shared Whiteboard
 
 ## Good to know - browser API
-
 - Canvas -> 2D games
 - Browser APIs - GPS, A/V
 
 # 3rd pass
-
 ## Testing
 
 ### FE
-
 - Jasmine, JEST, Karma(automated test)
 - UI TEst - phantomJS(screenshot tests), puppeteer(headless testing), protractor
 - FE - Frameworks - React, Vue, Ember, Angular - Components, Routing, State Management(Just these three)
 
 ### BE - testing
-
 - Mocha + Chai
 - NYC - code coverage(runs tests when code is updated), testing is very, very important.
 
 ### Deployment and DevOps
-
 - handle, nginx configs
 - handle, Apache configs
 - Well versed with Linux - like firewalls, not basic stupid stuff
 - Setup database - Mongo, MySQL, postgres
 
 ### Containerization
-
 - Docker - Modularization of OS and dependencies, programmatically managing resources(software)
 - Kubernetes(K8S) - Orchestrization framework
 - Chef, ansible
 
 ## DevOps Services - Free/Paid
-
 - Serverless - AWS lambda
 - IaaS - Machine is given(configure yourself) - Google Compute Engine, AWS EC2, DigitalOcean
 - PaaS - Worry only about the code - Heroku, Google App Engine, AWL LightSail
@@ -181,7 +167,6 @@ CodeWithHarry
 - CodePen.io - learn things
 
 # Resources
-
 - UX wing(https://uxwing.com/) for Icons
 - PixaBay(https://pixabay.com/) for free Images
 - FreeHTML5(https://freehtml5.co/) for free templates
@@ -190,13 +175,9 @@ CodeWithHarry
 - More resources are available on this GitHub Repository(https://github.com/bradtraversy/design-resources-for-developers)
 
 # This is great
-
 * Python vs Node is not important
 ---
 </details>
 
 - https://roadmap.sh/frontend
-
-
 - https://roadmap.sh/backend
-

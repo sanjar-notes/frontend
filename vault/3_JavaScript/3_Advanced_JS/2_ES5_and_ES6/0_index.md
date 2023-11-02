@@ -2,7 +2,6 @@
 Created Tuesday 14 July 2020
 
 #### About the JS ecosystem
-
 **"There is nothing static about being a web-developer, everything is improving".**
 
 - HTML, CSS are JS evolving very rapidly.
@@ -12,7 +11,6 @@ Created Tuesday 14 July 2020
 - ES5 and ES6 introduced new features which make coding very easy and fun.
 
 #### ECMAScript standards and compatibility
-
 - **Not all browsers support ES5 and ES6 right now, is it practical to learn and use the standard right now?**
 - Yes, some new features of ESx are not currently supported by all browsers. But we can still use them, we'll use a **compiler** to obtain the most supported version of ECMAScript from the latest ESx code. A popular compiler is **Babel**, it works with the latest ESx. **Don't worry about the version.**
 - There are two important operations when handling two versions:
@@ -25,7 +23,6 @@ Created Tuesday 14 July 2020
 - The new standards have made the code clean and concise.
 
 #### Features of ES5 and ES6
-
 There are 3 kinds of features introduced by ES5 and ES6:
 1. [Necessities](A_Necessities.md) - critical problems with JS
 2. [Shorthands and object features](B_Shorthands_and_object_features.md) - make code concise and dynamic.

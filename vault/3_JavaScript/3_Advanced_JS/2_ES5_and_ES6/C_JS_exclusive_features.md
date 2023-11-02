@@ -2,7 +2,6 @@
 Created Thursday 25 March 2021
 
 #### 1. Symbol data type
-
 - Useful when working with objects.
 - Used to create properties in objects which are invisible to the object owner.
 - This is important if different people work on the same object. Separation of concerns is the goal, symbols avoid properties to clash, if the object is handled by two scripts.
@@ -21,7 +20,6 @@ Created Thursday 25 March 2021
   FIXME
 
 #### 2. use `strict`
-
 - Purpose - Modern mode for JS, generates more exceptions that usual. It can be enforced at the **function** or **script** level. [See](https://johnresig.com/blog/ecmascript-5-strict-mode-json-and-more/).
 - Syntax - add `"use strict"` at the first line inside the function, class or script. Only comments may appear about the `"use script"`.
 - It is just a signal for the interpreter.

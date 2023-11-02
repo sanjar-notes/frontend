@@ -2,11 +2,9 @@
 Created Saturday 27 March 2021
 
 #### Browsing the web
-
 Browsing the web? This is* "*trivial". Yes, _using_ is. But we cannot think of optimization without knowing these details.
 
 #### First connection to a website
-
 ![](/assets/1_Browsing_the_web-image-1.png)
 
 - The URL is sent to the DNS, through the ISP(your Internet company).
@@ -16,7 +14,6 @@ Browsing the web? This is* "*trivial". Yes, _using_ is. But we cannot think of o
 DNS is a system, as well as a server. Watch [here](https://www.youtube.com/watch?v=72snZctFFtA&feature=youtu.be&t=45s).
 
 #### How does the website load
-
 - You request the website(server) for a page. The default page is called the "landing page".
 - The server sends 3 kinds of files for the webpage:
   1.  HTML
@@ -30,14 +27,12 @@ Note: Media files like images, videos, PDF etc are also recieved.
 ![](/assets/1_Browsing_the_web-image-2.png)
 
 #### What do the files do?
-
 - HTML - defines basic structure of the page. Relative locations of paragraphs, quotes, buttons, videos, images etc are defined in this file.
 - CSS - defines styling. - defines the font, color, styling and behavior of the parts defined by HTML.
 - JavaScript - adds interactivity to the page. It can manipulate page elements.
 - Media files are places as per the 3 files.
 
 #### What happens when a new page is requested
-
 Naive way:
 
 - You request for the new page.

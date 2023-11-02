@@ -2,7 +2,6 @@
 Created Tuesday 16 June 2020
 
 #### Why flexbox?
-
 Control/set contained elements in a single row/column.
 
 Helps us keep everything at the correct place(in a row or in a column - 1D), without explicit settings.
@@ -17,13 +16,11 @@ Two good are:
 ---
 
 #### flexbox container (in row mode, the default)
-
 ![](/assets/1_Flexbox_-_1D-image-1.png)
 
 ---
 
 #### The axes and controls
-
 The main axis and cross axis have nothing to do with horizontal/vertical.
 They are set via the `flex-direction` property, default is row.
 
@@ -33,7 +30,6 @@ They are set via the `flex-direction` property, default is row.
 ---
 
 #### There are two kinds of things to control in flex
-
 1. For the flex container - for positioning and laying out space to the flex items
 2. For the flex items - for setting their dimensions, optionally overriding container flex properties.
 

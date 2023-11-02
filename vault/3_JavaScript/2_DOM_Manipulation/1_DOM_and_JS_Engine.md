@@ -2,7 +2,6 @@
 Created Saturday 11 July 2020
 
 ### DOM
-
 We assumed, until now that HTML is _just_ rendered by the browser. Now, before rendering, there needs to be some concrete representation of the HTML in memory. This representation is called the **Document Object Model**(DOM). It is created by the browser as soon as the HTML is received.
 
 - It is simply a document that represents the skeleton(structure) of the webpage.
@@ -23,7 +22,6 @@ document.write('Hello'); // document the write method
 **Think of the **document** object as the skeleton of the screen that we see(with our eyes).**
 Note: DOM and document are used interchangeably.
 [DOM vs CSS vs reality](https://bitsofco.de/what-exactly-is-the-dom/#:~:text=This%20is%20because%20the%20DOM,styles%20applied%20to%20the%20element.)
-
 ### JS Engine
 
 - We assumed that JS is just loaded in the browser, but how?

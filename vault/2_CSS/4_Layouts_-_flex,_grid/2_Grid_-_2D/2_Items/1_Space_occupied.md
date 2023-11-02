@@ -7,7 +7,6 @@ First: Undertand how grid is represented
 - 1 based indexing
 
 ## ![](/assets/1_Space_occupied-image-1.png)
-
 **Set the postions**
 There are two options:
 1. grid-row: a/b; // occupies rows from line a to b

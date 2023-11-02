@@ -9,13 +9,12 @@ No, because they:
 
 
 #### 1. forEach - array
-
 * Purpose - iterate over an array.
 * Since ES5.
 * Syntax
 
 	myIterable.forEach(f); // f(ele) for all elements, returns nothing
-	
+
 	f = function(a){};	// a  = element value
 	f = function(a, b){}; // a = element value, b = index
 
@@ -27,7 +26,6 @@ No, because they:
 
 
 #### 2. for ``in`` - object
-
 * Purpose - iterate over an object.
 * Iterates over fieldNames, not values.
 * MAID(in-enumerate object)
@@ -50,14 +48,13 @@ No, because they:
 
 
 #### 3. for ``of`` - any iterable
-
 * Purpose - iterate over any *iterable*.
 * Solves the problem of iterables in ``for in``. Is a generalized ``forEach``.
 
 	// arrays
 	for(const ele of [1,2,3])
 		console.log(ele);
-	
+
 	// set
 	let s = new Set(['H', 'A', 'C', 'K']);
 	for(const i of s)
@@ -75,7 +72,7 @@ No, because they:
 	C
 	K
 	*/
-	
+
 	// better - destructuring
 	for(const [i, j] of s.entries())
 		console.log(i)

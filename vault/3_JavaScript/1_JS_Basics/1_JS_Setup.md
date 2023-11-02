@@ -2,12 +2,10 @@
 Created Tuesday 14 July 2020
 
 #### **No-setup method**
-
 - Open developer tool aka DevTool, in a browser.
 - Write JS in console
 
 #### **Dedicated setup(in the terminal)**
-
 - JavaScript needs the `node.js` interpreter to run outside the browser.
 - **Steps for installing node**
 

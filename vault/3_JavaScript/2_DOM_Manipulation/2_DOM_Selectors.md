@@ -2,7 +2,6 @@
 Created Saturday 11 July 2020
 
 ### Element Selectors - To get the element object(call it eObj)
-
 - We can select elements and attributes in the DOM(document object) using functions called DOM selectors. The most common ones are:
 1. **getElementsByTagName**('arg') - returns a list of element objects with the 'arg' tag. e.g all <p>, all <img>s
 2. **getElementsByClassName**('arg') - returns a list of element objects with class 'arg'.
@@ -17,7 +16,6 @@ Helps us brush up CSS as well. They used in most of the new codebases.
 ---
 
 ### Attribute Selectors - Assuming we've got the eObj, and now want the attributes
-
 - For editing/reading attributes:
 1. elementObj.**getAttribute**('attribute'); //prints the attribute value
 
@@ -42,7 +40,6 @@ Note: .style [won't](https://css-tricks.com/an-introduction-and-guide-to-the-css
 ---
 
 ### Content Selectors - Change content in the tag or input
-
 1. eObj.innerHTML = 'New content'; // ignores unused tags, <code></code> is invisible. **Dangerous to scripting attacks**
 2. eObj.textContent = 'New verbatim text'; // <code></code> will appear verbatim here.
 3. eObj.value; // for input tags like text, file etc
@@ -50,7 +47,6 @@ Note: .style [won't](https://css-tricks.com/an-introduction-and-guide-to-the-css
 ---
 
 ### Relative selectors
-
 1. eObj.parentElement - the parent element
 2. eObj.children - a list of the children elements
 3. eObj.firstElementChild

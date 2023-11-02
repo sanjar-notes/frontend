@@ -2,7 +2,6 @@
 Created Thursday 09 July 2020
 
 #### Array
-
 - Array is dynamic.
 - Syntax
 
@@ -36,7 +35,6 @@ Created Thursday 09 July 2020
 - The [spread operator](4._Advanced_Arrays.md) is indispensible. It is used almost everywhere.
 
 #### Object
-
 - Objects - It is a set of key-value pairs.
 - `Object` is a keyword.
 
@@ -66,7 +64,6 @@ Membership:
 ---
 
 #### String
-
 - `string` is a primitive type.
 - Strings are dynamically sized, immutable in JS.
 - String API - no inplace ops.

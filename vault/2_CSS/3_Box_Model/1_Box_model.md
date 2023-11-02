@@ -5,7 +5,6 @@ Every element is essentially a box in CSS
 ![](/assets/1_Box_model-image-1.png)
 
 ### padding part of width, height?
-
 - `width`, `height` are for content.
 - `padding`, `border` and `margin` are calculated seperately.
   ![](/assets/1_Box_model-image-2.png)

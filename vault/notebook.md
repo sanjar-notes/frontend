@@ -1,5 +1,4 @@
 # Index of Web Development
-
 - [0. Basics of the Web](0_Basics_of_the_Web.md)
   - [1. Browsing the web](1_Browsing_the_web.md)
   - [2. Dev Tool](2_Dev_Tool.md)

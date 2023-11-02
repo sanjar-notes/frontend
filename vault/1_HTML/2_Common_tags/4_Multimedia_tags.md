@@ -9,7 +9,6 @@ Available multimedia types are:
 5. PDF via browser level core plugins
 
 ### Image
-
 1. <**img**> - self closing image tag
    1. src - path to image file.
    2. alt - text for image file, displayed if image is unavailable
@@ -30,7 +29,6 @@ Example - `figure` tag is immensely helpful.
 ```
 
 ### Video
-
 - Syntax: `<video src="">Video not loaded text</video>`
 - Attributes:
   1.  `src`
@@ -43,14 +41,12 @@ Example - `figure` tag is immensely helpful.
   8.  `muted`
 
 ### Audio
-
 - `<audio controls>alt_text_here</audio>`
 - `<source src="" type="audio/mpeg" />` needs to be inside audio - can be used for sound awa transcripts
 
 mAid - self closing tags don't have a text content.
 
 ### iframe
-
 - Used for getting a webview from a website.
 - It is not a self closing tag
 - `<iframe src="">Fallback text here</iframe>`
@@ -92,7 +88,6 @@ mAid - self closing tags don't have a text content.
   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6SFAshmB8xVQZMIPrJ1qqY?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 ### A note on path
-
 - `src` path follows UNIX notation.
 - Use forward slash, even if website is on a Windows machine.
 - Relative paths are allowed - `.` and `..` can be used, relative to the current page.

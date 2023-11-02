@@ -2,7 +2,6 @@
 Created Monday 15 June 2020
 
 ### Syntax
-
 ```css
 body {
   background-image: url("paper.gif"); /* url('path-to-image') */
@@ -12,7 +11,6 @@ body {
 - See to it that the background doesn't make the text unreadable
 
 ### Variations
-
 1. Prevent repeating - background-image repeats an image both horizontally and vertically, to control this use:
    ```css
    body {

@@ -2,7 +2,6 @@
 Created Wednesday 08 July 2020
 
 #### Data types
-
 - JavaScript is dynamically typed.
 - There are 8 data types, divided into categories:
   - 7 primitives (immutable datum represented directly at the lowest level of the language)-
@@ -43,7 +42,6 @@ Note:
 - `Infinity` - a `number`.
 
 #### String
-
 - Single quotes and double quotes are equivalent.
 - Concatenate using `+`
 - Escape char and rules same as Python, C++, Java.
@@ -56,7 +54,6 @@ Note:
 - JS is loosely typed.
 
 #### Variables
-
 - Declaration and intialization are separate concepts in JS. Declarations are a must.
 - There are 3 kinds of variables:
   - **let** - simple variable(i.e. reassignable). Syntax: `let x = 0;`
@@ -80,7 +77,6 @@ Note:
 7. All inner scopes can read/write to variables of outer scope. Just like C++.
 
 #### Variable naming rules
-
 - Symbols → a-z, A-Z, 0-9, \_, $
 - Rules:
   - Name cannot start with a number
@@ -89,7 +85,6 @@ Note:
 - Note: You can use other language scripts like Cyrillic, Arabic etc. English is recommended.
 
 #### `var` vs `let`
-
 - The only difference is that var has a function scope, a more free scope. i.e it can leak out of top-level blocks, but not out of the function.
 
   if(true)
@@ -107,7 +102,6 @@ Note:
 - `var` is identical to a python3 variable. Simple.💡️
 
 #### Hoisting(JS feature)
-
 - Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (block or function).
 - Only declarations are hoisted, not initializations.
 - Gotchas about hoisting, there are 2:
@@ -123,7 +117,6 @@ Note:
 [Bad code](badCode.js)
 
 #### Standard IO
-
 **Output**
 
 - `console.log(variable)` - just like `print()` in Python3(newlines, virial). Works for both CLI and browser.
@@ -134,7 +127,6 @@ Note:
 - `prompt('message', defaultAnswer)` - same as `input()` in Python3. only for the browser.
 
 #### Operators
-
 - All operators are the same(symbol and rules) as C++(bitwise, relational, increment/decrement(post and pre)), with some changes:
   - Equality(string equivalent) - `==` and `!=`
   - Equality(of value and type) - `===` and `!==`
@@ -144,7 +136,6 @@ Note:
 - Assignment expressions are allowed.
 
 #### Code Structure
-
 - **Semicolons** - Using it at the end of a statement is preferred, because omitting it _can_ lead to error _sometimes_, if not all the time.
 - **Indendation** - JS is free-form.
   - {} - code blocks
@@ -152,18 +143,15 @@ Note:
 - **Comments**: same as C++, both multiline and inline.
 
 #### Conditionals
-
 - _if_, _else_, _else if_, _ternary operator(?:;)_ - same as C++
 - *switch - *same as* C++*
 - JS does the concept of truthy values.
 
 #### Loops
-
 - _for_, _while_, _do while - same as C++_
 - _continue_ and _break_ mean the same as C++.
 
 #### Functions
-
 - No return/parameter type required.
 - Keyword `function` is used - like `def` in Python3
 - Name may be skipped for IIFE.

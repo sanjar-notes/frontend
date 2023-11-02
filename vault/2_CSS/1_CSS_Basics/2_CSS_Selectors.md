@@ -17,7 +17,7 @@ Note: Don't try to remember all the names, use as per requirement.
 - Basic
 	```css
 	selector_code
-	{ 
+	{
 	  prop1: value1;
 	  prop2: value2;
 	  prop3: value3;
@@ -26,9 +26,9 @@ Note: Don't try to remember all the names, use as per requirement.
 
 	```css
 	p {}
-	
+
 	p.class_name {}
-	
+
 	p#id_name {}
 	```
 - Compound - no separator (no space and no comma). aka Logical AND.
@@ -36,7 +36,7 @@ Note: Don't try to remember all the names, use as per requirement.
 	/* select all h2 having class "header-text" and "japanese-text"*/
 	h2.header-text.japanese-text {}
 	/* of course, relevant h2 elements may have extra classes too, but the style will apply */
-	
+
 	/* select all p having class "light-text" and are being hovered upon */
 	p.light-text:hover {}
 	```
@@ -51,8 +51,7 @@ Note: Don't try to remember all the names, use as per requirement.
 ### 1. Simple selectors
 1. tag name(p)
 2. class(**.**) (somewhat specific - group of elements - irrespective of tag)
-3. id(**#**) - (we can use it only once - single) 
-
+3. id(**#**) - (we can use it only once - single)
 Note:	```
 * While using multiple classes in tags, they are [space](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/add-borders-around-your-elements) separated. ID's are [supposed](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/set-the-id-of-an-element) to be unique.
 * The order of class in the class `attribute` [does not](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/override-class-declarations-by-styling-id-attributes) affect the style. The order of declaration of classes in the CSS does.
@@ -84,17 +83,17 @@ img[alt^="image-"] /* select img elements whose alt starts with `image-`*/
 ### 3. Combinator selectors
 Select element(s) in relation to a selector/element.
 
-1. Descendant selector (space) - 
+1. Descendant selector (space) -
 	- `A B`
 	- all Bs inside A
-2. Child selector (>) - 
-	- `A > B` 
+2. Child selector (>) -
+	- `A > B`
 	- all Bs having A as parent
 3. Successive sibling selector (~)
 	- `A + B`
 	- all sibling Bs after A
-4. Successor sibling selector (+) - 
-	- `A ~ B`. 
+4. Successor sibling selector (+) -
+	- `A ~ B`.
 	- the B sibling after A
 
 MAID: Successive ones are more specific. Future generation and siblings only. Just like normal trees.
@@ -124,7 +123,7 @@ select part of an element, like first letter, first line etc
 1. To select all elements, use `*`. Examples:
 	```css
 	* { color: red; }
-	
+
 	*.name { color: red; }
 	.name  { color: red; } /* equivalent */
 

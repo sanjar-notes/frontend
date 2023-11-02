@@ -2,7 +2,6 @@
 Created Wednesday 08 July 2020
 
 #### Trivia
-
 - It is a general purpose programming language.
 - Created by NetScape in 1995 to run in the browser.
 - It was(is?) a feature for the browser.
@@ -10,7 +9,6 @@ Created Wednesday 08 July 2020
 - It has now been standardized and is called ECMAScript. JavaScript and ECMAScript are used interchangeably.
 
 #### What can JavaScript do
-
 **In the browser**
 
 1. Create, delete or modify any part of a webpage.
@@ -30,7 +28,6 @@ Anything.
 - It can be used for quick development.
 
 #### [What Can't JS do(in the browser)](https://javascript.info/intro#what-can-t-in-browser-javascript-do)
-
 1. Cannot read/write arbitary files to disk, except via the browser's API, that too for upload/download.
 2. Different tabs/windows generally do not know about each other. This is called the “Same Origin Policy”. To work around that, both pages must agree for data exchange and contain a special JavaScript code that handles it. **JS can still open new tabs and windows.**
 3. No access to OS functions.
@@ -41,7 +38,6 @@ Anything.
 - Modern browsers also allow plugin/extensions which may ask for extended permissions.
 
 #### Why use JavaScript
-
 - Single language for both front-end and back-end. Lesser things to learns, lesser tools.
 - Quite fast and stable.
 - Extremely good libraries and frameworks are available - React, Vue, Express
@@ -49,7 +45,6 @@ Anything.
 - Portable.
 
 #### Languages "over" JavaScript
-
 - JS has been implemented in all browser, with most features.
 - JS is efficient, but the syntax is not liked by everyone.
 - JS is not suitable for complex apps.
@@ -62,5 +57,4 @@ Anything.
   5.  Kotlin - modern, concise and safe language that can target the browser or `node`.
 
 #### What is `node`
-
 JavaScript was experimented with and was found to be quite fast. Consequently, the `node` interpreter was developed, for running JS as a general purpose programming language outside of the browser.

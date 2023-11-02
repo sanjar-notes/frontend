@@ -19,7 +19,6 @@ Note:
 
 
 #### Popular global objects(for the browser)
-
 * ``window`` - browser object. Controls the whole window - manipulate owned tabs, close the browser. This is unique.
 * ``document`` - current webpage object. Used for DOM manipulation. Each page has a document object.
 

@@ -2,7 +2,6 @@
 Created Wednesday 08 July 2020
 
 #### In the browser
-
 - Using the `<script>` `</script>` tag.
 
 There are 2 ways to add JS code:
@@ -22,14 +21,11 @@ There are 2 ways to add JS code:
 - Keep the `script` tag at the end of the `body` tag, and never in the head. Reason: Executing/downloading `script` content blocks the rendering process.
 
 #### Outside the browser
-
 - Write code in `.js` files.
 - Run them using `node file.js` in a terminal.
 
 #### REPL
-
 - Start the REPL using `node` command.
 
 #### Differences
-
 - In the browser, you may use objects like `window`, but this is an error in the terminal.

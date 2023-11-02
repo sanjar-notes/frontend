@@ -7,7 +7,6 @@ These were necessary features common in other programming languages:
 3. Template literals - easy string builder, ability to add DSL.
 
 #### 1. let and const
-
 - Both were introduced in ES6.
 - Purpose: Very basic feature. Makes JS sensible.
 - Both follow the same scoping rules - LEGB.
@@ -16,7 +15,6 @@ These were necessary features common in other programming languages:
 - Use of `var` is discouraged.
 
 #### 2. Arrow functions
-
 - _Looks_ similar to lamdas(storable functions).
 - Purpose: Function(state) Binding. Concise code.
 - The de-facto standard for anonymous functions.
@@ -54,7 +52,6 @@ Note:
 - Arrow function is short for "arrow function expressions". So these are actually expressions. Expressions don't have declarations, ergo, arrow functions are not hoisted.
 
 #### 3. Template Literals
-
 - Extremely powerful tool.
 - Purpose - DSL injection is easier, concise code.
 - Template string is a use case of this feature.

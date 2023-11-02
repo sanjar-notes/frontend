@@ -2,13 +2,11 @@
 Created Saturday 27 March 2021
 
 #### Dev Tool
-
 - This is a tool available in every modern browser.
 - To open it, click: Sandwich button → More Tools → Developer tools
 - Shortcut: `Ctrl` + `Shift` + `I`
 
 #### What does it do?
-
 - It is used to see:
   - Files sent by the server
   - Track website performance
@@ -22,7 +20,6 @@ And more
 ![](/assets/2_Dev_Tool-image-1.png)
 
 #### Playing around with a page
-
 - You can edit the files - HTML, CSS and JS. Changes are rendered instantly.
 - To edit HTML, click on the 'Elements tab'.
 
@@ -39,6 +36,5 @@ And more
 - Refresh the website to reset changes.
 
 #### How does the Dev Tool work
-
 - We are just editing the recieved files.
 - No changes are actually made on the server.

@@ -4,11 +4,9 @@ Created Thursday 25 March 2021
 TODO
 
 #### What is Composition
-
 - Writing functions where the input of the outer function is the output of the inner function, and this is true for all. Implementing f(g(h(x))) using main_func(f, g)(arg).
 
 #### Syntax
-
     const g = (foo) => (/*code*/); // takes function as argument
     const h = (a) => (/*code*/); // takes value as argument
 
@@ -19,7 +17,6 @@ TODO
 - Accumulation of context is optional.
 
 #### Why do this
-
 - For concise code
 
   // Without composition

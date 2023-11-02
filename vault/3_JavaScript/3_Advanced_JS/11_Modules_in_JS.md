@@ -69,7 +69,6 @@ a // can be used
 Useful: [CommonJS - what, why and how](https://medium.com/@cgcrutch18/commonjs-what-why-and-how-64ed9f31aa46)
 
 #### If CommonJS is what JS used, how does React use ES6 syntax?
-
 * Browsers don't understand CommonJS, as they're not Node.
 * Consequently, apps written in Node.js's JavaScript needs to be transpiled to vanilla JS.
 * This is where compilers like [Babel](2_ES5_and_ES6.md) come in: they can receieve input in any way.

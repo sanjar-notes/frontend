@@ -23,7 +23,6 @@ Created Sunday 12 July 2020
 - This is the reason why **caching** elements is so important, for relevant stuff, this makes it so easy and efficient.
 
 #### Three event parameter
-
 The callback function can have a parameter which is set by JS once the event occurs. Some important attributes of this `event` parameter are:
 1. tagName - returns tag name in all caps, a string.
 2. target - returns the host object

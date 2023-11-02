@@ -4,7 +4,6 @@ Created Thursday 25 March 2021
 FIXME
 
 #### Reference types
-
 All the datatypes except the primitive ones(number, boolean, string, null, undefined, symbol). e.g Array, Set, Object etc.
 
 - Reference types are compared(=== and ==) only by their address, no bit by bit comparison is performed.
