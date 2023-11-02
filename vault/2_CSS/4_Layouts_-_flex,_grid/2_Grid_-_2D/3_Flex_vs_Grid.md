@@ -3,6 +3,6 @@ Created Saturday 23 October 2021
 
 ![](/assets/3_Flex_vs_Grid-image-1.png)
 
-Flex: 1D controls (row or column, easy)
-Grid: 2D controls
-
+- Flex: 1D controls (row or column, easy)
+- Grid: 2D controls
+- Prefer flex over grid if it's possible.
