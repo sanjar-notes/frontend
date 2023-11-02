@@ -12,8 +12,5 @@ Steps:
 }
 ```
 
----
-
-**About flexbox**
-
+### About flexbox
 - It can [override](https://www.freecodecamp.org/learn/responsive-web-design/css-flexbox/use-display-flex-to-position-two-boxes) the blocked nature of div

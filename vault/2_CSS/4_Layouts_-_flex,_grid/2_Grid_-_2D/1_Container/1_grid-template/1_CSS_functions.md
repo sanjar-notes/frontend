@@ -12,8 +12,6 @@ Created Thursday 03 September 2020
   // same as 1fr auto 1fr auto 2fr
   }
 
----
-
 **minmax**
 Gives two values at the same time, minmax(smaller, greater)
 

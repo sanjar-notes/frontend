@@ -26,8 +26,5 @@ Try these resources:
 
 1. It's a good practice to keep the CSS file contents in the order of specificity.
 
----
-
-**Inheritance in CSS**
-
+### Inheritance in CSS
 - Elements get inherit the CSS styles of their parents

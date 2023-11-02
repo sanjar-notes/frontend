@@ -29,10 +29,7 @@ Explanation: This is equivalent to setting the eventListener to the p tag.
 - Today - there are very few new projects which use jQuery.
 - Developers who know only jQuery are not in high demand, and job postings are decreasing.
 
----
-
-**What is better, and consequently popular now?**
-
+### What is better, and consequently popular now?
 - We'll use a better, open source library called **React.js** - It is very popular and efficient(computationally awa from a development perspective).
 - It is declarative.
 
