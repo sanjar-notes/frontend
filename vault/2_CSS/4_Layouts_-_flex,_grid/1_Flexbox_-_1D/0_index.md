@@ -13,12 +13,8 @@ Two good are:
 1. [CSS Tricks - Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 2. [Flexbox froggy](https://flexboxfroggy.com/) - game to learn flexbox
 
----
-
 #### flexbox container (in row mode, the default)
 ![](/assets/1_Flexbox_-_1D-image-1.png)
-
----
 
 #### The axes and controls
 The main axis and cross axis have nothing to do with horizontal/vertical.
@@ -26,8 +22,6 @@ They are set via the `flex-direction` property, default is row.
 
 - main axis is along the `flex-direction`. Control for main axis is via the `justify-content` property.
 - cross axis is perpendicular to main axis. Conrtol for cross axis is via the `align-items` property.
-
----
 
 #### There are two kinds of things to control in flex
 1. For the flex container - for positioning and laying out space to the flex items

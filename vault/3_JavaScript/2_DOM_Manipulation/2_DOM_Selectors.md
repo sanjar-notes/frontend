@@ -13,8 +13,6 @@ Created Saturday 11 July 2020
 
 Helps us brush up CSS as well. They used in most of the new codebases.
 
----
-
 ### Attribute Selectors - Assuming we've got the eObj, and now want the attributes
 - For editing/reading attributes:
 1. elementObj.**getAttribute**('attribute'); //prints the attribute value
@@ -37,14 +35,10 @@ Note: .style [won't](https://css-tricks.com/an-introduction-and-guide-to-the-css
       2. eObj.classList.remove('remove_class');
       3. eObj.classList.toggle('class name'); // toggles the presence of a class.
 
----
-
 ### Content Selectors - Change content in the tag or input
 1. eObj.innerHTML = 'New content'; // ignores unused tags, <code></code> is invisible. **Dangerous to scripting attacks**
 2. eObj.textContent = 'New verbatim text'; // <code></code> will appear verbatim here.
 3. eObj.value; // for input tags like text, file etc
-
----
 
 ### Relative selectors
 1. eObj.parentElement - the parent element

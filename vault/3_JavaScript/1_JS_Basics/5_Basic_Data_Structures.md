@@ -61,8 +61,6 @@ Membership:
 - Iterables - `.includes(key)`
 - Object - `.hasOwnProperty('fieldName')`
 
----
-
 #### String
 - `string` is a primitive type.
 - Strings are dynamically sized, immutable in JS.
