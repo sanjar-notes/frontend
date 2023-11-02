@@ -29,8 +29,8 @@ Explanation: This is equivalent to setting the eventListener to the p tag.
 - Today - there are very few new projects which use jQuery.
 - Developers who know only jQuery are not in high demand, and job postings are decreasing.
 
-### What is better, and consequently popular now?
-- We'll use a better, open source library called **React.js** - It is very popular and efficient(computationally awa from a development perspective).
+### What replaced jQuery?
+- We'll use a better, open source library called React.js - It is very popular and efficient(computationally awa from a development perspective).
 - It is declarative.
-
-Note: We **won't** be using DOM manipulations from now on.
+- TBH, it's not that React was meant to be a replacement for jQuery. It's just that JS first apps (JS manages the UI) became popular, and they of course had tools for DOM manipulation.
+- In fact, nobody is using even the DOM API anymore. Code for apps written using React, Vue or Angular (JS SPA frameworks), don't have DOM API code and it's usually discouraged in such apps.

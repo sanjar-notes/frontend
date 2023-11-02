@@ -1,7 +1,7 @@
 # 2. What is JavaScript
 Created Wednesday 08 July 2020
 
-#### Trivia
+#### Info
 - It is a general purpose programming language.
 - Created by NetScape in 1995 to run in the browser.
 - It was(is?) a feature for the browser.

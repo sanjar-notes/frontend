@@ -11,4 +11,4 @@ FIXME - this page has wrong information, correct it.
 - Note: Reflow is [expensive](https://areknawo.com/dom-performance-case-study/#commento-login-box-container) as compared to Repaint.
 - We want to minimize DOM manipulation and events.
 
-**React.js **helps in [achieving](https://www.youtube.com/watch?v=mLMfx8BEt8g&ab_channel=FullstackAcademy) these goals.
+React.js helps in [achieving](https://www.youtube.com/watch?v=mLMfx8BEt8g&ab_channel=FullstackAcademy) these goals.

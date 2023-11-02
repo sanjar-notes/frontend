@@ -11,4 +11,3 @@ Steps to create an element.
 
 
 Note: Objects can be deleted using eObj.**remove()**;
-
