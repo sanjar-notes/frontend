@@ -1,7 +1,7 @@
 # 11. Modules in JS
 Created Saturday 18 July 2020
 
-### Why
+## Why
 For/To:
 * Avoid namespace pollution
 * Reuse of code
@@ -9,11 +9,11 @@ For/To:
 * Abstraction
 
 
-#### What is a module
+## What is a module
 A module is just a bit of code encapsulated in a file, and exported to another file.
 
-### How
-#### 1. ES6 modulesn (this came later)
+## How
+### 1. ES6 modules (this came later)
 * Let us first see where are we now:
 1. We had inline scripts in HTML - Reusability, pollution of the global namespace
 2. We had script tags src - Order has to be decided beforehand(dependency resolution), we have to keep the script tags in all HTML files, global namespace is polluted.
@@ -38,7 +38,7 @@ import { add as k } from "./add"
 import * as bundled from "./add"
 ```
 
-#### 2. Common JS modules (simplest)
+### 2. Common JS modules (simplest)
 The ES6 syntax has not been implemented in CommonJS (the standard for modules that Node follows). An **old** syntax is followed by Node.
 * Source: A variable is exported by assigning it to `module.exports`.
 * Destination: `require(path)` just returns the exported variable.
@@ -68,7 +68,7 @@ a // can be used
 ```
 Useful: [CommonJS - what, why and how](https://medium.com/@cgcrutch18/commonjs-what-why-and-how-64ed9f31aa46)
 
-#### If CommonJS is what JS used, how does React use ES6 syntax?
+## If CommonJS is what JS used, how does React use ES6 syntax?
 * Browsers don't understand CommonJS, as they're not Node.
 * Consequently, apps written in Node.js's JavaScript needs to be transpiled to vanilla JS.
 * This is where compilers like [Babel](2_ES5_and_ES6.md) come in: they can receieve input in any way.

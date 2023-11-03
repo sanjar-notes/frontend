@@ -6,7 +6,7 @@ Created Thursday 25 March 2021
 * Given a criteria and an array, there are 3 possibilities. The criteria holds for:
 	1. *every* element
 	2. *some* element
-	3. no element - same as **not(for all)**. Duplicate of 1.
+	3. no element - same as **not(for all)**. Duplicate of 2.
 * Consquently, JS has two array methods:
 	1. ``every``
 	2. ``some``
@@ -17,33 +17,33 @@ Created Thursday 25 March 2021
 	* Time complexity - Θ(n)
 	* Both return Boolean.
 
-
 Example
-	let nums = [22, 82, 90, 3, 96];
-	
-	function isEven(a){	return a%2==0;	}
-	console.log('All even - ' + nums.every(isEven));
-	/* output
-	All even - false
-	*/
-	
-	console.log('Atleast one even - ' + nums.some(isEven));
-	/* output
-	Atleast one even - true
-	*/
+```js
+let nums = [22, 82, 90, 3, 96];
 
-	// Access index
-	let nums = [22, 82, 90, 19, 96];
-	
-	console.log(nums.some((a, b) => {
-		if(a%2)
-			return false;
-		console.log(b);
-		return true;
-	}));
-	
-	/* output
-	true
-	3
-	*/
+function isEven(a) {	return a%2==0;	}
+console.log('All even - ' + nums.every(isEven));
+/* output
+All even - false
+*/
 
+console.log('Atleast one even - ' + nums.some(isEven));
+/* output
+Atleast one even - true
+*/
+
+// Access index
+let nums = [22, 82, 90, 19, 96];
+
+console.log(nums.some((a, b) => {
+	if(a%2)
+		return false;
+	console.log(b);
+	return true;
+}));
+
+/* output
+true
+3
+*/
+```

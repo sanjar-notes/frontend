@@ -19,41 +19,41 @@ These were necessary features common in other programming languages:
 - Purpose: Function(state) Binding. Concise code.
 - The de-facto standard for anonymous functions.
 - Syntax(can be used in conjunction):
-
   - For single argument: `p => {};`
   - For single expression as return value: `(p1, p2) => 2*3;`. Returns expression value.
   - For multiliners: `(p1, p2, p3) => { /* code*/ }`. Simple function function.
   - For other combination of cases - use all in conjunction.
 
-  const f = num => num\*2; // single argument, single expression
-  f() // call
+```js
+const f = num => num\*2; // single argument, single expression
+f() // call
 
-  // Multiline body - no return
-  const f = () =>
-  {
-  console.log('Hello');
-  console.log('World'); // returns undefined
-  }
+// Multiline body - no return
+const f = () =>
+{
+console.log('Hello');
+console.log('World'); // returns undefined
+}
 
-  //Multiline - with return
-  const f = (a, b) => {
-  a\*2 = b;
-  return a+b;
-  }; //
+//Multiline - with return
+const f = (a, b) => {
+a\*2 = b;
+return a+b;
+}; //
 
-  (()=>console.log(2))(); // Arrow function as IIFE
+(()=>console.log(2))(); // Arrow function as IIFE
+```
 
 - Important gotcha - arrow functions are not just a syntactic sugar for normal functions, they do more. See [details](this_and_arrow_functions.md).
 
 Note:
-
 - You do need a () for zero params.
-- Avoid normal functions for** throwaway **or** one-liner **functions**.**
+- Avoid normal functions for "throwaway or one-liner functions".
 - Arrow function is short for "arrow function expressions". So these are actually expressions. Expressions don't have declarations, ergo, arrow functions are not hoisted.
 
 #### 3. Template Literals
 - Extremely powerful tool.
-- Purpose - DSL injection is easier, concise code.
+- Purpose - string building, concise code, DSL injection is easier.
 - Template string is a use case of this feature.
 - General syntax:
   - Enclose the whole string in backticks.
@@ -65,16 +65,14 @@ Note:
 
 - Supports multiline strings.
 - Use:
-
   1.  As template string
+	```js
+	let pname = 'Sanjar', emotion = 'Happy';
+	let message = `${pname} is ${emotion}.`;
 
-  let pname = 'Sanjar', emotion = 'Happy';
-  let message = `${pname} is ${emotion}.`;
-
-  console.log(`I am ${pname}`); // prints -> I am Sanjar
-
+	console.log(`I am ${pname}`); // prints -> I am Sanjar
+	```
 2. For carrying JS code.
-
    `${ console.log(2); }` // prints 2 on string evaluation
 
    `${ (() => { console.log('Autodestruct sequence intiated'); })() } ` // pretty hacky and dangerous

@@ -28,19 +28,16 @@ There are two basic mechanisms in a computer:
 ---
 
 Asynchronous helps us tackle potentially blocking LOC.
-How to program asynchronous?
-
+How to program asynchronously?
 1. Using a timeout for the blocking sections of the code.
-
-![](/assets/10_How_Does_JS_works-image-2.png) > ![](/assets/10_How_Does_JS_works-image-3.png)![](/assets/10_How_Does_JS_works-image-4.png)
+	![](/assets/10_How_Does_JS_works-image-2.png) > ![](/assets/10_How_Does_JS_works-image-3.png)![](/assets/10_How_Does_JS_works-image-4.png)
 
 ---
 
 JavaScript Run-Time Environment
 
 - In addition to the JS engine, we have Web APIs(like DOM, AJAX etc), a callback queue and an event loop. All this is referred to as the environment.
-
-![](/assets/10_How_Does_JS_works-image-5.png)
+	![](/assets/10_How_Does_JS_works-image-5.png)
 
 - timeout is provided by the browser.
 

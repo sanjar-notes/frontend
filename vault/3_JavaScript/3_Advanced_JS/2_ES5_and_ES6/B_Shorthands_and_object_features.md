@@ -19,21 +19,19 @@ Created Thursday 25 March 2021
 - Other uses:
   1.  Swap variables - `[a, b] = [b, a]`
   2.  Outside functions
-  ```js
-  const { name, place } = personObj;
-  // use name and place
-  ```
-
-1. Functions taking an object argument
-
-```js
-function f({ name, place }) {
-  // OK
-  console.log(place, name);
-}
-
-f(personObj); // OK
-```
+	```js
+	const { name, place } = personObj;
+	// use name and place
+	```
+  3. Functions taking an object argument
+	```js
+	function f({ name, place }) {
+	// OK
+	console.log(place, name);
+	}
+	
+	f(personObj); // OK
+	```
 
 - Is destructuring worth it - [./destructuringCode.js](destructuringCode.js)
 - [More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Ignoring_some_returned_values) at MDN
@@ -41,20 +39,19 @@ f(personObj); // OK
 
 - Use existing object's value as field name, actually its string equivalent.
 - Purpose: Have dynamic fieldnames, decided at runtime.
-- Creating the property: [personObject] instead of fieldName.
-
-  let a = [1, 2], b = 'bingo';
-  let z =
-  {
-  [a]: 1 ,
-  [b]: 2
-  }
-  // { '1,2':1, 'bingo':2 } object created
-
-- Accessing the property syntax: z[a]
-
-![](/assets/B_Shorthands_and_object_features-image-1.png)
-![](/assets/B_Shorthands_and_object_features-image-2.png)
+- Creating the property: \[personObject] instead of fieldName.
+	```js
+	let a = [1, 2], b = 'bingo';
+	let z =
+	{
+	[a]: 1 ,
+	[b]: 2
+	}
+	// { '1,2':1, 'bingo':2 } object created
+	```
+- Accessing the property syntax: z\[a]
+	![](/assets/B_Shorthands_and_object_features-image-1.png)
+	![](/assets/B_Shorthands_and_object_features-image-2.png)
 
 - Gotchas
   - String equivalent of a list is a flattened list. For example: String equivalent of `[1, 2]` and `[1, [2]]` are identical.
@@ -65,13 +62,13 @@ f(personObj); // OK
   - So there are 3 equivalent ways for `creating fields`, all making the same field:
     1. Use a name - old way. Like this: `{ name: 'Sanjar' }`
     2. Use a string - in quotes. Like this: `{ 'name': 'Sanjar' }`
-    3. Use [existingObject] to set string equivalent as fieldname. Like so: `{ [nameObject]: 'Sanjar' };`
+    3. Use \[existingObject] to set string equivalent as fieldname. Like so: `{ [nameObject]: 'Sanjar' };`
   - And so there are three equivalent ways to access field values:
     - `Person.name` - just the name, no quotes no brackets.
     - `Person['name']` - using strings within brackets.
     - `Person[nameObject]` - finds a field matching the string equivalent of namedObject.
 
-#### 3. Object literal shothand - use variable as fieldName and value
+#### 3. Object literal shorthand - use variable as fieldName and value
 - Use an existing variable to specify both the fieldName and value in an object literal.
 - What happens: variable name becomes field name. Variable value becomes field value.
 - Purpose: Concise code. [See](https://www.youtube.com/watch?v=HF0PN1vHsSY).
@@ -87,20 +84,22 @@ f(personObj); // OK
 - Purpose - Concide code
 - Syntax
 
-  // old way
-  class Cashier
-  {
-  name: 'Will',
-  calculateWorth: function() {
-  /_code_/
-  },
-  }
+```js
+// old way
+const cashier = 
+{
+	name: 'Will',
+	calculateWorth: function() {
+	/_code_/
+	},
+}
 
-  // shorthand
-  class Cashier
-  {
-  name: 'Will',
-  calculateWorth() {/_code_/}
-  }
+// shorthand
+const cashier = 
+{
+	name: 'Will',
+	calculateWorth() {/_code_/}
+}
 
-  // both are identical
+// both are identical
+```
