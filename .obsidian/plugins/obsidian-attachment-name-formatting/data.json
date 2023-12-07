@@ -48,6 +48,7 @@
   "oneInMany": "Default",
   "enableAuto": true,
   "enableTime": false,
+  "enablePathHash": true,
   "enableExcludeFileName": false,
   "excludedFolders": [],
   "subfolders": [
