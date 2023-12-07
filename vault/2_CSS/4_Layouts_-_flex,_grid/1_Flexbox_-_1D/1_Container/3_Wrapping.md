@@ -7,13 +7,13 @@ It applies w.r.t the main axis only - as it is for reading, and therefore has no
 It has 3 values (modes):
 1. no-wrap → The default
 
-![](/assets/3_Wrapping-image-1.png)
+![](../../../../../assets/3_Wrapping-image-1-db802417.png)
 
 2. wrap → Wrap w.r.t to the main axis
 
-![](/assets/3_Wrapping-image-2.png)
+![](../../../../../assets/3_Wrapping-image-2-db802417.png)
 
 3. wrap-reverse → Wrap to put in the opposite direction(top here, row main-axis)
 
-![](/assets/3_Wrapping-image-3.png)
+![](../../../../../assets/3_Wrapping-image-3-db802417.png)
 

@@ -8,12 +8,12 @@ FIXME CSS w2h
 * CSS describes how HTML elements are displayed on the **screen, paper or in other media**
 * CSS saves a **lot of work**, it can control the layout of multiple web pages all at once.
 
-![](/assets/2_CSS-image-1.png)
+![](../../assets/0_index-image-1-b8e7d93e.png)
 
 #### CSS 3
 * CSS3 is the latest version of CSS.
 
-![](/assets/2_CSS-image-2.png)
+![](../../assets/0_index-image-2-b8e7d93e.png)
 
 * In an ideal world, every browser has the same CSS behavior.
 * CSS has some animations too.

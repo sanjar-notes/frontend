@@ -41,7 +41,7 @@ See <https://www.w3schools.com/tags/att_th_scope.asp> and <https://www.codecadem
 * There are two attributes that merge space for a cell to take multiple row/column cells.
 * Syntax: add ``rowspan``/``colspan``="*number*" to the `td`, the number defines number of cells spanned. Default value is 1 for both, 😁️.
 
-![](/assets/5_Table-image-1.png)
+![](../../../assets/5_Table-image-1-a92d20ef.png)
 In the diagram here
 * Hours has been rowspan set to 6, Sat F has rowspan set to 3, Lunch has colspan set to 5.
 * All other corresponding rows/columns have been removed. They are **absent**.

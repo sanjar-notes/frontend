@@ -8,12 +8,12 @@ There are 4 scopes in JS, in order of lookup(during use):
 3. **G**lobal scope - variables/functions at the script level, i.e outside of any class/function. This scope is unique.
 4. **B**uilt-in - stuff loaded by the intepreter, like console.log() etc. You can hack it.
 
-![](/assets/1_Scope-image-1.png)
+![](../../../assets/1_Scope-image-1-f26e87b7.png)
 Note:
 
 * **``Root Scope``** - global scope of the browser.
 
-![](/assets/1_Scope-image-2.png)
+![](../../../assets/1_Scope-image-2-f26e87b7.png)
 
 * Exactly like python3(LEGB), except that writing to outer variable is not restricted.
 

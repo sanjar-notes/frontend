@@ -18,7 +18,7 @@ Created Tuesday 14 July 2020
   2.  Transpiling - There are new _syntax_ changes, and the current code needs to be represented in old syntax. Functionality does not matter here.
 - Babel does both transpiling and polyfilling.
 
-![](/assets/2_ES5_and_ES6-image-1.png) ![](/assets/2_ES5_and_ES6-image-2.png)
+![](../../../../assets/0_index-image-1-66d11922.png) ![](../../../../assets/0_index-image-2-66d11922.png)
 
 - The new standards have made the code clean and concise.
 

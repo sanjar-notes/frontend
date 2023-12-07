@@ -60,8 +60,8 @@ Note:
   - Write literal part verbatim.
   - Use `${ JS_code }` to enclose the code parts.
 
-![](/assets/A_Necessities-image-1.png)
-![](/assets/A_Necessities-image-2.png)
+![](../../../../assets/A_Necessities-image-1-66d11922.png)
+![](../../../../assets/A_Necessities-image-2-66d11922.png)
 
 - Supports multiline strings.
 - Use:

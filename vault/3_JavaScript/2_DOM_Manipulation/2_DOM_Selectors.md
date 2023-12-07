@@ -20,15 +20,15 @@ Assuming we've got the eObj, and now want the attributes
 - For editing/reading attributes:
 1. `elementObj.getAttribute('attribute');` //prints the attribute value
 
-![](/assets/2_DOM_Selectors-image-1.png)
+![](../../../assets/2_DOM_Selectors-image-1-a09ebfc7.png)
 
 2. `elementObj.setAttribute('attribute', 'newvalue');` // change the attribute
 
-![](/assets/2_DOM_Selectors-image-2.png)
+![](../../../assets/2_DOM_Selectors-image-2-a09ebfc7.png)
 
 3. We can access and change inline style attributes directly by doing `elementObj.style.backgroundColor = 'red'`. But it is _discouraged_ as it violates the principle of separation of concerns.
 
-![](/assets/2_DOM_Selectors-image-3.png) is equivalent to ![](/assets/2_DOM_Selectors-image-4.png)
+![](../../../assets/2_DOM_Selectors-image-3-a09ebfc7.png) is equivalent to ![](../../../assets/2_DOM_Selectors-image-4-a09ebfc7.png)
 Note: .style [won't](https://css-tricks.com/an-introduction-and-guide-to-the-css-object-model-cssom/) be able to acesss external CSS.
 
 4. Because an element can have multiple classes, we have special **properties** for it:

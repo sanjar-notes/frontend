@@ -4,7 +4,7 @@ Created Tuesday 16 June 2020
 ### which font
 - Syntax: `font-family: Menlo, Montserrat, 'Segoue UI', serif;`
 - the latter ones are fallbacks if a previous one isn't available.
-![](/assets/4_Fonts-image-1.png)
+![](../../../../assets/4_Fonts-image-1-2b91d6c1.png)
 CSS font families:
 1. Generic family: serif or monospace or sans-serif
 2. font-family: a specific family viz apple, Arial, Times New Roman

@@ -14,7 +14,7 @@ Two good are:
 2. [Flexbox froggy](https://flexboxfroggy.com/) - game to learn flexbox
 
 #### flexbox container (in row mode, the default)
-![](/assets/1_Flexbox_-_1D-image-1.png)
+![](../../../../assets/0_index-image-1-f80503af.png)
 
 #### The axes and controls
 The main axis and cross axis have nothing to do with horizontal/vertical.

@@ -13,7 +13,7 @@ _Approach_ - Make a Player class, having a function with a switch(type_input) wh
 - All this is implemented and the simplified approach is called inheritance. It can be tricky, but is way better than the manual way.
 - Syntax: Use **extends** keyword.
 
-![](/assets/4_Inheritance-image-1.png)
+![](../../../../assets/4_Inheritance-image-1-7ed442d7.png)
 Note:
 
 - Classes are nothing but syntactic sugar introduced from ES6 2015

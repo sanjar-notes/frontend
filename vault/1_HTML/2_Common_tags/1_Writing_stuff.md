@@ -31,7 +31,7 @@ Created Wednesday 17 June 2020
 * How to use - just write the entity in the content.
 
 Examples
-![](/assets/1_Writing_stuff-image-1.png)
+![](../../../assets/1_Writing_stuff-image-1-a92d20ef.png)
 
 ### Miscellaneous
 1. `<kbd> Ctrl+S </kbd>` for keybindings.

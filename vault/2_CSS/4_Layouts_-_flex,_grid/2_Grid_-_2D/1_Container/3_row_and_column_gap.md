@@ -9,5 +9,5 @@ Properties and values (are sizes):
 2. `grid-row-gap`
 3. Shorthand `grid-gap`, applies same to both row/column.
 
-![](/assets/3_row_and_column_gap-image-1.png)
+![](../../../../../assets/3_row_and_column_gap-image-1-7c9477dc.png)
 

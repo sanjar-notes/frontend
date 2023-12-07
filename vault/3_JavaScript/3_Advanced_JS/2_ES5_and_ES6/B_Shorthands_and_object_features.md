@@ -50,8 +50,8 @@ Created Thursday 25 March 2021
 	// { '1,2':1, 'bingo':2 } object created
 	```
 - Accessing the property syntax: z\[a]
-	![](/assets/B_Shorthands_and_object_features-image-1.png)
-	![](/assets/B_Shorthands_and_object_features-image-2.png)
+	![](../../../../assets/B_Shorthands_and_object_features-image-1-66d11922.png)
+	![](../../../../assets/B_Shorthands_and_object_features-image-2-66d11922.png)
 
 - Gotchas
   - String equivalent of a list is a flattened list. For example: String equivalent of `[1, 2]` and `[1, [2]]` are identical.
@@ -74,8 +74,8 @@ Created Thursday 25 March 2021
 - Purpose: Concise code. [See](https://www.youtube.com/watch?v=HF0PN1vHsSY).
 - Syntax: Just include the variable, like element of an array.
 
-![](/assets/B_Shorthands_and_object_features-image-3.png)
-![](/assets/B_Shorthands_and_object_features-image-4.png)
+![](../../../../assets/B_Shorthands_and_object_features-image-3-66d11922.png)
+![](../../../../assets/B_Shorthands_and_object_features-image-4-66d11922.png)
 
 - Note: This feature has nothing to do with dynamic field names, as seen earlier.
 

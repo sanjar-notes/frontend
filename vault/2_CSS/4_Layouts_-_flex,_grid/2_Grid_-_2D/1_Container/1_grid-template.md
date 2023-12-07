@@ -27,7 +27,7 @@ There are 4 units (values):
 5. `min-content`
 6. `max-content`
 
-![](/assets/2_units-image-1.png)
+![](../../../../../assets/1_grid-template-image-1-7c9477dc.png)
 
 
 ## With `repeat`

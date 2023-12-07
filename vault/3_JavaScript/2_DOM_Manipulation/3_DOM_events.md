@@ -33,7 +33,7 @@ uiNode.addEventListener('click', clickHandlerFunc);
 // this object has the `target` (element that got triggered), and other keys and functions
 ```
 
-![](/assets/3_DOM_events-image-1.png)
+![](../../../assets/3_DOM_events-image-1-a09ebfc7.png)
 
 ## Some more events
 1. `'click'`

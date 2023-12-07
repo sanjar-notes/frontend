@@ -11,7 +11,7 @@ There are three ways to define color:
 Notes:
 1. For grayscale - use the same color for all red, green and blue.
 
-![](/assets/2_Colors-image-1.png)
+![](../../../../assets/2_Colors-image-1-2b91d6c1.png)
 
 2. There are about 140 names supported by HTML/CSS
 3. **rgba(r,g,b, alpha) **is used 0≤α≤1 to allow transparency with alpha = **1 being the most opaque**. It's got nothing to do with the rgb values.

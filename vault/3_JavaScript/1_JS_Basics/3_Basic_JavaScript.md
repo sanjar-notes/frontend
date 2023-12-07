@@ -23,7 +23,7 @@ Created Wednesday 08 July 2020
 
 1. `number` - For both integers and floats.
 2. `bigint`
-3. `string` - both kinds of quotes are OK, you can even use backticks. Concatenation using `+`. Strings can be like numbers(and vice versa). e.g. '`2.3'*2 = 4.6`. ![Escape](3_Basic_JavaScript-image-1.png) character same as C++. Strings can span multiple lines.
+3. `string` - both kinds of quotes are OK, you can even use backticks. Concatenation using `+`. Strings can be like numbers(and vice versa). e.g. '`2.3'*2 = 4.6`. ![Escape](../../../assets/3_Basic_JavaScript-image-1-3c35d827.png) character same as C++. Strings can span multiple lines.
 4. `boolean`(`true`/`false`)
 5. `Symbol`
 6. `undefined` - not been assigned(garbage values are avoided this way)
@@ -65,7 +65,7 @@ Note:
   - **const** - non reassignable variable(variable contents may be changed). Must be intialized with declaration. Same as C++'s `const`. Syntax `const k = 'stingy symbol table';`
   - **var **- leaks out of block scope. Follows all other scoping rules. Syntax: `var k = 'var wars';`
 
-![](/assets/3_Basic_JavaScript-image-2.png)
+![](../../../assets/3_Basic_JavaScript-image-2-3c35d827.png)
 
 - All variables follow the same syntax - for declaration, initlialization, assignment, access. The syntax are:
   - Declaration: `let x;`, `const p = 24;`, `var k = 'hi`';

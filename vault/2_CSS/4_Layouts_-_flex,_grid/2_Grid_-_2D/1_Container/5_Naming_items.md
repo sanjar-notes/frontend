@@ -30,7 +30,7 @@ Steps:
 
 
 e.g Here the first 3 cells were marked header
-![](/assets/5_Naming_items-image-1.png)
+![](../../../../../assets/5_Naming_items-image-1-7c9477dc.png)
 
 *****
 

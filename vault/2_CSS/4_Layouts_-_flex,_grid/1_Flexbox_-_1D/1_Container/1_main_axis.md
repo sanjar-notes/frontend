@@ -14,5 +14,5 @@ It has 6 values (modes):
 
 
 #### Picture
-![](/assets/1_main_axis-image-1.png)
+![](../../../../../assets/1_main_axis-image-1-db802417.png)
 

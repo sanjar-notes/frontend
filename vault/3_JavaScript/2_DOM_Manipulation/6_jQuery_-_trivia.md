@@ -10,17 +10,17 @@ Created Monday 13 July 2020
 - How does it look?
   1.  jQuery is added inside a script tag.
 
-![](/assets/6_jQuery_-_trivia-image-1.png)
+![](../../../assets/6_jQuery_-_trivia-image-1-a09ebfc7.png)
 Explanation: This is equivalent to setting the eventListener to the p tag.
 
 2. For running jQuery, we need to attach the library.
 
-![](/assets/6_jQuery_-_trivia-image-2.png)
+![](../../../assets/6_jQuery_-_trivia-image-2-a09ebfc7.png)
 
 - What's the issue with jQuery:
   1.  It made the code very imperative - the developer had to account for every action and the consequences, which includes the user's actions. For big websites, this becomes a huge mess.
 
-![](/assets/6_jQuery_-_trivia-image-3.png)
+![](../../../assets/6_jQuery_-_trivia-image-3-a09ebfc7.png)
 **The pyramid of Doom**
 
 ---

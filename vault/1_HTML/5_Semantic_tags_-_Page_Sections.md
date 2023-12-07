@@ -2,7 +2,7 @@
 Created Wednesday 17 June 2020
 
 - We have header, navigation, content tags and footer. The layout is like this:
-  ![](/assets/5_Semantic_tags_-_Page_Sections-image-1.png)
+  ![](../../assets/5_Semantic_tags_-_Page_Sections-image-1-ac689b10.png)
   The 7 semantic (fixed type of content is not fixed) tags:
 1. header - for headings, dates, name etc
 2. nav - for links to other pages

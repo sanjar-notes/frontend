@@ -17,7 +17,7 @@ console.log(this===f()); // -> true for a webpage, this and f() reference the do
 
 
 * How to change context - we need to be inside another object.
-	![](/assets/2_Scope_context-image-1.png)
+	![](../../../../assets/2_Scope_context-image-1-7ed442d7.png)
 Note that lambda function doesn't acknowledge a change in parent object but a function does.
 
 FIXME: <https://youtu.be/zE9iro4r918> ``this`` keyword, ``apply`` and ``bind``

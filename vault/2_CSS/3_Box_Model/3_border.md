@@ -8,7 +8,7 @@ Created Monday 15 June 2020
 	1. `border-color`. This is inherited.
 	2. `border-style: solid | dotted `
 	3. `border-width: {unit} | thin | medium | thick`
-		![](/assets/3_border-image-1.png)
+		![](../../../assets/3_border-image-1-b158a57d.png)
 Individual border (top or left or right or bottom) can be styled by using a 3 worded key. Example: `border-top-color`.
 
 ### Rounded corners aka `border-radius`

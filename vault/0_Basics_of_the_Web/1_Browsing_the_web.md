@@ -5,7 +5,7 @@ Created Saturday 27 March 2021
 Browsing the web? This is* "*trivial". Yes, _using_ is. But we cannot think of optimization without knowing these details.
 
 #### First connection to a website
-![](/assets/1_Browsing_the_web-image-1.png)
+![](../../assets/1_Browsing_the_web-image-1-c17f2814.png)
 
 - The URL is sent to the DNS, through the ISP(your Internet company).
 - The DNS sends an IP address(the physical device's address). This identifies the server(computer owned by the website) address. Your device also has an IP address.
@@ -24,7 +24,7 @@ Note: Media files like images, videos, PDF etc are also recieved.
 
 - The browser reads the files and renders the webpage.
 
-![](/assets/1_Browsing_the_web-image-2.png)
+![](../../assets/1_Browsing_the_web-image-2-c17f2814.png)
 
 #### What do the files do?
 - HTML - defines basic structure of the page. Relative locations of paragraphs, quotes, buttons, videos, images etc are defined in this file.
