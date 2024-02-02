@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*! ADAPTED
+    Typeplate : Starter Kit
+    URL ........... http://typeplate.com
+    Version ....... 3.0.2
+    Github ........ https://github.com/typeplate/starter-kit
+    Authors ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+    License ....... Creative Commmons Attribution 3.0
+    License URL ... https://github.com/typeplate/starter-kit/blob/master/license.txt
+    */
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-rendering: optimizeLegibility;
+        line-height: 1;
+        margin-top: 0;
+        color: #222;
+      }
+
+      blockquote + figcaption cite {
+        display: block;
+        font-size: inherit;
+        text-align: right;
+      }
+
+      body {
+        word-wrap: break-word;
+      }
+
+      pre code {
+        word-wrap: normal;
+      }
+
+      body {
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        color: #444;
+      }
+
+      h1 {
+        font-size: 2em;
+        /* 2*16 = 32 */
+      }
+
+      h2 {
+        font-size: 1.5em;
+        /* 1.5*16 = 24 */
+      }
+
+      h3 {
+        font-size: 1.17em;
+        /* 1.17*16 = 18.72 */
+      }
+
+      h4 {
+        font-size: 1em;
+        /* 1*16 = 16 */
+      }
+
+      h5 {
+        font-size: 0.83em;
+        /* 0.83*16 = 13.28 */
+      }
+
+      h6 {
+        font-size: 0.75em;
+        /* 0.75*16 = 12 */
+      }
+
+      h1 {
+        margin: 2.42424rem 0 1.454544rem;
+      }
+
+      h2 {
+        margin: 2.0202rem 0 1.21212rem;
+      }
+
+      h3 {
+        margin: 1.61616rem 0 1rem;
+      }
+
+      h4 {
+        margin: 1.21212rem 0 1;
+      }
+
+      h5 {
+        margin: 0.80808rem 0;
+      }
+
+      h6 {
+        margin: 0.70707rem 0;
+      }
+
+      p {
+        margin: auto auto 1.5rem;
+      }
+
+      small {
+        font-size: 65%;
+      }
+
+      input,
+      abbr,
+      acronym,
+      blockquote,
+      code,
+      kbd,
+      q,
+      samp,
+      var {
+        -webkit-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+      }
+
+      pre {
+        white-space: pre;
+      }
+
+      pre code {
+        white-space: -moz-pre-wrap;
+        white-space: pre-wrap;
+      }
+
+      code {
+        white-space: pre;
+        font-family: SF Mono, Consolas, Dejavu Sans Mono, Menlo, monospace;
+      }
+
+      abbr {
+        -webkit-font-variant: small-caps;
+        -moz-font-variant: small-caps;
+        -ms-font-variant: small-caps;
+        font-variant: small-caps;
+        font-weight: 600;
+        text-transform: lowercase;
+        color: gray;
+      }
+
+      abbr[title]:hover {
+        cursor: help;
+      }
+
+      /* FROM http://purecss.io/layouts/side-menu/  adapted to remove pure classes*/
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+        color: #444;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+      }
+
+      code,
+      pre {
+        background-color: #f5f5f5;
+        color: #444;
+        border-radius: 2px;
+        text-shadow: 0px 1px 0px white;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+      }
+
+      pre code {
+        border: none;
+        box-shadow: none;
+      }
+
+      pre {
+        padding: 0.5em;
+      }
+
+      code {
+        display: inline-block;
+        padding: 0 0.5em;
+        line-height: 1.4;
+        font-size: 0.9em;
+      }
+
+      table {
+        border-spacing: 0;
+        margin-bottom: 1.5rem;
+      }
+
+      table th,
+      table td {
+        padding: 0.3em 0.7em;
+      }
+
+      table th {
+        background-color: #f4f4f4;
+        border-bottom: 2px solid #444;
+      }
+
+      table td {
+        border: 1px solid #f5f5f5;
+      }
+
+      /* Add transition to containers so they can push in and out. */
+
+      #layout,
+      #menu,
+      .menu-link {
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+
+      /* This is the parent `<div>` that contains the menu and the content area. */
+
+      #layout {
+        position: relative;
+        padding-left: 0;
+      }
+
+      #layout.active #menu {
+        left: 250px;
+        width: 250px;
+      }
+
+      #layout.active .menu-link {
+        left: 250px;
+      }
+
+      /* The content `<div>` is where all your content goes. */
+
+      .content {
+        margin: 50px auto;
+        padding: 0 2em;
+        max-width: 80ex;
+        line-height: 1.6em;
+      }
+
+      /*
+      The `#menu` `<div>` is the parent `<div>` that contains the menu that
+      appears on the left side of the page.
+      */
+
+      #menu {
+        margin-left: -250px;
+        /* "#menu" width */
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
+        /* so the menu or its navicon stays above all content */
+        background: #f4f4f4;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.9em;
+      }
+
+      @media print {
+        #menu,
+        .menu-link {
+          display: none !important;
+        }
+      }
+
+      a,
+      a * {
+        text-decoration: none;
+        color: #2483cc;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: #2483cc;
+      }
+
+      /* All anchors inside the menu should be styled like this. */
+
+      #menu a {
+        display: block;
+        padding: 0.5em 0.5em;
+      }
+
+      #menu a:first-letter {
+        text-transform: capitalize;
+      }
+
+      #menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 1em 0.5em;
+      }
+
+      #menu ul ul {
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        border-left: 4px solid rgba(255, 255, 255, 0.5);
+      }
+
+      /* Change color of the anchor links on hover/focus. */
+
+      #menu li a:hover,
+      #menu li a:focus {
+        background: rgba(255, 255, 255, 0.4);
+      }
+
+      /* This styles the selected menu item `<li>`. */
+
+      #menu li a.active {
+        background: rgba(0, 0, 0, 0.05);
+      }
+
+      /* This styles a link within a selected menu item `<li>`. */
+
+      #menu li a.active {
+        color: #222;
+      }
+
+      /* This styles the menu heading. */
+
+      #menu li.heading {
+        font-size: 0.9em;
+        text-transform: uppercase;
+        color: #000;
+      }
+
+      #menu li.heading > * {
+        padding: 0.5em;
+        display: block;
+      }
+
+      #menu li.heading a {
+        color: #0c68af;
+      }
+
+      /* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
+      /*
+      `.menu-link` represents the responsive menu toggle that shows/hides on
+      small screens.
+      */
+
+      .menu-link {
+        position: fixed;
+        display: block;
+        /* show this only on small screens */
+        top: 0;
+        left: 0;
+        /* "#menu width" */
+        font-size: 10px;
+        /* change this value to increase/decrease button size */
+        z-index: 10;
+        width: 2em;
+        height: auto;
+        padding: 1.6em 1.2em;
+        border-radius: 0 2px 2px 0;
+      }
+
+      .menu-link:hover {
+        background: #f4f4f4;
+      }
+
+      .menu-link span {
+        position: relative;
+        display: block;
+      }
+
+      .menu-link span,
+      .menu-link span:before,
+      .menu-link span:after {
+        background-color: #555;
+        width: 100%;
+        height: 0.2em;
+        border-radius: 1em;
+      }
+
+      .menu-link span:before,
+      .menu-link span:after {
+        position: absolute;
+        margin-top: -0.6em;
+        content: " ";
+      }
+
+      .menu-link span:after {
+        margin-top: 0.6em;
+      }
+
+      /* Hides the menu at `48em`, but modify this based on your app's needs. */
+
+      @media (min-width: 48em) {
+        .header,
+        .content {
+          padding-left: 2em;
+          padding-right: 2em;
+        }
+
+        #layout {
+          padding-left: 250px;
+          /* left col width "#menu" */
+          left: 0;
+        }
+        #menu {
+          left: 250px;
+        }
+
+        .menu-link {
+          position: fixed;
+          left: 250px;
+          display: none;
+        }
+
+        #layout.active .menu-link {
+          left: 250px;
+        }
+      }
+
+      @media (max-width: 48em) {
+        /* Only apply this when the window is small. Otherwise, the following case results in extra padding on the left:
+         * Make the window small.
+         * Tap the menu to trigger the active state.
+         * Make the window large again.
+         */
+        #layout.active {
+          position: relative;
+          left: 250px;
+        }
+      }
+
+      /* Heading anchors and permalinks */
+      h1[id],
+      h2[id],
+      h3[id],
+      h4[id],
+      h5[id],
+      h6[id] {
+        position: relative;
+      }
+      .heading-anchor-permalink {
+        /* Position the permalink to the left of the title */
+        position: absolute;
+        right: 100%;
+        /* Add some spacing as padding to not lose the hover */
+        padding-right: 0.6rem;
+        /* Make it only visible on heading hover, see below */
+        opacity: 0;
+      }
+      h1[id]:hover .heading-anchor-permalink,
+      h2[id]:hover .heading-anchor-permalink,
+      h3[id]:hover .heading-anchor-permalink,
+      h4[id]:hover .heading-anchor-permalink,
+      h5[id]:hover .heading-anchor-permalink,
+      h6[id]:hover .heading-anchor-permalink {
+        opacity: 0.5;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <div id="layout">
+      <!-- Menu toggle -->
+      <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+      </a>
+      <nav id="menu">
+        <ul>
+<li><a class="" href="../../../../README.html">README</a></li>
+<li class="heading"><span>home</span></li>
+<ul>
+<li><a class="" href="../../../../home/1_motivation.html">1 motivation</a></li>
+<li><a class="" href="../../../../home/2_resources.html">2 resources</a></li>
+<li><a class="" href="../../../../home/3_roadmap.html">3 roadmap</a></li>
+<li class="heading"><span>4 resource itineraries</span></li>
+<ul>
+<li><a class="" href="../../../../home/4_resource_itineraries/1_Complete_Web_Developer_2020.html">1 Complete Web Developer 2020</a></li>
+<li><a class="" href="../../../../home/4_resource_itineraries/2_freeCodeCamp.html">2 freeCodeCamp</a></li>
+<li class="heading"><span>3 JavaScript Understanding the weird parts</span></li>
+<ul>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/0_Source Link.html">0 Source Link</a></li>
+<li class="heading"><span>1 Getting Started</span></li>
+<ul>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started/1_Introduction_and_Goal_of_the_course.html">1 Introduction and Goal of the course</a></li>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started/2_Setup.html">2 Setup</a></li>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/1_Getting_Started/6_Understanding_and_frameworks.html">6 Understanding and frameworks</a></li>
+</ul>
+<li class="heading"><span>2 Execution Contexts and Lexical Environments</span></li>
+<ul>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/10_The_Global_environment_and_the_global_variable.html">10 The Global environment and the global variable</a></li>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/11_Two_phase_interpretation,_hoisting.html">11 Two phase interpretation, hoisting</a></li>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/12_undefined_is_special.html">12 undefined is special</a></li>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/14_js_is_single_threaded_and_synchronous.html">14 js is single threaded and synchronous</a></li>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/17_The_scope_chain.html">17 The scope chain</a></li>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/19_Asynchronous_callbacks.html">19 Asynchronous callbacks</a></li>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/7_First_3_big_word_alerts.html">7 First 3 big word alerts</a></li>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/2_Execution_Contexts_and_Lexical_Environments/8_Name_value_pairs_and_objects.html">8 Name value pairs and objects</a></li>
+</ul>
+<li class="heading"><span>3 Types and operators</span></li>
+<ul>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/3_Types_and_operators/21_Primitive_types.html">21 Primitive types</a></li>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/3_Types_and_operators/26_Comparison_operators.html">26 Comparison operators</a></li>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/3_Types_and_operators/29_Logic_ops_and_value_evaluation.html">29 Logic ops and value evaluation</a></li>
+<li><a class="" href="../../../../home/4_resource_itineraries/3_JavaScript_Understanding_the_weird_parts/3_Types_and_operators/30_Multi-file_collisions.html">30 Multi file collisions</a></li>
+</ul>
+</ul>
+<li class="heading"><span>4 FrontendMentor challenges</span></li>
+<ul>
+<li><a class="" href="../../../../home/4_resource_itineraries/4_FrontendMentor_challenges/1_intro_section_with_nav_dropdown.html">1 intro section with nav dropdown</a></li>
+</ul>
+</ul>
+<li><a class="" href="../../../../home/5_projects.html">5 projects</a></li>
+<li><a class="" href="../../../../home/6_setup.html">6 setup</a></li>
+</ul>
+<li class="heading"><span>tooling</span></li>
+<ul>
+<li><a class="" href="../../../../tooling/README.html">README</a></li>
+<li class="heading"><span>obsidian templates</span></li>
+<ul>
+<li><a class="" href="../../../../tooling/obsidian-templates/README.html">README</a></li>
+<li class="heading"><span>templater</span></li>
+<ul>
+<li><a class="" href="../../../../tooling/obsidian-templates/templater/timestamp.html">timestamp</a></li>
+<li><a class="" href="../../../../tooling/obsidian-templates/templater/title_and_date.html">title and date</a></li>
+<li><a class="" href="../../../../tooling/obsidian-templates/templater/w2h.html">w2h</a></li>
+</ul>
+</ul>
+</ul>
+<li class="heading"><span>vault</span></li>
+<ul>
+<li class="heading"><span>0 Basics of the Web</span></li>
+<ul>
+<li><a class="" href="../../../0_Basics_of_the_Web/1_Browsing_the_web.html">1 Browsing the web</a></li>
+<li class="heading"><span>2 Dev Tool</span></li>
+<ul>
+<li><a class="" href="../../../0_Basics_of_the_Web/2_Dev_Tool/0_index.html">0 index</a></li>
+<li><a class="" href="../../../0_Basics_of_the_Web/2_Dev_Tool/1_DevTool_advanced.html">1 DevTool advanced</a></li>
+</ul>
+<li><a class="" href="../../../0_Basics_of_the_Web/3_How_browsers_work.html">3 How browsers work</a></li>
+<li><a class="" href="../../../0_Basics_of_the_Web/4_First_website_visit_details.html">4 First website visit details</a></li>
+<li><a class="" href="../../../0_Basics_of_the_Web/4_Rendering_Performance_basics.html">4 Rendering Performance basics</a></li>
+</ul>
+<li class="heading"><span>1 HTML</span></li>
+<ul>
+<li><a class="" href="../../../1_HTML/0_index.html">0 index</a></li>
+<li><a class="" href="../../../1_HTML/1_What_are_tags.html">1 What are tags</a></li>
+<li class="heading"><span>2 Common tags</span></li>
+<ul>
+<li><a class="" href="../../../1_HTML/2_Common_tags/1_Writing_stuff.html">1 Writing stuff</a></li>
+<li><a class="" href="../../../1_HTML/2_Common_tags/2_Anchor_tag.html">2 Anchor tag</a></li>
+<li><a class="" href="../../../1_HTML/2_Common_tags/3_Lists.html">3 Lists</a></li>
+<li><a class="" href="../../../1_HTML/2_Common_tags/4_Multimedia_tags.html">4 Multimedia tags</a></li>
+<li><a class="" href="../../../1_HTML/2_Common_tags/5_Table.html">5 Table</a></li>
+<li><a class="" href="../../../1_HTML/2_Common_tags/6_Meta_tags.html">6 Meta tags</a></li>
+</ul>
+<li><a class="" href="../../../1_HTML/3_Containers.html">3 Containers</a></li>
+<li><a class="" href="../../../1_HTML/4_Forms.html">4 Forms</a></li>
+<li><a class="" href="../../../1_HTML/5_Semantic_tags_-_Page_Sections.html">5 Semantic tags   Page Sections</a></li>
+</ul>
+<li class="heading"><span>2 CSS</span></li>
+<ul>
+<li><a class="" href="../../../2_CSS/0_index.html">0 index</a></li>
+<li class="heading"><span>1 CSS Basics</span></li>
+<ul>
+<li><a class="" href="../../../2_CSS/1_CSS_Basics/0_index.html">0 index</a></li>
+<li><a class="" href="../../../2_CSS/1_CSS_Basics/1_Types_of_CSS.html">1 Types of CSS</a></li>
+<li><a class="" href="../../../2_CSS/1_CSS_Basics/2_CSS_Selectors.html">2 CSS Selectors</a></li>
+<li><a class="" href="../../../2_CSS/1_CSS_Basics/3_Order_and_Inheritance_in_CSS.html">3 Order and Inheritance in CSS</a></li>
+<li><a class="" href="../../../2_CSS/1_CSS_Basics/4_Critical_Render_Path.html">4 Critical Render Path</a></li>
+</ul>
+<li class="heading"><span>2 Commonly used properties   IGN</span></li>
+<ul>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/0_Miscellaneous.html">0 Miscellaneous</a></li>
+<li class="heading"><span>1 Data based</span></li>
+<ul>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/1_Data_based/1_Size.html">1 Size</a></li>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/1_Data_based/2_Colors.html">2 Colors</a></li>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/1_Data_based/3_background-image.html">3 background image</a></li>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/1_Data_based/4_Fonts.html">4 Fonts</a></li>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/1_Data_based/5_Text_Formatting.html">5 Text Formatting</a></li>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/1_Data_based/6_Icons.html">6 Icons</a></li>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/1_Data_based/7_Links.html">7 Links</a></li>
+</ul>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/4_List_styles.html">4 List styles</a></li>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/5_CSS_tables.html">5 CSS tables</a></li>
+<li class="heading"><span>6 CSS extras   IGN</span></li>
+<ul>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/6_CSS_extras_-_IGN/0_index.html">0 index</a></li>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/6_CSS_extras_-_IGN/1_Media_queries.html">1 Media queries</a></li>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/6_CSS_extras_-_IGN/2_auto_keyword.html">2 auto keyword</a></li>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/6_CSS_extras_-_IGN/3_Avoid_pixelation.html">3 Avoid pixelation</a></li>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/6_CSS_extras_-_IGN/4_Viewport_sizes.html">4 Viewport sizes</a></li>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/6_CSS_extras_-_IGN/5_CSS_variables.html">5 CSS variables</a></li>
+<li><a class="" href="../../../2_CSS/2_Commonly_used_properties_-_IGN/6_CSS_extras_-_IGN/6_CSS_calc_function.html">6 CSS calc function</a></li>
+</ul>
+</ul>
+<li class="heading"><span>3 Box Model</span></li>
+<ul>
+<li><a class="" href="../../../2_CSS/3_Box_Model/0_index.html">0 index</a></li>
+<li><a class="" href="../../../2_CSS/3_Box_Model/1_Box_model.html">1 Box model</a></li>
+<li><a class="" href="../../../2_CSS/3_Box_Model/2_margin_and_padding.html">2 margin and padding</a></li>
+<li><a class="" href="../../../2_CSS/3_Box_Model/3_border.html">3 border</a></li>
+<li><a class="" href="../../../2_CSS/3_Box_Model/4_height_and_width.html">4 height and width</a></li>
+<li><a class="" href="../../../2_CSS/3_Box_Model/5_outline.html">5 outline</a></li>
+<li><a class="" href="../../../2_CSS/3_Box_Model/6_display_and_visibility.html">6 display and visibility</a></li>
+</ul>
+<li class="heading"><span>4 Layouts   flex, grid</span></li>
+<ul>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/0_index.html">0 index</a></li>
+<li class="heading"><span>1 Flexbox   1D</span></li>
+<ul>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/1_Flexbox_-_1D/0_flex_syntax.html">0 flex syntax</a></li>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/1_Flexbox_-_1D/0_index.html">0 index</a></li>
+<li class="heading"><span>1 Container</span></li>
+<ul>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/1_Flexbox_-_1D/1_Container/1_main_axis.html">1 main axis</a></li>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/1_Flexbox_-_1D/1_Container/2_cross_axis.html">2 cross axis</a></li>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/1_Flexbox_-_1D/1_Container/3_Wrapping.html">3 Wrapping</a></li>
+</ul>
+<li class="heading"><span>2 Items</span></li>
+<ul>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/1_Flexbox_-_1D/2_Items/1_flex-shrink.html">1 flex shrink</a></li>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/1_Flexbox_-_1D/2_Items/2_flex-grow.html">2 flex grow</a></li>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/1_Flexbox_-_1D/2_Items/3_flex-basis.html">3 flex basis</a></li>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/1_Flexbox_-_1D/2_Items/4_order.html">4 order</a></li>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/1_Flexbox_-_1D/2_Items/5_align_self.html">5 align self</a></li>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/1_Flexbox_-_1D/2_Items/6_All_in_one_flex_property.html">6 All in one flex property</a></li>
+</ul>
+</ul>
+<li class="heading"><span>2 Grid   2D</span></li>
+<ul>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/2_Grid_-_2D/0_index.html">0 index</a></li>
+<li class="heading"><span>1 Container</span></li>
+<ul>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/2_Grid_-_2D/1_Container/1_grid-template.html">1 grid template</a></li>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/2_Grid_-_2D/1_Container/3_row_and_column_gap.html">3 row and column gap</a></li>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/2_Grid_-_2D/1_Container/4_Justifying_and_aligning_items.html">4 Justifying and aligning items</a></li>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/2_Grid_-_2D/1_Container/5_Naming_items.html">5 Naming items</a></li>
+</ul>
+<li class="heading"><span>2 Items</span></li>
+<ul>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/2_Grid_-_2D/2_Items/0_index.html">0 index</a></li>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/2_Grid_-_2D/2_Items/1_Space_occupied.html">1 Space occupied</a></li>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/2_Grid_-_2D/2_Items/2_grid_item_position.html">2 grid item position</a></li>
+</ul>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/2_Grid_-_2D/3_Flex_vs_Grid.html">3 Flex vs Grid</a></li>
+</ul>
+<li><a class="" href="../../../2_CSS/4_Layouts_-_flex,_grid/3_Floats.html">3 Floats</a></li>
+</ul>
+<li><a class="" href="../../../2_CSS/5_Positioning.html">5 Positioning</a></li>
+<li><a class="" href="../../../2_CSS/6_Transition_and_Animations.html">6 Transition and Animations</a></li>
+<li><a class="" href="../../../2_CSS/7_Media_queries.html">7 Media queries</a></li>
+</ul>
+<li class="heading"><span>3 JavaScript</span></li>
+<ul>
+<li><a class="" href="../../0_index.html">0 index</a></li>
+<li class="heading"><span>1 JS Basics</span></li>
+<ul>
+<li><a class="" href="../../1_JS_Basics/0_index.html">0 index</a></li>
+<li><a class="" href="../../1_JS_Basics/1_JS_Setup.html">1 JS Setup</a></li>
+<li><a class="" href="../../1_JS_Basics/2_What_is_JavaScript.html">2 What is JavaScript</a></li>
+<li><a class="" href="../../1_JS_Basics/3_Basic_JavaScript.html">3 Basic JavaScript</a></li>
+<li><a class="" href="../../1_JS_Basics/4_Using_JS.html">4 Using JS</a></li>
+<li><a class="" href="../../1_JS_Basics/5_Basic_Data_Structures.html">5 Basic Data Structures</a></li>
+</ul>
+<li class="heading"><span>2 DOM Manipulation</span></li>
+<ul>
+<li><a class="" href="../../2_DOM_Manipulation/0_index.html">0 index</a></li>
+<li><a class="" href="../../2_DOM_Manipulation/1_DOM_and_JS_Engine.html">1 DOM and JS Engine</a></li>
+<li><a class="" href="../../2_DOM_Manipulation/2_DOM_Selectors.html">2 DOM Selectors</a></li>
+<li><a class="" href="../../2_DOM_Manipulation/3_DOM_events.html">3 DOM events</a></li>
+<li><a class="" href="../../2_DOM_Manipulation/4_Creating_new_HTML_elements.html">4 Creating new HTML elements</a></li>
+<li><a class="" href="../../2_DOM_Manipulation/6_jQuery_-_trivia.html">6 jQuery   trivia</a></li>
+<li><a class="" href="../../2_DOM_Manipulation/7_Developer_Fundamental_5.html">7 Developer Fundamental 5</a></li>
+</ul>
+<li class="heading"><span>3 Advanced JS</span></li>
+<ul>
+<li><a class="" href="../0_index.html">0 index</a></li>
+<li><a class="" href="../10_How_Does_JS_works.html">10 How Does JS works</a></li>
+<li><a class="" href="../11_Modules_in_JS.html">11 Modules in JS</a></li>
+<li class="heading"><span>12 Asynchronous JavaScript</span></li>
+<ul>
+<li><a class="" href="../12_Asynchronous_JavaScript/0_index.html">0 index</a></li>
+<li><a class="" href="../12_Asynchronous_JavaScript/1_Event_loop.html">1 Event loop</a></li>
+<li><a class="" href="../12_Asynchronous_JavaScript/2_Callbacks.html">2 Callbacks</a></li>
+<li><a class="" href="../12_Asynchronous_JavaScript/3_Promises.html">3 Promises</a></li>
+<li><a class="" href="../12_Asynchronous_JavaScript/4_Async_await.html">4 Async await</a></li>
+<li><a class="" href="../12_Asynchronous_JavaScript/5_Comparing_async_coding_constructs.html">5 Comparing async coding constructs</a></li>
+</ul>
+<li><a class="" href="../13_Exception_handling.html">13 Exception handling</a></li>
+<li><a class="" href="../1_Scope.html">1 Scope</a></li>
+<li class="heading"><span>2 ES5 and ES6</span></li>
+<ul>
+<li><a class="" href="../2_ES5_and_ES6/0_index.html">0 index</a></li>
+<li><a class="" href="../2_ES5_and_ES6/A_Necessities.html">A Necessities</a></li>
+<li><a class="" href="../2_ES5_and_ES6/B_Shorthands_and_object_features.html">B Shorthands and object features</a></li>
+<li><a class="" href="../2_ES5_and_ES6/C_JS_exclusive_features.html">C JS exclusive features</a></li>
+</ul>
+<li><a class="" href="../3_Advanced_Loops.html">3 Advanced Loops</a></li>
+<li class="heading"><span>4 Advanced Arrays</span></li>
+<ul>
+<li><a class="" href="1_spread_and_rest_operators.html">1 spread and rest operators</a></li>
+<li><a class="active" href="2_Map,_filter_and_reduce.html">2 Map, filter and reduce</a></li>
+<li><a class="" href="3_some_and_every.html">3 some and every</a></li>
+</ul>
+<li class="heading"><span>5 Advanced Functions</span></li>
+<ul>
+<li><a class="" href="../5_Advanced_Functions/1_Pure_functions.html">1 Pure functions</a></li>
+<li><a class="" href="../5_Advanced_Functions/2_Closures.html">2 Closures</a></li>
+<li><a class="" href="../5_Advanced_Functions/3_Currying.html">3 Currying</a></li>
+<li><a class="" href="../5_Advanced_Functions/4_Function_composition.html">4 Function composition</a></li>
+</ul>
+<li class="heading"><span>6 Advanced Objects</span></li>
+<ul>
+<li><a class="" href="../6_Advanced_Objects/1_How_variables_work.html">1 How variables work</a></li>
+<li><a class="" href="../6_Advanced_Objects/2_Scope_context.html">2 Scope context</a></li>
+<li><a class="" href="../6_Advanced_Objects/3_Classes_and_objects.html">3 Classes and objects</a></li>
+<li><a class="" href="../6_Advanced_Objects/4_Inheritance.html">4 Inheritance</a></li>
+</ul>
+<li><a class="" href="../7_ES7.html">7 ES7</a></li>
+<li><a class="" href="../8_ES8.html">8 ES8</a></li>
+<li><a class="" href="../9_Debugging.html">9 Debugging</a></li>
+</ul>
+<li class="heading"><span>4 Extra JS</span></li>
+<ul>
+<li><a class="" href="../../4_Extra_JS/1_Intl_API.html">1 Intl API</a></li>
+</ul>
+</ul>
+<li class="heading"><span>4 Website Design</span></li>
+<ul>
+<li><a class="" href="../../../4_Website_Design/1_Accessibility.html">1 Accessibility</a></li>
+<li><a class="" href="../../../4_Website_Design/2_Folder_structure.html">2 Folder structure</a></li>
+</ul>
+<li><a class="" href="../../../notebook.html">notebook</a></li>
+</ul>
+</ul>
+      </nav>
+      <article id="main" class="content">
+        <h1 id="2.-map%2C-filter-and-reduce">2. Map, filter and reduce <a class="heading-anchor-permalink" href="#2.-map%2C-filter-and-reduce">#</a></h1>
+<p>Created Thursday 25 March 2021</p>
+<h2 id="why-use-map%2C-filter-or-reduce%3F">Why use map, filter or reduce? <a class="heading-anchor-permalink" href="#why-use-map%2C-filter-or-reduce%3F">#</a></h2>
+<ul>
+<li>Map, filter and reduce help us to make our code functionally pure(deterministic).</li>
+</ul>
+<h2 id="1.-map">1. Map <a class="heading-anchor-permalink" href="#1.-map">#</a></h2>
+<ul>
+<li>Purpose - store f(ele) for each element, in a <strong>map object</strong>.</li>
+<li>Syntax - <code>arr.map(f)</code>; where f can be a function in any form.</li>
+<li>Assume an argument when defining f.</li>
+<li>f(ele) is computed and stored for each element. <code>undefined</code> is stored if <code>f</code> returns nothing.</li>
+<li>The map object is index subscriptable.</li>
+</ul>
+<p><img src="../../../../assets/2_Map,_filter_and_reduce-image-1-4ce68a0b.png" alt=""></p>
+<h2 id="2.-filter">2. Filter <a class="heading-anchor-permalink" href="#2.-filter">#</a></h2>
+<ul>
+<li>Purpose - returns an iterable of elements for which f(ele) is true.</li>
+<li>Syntax - same as map.</li>
+</ul>
+<p><img src="../../../../assets/2_Map,_filter_and_reduce-image-2-4ce68a0b.png" alt=""></p>
+<h2 id="3.-reduce">3. Reduce <a class="heading-anchor-permalink" href="#3.-reduce">#</a></h2>
+<ul>
+<li>Purpose - Accumulates the result by running f(accum,ele) for each element.</li>
+<li>Syntax - <code>arr.reduce(f, accum_start=0)</code></li>
+<li>You must have <em>accumulator</em> and <em>element</em> as parameters of <code>f</code>, in order.</li>
+</ul>
+<pre><code class="language-js">const arr = [1, 2, 3]
+const res = arr.reduce(((accum, ele)=&gt; accum + ele), accum_init_value); // 0 if unspecified
+// same as doing accum = accum + ele each time
+</code></pre>
+<ul>
+<li>Remember to update accum inside f().</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>All the quick for functions - <strong>forEach</strong>, <strong>map</strong>, <strong>filter</strong> and <strong>reduce</strong> work sequentially by default. They can be made parallel, however.</li>
+<li>Iteration number is available all <strong>forEach</strong>, <strong>map</strong> and **filter **- as the second parameter of <code>f</code>. This is optional.</li>
+</ul>
+<h2 id="gotchas">Gotchas <a class="heading-anchor-permalink" href="#gotchas">#</a></h2>
+<ul>
+<li><code>map</code> and <code>filter</code> return an array as output, while <code>reduce</code> returns a single value (usually).</li>
+<li>Use these anytime we need loops for small things.</li>
+<li>forEach is different, it returns nothing.</li>
+</ul>
+
+      </article>
+    </div>
+    <script>
+      // Load contents.json if you need it
+    </script>
+    <script>
+      // FROM http://purecss.io/js/ui.js
+      (function(window, document) {
+        var layout = document.getElementById("layout"),
+          menu = document.getElementById("menu"),
+          menuLink = document.getElementById("menuLink");
+
+        function toggleClass(element, className) {
+          var classes = element.className.split(/\s+/),
+            length = classes.length,
+            i = 0;
+
+          for (; i < length; i++) {
+            if (classes[i] === className) {
+              classes.splice(i, 1);
+              break;
+            }
+          }
+          // The className is not found
+          if (length === classes.length) {
+            classes.push(className);
+          }
+
+          element.className = classes.join(" ");
+        }
+
+        menuLink.onclick = function(e) {
+          var active = "active";
+
+          e.preventDefault();
+          toggleClass(layout, active);
+          toggleClass(menu, active);
+          toggleClass(menuLink, active);
+        };
+      })(this, this.document);
+    </script>
+  </body>
+</html>
