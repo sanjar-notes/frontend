@@ -24,11 +24,11 @@ Example - `figure` tag is immensely helpful.
 <figure>
   <img src="myCat.jpg" />
   <figcaption>My Cat</figcaption>
-  <figure></figure>
 </figure>
 ```
 
 ### Video
+[WhatWG](https://wicg.github.io/controls-list/explainer.html#examples)
 - Syntax: `<video src="">Video not loaded text</video>`
 - Attributes:
   1.  `src`
@@ -36,13 +36,12 @@ Example - `figure` tag is immensely helpful.
   3.  `width`
   4.  `poster` = "image.png"
   5.  `autoplay`
-  6.  `control`
+  6.  `controls`
   7.  `loop`
   8.  `muted`
 
 ### Audio
-- `<audio controls>alt_text_here</audio>`
-- `<source src="" type="audio/mpeg" />` needs to be inside audio - can be used for sound awa transcripts
+- `<audio src="" controls>alt_text_here</audio>`
 
 mAid - self closing tags don't have a text content.
 
@@ -92,4 +91,5 @@ mAid - self closing tags don't have a text content.
 - Use forward slash, even if website is on a Windows machine.
 - Relative paths are allowed - `.` and `..` can be used, relative to the current page.
 - Absolute paths are OK too, from the root of the machine.
+- External paths (http, ftp) are OK as well!
 - Note: index.html does not determine the root in any case.

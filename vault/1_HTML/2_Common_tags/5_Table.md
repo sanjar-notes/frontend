@@ -51,3 +51,10 @@ In the diagram here
 FIXME, to be included or not. I'll use CSS anyways.
 Can set this to some integer value, for the table outline.
 
+
+## Windowing/very-large-table
+The table tag is a simple UI widget. 
+It renders all the data at once.
+Furthermore, cell content changes or table size changes (window resized) causes a complete browser reflow.
+
+Windowing (process only the UI that's currently visible) is used to fix this issue. `div` tags are used here, since they don't have the reflow issue. Libraries like `react-window` are known solutions to implement large tables.
