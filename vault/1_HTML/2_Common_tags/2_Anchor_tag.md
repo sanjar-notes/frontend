@@ -13,6 +13,7 @@ Syntax: `<a href=""> </a>` is used for making links.
 	1. Email - [``mailto:example@gmail.com``](mailto:example@gmail.com)``?subject=Subject&body=Content``
 	2. SMS - ``sms:1234567890?body=Content``
 	3. Phone call - ``tel:1234567890``
+	4. WhatsApp - `whatsapp://send?text=my message&phone=+919123456789`, `whatsapp://send?text=Hello%20World!`
 
 This opens the relevant app. subject and body may be skipped.
 * *Huge Plus*: As anchor is an open tag, We can set images to act as links, and technically anything.
