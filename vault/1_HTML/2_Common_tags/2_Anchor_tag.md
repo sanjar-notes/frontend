@@ -14,12 +14,13 @@ Syntax: `<a href=""> </a>` is used for making links.
 	2. SMS - ``sms:1234567890?body=Content``
 	3. Phone call - ``tel:1234567890``
 	4. WhatsApp - `whatsapp://send?text=my message&phone=+919123456789`, `whatsapp://send?text=Hello%20World!`
+5. Custom schemes. Especially relevant for xdg-open or Android intent.
 
 This opens the relevant app. subject and body may be skipped.
 * *Huge Plus*: As anchor is an open tag, We can set images to act as links, and technically anything.
 
 ### Other attributes
-1. `<a target="_blank"></a>` opens the link in new tab. It has 3 more values, see [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target).
+1. `<a target="_blank"></a>` opens the link in new tab. It has 3 more values, see [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#target).
 2. `<a download></a>` boolean attribute will download the file. Of course the `href` needs to be a valid file.
 
 ### Relative vs absolute address/paths
