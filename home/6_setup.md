@@ -16,3 +16,4 @@ Vite supports:
 - ESM
 - import JSON
 - npm packages for code sharing
+- Can enable testing with one command ([vitest](https://vitest.dev/guide/))
